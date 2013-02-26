@@ -1,0 +1,10 @@
+C:\Users\KIEN\Documents\Visual Studio 2010\Projects\TowerDefenseGame\TowerDefenseGame\TowerDefenseGame\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\KIEN\Documents\Visual Studio 2010\Projects\TowerDefenseGame\TowerDefenseGame\TowerDefenseGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\KIEN\Documents\Visual Studio 2010\Projects\TowerDefenseGame\TowerDefenseGame\TowerDefenseGame\bin\x86\Debug\TowerDefenseGame.exe
+C:\Users\KIEN\Documents\Visual Studio 2010\Projects\TowerDefenseGame\TowerDefenseGame\TowerDefenseGame\bin\x86\Debug\TowerDefenseGame.pdb
+C:\Users\KIEN\Documents\Visual Studio 2010\Projects\TowerDefenseGame\TowerDefenseGame\TowerDefenseGame\obj\x86\Debug\TowerDefenseGame.exe
+C:\Users\KIEN\Documents\Visual Studio 2010\Projects\TowerDefenseGame\TowerDefenseGame\TowerDefenseGame\obj\x86\Debug\TowerDefenseGame.pdb
+C:\Users\KIEN\Documents\Visual Studio 2010\Projects\TowerDefenseGame\TowerDefenseGame\TowerDefenseGame\bin\x86\Debug\Content\demo_enemy.xnb
+C:\Users\KIEN\Documents\Visual Studio 2010\Projects\TowerDefenseGame\TowerDefenseGame\TowerDefenseGame\bin\x86\Debug\Content\images\enemy\axeman.xnb
+C:\Users\KIEN\Documents\Visual Studio 2010\Projects\TowerDefenseGame\TowerDefenseGame\TowerDefenseGame\bin\x86\Debug\Content\images\tower\arrow_tower.xnb
+C:\Users\KIEN\Documents\Visual Studio 2010\Projects\TowerDefenseGame\TowerDefenseGame\TowerDefenseGame\bin\x86\Debug\Content\images\bullet\arrow.xnb

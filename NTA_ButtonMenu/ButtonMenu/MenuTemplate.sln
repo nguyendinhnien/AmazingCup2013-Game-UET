@@ -1,0 +1,43 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuTemplate", "ButtonMenu\ButtonMenu\MenuTemplate.csproj", "{D23BA178-6887-4027-A744-D928395DFF3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuTemplateContent", "ButtonMenu\ButtonMenuContent\MenuTemplateContent.contentproj", "{AF727A9A-2062-40EA-AA8E-D174A3062DBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D23BA178-6887-4027-A744-D928395DFF3B}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D23BA178-6887-4027-A744-D928395DFF3B}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{D23BA178-6887-4027-A744-D928395DFF3B}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{D23BA178-6887-4027-A744-D928395DFF3B}.Debug|x86.ActiveCfg = Debug|x86
+		{D23BA178-6887-4027-A744-D928395DFF3B}.Debug|x86.Build.0 = Debug|x86
+		{D23BA178-6887-4027-A744-D928395DFF3B}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{D23BA178-6887-4027-A744-D928395DFF3B}.Release|Any CPU.ActiveCfg = Release|x86
+		{D23BA178-6887-4027-A744-D928395DFF3B}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{D23BA178-6887-4027-A744-D928395DFF3B}.Release|Mixed Platforms.Build.0 = Release|x86
+		{D23BA178-6887-4027-A744-D928395DFF3B}.Release|x86.ActiveCfg = Release|x86
+		{D23BA178-6887-4027-A744-D928395DFF3B}.Release|x86.Build.0 = Release|x86
+		{D23BA178-6887-4027-A744-D928395DFF3B}.Release|Xbox 360.ActiveCfg = Release|x86
+		{AF727A9A-2062-40EA-AA8E-D174A3062DBD}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{AF727A9A-2062-40EA-AA8E-D174A3062DBD}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{AF727A9A-2062-40EA-AA8E-D174A3062DBD}.Debug|x86.ActiveCfg = Debug|x86
+		{AF727A9A-2062-40EA-AA8E-D174A3062DBD}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{AF727A9A-2062-40EA-AA8E-D174A3062DBD}.Release|Any CPU.ActiveCfg = Release|x86
+		{AF727A9A-2062-40EA-AA8E-D174A3062DBD}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{AF727A9A-2062-40EA-AA8E-D174A3062DBD}.Release|x86.ActiveCfg = Release|x86
+		{AF727A9A-2062-40EA-AA8E-D174A3062DBD}.Release|Xbox 360.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>MyFont.spritefont</Source>
+      <Name>MyFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\MyFont.xnb</Output>
+      <Time>2013-02-14T11:09:35.6921925+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\MainMenu\title_screen_button1_select.png</Source>
+      <Name>images\MainMenu\title_screen_button1_select</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\MainMenu\title_screen_button1_select.xnb</Output>
+      <Time>2013-02-19T15:12:32.766901+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\MainMenu\title_screen_button2_select.png</Source>
+      <Name>images\MainMenu\title_screen_button2_select</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\MainMenu\title_screen_button2_select.xnb</Output>
+      <Time>2013-02-19T15:12:32.7679011+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\MainMenu\title_screen_button3_select.png</Source>
+      <Name>images\MainMenu\title_screen_button3_select</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\MainMenu\title_screen_button3_select.xnb</Output>
+      <Time>2013-02-19T15:12:32.7709013+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\MainMenu\title_screen_button4_select.png</Source>
+      <Name>images\MainMenu\title_screen_button4_select</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\MainMenu\title_screen_button4_select.xnb</Output>
+      <Time>2013-02-19T15:12:32.7719013+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\MainMenu\title_screen_button5_select.png</Source>
+      <Name>images\MainMenu\title_screen_button5_select</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\MainMenu\title_screen_button5_select.xnb</Output>
+      <Time>2013-02-19T15:12:32.7729014+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\MainMenu\title_screen_computer_wide.png</Source>
+      <Name>images\MainMenu\title_screen_computer_wide</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\MainMenu\title_screen_computer_wide.xnb</Output>
+      <Time>2013-02-19T15:12:32.7749015+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\MainMenu\title_screen_quit_select.png</Source>
+      <Name>images\MainMenu\title_screen_quit_select</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\MainMenu\title_screen_quit_select.xnb</Output>
+      <Time>2013-02-19T15:12:32.7759015+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\MessageBox\AButton.png</Source>
+      <Name>images\MessageBox\AButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\MessageBox\AButton.xnb</Output>
+      <Time>2013-02-19T15:40:31.235904+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\MessageBox\BButton.png</Source>
+      <Name>images\MessageBox\BButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\MessageBox\BButton.xnb</Output>
+      <Time>2013-02-19T15:40:31.236904+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\MessageBox\Confirm.png</Source>
+      <Name>images\MessageBox\Confirm</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\MessageBox\Confirm.xnb</Output>
+      <Time>2013-02-19T15:40:53.0941542+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\MessageBox\FadeScreen.png</Source>
+      <Name>images\MessageBox\FadeScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\MessageBox\FadeScreen.xnb</Output>
+      <Time>2013-02-19T15:41:13.1393007+07:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenuContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenuContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2013-01-19T11:22:44.0650552+07:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

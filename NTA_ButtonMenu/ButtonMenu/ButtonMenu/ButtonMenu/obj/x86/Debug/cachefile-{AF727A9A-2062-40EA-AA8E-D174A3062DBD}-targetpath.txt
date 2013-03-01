@@ -1,0 +1,12 @@
+Content\MyFont.xnb
+Content\images\MainMenu\title_screen_button1_select.xnb
+Content\images\MainMenu\title_screen_button2_select.xnb
+Content\images\MainMenu\title_screen_button3_select.xnb
+Content\images\MainMenu\title_screen_button4_select.xnb
+Content\images\MainMenu\title_screen_button5_select.xnb
+Content\images\MainMenu\title_screen_computer_wide.xnb
+Content\images\MainMenu\title_screen_quit_select.xnb
+Content\images\MessageBox\AButton.xnb
+Content\images\MessageBox\BButton.xnb
+Content\images\MessageBox\Confirm.xnb
+Content\images\MessageBox\FadeScreen.xnb

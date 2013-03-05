@@ -1,7 +1,6 @@
 C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\obj\x86\Debug\ButtonMenu.exe
 C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\obj\x86\Debug\ButtonMenu.pdb
-C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\MyFont.xnb
 C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\MainMenu\title_screen_button1_select.xnb
 C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\MainMenu\title_screen_button2_select.xnb
 C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\MainMenu\title_screen_button3_select.xnb
@@ -16,3 +15,13 @@ C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\Button
 C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\MessageBox\Confirm.xnb
 C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\MessageBox\FadeScreen.xnb
 C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\obj\x86\Debug\MenuTemplate.csprojResolveAssemblyReference.cache
+C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\HelpScreen\help_build_creatively_wide.xnb
+C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\HelpScreen\help_towers_01.xnb
+C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\HelpScreen\help_towers_02.xnb
+C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\HelpScreen\button_selection_vertical.xnb
+C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\HelpScreen\button_selection_square.xnb
+C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\NewGameScreen\NewGameScreen.xnb
+C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\NewGameScreen\ExitButtonSelected.xnb
+C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\NewGameScreen\StartButtonSelected.xnb
+C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\PlayingScreen\Layer0.xnb
+C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\Fonts\Font1.xnb

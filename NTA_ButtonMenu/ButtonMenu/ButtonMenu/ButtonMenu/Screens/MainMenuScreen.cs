@@ -18,7 +18,7 @@ namespace ButtonMenu
     /// </summary>
     public class MainMenuScreen : GameScreen
     {
-        const int NUMBER_OF_BUTTONS = 5;
+        private const int NUMBER_OF_BUTTONS = 6;
         
         private Texture2D backgroundTexture;
         private Vector2 backgroundPosition;
@@ -48,14 +48,16 @@ namespace ButtonMenu
             backgroundTexture =
                 content.Load<Texture2D>(@"images/MainMenu/title_screen_computer_wide");
             buttonTextures[0] =
-                content.Load<Texture2D>(@"images/MainMenu/title_screen_button1_select");
+                content.Load<Texture2D>(@"images/MainMenu/title_screen_quit_select");
             buttonTextures[1] =
-                content.Load<Texture2D>(@"images/MainMenu/title_screen_button2_select");
+                content.Load<Texture2D>(@"images/MainMenu/title_screen_button1_select");
             buttonTextures[2] =
-                content.Load<Texture2D>(@"images/MainMenu/title_screen_button3_select");
+                content.Load<Texture2D>(@"images/MainMenu/title_screen_button2_select");
             buttonTextures[3] =
-                content.Load<Texture2D>(@"images/MainMenu/title_screen_button4_select");
+                content.Load<Texture2D>(@"images/MainMenu/title_screen_button3_select");
             buttonTextures[4] =
+                content.Load<Texture2D>(@"images/MainMenu/title_screen_button4_select");
+            buttonTextures[5] =
                 content.Load<Texture2D>(@"images/MainMenu/title_screen_button5_select");
 
             Viewport viewport = ScreenManager.GraphicsDevice.Viewport;
@@ -63,25 +65,29 @@ namespace ButtonMenu
                 (viewport.Width - backgroundTexture.Width) / 2,
                 (viewport.Height - backgroundTexture.Height) / 2);
     
-            buttonPositions[0] = new Vector2(-10, 615);
-            buttonRectangles[0] = new Rectangle(-10, 615,
+            buttonPositions[0] = new Vector2(0, 10);
+            buttonRectangles[0] = new Rectangle(0, 10,
                 buttonTextures[0].Width, buttonTextures[0].Height);
 
-            buttonPositions[1] = new Vector2(70, 620);
-            buttonRectangles[1] = new Rectangle(70, 620,
-                buttonTextures[1].Width, buttonTextures[0].Height);
+            buttonPositions[1] = new Vector2(-10, 615);
+            buttonRectangles[1] = new Rectangle(-10, 615,
+                buttonTextures[1].Width, buttonTextures[1].Height);
 
-            buttonPositions[2] = new Vector2(-10, 615);
-            buttonRectangles[2] = new Rectangle(-10, 615,
-                buttonTextures[2].Width, buttonTextures[0].Height);
+            buttonPositions[2] = new Vector2(180, 640);
+            buttonRectangles[2] = new Rectangle(180, 640,
+                buttonTextures[2].Width, buttonTextures[2].Height);
 
-            buttonPositions[3] = new Vector2(-10, 615);
-            buttonRectangles[3] = new Rectangle(-10, 615,
-                buttonTextures[3].Width, buttonTextures[0].Height);
+            buttonPositions[3] = new Vector2(380, 615);
+            buttonRectangles[3] = new Rectangle(380, 615,
+                buttonTextures[3].Width, buttonTextures[3].Height);
 
-            buttonPositions[4] = new Vector2(-10, 615);
-            buttonRectangles[4] = new Rectangle(-10, 615,
-                buttonTextures[4].Width, buttonTextures[0].Height);
+            buttonPositions[4] = new Vector2(570, 635);
+            buttonRectangles[4] = new Rectangle(570, 635,
+                buttonTextures[4].Width, buttonTextures[4].Height);
+
+            buttonPositions[5] = new Vector2(830, 645);
+            buttonRectangles[5] = new Rectangle(830, 645,
+                buttonTextures[5].Width, buttonTextures[5].Height);
             
         }
 
@@ -154,9 +160,16 @@ namespace ButtonMenu
                     ActionOnPlayButton();
                     break;
                 case 2:
-                    //call something
+                    ActionOnResumeButton();
                     break;
                 case 3:
+                    ActionOnScoresButton();
+                    break;
+                case 4:
+                    ActionOnOptionsButton();
+                    break;
+                case 5:
+                    ActionOnHelpButton();
                     break;
                 default:
                     break;
@@ -173,6 +186,24 @@ namespace ButtonMenu
 
         void ActionOnPlayButton()
         {
+            ScreenManager.AddScreen(new NewGameScreen());
+        }
+
+        void ActionOnResumeButton()
+        {
+        }
+
+        void ActionOnScoresButton()
+        {
+        }
+
+        void ActionOnOptionsButton()
+        {
+        }
+
+        void ActionOnHelpButton()
+        {
+            ScreenManager.AddScreen(new HelpScreen());
         }
 
         void ConfirmExitMessageBoxAccepted(object sender, EventArgs e)

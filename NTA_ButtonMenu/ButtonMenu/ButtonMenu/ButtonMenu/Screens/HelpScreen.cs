@@ -105,7 +105,7 @@ namespace ButtonMenu
             spriteBatch.End();
         }
 
-/*        public override void HandleInput()
+        public override void HandleInput()
         {
             //check every image can click in the screen
             for (int i = 0; i < NUMBER_OF_BUTTONS; i++)
@@ -120,7 +120,7 @@ namespace ButtonMenu
                     else if (InputManager.IsMouseJustReleased())
                     {
                         //mouse is just released, do something and continue
-                        TakeActionOnImage(i);
+                        TakeActionOnButton(i);
                     }
                 }
                 else
@@ -128,12 +128,12 @@ namespace ButtonMenu
                     //do something
                     isButtonSelected[i] = false;
                 }
-        }*/
+        }
 
         /// <summary>
         /// Logic for each Image when clicked by mouse
         /// </summary>
-        void TakeActionOnImage(int i)
+        void TakeActionOnButton(int i)
         {
             switch (i)
             {

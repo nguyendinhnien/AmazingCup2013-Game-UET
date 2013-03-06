@@ -155,15 +155,82 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Fonts\Font1.spritefont">
-      <Name>Font1</Name>
+    <Compile Include="Fonts\font1.spritefont">
+      <Name>font1</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="images\PlayingScreen\Layer0.png">
-      <Name>Layer0</Name>
+    <Compile Include="images\PlayingScreen\hud_audio_off.png">
+      <Name>hud_audio_off</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\hud_audio_on.png">
+      <Name>hud_audio_on</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\hud_configure.png">
+      <Name>hud_configure</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\hud_health.png">
+      <Name>hud_health</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\hud_money.png">
+      <Name>hud_money</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\hud_pause.png">
+      <Name>hud_pause</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\hud_play.png">
+      <Name>hud_play</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\icon_gatling_tower.png">
+      <Name>icon_gatling_tower</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\icon_gatling_tower_disabled.png">
+      <Name>icon_gatling_tower_disabled</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\icon_goo_tower.png">
+      <Name>icon_goo_tower</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\icon_goo_tower_disabled.png">
+      <Name>icon_goo_tower_disabled</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\icon_ice_tower.png">
+      <Name>icon_ice_tower</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\icon_ice_tower_disabled.png">
+      <Name>icon_ice_tower_disabled</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\PlayingScreen\map.png">
+      <Name>map</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

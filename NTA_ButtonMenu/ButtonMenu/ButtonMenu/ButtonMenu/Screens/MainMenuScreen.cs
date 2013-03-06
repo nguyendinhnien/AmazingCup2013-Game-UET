@@ -136,7 +136,7 @@ namespace ButtonMenu
                     else if (InputManager.IsMouseJustReleased())
                     {
                         //mouse is just released, do something and continue
-                        TakeActionOnImage(i);
+                        TakeActionOnButton(i);
                     }
                 }
                 else
@@ -149,7 +149,7 @@ namespace ButtonMenu
         /// <summary>
         /// Logic for each Image when clicked by mouse
         /// </summary>
-        void TakeActionOnImage(int i)
+        void TakeActionOnButton(int i)
         {
             switch (i)
             {

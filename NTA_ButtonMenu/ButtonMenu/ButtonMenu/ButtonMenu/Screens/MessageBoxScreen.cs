@@ -84,7 +84,7 @@ namespace ButtonMenu
         public override void LoadContent()
         {
             ContentManager content = ScreenManager.Game.Content;
-            myFont = content.Load<SpriteFont>(@"MyFont");
+            myFont = content.Load<SpriteFont>(@"Fonts/Font1");
 
             backgroundTexture = content.Load<Texture2D>(@"images\MessageBox\Confirm");
             backTexture = content.Load<Texture2D>(@"images\MessageBox\BButton");

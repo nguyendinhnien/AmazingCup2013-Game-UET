@@ -85,7 +85,7 @@ namespace ButtonMenu
                     else if (InputManager.IsMouseJustReleased())
                     {
                         //mouse is just released, do something and continue
-                        TakeActionOnImage(i);
+                        TakeActionOnButton(i);
                     }
                 }
                 else
@@ -96,7 +96,7 @@ namespace ButtonMenu
         }
 
 
-        void TakeActionOnImage(int i)
+        void TakeActionOnButton(int i)
         {
             switch (i)
             {
@@ -113,7 +113,7 @@ namespace ButtonMenu
 
         void ActionOnStartButton()
         {
-
+            ScreenManager.AddScreen(new PlayingScreen());
         }
 
         void ActionOnExitButton()

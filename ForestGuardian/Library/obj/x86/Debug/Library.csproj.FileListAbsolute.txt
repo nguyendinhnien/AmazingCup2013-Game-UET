@@ -1,0 +1,16 @@
+C:\Users\KIEN\Documents\Visual Studio 2010\Projects\ForestGuardian\Library\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\KIEN\Documents\Visual Studio 2010\Projects\ForestGuardian\Library\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\KIEN\Documents\Visual Studio 2010\Projects\ForestGuardian\Library\bin\x86\Debug\Library.dll
+C:\Users\KIEN\Documents\Visual Studio 2010\Projects\ForestGuardian\Library\bin\x86\Debug\Library.pdb
+C:\Users\KIEN\Documents\Visual Studio 2010\Projects\ForestGuardian\Library\obj\x86\Debug\Library.dll
+C:\Users\KIEN\Documents\Visual Studio 2010\Projects\ForestGuardian\Library\obj\x86\Debug\Library.pdb
+C:\Users\KIEN\Documents\Visual Studio 2010\Projects\ForestGuardian\Library\bin\x86\Debug\Data.dll
+C:\Users\KIEN\Documents\Visual Studio 2010\Projects\ForestGuardian\Library\bin\x86\Debug\Data.pdb
+D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Library\bin\x86\Debug\Library.dll
+D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Library\bin\x86\Debug\Library.pdb
+D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Library\bin\x86\Debug\Data.dll
+D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Library\bin\x86\Debug\Data.pdb
+D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Library\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Library\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Library\obj\x86\Debug\Library.dll
+D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Library\obj\x86\Debug\Library.pdb

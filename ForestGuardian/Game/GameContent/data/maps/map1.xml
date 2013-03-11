@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="Data.Map">
+    <Name>Forest 1</Name>
+    <Width>15</Width>
+    <Height>10</Height>
+    <TileSize>64</TileSize>
+    <BackgroundFile>images/maps/map1</BackgroundFile>
+    <InteractiveMap>
+      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+      2 0 0 0 0 0 2 0 0 0 0 0 2 0 2
+      2 0 0 0 0 0 0 0 0 0 0 0 0 0 2
+      2 0 0 0 0 0 0 1 1 1 1 1 0 0 2
+      1 1 1 1 1 0 0 1 0 0 0 1 0 0 2
+      0 0 0 0 1 0 0 1 1 1 1 1 1 1 1
+      2 0 0 0 1 1 1 1 0 0 2 1 0 0 2
+      2 0 2 0 0 0 0 1 1 1 1 1 0 0 2
+      2 0 0 0 0 0 0 0 0 0 0 0 0 0 2
+      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+    </InteractiveMap>
+    <StartCell Type="Data.Cell">
+      <tile_x>0</tile_x> <tile_y>4</tile_y>
+    </StartCell>
+    <EndCell Type="Data.Cell">
+      <tile_x>14</tile_x> <tile_y>5</tile_y>
+    </EndCell>
+    <Waves>
+      <Item> <EnemyType>AxeMan</EnemyType> <EnemyNumber>2</EnemyNumber> <SpawnRate>2.0</SpawnRate></Item>
+      <Item> <EnemyType>AxeMan</EnemyType> <EnemyNumber>2</EnemyNumber> <SpawnRate>2.2</SpawnRate></Item>
+      <Item> <EnemyType>AxeMan</EnemyType> <EnemyNumber>5</EnemyNumber> <SpawnRate>2.3</SpawnRate></Item>
+      <Item> <EnemyType>AxeMan</EnemyType> <EnemyNumber>7</EnemyNumber> <SpawnRate>2.2</SpawnRate></Item>
+    </Waves>
+  </Asset>
+</XnaContent>

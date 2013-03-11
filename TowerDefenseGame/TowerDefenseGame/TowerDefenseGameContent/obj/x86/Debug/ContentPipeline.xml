@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\KIEN\Documents\Visual Studio 2010\Projects\TowerDefenseGame\TowerDefenseGame\TowerDefenseGame\bin\x86\Debug\Content\demo_enemy.xnb</Output>
-      <Time>2013-02-02T11:43:22.6762796+07:00</Time>
+      <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\TowerDefenseGame\TowerDefenseGame\TowerDefenseGame\bin\x86\Debug\Content\demo_enemy.xnb</Output>
+      <Time>2013-02-28T20:54:17.0198231+07:00</Time>
     </Item>
     <Item>
       <Source>images\enemy\axeman.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\KIEN\Documents\Visual Studio 2010\Projects\TowerDefenseGame\TowerDefenseGame\TowerDefenseGame\bin\x86\Debug\Content\images\enemy\axeman.xnb</Output>
-      <Time>2013-02-25T23:43:43.8749466+07:00</Time>
+      <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\TowerDefenseGame\TowerDefenseGame\TowerDefenseGame\bin\x86\Debug\Content\images\enemy\axeman.xnb</Output>
+      <Time>2013-02-28T20:54:17.0228233+07:00</Time>
     </Item>
     <Item>
       <Source>images\tower\arrow_tower.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\KIEN\Documents\Visual Studio 2010\Projects\TowerDefenseGame\TowerDefenseGame\TowerDefenseGame\bin\x86\Debug\Content\images\tower\arrow_tower.xnb</Output>
-      <Time>2013-02-02T11:43:22.6762796+07:00</Time>
+      <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\TowerDefenseGame\TowerDefenseGame\TowerDefenseGame\bin\x86\Debug\Content\images\tower\arrow_tower.xnb</Output>
+      <Time>2013-02-28T20:54:17.0228233+07:00</Time>
     </Item>
     <Item>
       <Source>images\bullet\arrow.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\KIEN\Documents\Visual Studio 2010\Projects\TowerDefenseGame\TowerDefenseGame\TowerDefenseGame\bin\x86\Debug\Content\images\bullet\arrow.xnb</Output>
-      <Time>2013-02-18T23:27:53.8195626+07:00</Time>
+      <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\TowerDefenseGame\TowerDefenseGame\TowerDefenseGame\bin\x86\Debug\Content\images\bullet\arrow.xnb</Output>
+      <Time>2013-02-28T20:54:17.0218232+07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -43,10 +43,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\KIEN\Documents\Visual Studio 2010\Projects\TowerDefenseGame\TowerDefenseGame\TowerDefenseGameContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\KIEN\Documents\Visual Studio 2010\Projects\TowerDefenseGame\TowerDefenseGame\TowerDefenseGame\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\KIEN\Documents\Visual Studio 2010\Projects\TowerDefenseGame\TowerDefenseGame\TowerDefenseGameContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\KIEN\Documents\Visual Studio 2010\Projects\TowerDefenseGame\TowerDefenseGame\TowerDefenseGame\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>D:\WORK\_Programing\AmazingCup2013-Game-UET\TowerDefenseGame\TowerDefenseGame\TowerDefenseGameContent\</RootDirectory>
+      <LoggerRootDirectory>D:\WORK\_Programing\AmazingCup2013-Game-UET\TowerDefenseGame\TowerDefenseGame\TowerDefenseGame\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\WORK\_Programing\AmazingCup2013-Game-UET\TowerDefenseGame\TowerDefenseGame\TowerDefenseGameContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\WORK\_Programing\AmazingCup2013-Game-UET\TowerDefenseGame\TowerDefenseGame\TowerDefenseGame\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -75,7 +75,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2013-01-18T01:58:09.5358463+07:00</Value>
+        <Value>2013-01-20T17:50:32.5952282+07:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

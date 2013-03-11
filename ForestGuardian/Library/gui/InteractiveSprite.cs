@@ -59,7 +59,7 @@ namespace Library.gui
             if (visible)
             {
                 //Chu y den viec scale sprite
-                Rectangle spriteRectangle = new Rectangle((int)position.X, (int)position.Y, texture.Width, texture.Height);
+                Rectangle spriteRectangle = new Rectangle((int)mPosition.X, (int)mPosition.Y, mTexture.Width, mTexture.Height);
                 if (spriteRectangle.Contains(new Point(current_mouseState.X, current_mouseState.Y)))
                 {
 

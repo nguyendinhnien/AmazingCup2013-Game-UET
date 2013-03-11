@@ -45,7 +45,7 @@ namespace Library
             Vector2 anchor = new Vector2();
             anchor.X = pCenter.X;
             anchor.Y = pCenter.Y - 32;
-            center = anchor;
+            mCenter = anchor;
 
             this.cost = cost;
             this.range = range;
@@ -66,7 +66,7 @@ namespace Library
 
         public bool isInRange(Vector2 position)
         {
-            if (Vector2.Distance(center, position) <= range) return true;
+            if (Vector2.Distance(mCenter, position) <= range) return true;
             else return false;
         }
 
@@ -76,9 +76,9 @@ namespace Library
 
             foreach(Enemy enemy in enemies){
                 if(isInRange(enemy.Center)){
-                    if (Vector2.Distance(center, enemy.Center) < smallest_range)
+                    if (Vector2.Distance(mCenter, enemy.Center) < smallest_range)
                     {
-                        smallest_range = Vector2.Distance(center, enemy.Center);
+                        smallest_range = Vector2.Distance(mCenter, enemy.Center);
                         closest_enemy = enemy;
                     }
                 }

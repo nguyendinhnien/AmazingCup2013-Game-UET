@@ -9,9 +9,9 @@ namespace Library
 {
     public class Sprite
     {     
-        protected Texture2D texture;       
-        protected Vector2 position;
-        protected Vector2 center;
+        protected Texture2D mTexture;       
+        protected Vector2 mPosition;
+        protected Vector2 mCenter;
 
         protected float layer_depth;
         public float Rotation = 0.0f;
@@ -19,43 +19,43 @@ namespace Library
 
         public Sprite(Texture2D texture)
         {
-            this.texture = texture;
+            this.mTexture = texture;
         }
         public Sprite(Texture2D texture, Vector2 center)
         {
-            this.texture = texture;
-            this.center = center;
+            this.mTexture = texture;
+            this.mCenter = center;
 
-            this.position.X = center.X - texture.Width / 2;
-            this.position.Y = center.Y - texture.Height / 2;
+            this.mPosition.X = center.X - texture.Width / 2;
+            this.mPosition.Y = center.Y - texture.Height / 2;
         }
 
         public Vector2 Position
         {
-            get { return position; }
-            set { position = value; }
+            get { return mPosition; }
+            set { mPosition = value; }
         }
         public Vector2 Center
         {
-            get { return center; }
-            set { position = value; }
+            get { return mCenter; }
+            set { mPosition = value; }
         }
 
         public Rectangle BoundingBox()
         {
-            return texture.Bounds;
+            return mTexture.Bounds;
         }
 
         public virtual void Update(GameTime gameTime)
         {
-            this.position.X = center.X - texture.Width / 2;
-            this.position.Y = center.Y - texture.Height / 2;
+            this.mPosition.X = mCenter.X - mTexture.Width / 2;
+            this.mPosition.Y = mCenter.Y - mTexture.Height / 2;
         }
         
         public virtual void Draw(SpriteBatch spriteBatch)
         {
             //spriteBatch.Draw(texture, position, null, Color.White, Rotation, Vector2.Zero, Scale, SpriteEffects.None, layer_depth);
-            spriteBatch.Draw(texture, position, Color.White);
+            spriteBatch.Draw(mTexture, mPosition, Color.White);
         }
     }
 }

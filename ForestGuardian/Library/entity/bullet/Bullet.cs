@@ -68,11 +68,11 @@ namespace Library
         }
         public void Move()
         {
-            Vector2 direction = target_center - center;
+            Vector2 direction = target_center - mCenter;
             direction.Normalize();
 
             Vector2 velocity = speed * direction;
-            center += velocity;
+            mCenter += velocity;
             age--;
         }
 

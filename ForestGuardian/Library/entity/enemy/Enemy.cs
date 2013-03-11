@@ -43,7 +43,7 @@ namespace Library
 
         public float DistanceToDestination
         {
-            get { return Vector2.Distance(center, waypoints.Peek()); }
+            get { return Vector2.Distance(mCenter, waypoints.Peek()); }
         }
 
         public bool atDestination
@@ -94,7 +94,7 @@ namespace Library
 
         public Vector2 getDirection() 
         {
-            Vector2 direction = waypoints.Peek() - center;
+            Vector2 direction = waypoints.Peek() - mCenter;
             direction.Normalize();
             return direction;
         }
@@ -104,16 +104,16 @@ namespace Library
             Vector2 direction = getDirection();
             Vector2 velocity = move_speed * direction;
             if (DistanceToDestination > velocity.Length()) {
-                center += velocity;
+                mCenter += velocity;
             }
             else {
-                center = waypoints.Peek();
+                mCenter = waypoints.Peek();
             }
         }
         
         public void checkHit(Bullet b)
         {
-            if (Vector2.Distance(center, b.Center) < hit_radius)
+            if (Vector2.Distance(mCenter, b.Center) < hit_radius)
             {
                 this.lostHealth(b.Damage);
             }

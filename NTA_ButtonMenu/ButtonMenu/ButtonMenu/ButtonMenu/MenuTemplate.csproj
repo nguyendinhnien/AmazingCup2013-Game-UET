@@ -116,6 +116,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="MenuTemplate.cs" />
     <Compile Include="Managers\ScreenManager.cs" />
+    <Compile Include="Screens\NewGameScreen.cs" />
+    <Compile Include="Screens\PlayingScreen.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

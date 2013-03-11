@@ -2,15 +2,6 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>MyFont.spritefont</Source>
-      <Name>MyFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\MyFont.xnb</Output>
-      <Time>2013-02-14T11:09:35.6921925+07:00</Time>
-    </Item>
-    <Item>
       <Source>images\MainMenu\title_screen_button1_select.png</Source>
       <Name>images\MainMenu\title_screen_button1_select</Name>
       <Importer>TextureImporter</Importer>
@@ -108,6 +99,213 @@
       <Options>None</Options>
       <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\MessageBox\FadeScreen.xnb</Output>
       <Time>2013-02-19T15:41:13.1393007+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\HelpScreen\help_build_creatively_wide.png</Source>
+      <Name>images\HelpScreen\help_build_creatively_wide</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\HelpScreen\help_build_creatively_wide.xnb</Output>
+      <Time>2013-03-01T18:53:14.8690501+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\HelpScreen\help_towers_01.png</Source>
+      <Name>images\HelpScreen\help_towers_01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\HelpScreen\help_towers_01.xnb</Output>
+      <Time>2013-03-01T18:53:14.937054+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\HelpScreen\help_towers_02.png</Source>
+      <Name>images\HelpScreen\help_towers_02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\HelpScreen\help_towers_02.xnb</Output>
+      <Time>2013-03-01T18:53:14.9650556+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\HelpScreen\button_selection_vertical.png</Source>
+      <Name>images\HelpScreen\button_selection_vertical</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\HelpScreen\button_selection_vertical.xnb</Output>
+      <Time>2013-03-01T19:23:52.7441706+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\HelpScreen\button_selection_square.png</Source>
+      <Name>images\HelpScreen\button_selection_square</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\HelpScreen\button_selection_square.xnb</Output>
+      <Time>2013-03-04T20:07:16.0008178+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\NewGameScreen\NewGameScreen.png</Source>
+      <Name>images\NewGameScreen\NewGameScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\NewGameScreen\NewGameScreen.xnb</Output>
+      <Time>2013-03-04T20:35:13.0817413+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\NewGameScreen\ExitButtonSelected.png</Source>
+      <Name>images\NewGameScreen\ExitButtonSelected</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\NewGameScreen\ExitButtonSelected.xnb</Output>
+      <Time>2013-03-04T20:39:35.4877501+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\NewGameScreen\StartButtonSelected.png</Source>
+      <Name>images\NewGameScreen\StartButtonSelected</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\NewGameScreen\StartButtonSelected.xnb</Output>
+      <Time>2013-03-04T20:39:35.4897502+07:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\Font1.spritefont</Source>
+      <Name>Fonts\Font1</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\Fonts\Font1.xnb</Output>
+      <Time>2013-03-06T18:57:58.883946+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\PlayingScreen\hud_audio_off.png</Source>
+      <Name>images\PlayingScreen\hud_audio_off</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\PlayingScreen\hud_audio_off.xnb</Output>
+      <Time>2013-03-06T17:48:21.5350153+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\PlayingScreen\hud_audio_on.png</Source>
+      <Name>images\PlayingScreen\hud_audio_on</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\PlayingScreen\hud_audio_on.xnb</Output>
+      <Time>2013-03-06T17:48:21.5370154+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\PlayingScreen\hud_configure.png</Source>
+      <Name>images\PlayingScreen\hud_configure</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\PlayingScreen\hud_configure.xnb</Output>
+      <Time>2013-03-06T17:48:21.5900184+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\PlayingScreen\hud_health.png</Source>
+      <Name>images\PlayingScreen\hud_health</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\PlayingScreen\hud_health.xnb</Output>
+      <Time>2013-03-06T17:48:21.5920186+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\PlayingScreen\hud_money.png</Source>
+      <Name>images\PlayingScreen\hud_money</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\PlayingScreen\hud_money.xnb</Output>
+      <Time>2013-03-06T17:48:21.5940187+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\PlayingScreen\hud_pause.png</Source>
+      <Name>images\PlayingScreen\hud_pause</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\PlayingScreen\hud_pause.xnb</Output>
+      <Time>2013-03-06T17:48:21.5950187+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\PlayingScreen\hud_play.png</Source>
+      <Name>images\PlayingScreen\hud_play</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\PlayingScreen\hud_play.xnb</Output>
+      <Time>2013-03-06T17:48:21.5960188+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\PlayingScreen\icon_gatling_tower.png</Source>
+      <Name>images\PlayingScreen\icon_gatling_tower</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\PlayingScreen\icon_gatling_tower.xnb</Output>
+      <Time>2013-03-06T17:48:21.5980189+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\PlayingScreen\icon_gatling_tower_disabled.png</Source>
+      <Name>images\PlayingScreen\icon_gatling_tower_disabled</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\PlayingScreen\icon_gatling_tower_disabled.xnb</Output>
+      <Time>2013-03-06T17:48:21.599019+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\PlayingScreen\icon_goo_tower.png</Source>
+      <Name>images\PlayingScreen\icon_goo_tower</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\PlayingScreen\icon_goo_tower.xnb</Output>
+      <Time>2013-03-06T17:48:21.600019+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\PlayingScreen\icon_goo_tower_disabled.png</Source>
+      <Name>images\PlayingScreen\icon_goo_tower_disabled</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\PlayingScreen\icon_goo_tower_disabled.xnb</Output>
+      <Time>2013-03-06T17:48:21.6010191+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\PlayingScreen\icon_ice_tower.png</Source>
+      <Name>images\PlayingScreen\icon_ice_tower</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\PlayingScreen\icon_ice_tower.xnb</Output>
+      <Time>2013-03-06T17:48:21.6020191+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\PlayingScreen\icon_ice_tower_disabled.png</Source>
+      <Name>images\PlayingScreen\icon_ice_tower_disabled</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\PlayingScreen\icon_ice_tower_disabled.xnb</Output>
+      <Time>2013-03-06T17:48:21.6030192+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\PlayingScreen\map.png</Source>
+      <Name>images\PlayingScreen\map</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\Visual Studio 2010\Projects\ButtonMenu\ButtonMenu\ButtonMenu\bin\x86\Debug\Content\images\PlayingScreen\map.xnb</Output>
+      <Time>2013-03-06T18:04:21.9109457+07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

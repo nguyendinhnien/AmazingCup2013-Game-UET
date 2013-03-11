@@ -42,13 +42,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyFont.spritefont">
-      <Name>MyFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="images\MainMenu\title_screen_button1_select.png">
       <Name>title_screen_button1_select</Name>
       <Importer>TextureImporter</Importer>
@@ -107,6 +100,137 @@
   <ItemGroup>
     <Compile Include="images\MessageBox\FadeScreen.png">
       <Name>FadeScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\HelpScreen\help_build_creatively_wide.png">
+      <Name>help_build_creatively_wide</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\HelpScreen\help_towers_01.png">
+      <Name>help_towers_01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\HelpScreen\help_towers_02.png">
+      <Name>help_towers_02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\HelpScreen\button_selection_vertical.png">
+      <Name>button_selection_vertical</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\HelpScreen\button_selection_square.png">
+      <Name>button_selection_square</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\NewGameScreen\NewGameScreen.png">
+      <Name>NewGameScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\NewGameScreen\ExitButtonSelected.png">
+      <Name>ExitButtonSelected</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\NewGameScreen\StartButtonSelected.png">
+      <Name>StartButtonSelected</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fonts\font1.spritefont">
+      <Name>font1</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\PlayingScreen\hud_audio_off.png">
+      <Name>hud_audio_off</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\hud_audio_on.png">
+      <Name>hud_audio_on</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\hud_configure.png">
+      <Name>hud_configure</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\hud_health.png">
+      <Name>hud_health</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\hud_money.png">
+      <Name>hud_money</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\hud_pause.png">
+      <Name>hud_pause</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\hud_play.png">
+      <Name>hud_play</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\icon_gatling_tower.png">
+      <Name>icon_gatling_tower</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\icon_gatling_tower_disabled.png">
+      <Name>icon_gatling_tower_disabled</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\icon_goo_tower.png">
+      <Name>icon_goo_tower</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\icon_goo_tower_disabled.png">
+      <Name>icon_goo_tower_disabled</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\icon_ice_tower.png">
+      <Name>icon_ice_tower</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\PlayingScreen\icon_ice_tower_disabled.png">
+      <Name>icon_ice_tower_disabled</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\PlayingScreen\map.png">
+      <Name>map</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

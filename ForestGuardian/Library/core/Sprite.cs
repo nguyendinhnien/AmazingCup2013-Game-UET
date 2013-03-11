@@ -14,21 +14,8 @@ namespace Library
         protected Vector2 mCenter;
 
         protected float layer_depth;
-        public float Rotation = 0.0f;
-        public float Scale = 1.0f;
-
-        public Sprite(Texture2D texture)
-        {
-            this.mTexture = texture;
-        }
-        public Sprite(Texture2D texture, Vector2 center)
-        {
-            this.mTexture = texture;
-            this.mCenter = center;
-
-            this.mPosition.X = center.X - texture.Width / 2;
-            this.mPosition.Y = center.Y - texture.Height / 2;
-        }
+        public float mRotation = 0.0f;
+        public float mScale = 1.0f;
 
         public Vector2 Position
         {
@@ -39,6 +26,20 @@ namespace Library
         {
             get { return mCenter; }
             set { mPosition = value; }
+        }
+
+        public Sprite(Texture2D texture)
+        {
+            this.mTexture = texture;
+        }
+
+        public Sprite(Texture2D texture, Vector2 center)
+        {
+            this.mTexture = texture;
+            this.mCenter = center;
+
+            this.mPosition.X = center.X - texture.Width / 2;
+            this.mPosition.Y = center.Y - texture.Height / 2;
         }
 
         public Rectangle BoundingBox()

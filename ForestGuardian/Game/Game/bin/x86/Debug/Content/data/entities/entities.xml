@@ -4,7 +4,7 @@
     <SawMan health="2.0" value="2" speed="0.8" texture_location="images/enemy/sawman"></SawMan>
   </Enemy>
   <Tower>
-    <ArrowTower health="1.0" cost="1" range="100" fire_reload="20" damage="2" texture_location="images/tower/oak_tree_level_1" bullet_texture="images/bullet/arrow"></ArrowTower>
+    <ArrowTower health="1.0" cost="1" range="100" fire_reload="20" damage="2" texture_location="images/tower/oak_tree_level_1" bullet_texture="images/bullet/acorn"></ArrowTower>
   </Tower>
   <Bullet>
     

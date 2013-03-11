@@ -10,4 +10,5 @@ Content\data\maps\map1.xnb
 Content\images\tower\catus_level_1.xnb
 Content\images\tower\oak_tree_level_1.xnb
 Content\images\tower\pineapple_level_1.xnb
+Content\images\bullet\acorn.xnb
 Content\data\entities\entities.xml

@@ -15,8 +15,9 @@ namespace Library
         protected int age;
         //protected bool alive;
 
-
         protected Vector2 target_center;
+        protected Vector2 mVelocity;
+        Vector2 mDirection;
 
         public float Speed
         {
@@ -68,12 +69,19 @@ namespace Library
         }
         public void Move()
         {
-            Vector2 direction = target_center - mCenter;
-            direction.Normalize();
+            mDirection = target_center - mCenter;
+            mDirection.Normalize();
 
-            Vector2 velocity = speed * direction;
-            mCenter += velocity;
+            mVelocity = speed * mDirection;
+            mCenter += mVelocity;
             age--;
+        }
+
+        public void setRotation(float value)
+        {
+            mRotation = value;
+
+            mVelocity = Vector2.Transform(mVelocity, Matrix.CreateRotationZ(mRotation));
         }
 
         public override void Update(GameTime gameTime)

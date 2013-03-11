@@ -42,3 +42,4 @@ D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\obj\x86\Deb
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\tower\catus_level_1.xnb
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\tower\oak_tree_level_1.xnb
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\tower\pineapple_level_1.xnb
+D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\bullet\acorn.xnb

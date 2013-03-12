@@ -64,10 +64,10 @@ namespace Game
             //button = new Button(texture, hoverTexture, pressTexture, new Vector2(0, 0));
             //button.Clicked += PlayBut_Clicked;
 
-            texture = Content.Load<Texture2D>(@"images\gameplay\buttons\arrow_tower_but");
+            texture = Content.Load<Texture2D>(@"images\gameplay\buttons\tree_icon");
             hoverTexture = null;
             pressTexture = null;
-            button = new Button(texture, hoverTexture, pressTexture, new Vector2(100, 100));
+            button = new Button(texture, hoverTexture, pressTexture, new Vector2(550, 370));
             button.Clicked += ArrowTowerBut_Clicked;
             buttons.Add(button);
         }

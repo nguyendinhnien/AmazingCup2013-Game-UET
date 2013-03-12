@@ -56,11 +56,11 @@ namespace Game
         
         private MouseState previousState;
         
-        public GamePlayScene(GameManager game):base(game){}
-
         public int Lives { get { return lives; } }
         public int Money { get { return money; } }
         public int Points { get { return points; } }
+
+        public GamePlayScene(GameManager game):base(game){}
 
         public override void LoadContent()
         {

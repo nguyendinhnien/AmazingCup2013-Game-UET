@@ -118,6 +118,15 @@
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\bullet\acorn.xnb</Output>
       <Time>2013-03-11T23:16:05.8164475+07:00</Time>
     </Item>
+    <Item>
+      <Source>images\gameplay\buttons\tree_icon.png</Source>
+      <Name>images\gameplay\buttons\tree_icon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\tree_icon.xnb</Output>
+      <Time>2013-03-12T22:18:21.3945253+07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

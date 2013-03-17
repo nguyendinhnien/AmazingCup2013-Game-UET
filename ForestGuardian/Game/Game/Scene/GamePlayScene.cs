@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.Input;
 using Data;
 using Library;
 
-namespace Game
+namespace Forest
 {
     public enum TowerPut
     {
@@ -25,7 +25,7 @@ namespace Game
         public const byte TOWER = 1;
         public const byte OTHER = 2;
     }
-    public class GamePlayScene:Scene
+    public class GamePlayScene:GameScreen
     {
         private BackgroundLayer background_layer;
 
@@ -60,14 +60,14 @@ namespace Game
         public int Money { get { return money; } }
         public int Points { get { return points; } }
 
-        public GamePlayScene(GameManager game):base(game){}
+        public GamePlayScene():base(){}
 
         public override void LoadContent()
         {
             LoadGameData();
             hud_layer = new HudLayer(this);
-            UpgradeButtonTexture = game.Content.Load<Texture2D>(@"images\gameplay\buttons\upgrade_but");
-            SellButtonTexture = game.Content.Load<Texture2D>(@"images\gameplay\buttons\sell_but");
+            UpgradeButtonTexture = ScreenManager.Game.Content.Load<Texture2D>(@"images\gameplay\buttons\upgrade_but");
+            SellButtonTexture = ScreenManager.Game.Content.Load<Texture2D>(@"images\gameplay\buttons\sell_but");
             UpgradeButton = new ValueButton(UpgradeButtonTexture, null, null, new Vector2(-1000.0f, -1000.0f));
             SellButton = new ValueButton(SellButtonTexture, null, null, new Vector2(-1000.0f,-1000.0f));
             SellButton.Clicked += SellButton_Clicked;
@@ -76,22 +76,22 @@ namespace Game
 
         public void LoadGameData()
         {
-            Loader.LoadEntitiesFromFile("data/entities/entities.xml",game.Content);
+            Loader.LoadEntitiesFromFile("data/entities/entities.xml", ScreenManager.Game.Content);
             loadMap(@"data\maps\map1");
-            Camera2D.Reset(game.GraphicsDevice.Viewport);
+            Camera2D.Reset(ScreenManager.Game.GraphicsDevice.Viewport);
             
         }
 
         public void loadMap(string map_file)
         {
-            Map map = game.Content.Load<Map>(map_file);
+            Map map = ScreenManager.Game.Content.Load<Map>(map_file);
             map.PostReading();
 
             width = map.Width;
             height = map.Height;
             tile_size = map.TileSize;
-            
-            Texture2D background_texture = game.Content.Load<Texture2D>(map.BackgroundFile);
+
+            Texture2D background_texture = ScreenManager.Game.Content.Load<Texture2D>(map.BackgroundFile);
             background_layer = new BackgroundLayer(Vector2.Zero, background_texture);
             
             interactive_map = new byte[width*height];
@@ -176,7 +176,7 @@ namespace Game
             tower_selected_keypos = -1; tower_selecting = false;
         }
 
-        public override void Update(GameTime gameTime)
+        public override void  HandleInput(GameTime gameTime)
         {
             //Cap nhat Camera          
             Camera2D.Update(gameTime);

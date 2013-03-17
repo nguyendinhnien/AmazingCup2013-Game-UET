@@ -22,7 +22,8 @@ namespace Library
         // The the different state textures.
         protected Texture2D hoverTexture;
         protected Texture2D pressTexture;
-        protected Texture2D texture;
+        protected Texture2D buttonTexture;
+        protected Texture2D drawTexture;
 
         protected Vector2 position;
         protected Rectangle bounds;
@@ -41,7 +42,7 @@ namespace Library
         {
             this.hoverTexture = hoverTexture;
             this.pressTexture = pressTexture;
-            this.texture = texture;
+            this.buttonTexture = texture;
             this.position = position;
 
             this.bounds = new Rectangle((int)position.X, (int)position.Y, (int)(texture.Width), (int)(texture.Height));
@@ -50,14 +51,14 @@ namespace Library
         public Vector2 Position
         {
             get { return position; }
-            set { position = value; bounds = new Rectangle((int)position.X, (int)position.Y, (int)(texture.Width), (int)(texture.Height)); }
+            set { position = value; bounds = new Rectangle((int)position.X, (int)position.Y, (int)(buttonTexture.Width), (int)(buttonTexture.Height)); }
         }
 
         public Vector2 Center
         {
-            get { return new Vector2(position.X + texture.Bounds.Width / 2, position.Y + texture.Bounds.Height / 2); }
-            set { position.X = value.X - texture.Bounds.Width / 2; position.Y = value.Y - texture.Bounds.Height / 2;
-            bounds = new Rectangle((int)position.X, (int)position.Y, (int)(texture.Width), (int)(texture.Height));}
+            get { return new Vector2(position.X + buttonTexture.Bounds.Width / 2, position.Y + buttonTexture.Bounds.Height / 2); }
+            set { position.X = value.X - buttonTexture.Bounds.Width / 2; position.Y = value.Y - buttonTexture.Bounds.Height / 2;
+            bounds = new Rectangle((int)position.X, (int)position.Y, (int)(buttonTexture.Width), (int)(buttonTexture.Height));}
         }
 
         public bool InBound(Vector2 pos)
@@ -91,6 +92,11 @@ namespace Library
                     state = ButtonStatus.Pressing;
                     if (Pressed != null) { Pressed(this, EventArgs.Empty); }
                 }
+                //NTA added
+                else
+                {
+                    state = ButtonStatus.Normal;
+                }
             }
 
             //Trang thai Clicked
@@ -114,7 +120,13 @@ namespace Library
 
         public virtual void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(texture, this.position, null, Color.White, Rotation, Vector2.Zero, Scale, SpriteEffects.None, layer_depth);
+            if (state == ButtonStatus.Pressing && pressTexture != null)
+                drawTexture = pressTexture;
+            else if (state == ButtonStatus.Hovering && hoverTexture != null)
+                drawTexture = hoverTexture;
+            else
+                drawTexture = buttonTexture;
+            spriteBatch.Draw(drawTexture, this.position, null, Color.White, Rotation, Vector2.Zero, Scale, SpriteEffects.None, layer_depth);
         }
     }
 }

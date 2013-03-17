@@ -1,2 +1,3 @@
 C:\Users\KIEN\Documents\Visual Studio 2010\Projects\ForestGuardian\Game\GameContent\obj\x86\Debug\ResolveAssemblyReference.cache
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\GameContent\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Download\ForestGuardian\Game\GameContent\obj\x86\Debug\GameContent.contentprojResolveAssemblyReference.cache

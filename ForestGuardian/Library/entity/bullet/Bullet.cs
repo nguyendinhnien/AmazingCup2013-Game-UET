@@ -17,6 +17,8 @@ namespace Library
         protected Vector2 mVelocity;
         Vector2 mDirection;
 
+        private bool mHit;
+
         public float Speed
         {
             get { return speed; }
@@ -37,6 +39,7 @@ namespace Library
         {
             this.speed = speed;
             mDamage = pDamage;
+            mHit = false;
         }
 
         public Bullet(Texture2D texture, Vector2 center, float speed, Vector2 target_center)
@@ -44,17 +47,16 @@ namespace Library
         {
             this.speed = speed;
             this.target_center = target_center;
-        }
-
-        public void Kill()
-        {
-            //alive = false;
-            age = 0;
+            mHit = false;
         }
 
         public virtual void HitTarget(Enemy pEnemy)
         {
-            pEnemy.lostHealth(mDamage);
+            if (!mHit)
+            {
+                pEnemy.lostHealth(mDamage);
+                mHit = true;
+            }
         }
 
         public void setTargetPos(Vector2 pTargetCenter)
@@ -90,8 +92,6 @@ namespace Library
             if (target_center != null)
             {
                 Move();
-                //HitTarget();
-                //alive = false;
             }
             base.Update(gameTime);
         }

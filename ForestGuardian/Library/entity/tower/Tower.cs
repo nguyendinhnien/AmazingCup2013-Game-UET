@@ -19,14 +19,14 @@ namespace Library
         protected int range;
         protected int damage;
 
-        protected int fire_reload;
+        protected float mFireReload;
+        protected float reloadDuration;
         protected float timer = 0;
 
         protected int cost;
         protected int level;
 
         protected Enemy target;
-        protected bool attacking;
 
         protected Bullet bullet;
 
@@ -39,6 +39,7 @@ namespace Library
         {
             get { return range; }
         }
+
         #region Cost
         public int Cost
         {
@@ -54,30 +55,26 @@ namespace Library
         }
         #endregion
 
-        public Tower(Texture2D texture, Vector2 pCenter, int cost, int range, int damage, int fire_reload)
+        public Tower(Texture2D texture, Vector2 pCenter, int cost, int range, int damage, float fire_reload)
             : base(texture, pCenter)
         {
             this.cost = cost;
             this.range = range;
             this.damage = damage;
-            this.fire_reload = fire_reload;
+            this.mFireReload = fire_reload;
 
-            //Ban dau chua co dich, set la false
-            this.attacking = false;
             this.level = 1;
             this.layer_depth = 0.5f;
         }
 
-        public Tower(Texture2D texture, Vector2 pPosition, Anchor a, int cost, int range, int damage, int fire_reload)
+        public Tower(Texture2D texture, Vector2 pPosition, Anchor a, int cost, int range, int damage, float fire_reload)
             : base(texture, pPosition,a)
         {
             this.cost = cost;
             this.range = range;
             this.damage = damage;
-            this.fire_reload = fire_reload;
-            
-            //Ban dau chua co dich, set la false
-            this.attacking = false;
+            this.mFireReload = fire_reload;
+
             this.level = 1;
             this.layer_depth = 0.5f;
         }
@@ -114,9 +111,10 @@ namespace Library
 
         public void Attack(Enemy enemy)
         {
-            if (!attacking)
+            if (reloadDuration <= 0)
             {
-                attacking = true;
+                reloadDuration = mFireReload;
+
                 target = enemy;
 
                 createBullet();
@@ -174,6 +172,15 @@ namespace Library
             */
             base.Update(gameTime);
 
+            //Console.Write("Time: ");
+            //Console.WriteLine((float)gameTime.ElapsedGameTime.TotalSeconds);
+            //Console.Write("Duration: ");
+            //Console.WriteLine(reloadDuration);
+            if (reloadDuration >= 0)
+            {
+                reloadDuration -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+            }
+
             if (target != null && !isInRange(target.Center))
             {
                 target = null;   
@@ -182,14 +189,9 @@ namespace Library
             if (bullet != null && target != null)
             {
                 bullet.Update(gameTime);
-                if (!bullet.Alive)
+                if (!bullet.Alive && target != null)
                 {
-                    attacking = false;
-
-                    if (target != null)
-                    {
-                        bullet.HitTarget(target);
-                    }
+                    bullet.HitTarget(target);
                 }
             }
         }

@@ -12,9 +12,9 @@ namespace Library
         public static Texture2D TEXTURE;
         public static Texture2D BULLET_TEXTURE;
 
+        public static float FIRE_RELOAD = 1.5f;
         public static int COST = 2;
         public static int RANGE = 150;
-        public static int FIRE_RELOAD = 2;
         public static int DAMAGE = 0;
         public static float REDUCE_SPEED = 0.7f;
         public static float SLOW_DURATION = 3;

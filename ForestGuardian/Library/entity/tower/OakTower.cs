@@ -12,9 +12,9 @@ namespace Library
         public static Texture2D TEXTURE;
         public static Texture2D BULLET_TEXTURE;
 
+        public static float FIRE_RELOAD = 0.5f;
         public static int COST= 1;
         public static int RANGE = 150;
-        public static int FIRE_RELOAD = 10;
         public static int DAMAGE = 5;
 
         public OakTower(Vector2 pCenter)

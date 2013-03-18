@@ -36,7 +36,8 @@ namespace Library
             {
                 if (isInRange(enemy.Center))
                 {
-                    enemy.lostHealth(mDamage);
+                    //enemy.lostHealth(mDamage);
+                    base.HitTarget(enemy);
                 }
             }
         }

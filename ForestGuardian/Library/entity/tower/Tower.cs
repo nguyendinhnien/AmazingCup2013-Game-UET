@@ -93,7 +93,7 @@ namespace Library
             else return false;
         }
 
-        public Enemy getClosestEnemy(List<Enemy> enemies)
+        public virtual Enemy getClosestEnemy(List<Enemy> enemies)
         {
             Enemy closest_enemy = null;
             float smallest_range = range;
@@ -188,7 +188,7 @@ namespace Library
 
                     if (target != null)
                     {
-                        target.lostHealth(damage);
+                        bullet.HitTarget(target);
                     }
                 }
             }

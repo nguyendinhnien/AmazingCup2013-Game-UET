@@ -38,7 +38,7 @@ namespace Library
 
         public override void createBullet()
         {
-            bullet = new CactusBullet(BULLET_TEXTURE, this.Center);
+            bullet = new CactusBullet(BULLET_TEXTURE, this.Center, damage);
 
             bullet.setTargetPos(this.Target.Center);
         }

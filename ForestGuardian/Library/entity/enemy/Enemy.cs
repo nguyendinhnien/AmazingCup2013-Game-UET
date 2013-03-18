@@ -148,9 +148,6 @@ namespace Library
                 mSlowDuration -= (float)gameTime.ElapsedGameTime.TotalSeconds;
             }
 
-            Console.Write("Speed: ");
-            Console.WriteLine(tmpSpeed);
-
             Vector2 velocity = Vector2.Multiply(direction, tmpSpeed);
 
             if (DistanceToDestination > velocity.Length())

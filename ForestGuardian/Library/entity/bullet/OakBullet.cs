@@ -11,8 +11,8 @@ namespace Library
     {
         public static float SPEED = 8.0f;
 
-        public OakBullet( Texture2D pTexture, Vector2 pCenter)
-            : base(pTexture, pCenter, SPEED) { }
+        public OakBullet(Texture2D pTexture, Vector2 pCenter, int pDamage)
+            : base(pTexture, pCenter, SPEED, pDamage) { }
         public OakBullet( Texture2D pTexture, Vector2 pCenter, Vector2 pTarget_center)
             : base(pTexture, pCenter, SPEED, pTarget_center) { } 
     }

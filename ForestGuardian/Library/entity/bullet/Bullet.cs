@@ -11,6 +11,7 @@ namespace Library
     {
         protected float speed;
         protected int age;
+        protected int mDamage;
 
         protected Vector2 target_center;
         protected Vector2 mVelocity;
@@ -26,10 +27,16 @@ namespace Library
             get { return (age > 0); }
         }
 
-        public Bullet(Texture2D texture, Vector2 center, float speed)
+        public int Damage
+        {
+            get { return mDamage; }
+        }
+
+        public Bullet(Texture2D texture, Vector2 center, float speed, int pDamage)
             : base(texture, center)
         {
             this.speed = speed;
+            mDamage = pDamage;
         }
 
         public Bullet(Texture2D texture, Vector2 center, float speed, Vector2 target_center)
@@ -45,9 +52,9 @@ namespace Library
             age = 0;
         }
 
-        public void HitTarget()
+        public virtual void HitTarget(Enemy pEnemy)
         {
-            //Vector2.Distance(Center, target.Center) < 12;
+            pEnemy.lostHealth(mDamage);
         }
 
         public void setTargetPos(Vector2 pTargetCenter)

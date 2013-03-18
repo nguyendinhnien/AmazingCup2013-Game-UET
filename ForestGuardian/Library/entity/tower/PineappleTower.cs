@@ -16,7 +16,9 @@ namespace Library
         public static int RANGE = 200;
         public static int FIRE_RELOAD = 10;
         public static int DAMAGE = 20;
-        public static int SPLASH_RANGE = 50;
+        //public static int SPLASH_RANGE = 50;
+
+        private List<Enemy> mEnemies;
 
         public PineappleTower(Vector2 pCenter)
             : base(TEXTURE, pCenter, COST, RANGE, DAMAGE, FIRE_RELOAD){}
@@ -26,16 +28,21 @@ namespace Library
 
         public override void createBullet()
         {
-            bullet = new PineappleBullet(BULLET_TEXTURE, this.Center);
+            bullet = new PineappleBullet(BULLET_TEXTURE, this.Center, damage, mEnemies);
 
             bullet.setTargetPos(this.Target.Center);
         }
 
+        public override Enemy getClosestEnemy(List<Enemy> enemies)
+        {
+            mEnemies = enemies;
+
+            return base.getClosestEnemy(enemies);
+        }
 
         public override void Update(GameTime gameTime)
         {
             base.Update(gameTime);
         }
-
     }
 }

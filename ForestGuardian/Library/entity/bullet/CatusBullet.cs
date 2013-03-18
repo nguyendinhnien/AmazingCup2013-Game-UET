@@ -11,8 +11,8 @@ namespace Library
     {
         public static float SPEED = 8.0f;
 
-        public CactusBullet( Texture2D pTexture, Vector2 pCenter)
-            : base(pTexture, pCenter, SPEED) { }
+        public CactusBullet(Texture2D pTexture, Vector2 pCenter, int pDamage)
+            : base(pTexture, pCenter, SPEED, pDamage) { }
         public CactusBullet(Texture2D pTexture, Vector2 pCenter, Vector2 pTarget_center)
             : base(pTexture, pCenter, SPEED, pTarget_center) { } 
     }

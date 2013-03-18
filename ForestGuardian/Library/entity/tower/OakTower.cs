@@ -26,7 +26,7 @@ namespace Library
 
         public override void createBullet()
         {
-            bullet = new OakBullet(BULLET_TEXTURE, this.Center);
+            bullet = new OakBullet(BULLET_TEXTURE, this.Center, damage);
 
             bullet.setTargetPos(this.Target.Center);
         }

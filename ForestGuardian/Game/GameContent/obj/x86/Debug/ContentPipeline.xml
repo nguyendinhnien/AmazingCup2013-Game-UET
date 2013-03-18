@@ -7,7 +7,7 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\maps\map1.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\maps\map1.xnb</Output>
       <Time>2013-03-13T07:57:32+07:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\maps\map1.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\maps\map1.xnb</Output>
       <Time>2013-03-05T10:06:00+07:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\sell_but.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\sell_but.xnb</Output>
       <Time>2013-03-18T09:05:32+07:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\health_bar.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\health_bar.xnb</Output>
       <Time>2013-03-16T23:05:48+07:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\enemies\axeman.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\enemies\axeman.xnb</Output>
       <Time>2013-03-12T09:52:26+07:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\oak_tower_level1.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\oak_tower_level1.xnb</Output>
       <Time>2013-03-11T16:25:50+07:00</Time>
     </Item>
     <Item>
@@ -61,7 +61,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\catus_tower_level1.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\catus_tower_level1.xnb</Output>
       <Time>2013-03-11T16:24:24+07:00</Time>
     </Item>
     <Item>
@@ -70,7 +70,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\pineapple_tower_level1.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\pineapple_tower_level1.xnb</Output>
       <Time>2013-03-11T16:25:56+07:00</Time>
     </Item>
     <Item>
@@ -79,7 +79,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\catus_tower_disable_but.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\catus_tower_disable_but.xnb</Output>
       <Time>2013-03-17T11:50:02+07:00</Time>
     </Item>
     <Item>
@@ -88,7 +88,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\oak_tower_disable_but.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\oak_tower_disable_but.xnb</Output>
       <Time>2013-03-17T11:51:20+07:00</Time>
     </Item>
     <Item>
@@ -97,7 +97,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\oak_tower_enable_but.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\oak_tower_enable_but.xnb</Output>
       <Time>2013-03-17T10:44:56+07:00</Time>
     </Item>
     <Item>
@@ -106,7 +106,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\pineapple_tower_disable_but.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\pineapple_tower_disable_but.xnb</Output>
       <Time>2013-03-17T11:50:30+07:00</Time>
     </Item>
     <Item>
@@ -115,7 +115,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\pineapple_tower_enable_but.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\pineapple_tower_enable_but.xnb</Output>
       <Time>2013-03-17T10:45:24+07:00</Time>
     </Item>
     <Item>
@@ -124,7 +124,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\upgrade_disable_but.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\upgrade_disable_but.xnb</Output>
       <Time>2013-03-18T09:06:58+07:00</Time>
     </Item>
     <Item>
@@ -133,7 +133,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\upgrade_enable_but.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\upgrade_enable_but.xnb</Output>
       <Time>2013-03-18T09:07:16+07:00</Time>
     </Item>
     <Item>
@@ -142,7 +142,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\catus_tower_enable_but.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\catus_tower_enable_but.xnb</Output>
       <Time>2013-03-17T10:45:58+07:00</Time>
     </Item>
     <Item>
@@ -151,7 +151,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\acorn.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\acorn.xnb</Output>
       <Time>2013-03-18T00:48:08+07:00</Time>
     </Item>
     <Item>
@@ -160,7 +160,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\b_back.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\b_back.xnb</Output>
       <Time>2013-03-18T10:54:06+07:00</Time>
     </Item>
     <Item>
@@ -169,7 +169,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\b_back_clicked.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\b_back_clicked.xnb</Output>
       <Time>2013-03-18T10:54:06+07:00</Time>
     </Item>
     <Item>
@@ -178,7 +178,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\credit.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\credit.xnb</Output>
       <Time>2013-03-18T10:54:06+07:00</Time>
     </Item>
     <Item>
@@ -187,7 +187,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_help.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_help.xnb</Output>
       <Time>2013-03-18T10:54:20+07:00</Time>
     </Item>
     <Item>
@@ -196,7 +196,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_help_clicked.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_help_clicked.xnb</Output>
       <Time>2013-03-18T10:54:20+07:00</Time>
     </Item>
     <Item>
@@ -205,7 +205,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_options.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_options.xnb</Output>
       <Time>2013-03-18T10:54:20+07:00</Time>
     </Item>
     <Item>
@@ -214,7 +214,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_options_clicked.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_options_clicked.xnb</Output>
       <Time>2013-03-18T10:54:20+07:00</Time>
     </Item>
     <Item>
@@ -223,7 +223,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_play.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_play.xnb</Output>
       <Time>2013-03-18T10:54:20+07:00</Time>
     </Item>
     <Item>
@@ -232,7 +232,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_play_clicked.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_play_clicked.xnb</Output>
       <Time>2013-03-18T10:54:20+07:00</Time>
     </Item>
     <Item>
@@ -241,7 +241,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_quit.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_quit.xnb</Output>
       <Time>2013-03-18T10:54:20+07:00</Time>
     </Item>
     <Item>
@@ -250,7 +250,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_quit_clicked.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_quit_clicked.xnb</Output>
       <Time>2013-03-18T10:54:20+07:00</Time>
     </Item>
     <Item>
@@ -259,7 +259,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_scores.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_scores.xnb</Output>
       <Time>2013-03-18T10:54:20+07:00</Time>
     </Item>
     <Item>
@@ -268,7 +268,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_scores_clicked.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_scores_clicked.xnb</Output>
       <Time>2013-03-18T10:54:20+07:00</Time>
     </Item>
     <Item>
@@ -277,7 +277,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\main.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\main.xnb</Output>
       <Time>2013-03-18T10:54:20+07:00</Time>
     </Item>
     <Item>
@@ -286,7 +286,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\b_close.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\b_close.xnb</Output>
       <Time>2013-03-18T10:54:44+07:00</Time>
     </Item>
     <Item>
@@ -295,7 +295,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\b_close_clicked.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\b_close_clicked.xnb</Output>
       <Time>2013-03-18T10:54:44+07:00</Time>
     </Item>
     <Item>
@@ -304,7 +304,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\decrease_volume.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\decrease_volume.xnb</Output>
       <Time>2013-03-18T10:54:44+07:00</Time>
     </Item>
     <Item>
@@ -313,7 +313,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\decrease_volume_clicked.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\decrease_volume_clicked.xnb</Output>
       <Time>2013-03-18T10:54:44+07:00</Time>
     </Item>
     <Item>
@@ -322,7 +322,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\dialog_options.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\dialog_options.xnb</Output>
       <Time>2013-03-18T10:54:44+07:00</Time>
     </Item>
     <Item>
@@ -331,7 +331,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\FadeScreen.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\FadeScreen.xnb</Output>
       <Time>2013-03-18T10:54:44+07:00</Time>
     </Item>
     <Item>
@@ -340,7 +340,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\increase_volume.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\increase_volume.xnb</Output>
       <Time>2013-03-18T10:54:44+07:00</Time>
     </Item>
     <Item>
@@ -349,7 +349,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\increase_volume_clicked.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\increase_volume_clicked.xnb</Output>
       <Time>2013-03-18T10:54:44+07:00</Time>
     </Item>
     <Item>
@@ -358,7 +358,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\slide_sound_button.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\slide_sound_button.xnb</Output>
       <Time>2013-03-18T10:54:44+07:00</Time>
     </Item>
     <Item>
@@ -367,8 +367,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\sound_bar.xnb</Output>
-      <Time>2013-03-18T10:54:44+07:00</Time>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\sound_bar.xnb</Output>
+      <Time>2013-03-18T15:12:02.7443258+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\OptionScene\tick_full_screen.png</Source>
@@ -376,7 +376,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\tick_full_screen.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\tick_full_screen.xnb</Output>
       <Time>2013-03-18T10:54:44+07:00</Time>
     </Item>
     <Item>
@@ -385,7 +385,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ScoreScene\b_back.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ScoreScene\b_back.xnb</Output>
       <Time>2013-03-18T10:56:18+07:00</Time>
     </Item>
     <Item>
@@ -394,7 +394,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ScoreScene\b_back_clicked.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ScoreScene\b_back_clicked.xnb</Output>
       <Time>2013-03-18T10:56:18+07:00</Time>
     </Item>
     <Item>
@@ -403,7 +403,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ScoreScene\scoreboard.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ScoreScene\scoreboard.xnb</Output>
       <Time>2013-03-18T10:56:18+07:00</Time>
     </Item>
     <Item>
@@ -412,7 +412,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_backward.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_backward.xnb</Output>
       <Time>2013-03-18T10:56:32+07:00</Time>
     </Item>
     <Item>
@@ -421,7 +421,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_backward_clicked.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_backward_clicked.xnb</Output>
       <Time>2013-03-18T10:56:32+07:00</Time>
     </Item>
     <Item>
@@ -430,7 +430,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_forward.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_forward.xnb</Output>
       <Time>2013-03-18T10:56:32+07:00</Time>
     </Item>
     <Item>
@@ -439,7 +439,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_forward_clicked.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_forward_clicked.xnb</Output>
       <Time>2013-03-18T10:56:32+07:00</Time>
     </Item>
     <Item>
@@ -448,7 +448,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_select_level.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_select_level.xnb</Output>
       <Time>2013-03-18T10:56:32+07:00</Time>
     </Item>
     <Item>
@@ -457,7 +457,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_start_game.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_start_game.xnb</Output>
       <Time>2013-03-18T10:56:32+07:00</Time>
     </Item>
     <Item>
@@ -466,7 +466,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_start_game_clicked.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_start_game_clicked.xnb</Output>
       <Time>2013-03-18T10:56:32+07:00</Time>
     </Item>
     <Item>
@@ -475,7 +475,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\demo_select_level.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\demo_select_level.xnb</Output>
       <Time>2013-03-18T10:56:32+07:00</Time>
     </Item>
     <Item>
@@ -484,7 +484,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\highline_select_card.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\highline_select_card.xnb</Output>
       <Time>2013-03-18T10:56:32+07:00</Time>
     </Item>
     <Item>
@@ -493,7 +493,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\lock_card.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\lock_card.xnb</Output>
       <Time>2013-03-18T10:56:32+07:00</Time>
     </Item>
     <Item>
@@ -502,7 +502,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level1_thumb.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level1_thumb.xnb</Output>
       <Time>2013-03-18T10:56:32+07:00</Time>
     </Item>
     <Item>
@@ -511,7 +511,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level2_thumb.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level2_thumb.xnb</Output>
       <Time>2013-03-18T10:56:32+07:00</Time>
     </Item>
     <Item>
@@ -520,7 +520,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level3_thumb.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level3_thumb.xnb</Output>
       <Time>2013-03-18T10:56:32+07:00</Time>
     </Item>
     <Item>
@@ -529,7 +529,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_1_preview.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_1_preview.xnb</Output>
       <Time>2013-03-18T10:56:32+07:00</Time>
     </Item>
     <Item>
@@ -538,7 +538,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_2_preview.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_2_preview.xnb</Output>
       <Time>2013-03-18T10:56:32+07:00</Time>
     </Item>
     <Item>
@@ -547,7 +547,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_3_preview.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_3_preview.xnb</Output>
       <Time>2013-03-18T10:56:32+07:00</Time>
     </Item>
     <Item>
@@ -556,7 +556,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\selectmaps.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\selectmaps.xnb</Output>
       <Time>2013-03-18T10:56:32+07:00</Time>
     </Item>
     <Item>
@@ -565,7 +565,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\unselect_card.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\unselect_card.xnb</Output>
       <Time>2013-03-18T10:56:32+07:00</Time>
     </Item>
     <Item>
@@ -574,7 +574,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\gameplay\value_font.xnb</Output>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\gameplay\value_font.xnb</Output>
       <Time>2013-03-17T12:44:44+07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
@@ -583,10 +583,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>E:\ForestGuardian\Game\GameContent\</RootDirectory>
-      <LoggerRootDirectory>E:\ForestGuardian\Game\Game\</LoggerRootDirectory>
-      <IntermediateDirectory>E:\ForestGuardian\Game\GameContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>E:\ForestGuardian\Game\Game\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\GameContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\GameContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -614,7 +614,7 @@
         <Value>2010-08-23T12:41:18+07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>E:\ForestGuardian\Data\bin\x86\Debug\Data.dll</Key>
+        <Key>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Data\bin\x86\Debug\Data.dll</Key>
         <Value>2013-03-16T22:43:26+07:00</Value>
       </Assembly>
       <Assembly>

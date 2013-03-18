@@ -22,3 +22,9 @@ E:\ForestGuardian\Data\obj\x86\Debug\Data.csprojResolveAssemblyReference.cache
 E:\ForestGuardian\Data\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 E:\ForestGuardian\Data\obj\x86\Debug\Data.dll
 E:\ForestGuardian\Data\obj\x86\Debug\Data.pdb
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Data\bin\x86\Debug\Data.dll
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Data\bin\x86\Debug\Data.pdb
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Data\obj\x86\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Data\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Data\obj\x86\Debug\Data.dll
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Data\obj\x86\Debug\Data.pdb

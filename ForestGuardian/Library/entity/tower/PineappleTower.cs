@@ -16,6 +16,7 @@ namespace Library
         public static int RANGE = 200;
         public static int FIRE_RELOAD = 10;
         public static int DAMAGE = 20;
+        public static int SPLASH_RANGE = 50;
 
         public PineappleTower(Vector2 pCenter)
             : base(TEXTURE, pCenter, COST, RANGE, DAMAGE, FIRE_RELOAD){}

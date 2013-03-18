@@ -19,7 +19,7 @@ namespace Library
 
         protected float maxHealth;
         protected float health;
-        protected float move_speed;
+        protected float mSpeed;
         protected float hit_radius;
         protected int value;
 
@@ -29,6 +29,9 @@ namespace Library
         protected static float destinationLimit = 4.0f;
         protected bool at_end;
 
+        private float mSpeedReduce;
+        private float mSlowDuration;
+
         public float Health
         {
             get { return health; }
@@ -36,7 +39,7 @@ namespace Library
 
         public float Speed
         {
-            get { return move_speed; }
+            get { return mSpeed; }
         }
 
         public float DistanceToDestination
@@ -64,6 +67,18 @@ namespace Library
             get { return value; }
         }
 
+        public float SpeedReduce
+        {
+            get { return mSpeedReduce; }
+            set { mSpeedReduce = value; }
+        }
+
+        public float SlowDuration
+        {
+            get { return mSlowDuration; }
+            set { mSlowDuration = value; }
+        }
+
         public Enemy(Texture2D texture, Vector2 center, float maxHealth, int value, float move_speed)
             : base(texture, center)
         {
@@ -73,7 +88,7 @@ namespace Library
             this.value = value;
             this.alive = true;
 
-            this.move_speed = move_speed;
+            this.mSpeed = move_speed;
             this.at_end = false;
             this.layer_depth = 0.6f;
         }
@@ -87,7 +102,7 @@ namespace Library
             this.value = value;
             this.alive = true;
 
-            this.move_speed = move_speed;
+            this.mSpeed = move_speed;
             this.at_end = false;
             this.layer_depth = 0.6f;
         }
@@ -112,10 +127,32 @@ namespace Library
             return direction;
         }
 
-        public void Move()
+        public void Move(GameTime gameTime)
         {
             Vector2 direction = getDirection();
-            Vector2 velocity = move_speed * direction;
+            float tmpSpeed = mSpeed;
+
+            if (mSlowDuration <= 0)
+            {
+                mSpeedReduce = 0;
+                mSlowDuration = 0;
+            }
+
+            if (mSpeedReduce != 0 && mSlowDuration >= 0)
+            {
+                tmpSpeed *= 1 - mSpeedReduce;
+                //Console.Write("Time: ");
+                //Console.WriteLine((float)gameTime.ElapsedGameTime.TotalSeconds);
+                //Console.Write("Duration: ");
+                //Console.WriteLine(mSlowDuration);
+                mSlowDuration -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+            }
+
+            Console.Write("Speed: ");
+            Console.WriteLine(tmpSpeed);
+
+            Vector2 velocity = Vector2.Multiply(direction, tmpSpeed);
+
             if (DistanceToDestination > velocity.Length())
             {
                 mCenter += velocity;
@@ -141,7 +178,7 @@ namespace Library
             {
                 //Neu da toi mot vi tri waypoint
                 if (atDestination) { waypoints.Dequeue(); }
-                else { Move(); }
+                else { Move(gameTime); }
             }
             else{
                 at_end = true;

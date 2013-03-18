@@ -47,13 +47,13 @@ namespace Library
 
         public void HitTarget()
         {
-
+            //Vector2.Distance(Center, target.Center) < 12;
         }
 
-        public void setTargetPos(Vector2 target_center)
+        public void setTargetPos(Vector2 pTargetCenter)
         {
-            this.target_center = target_center;
-            mDirection = target_center - mCenter;
+            this.target_center = pTargetCenter;
+            mDirection = pTargetCenter - mCenter;
             age = (int)mDirection.Length();
             mDirection.Normalize();
 

@@ -16,12 +16,25 @@ namespace Library
         public static int RANGE = 150;
         public static int FIRE_RELOAD = 2;
         public static int DAMAGE = 0;
+        public static float REDUCE_SPEED = 0.7f;
+        public static float SLOW_DURATION = 3;
+
+        private float mSpeedReduce;
+        private float mSlowDuration;
 
         public CactusTower(Vector2 pCenter)
-            : base(TEXTURE, pCenter, COST, RANGE, DAMAGE, FIRE_RELOAD) {}
+            : base(TEXTURE, pCenter, COST, RANGE, DAMAGE, FIRE_RELOAD) 
+        {
+            mSpeedReduce = REDUCE_SPEED;
+            mSlowDuration = SLOW_DURATION;
+        }
         
         public CactusTower(Vector2 pPosition, Anchor a)
-            : base(TEXTURE, pPosition, a, COST, RANGE, DAMAGE, FIRE_RELOAD) {}
+            : base(TEXTURE, pPosition, a, COST, RANGE, DAMAGE, FIRE_RELOAD) 
+        {
+            mSpeedReduce = REDUCE_SPEED;
+            mSlowDuration = SLOW_DURATION;
+        }
 
         public override void createBullet()
         {
@@ -33,6 +46,12 @@ namespace Library
         public override void Update(GameTime gameTime)
         {
             base.Update(gameTime);
+
+            if (target != null && !bullet.Alive && target.SlowDuration < mSlowDuration)
+            {
+                target.SpeedReduce = mSpeedReduce;
+                target.SlowDuration = mSlowDuration;
+            }
         }
 
     }

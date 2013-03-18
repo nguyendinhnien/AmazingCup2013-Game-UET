@@ -83,7 +83,7 @@ namespace Forest
 
         private void PlayButtonClicked(object sender, EventArgs e)
         {
-            ScreenManager.AddScreen(new SelectLevelScene());     
+            ScreenManager.AddScreen(new GamePlayScene());     
         }
 
         private void ScoresButtonClicked(object sender, EventArgs e)

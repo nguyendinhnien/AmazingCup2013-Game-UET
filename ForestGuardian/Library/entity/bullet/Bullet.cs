@@ -64,17 +64,24 @@ namespace Library
         }
 
         public void setTargetPos(Vector2 target_center)
-        {
+        {   
             this.target_center = target_center;
-        }
-        public void Move()
-        {
             mDirection = target_center - mCenter;
+            age = (int)mDirection.Length();
             mDirection.Normalize();
 
             mVelocity = speed * mDirection;
+
+            Console.Write("Start Age: ");
+            Console.WriteLine(age.ToString());
+        }
+        
+        public void Move()
+        {
             mCenter += mVelocity;
-            age--;
+            age -= (int)mVelocity.Length();
+            Console.Write("Age: ");
+            Console.WriteLine(age.ToString());
         }
 
         public void setRotation(float value)

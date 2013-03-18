@@ -151,6 +151,17 @@ namespace Library
             }
             */
             base.Update(gameTime);
+
+            if (target != null)
+            {
+                Vector2 disVec = this.mCenter - this.target.Center;
+                float distance = disVec.Length();
+                if (distance > range)
+                {
+                    target = null;
+                }
+            }
+
             if (bullet != null)
             {
                 bullet.Update(gameTime);

@@ -30,7 +30,7 @@ namespace Library
             bullet = new Bullet(BULLET_TEXTURE, this.Center, this.damage, 5, this.fire_reload);
 
             bullet.setTargetPos(this.Target.Center);
-            bullet.Move();
+            //bullet.Move();
         }
 
         //public override void Reload()

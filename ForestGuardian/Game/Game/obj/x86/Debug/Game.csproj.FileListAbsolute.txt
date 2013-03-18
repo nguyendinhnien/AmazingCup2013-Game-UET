@@ -35,7 +35,6 @@ D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Deb
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Library.dll
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Data.pdb
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Library.pdb
-D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\obj\x86\Debug\ResolveAssemblyReference.cache
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\obj\x86\Debug\Game.exe
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\obj\x86\Debug\Game.pdb
@@ -44,3 +43,4 @@ D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Deb
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\tower\pineapple_level_1.xnb
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\bullet\acorn.xnb
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\tree_icon.xnb
+D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\obj\x86\Debug\Game.csprojResolveAssemblyReference.cache

@@ -67,6 +67,12 @@ namespace Library
         {
             this.target_center = target_center;
         }
+
+        public void Chase()
+        {
+
+        }
+
         public void Move()
         {
             mDirection = target_center - mCenter;

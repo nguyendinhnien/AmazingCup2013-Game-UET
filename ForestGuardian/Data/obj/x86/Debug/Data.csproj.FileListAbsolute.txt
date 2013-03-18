@@ -6,7 +6,7 @@ C:\Users\KIEN\Documents\Visual Studio 2010\Projects\ForestGuardian\Data\obj\x86\
 C:\Users\KIEN\Documents\Visual Studio 2010\Projects\ForestGuardian\Data\obj\x86\Debug\Data.pdb
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Data\bin\x86\Debug\Data.dll
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Data\bin\x86\Debug\Data.pdb
-D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Data\obj\x86\Debug\ResolveAssemblyReference.cache
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Data\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Data\obj\x86\Debug\Data.dll
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Data\obj\x86\Debug\Data.pdb
+D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Data\obj\x86\Debug\Data.csprojResolveAssemblyReference.cache

@@ -74,15 +74,6 @@
       <Time>2011-10-03T09:58:54+07:00</Time>
     </Item>
     <Item>
-      <Source>data\maps\map1.xml</Source>
-      <Name>data\maps\map1</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\maps\map1.xnb</Output>
-      <Time>2013-03-10T14:47:46+07:00</Time>
-    </Item>
-    <Item>
       <Source>images\tower\catus_level_1.png</Source>
       <Name>images\tower\catus_level_1</Name>
       <Importer>TextureImporter</Importer>
@@ -127,6 +118,15 @@
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\tree_icon.xnb</Output>
       <Time>2013-03-12T22:18:21.3945253+07:00</Time>
     </Item>
+    <Item>
+      <Source>data\maps\map1.xml</Source>
+      <Name>data\maps\map1</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\maps\map1.xnb</Output>
+      <Time>2013-03-10T14:47:46+07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
@@ -165,11 +165,11 @@
       </Assembly>
       <Assembly>
         <Key>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Data\bin\x86\Debug\Data.dll</Key>
-        <Value>2013-03-09T21:39:08+07:00</Value>
+        <Value>2013-03-17T23:34:03.6042025+07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2013-01-20T17:50:32.5952282+07:00</Value>
+        <Value>2013-03-17T23:24:38.1358596+07:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

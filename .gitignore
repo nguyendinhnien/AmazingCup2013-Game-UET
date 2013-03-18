@@ -3,3 +3,7 @@ proj.win32/Debug.win32/*
 proj.win32/Release.win32/*
 proj.ios/god-s-rage.xcodeproj/project.xcworkspace/xcuserdata/
 TestField
+ForestGuardian/Game/Game/bin/x86/Debug
+ForestGuardian/Game/GameContent/obj/x86/Debug
+ForestGuardian/Library/bin/x86/Debug
+ForestGuardian/Library/Obj/x86/Debug

@@ -1,6 +1,6 @@
 using System;
 
-namespace Forest
+namespace CustomGame
 {
 #if WINDOWS || XBOX
     static class Program
@@ -10,7 +10,7 @@ namespace Forest
         /// </summary>
         static void Main(string[] args)
         {
-            using (ForestGuardian game = new ForestGuardian())
+            using (GameManager game = new GameManager())
             {
                 game.Run();
             }

@@ -29,6 +29,16 @@ namespace Library
         private bool finish=false;
 
 
+        public Wave(string enemy_type ,int total_number, float spawn_rate, Queue<Vector2> waypoints)
+        {
+            this.spawn_rate = spawn_rate;
+            this.enemy_type = enemy_type;
+            this.total_number = total_number;
+            this.waypoints = waypoints;
+
+            this.active_enemies = new List<Enemy>();
+        }
+
         public bool Finish
         {
             get { return finish; }
@@ -50,16 +60,6 @@ namespace Library
             get { return active_enemies; }
         }
         
-        public Wave(string enemy_type ,int total_number, float spawn_rate, Queue<Vector2> waypoints)
-        {
-            this.spawn_rate = spawn_rate;
-            this.enemy_type = enemy_type;
-            this.total_number = total_number;
-            this.waypoints = waypoints;
-
-            this.active_enemies = new List<Enemy>();
-        }
-
         public Enemy getNewEnemy()
         {
             Enemy enemy;

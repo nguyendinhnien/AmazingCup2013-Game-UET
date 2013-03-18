@@ -31,7 +31,7 @@ namespace Library
         protected float layer_depth = 0.1f;
         protected float Rotation = 0.0f;
         protected float Scale = 1.0f;
-        
+
         private ButtonStatus state = ButtonStatus.Normal;
 
         public event EventHandler Clicked;
@@ -57,8 +57,11 @@ namespace Library
         public Vector2 Center
         {
             get { return new Vector2(position.X + buttonTexture.Bounds.Width / 2, position.Y + buttonTexture.Bounds.Height / 2); }
-            set { position.X = value.X - buttonTexture.Bounds.Width / 2; position.Y = value.Y - buttonTexture.Bounds.Height / 2;
-            bounds = new Rectangle((int)position.X, (int)position.Y, (int)(buttonTexture.Width), (int)(buttonTexture.Height));}
+            set
+            {
+                position.X = value.X - buttonTexture.Bounds.Width / 2; position.Y = value.Y - buttonTexture.Bounds.Height / 2;
+                bounds = new Rectangle((int)position.X, (int)position.Y, (int)(buttonTexture.Width), (int)(buttonTexture.Height));
+            }
         }
 
         public bool InBound(Vector2 pos)

@@ -32,20 +32,20 @@ namespace Library
         {
             get { return (age > 0); }
         }
-        
+
         public Bullet(Texture2D texture, Vector2 center, int damage, float speed, int max_age)
-            :base(texture,center)
+            : base(texture, center)
         {
             this.damage = damage;
             this.speed = speed;
             this.age = max_age;
         }
 
-        public Bullet(Texture2D texture, Vector2 center, int damage, float speed,int max_age, Vector2 target_center)
-            :base(texture,center)
+        public Bullet(Texture2D texture, Vector2 center, int damage, float speed, int max_age, Vector2 target_center)
+            : base(texture, center)
         {
             this.damage = damage;
-            this.speed = speed;       
+            this.speed = speed;
             //this.max_age = max_age;
             this.age = max_age;
             //this.alive = true;
@@ -57,24 +57,31 @@ namespace Library
             //alive = false;
             age = 0;
         }
-        
+
         public void HitTarget()
         {
-            
+
         }
 
         public void setTargetPos(Vector2 target_center)
         {
             this.target_center = target_center;
-        }
-        public void Move()
-        {
             mDirection = target_center - mCenter;
+            age = (int)mDirection.Length();
             mDirection.Normalize();
 
             mVelocity = speed * mDirection;
+
+            Console.Write("Start Age: ");
+            Console.WriteLine(age.ToString());
+        }
+
+        public void Move()
+        {
             mCenter += mVelocity;
-            age--;
+            age -= (int)mVelocity.Length();
+            Console.Write("Age: ");
+            Console.WriteLine(age.ToString());
         }
 
         public void setRotation(float value)

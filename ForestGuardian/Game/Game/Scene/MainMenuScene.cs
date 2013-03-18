@@ -10,9 +10,9 @@ using Microsoft.Xna.Framework.Input;
 using Data;
 using Library;
 
-namespace Forest
+namespace CustomGame
 {
-    public class MainMenuScene : GameScreen
+    public class MainMenuScene : GameScene
     {
         private int NUMBER_OF_BUTTONS = 5;
         private Button[] button;
@@ -27,7 +27,7 @@ namespace Forest
 
         public override void LoadContent()
         {
-            ContentManager content = ScreenManager.Game.Content;
+            ContentManager content = SceneManager.Game.Content;
             backgroundTexture = content.Load<Texture2D>(@"images\scene\MainMenuScene\main");
             backgroundPosition = new Vector2(0, 0);
 
@@ -59,7 +59,7 @@ namespace Forest
         }
 
 
-        public override void  HandleInput(GameTime gameTime)
+        public override void  Update(GameTime gameTime)
         {
             for (int i = 0; i < NUMBER_OF_BUTTONS; i++)
             {
@@ -83,27 +83,27 @@ namespace Forest
 
         private void PlayButtonClicked(object sender, EventArgs e)
         {
-            ScreenManager.AddScreen(new SelectLevelScene());     
+            SceneManager.AddScreen(new GamePlayScene());     
         }
 
         private void ScoresButtonClicked(object sender, EventArgs e)
         {
-            ScreenManager.AddScreen(new ScoreScene());
+            SceneManager.AddScreen(new ScoreScene());
         }
 
         private void OptionsButtonClicked(object sender, EventArgs e)
         {
-            ScreenManager.AddScreen(new OptionScene());
+            SceneManager.AddScreen(new OptionScene());
         }
 
         private void HelpButtonClicked(object sender, EventArgs e)
         {
-            ScreenManager.AddScreen(new HelpScene());
+            SceneManager.AddScreen(new HelpScene());
         }
 
         private void QuitButtonClicked(object sender, EventArgs e)
         {
-            ScreenManager.Game.Exit();
+            SceneManager.Game.Exit();
         }
     }
 }

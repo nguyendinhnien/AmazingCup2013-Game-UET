@@ -7,9 +7,16 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Library
 {
+    public enum Anchor{
+        TOPLEFT,
+        TOPRIGHT,
+        CENTER,
+        BOTTOMLEFT,
+        BOTTOMRIGHT
+    }
     public class Sprite
-    {     
-        protected Texture2D mTexture;       
+    {
+        protected Texture2D mTexture;
         protected Vector2 mPosition;
         protected Vector2 mCenter;
 
@@ -37,11 +44,34 @@ namespace Library
         {
             this.mTexture = texture;
             this.mCenter = center;
-
-            this.mPosition.X = center.X - texture.Width / 2;
-            this.mPosition.Y = center.Y - texture.Height / 2;
         }
 
+        public Sprite(Texture2D texture, Vector2 position, Anchor anchor)
+        {
+            this.mTexture = texture;
+            switch (anchor)
+            {
+                case Anchor.TOPLEFT:
+                    this.mCenter.X = position.X + texture.Width / 2;
+                    this.mCenter.Y = position.Y + texture.Height / 2;
+                    break;
+                case Anchor.TOPRIGHT:
+                    this.mCenter.X = position.X - texture.Width / 2;
+                    this.mCenter.Y = position.Y + texture.Height / 2;
+                    break;
+                case Anchor.CENTER:
+                    this.mCenter = position;
+                    break;
+                case Anchor.BOTTOMLEFT:
+                    this.mCenter.X = position.X + texture.Width / 2;
+                    this.mCenter.Y = position.Y - texture.Height / 2;
+                    break;
+                case Anchor.BOTTOMRIGHT:
+                    this.mCenter.X = position.X - texture.Width / 2;
+                    this.mCenter.Y = position.Y - texture.Height / 2;
+                    break;
+            }
+        }
         public Rectangle BoundingBox()
         {
             return mTexture.Bounds;
@@ -52,11 +82,10 @@ namespace Library
             this.mPosition.X = mCenter.X - mTexture.Width / 2;
             this.mPosition.Y = mCenter.Y - mTexture.Height / 2;
         }
-        
+
         public virtual void Draw(SpriteBatch spriteBatch)
         {
-            //spriteBatch.Draw(texture, position, null, Color.White, Rotation, Vector2.Zero, Scale, SpriteEffects.None, layer_depth);
-            spriteBatch.Draw(mTexture, mPosition, Color.White);
+            spriteBatch.Draw(mTexture, mPosition, null, Color.White, mRotation, Vector2.Zero, mScale, SpriteEffects.None, layer_depth);
         }
     }
 }

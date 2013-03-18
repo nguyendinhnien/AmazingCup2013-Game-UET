@@ -7,6 +7,12 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Library
 {
+    public enum TowerType{
+        NONE,
+        OakTower,
+        CatusTower,
+        PineappleTower
+    }
     public class Tower : Sprite
     {
         //Cac thuoc tinh co ban cua moi tower
@@ -23,7 +29,7 @@ namespace Library
         protected bool attacking;
 
         protected Bullet bullet;
-    
+
         public Enemy Target
         {
             get { return target; }
@@ -33,33 +39,50 @@ namespace Library
         {
             get { return range; }
         }
-
+        #region Cost
         public int Cost
         {
             get { return cost; }
         }
+        public int UpgradeCost
+        {
+            get { return cost; }
+        }
+        public int SellCost
+        {
+            get { return cost; }
+        }
+        #endregion
 
-        public Tower(Texture2D texture, Vector2 pCenter, int cost, int range, int damage, int fire_reload )
+        public Tower(Texture2D texture, Vector2 pCenter, int cost, int range, int damage, int fire_reload)
             : base(texture, pCenter)
         {
-            Vector2 anchor = new Vector2();
-            anchor.X = pCenter.X;
-            anchor.Y = pCenter.Y - 32;
-            mCenter = anchor;
-
             this.cost = cost;
             this.range = range;
             this.damage = damage;
-            
             this.fire_reload = fire_reload;
 
-            //Ban dau chua co dich, set la false. Neu set la true se lam chuyen
+            //Ban dau chua co dich, set la false
             this.attacking = false;
             this.level = 1;
-            this.layer_depth = 0.6f;
+            this.layer_depth = 0.5f;
         }
 
-        public virtual void Upgrage()
+        public Tower(Texture2D texture, Vector2 pPosition, Anchor a, int cost, int range, int damage, int fire_reload)
+            : base(texture, pPosition,a)
+        {
+            this.cost = cost;
+            this.range = range;
+            this.damage = damage;
+            this.fire_reload = fire_reload;
+            
+            //Ban dau chua co dich, set la false
+            this.attacking = false;
+            this.level = 1;
+            this.layer_depth = 0.5f;
+        }
+
+        public virtual void Upgrade()
         {
             level++;
         }
@@ -70,12 +93,15 @@ namespace Library
             else return false;
         }
 
-        public Enemy getClosestEnemy(List<Enemy> enemies){
+        public Enemy getClosestEnemy(List<Enemy> enemies)
+        {
             Enemy closest_enemy = null;
             float smallest_range = range;
 
-            foreach(Enemy enemy in enemies){
-                if(isInRange(enemy.Center)){
+            foreach (Enemy enemy in enemies)
+            {
+                if (isInRange(enemy.Center))
+                {
                     if (Vector2.Distance(mCenter, enemy.Center) < smallest_range)
                     {
                         smallest_range = Vector2.Distance(mCenter, enemy.Center);
@@ -94,12 +120,8 @@ namespace Library
                 target = enemy;
 
                 createBullet();
-
-                //target.lostHealth(damage);
             }
         }
-
-        public virtual void Reload() { }
 
         public virtual void createBullet() { }
 
@@ -125,7 +147,7 @@ namespace Library
         //    Vector2 aimSpot = target.Center + target_velocity * (int)t;
         //    return aimSpot;
         //}
-        
+
         public override void Update(GameTime gameTime)
         {
 
@@ -151,6 +173,12 @@ namespace Library
             }
             */
             base.Update(gameTime);
+
+            if (target != null && !isInRange(target.Center))
+            {
+                target = null;
+            }
+
             if (bullet != null)
             {
                 bullet.Update(gameTime);
@@ -173,11 +201,6 @@ namespace Library
             {
                 bullet.Draw(spriteBatch);
             }
-            
-            //foreach (Bullet bullet in bullets)
-            //{
-            //    bullet.Draw(spriteBatch);
-            //}
         }
     }
 }

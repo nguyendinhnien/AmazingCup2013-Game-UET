@@ -26,7 +26,15 @@ namespace Library
         public void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(texture, position, null,Color.White, Rotation, Vector2.Zero, Scale, SpriteEffects.None, layer_depth);
-            //spriteBatch.Draw(texture, position, Color.White);
+        }
+
+        public int Width
+        {
+            get { return texture.Width; }
+        }
+        public int Height
+        {
+            get { return texture.Height; }
         }
     }
 }

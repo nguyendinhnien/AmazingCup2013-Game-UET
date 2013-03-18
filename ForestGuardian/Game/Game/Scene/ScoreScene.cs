@@ -10,9 +10,9 @@ using Microsoft.Xna.Framework.Input;
 using Data;
 using Library;
 
-namespace Forest
+namespace CustomGame
 {
-    public class ScoreScene : GameScreen
+    public class ScoreScene : GameScene
     {
         private Button button;
         private Texture2D backgroundTexture;
@@ -25,7 +25,7 @@ namespace Forest
 
         public override void LoadContent()
         {
-            ContentManager content = ScreenManager.Game.Content;
+            ContentManager content = SceneManager.Game.Content;
             backgroundTexture = content.Load<Texture2D>(@"images/scene/ScoreScene/scoreboard");
             backgroundPosition = new Vector2(0, 0);
 
@@ -43,7 +43,7 @@ namespace Forest
             this.ExitScreen();
         }
 
-        public override void HandleInput(GameTime gameTime)
+        public override void Update(GameTime gameTime)
         {
                 button.Update(gameTime);
         }

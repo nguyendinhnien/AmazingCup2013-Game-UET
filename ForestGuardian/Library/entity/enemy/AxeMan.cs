@@ -9,19 +9,16 @@ namespace Library
 {
     public class AxeMan : Enemy
     {
-        public static Texture2D TEXTURE;   
-        public static float MOVE_SPEED;
-        public static float MAX_HEALTH;
-        public static int VALUE;
+        public static Texture2D TEXTURE;
+        public static float MOVE_SPEED = 2.0f;
+        public static float MAX_HEALTH = 3.0f;
+        public static int VALUE = 1;
 
-        //public static String TextureLocation{
-        //    get { return TEXTURE_LOCATION; }
-        //}
-        
         public AxeMan(Vector2 center)
-            : base(TEXTURE,center,MAX_HEALTH,VALUE,MOVE_SPEED)
-        {
-                    
-        }
+            : base(TEXTURE, center, MAX_HEALTH, VALUE, MOVE_SPEED){}
+
+        public AxeMan(Vector2 position, Anchor a)
+            : base(TEXTURE, position, a, MAX_HEALTH, VALUE, MOVE_SPEED) { }
+
     }
 }

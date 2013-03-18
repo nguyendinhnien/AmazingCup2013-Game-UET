@@ -13,10 +13,8 @@ namespace Library
         public const string AXE_MAN = "AxeMan";
         public const string SAW_MAN = "SawMan";
     }
-
     public class Enemy : Sprite
     {
-        public static String HEALTH_BAR_TEXTURE_LOCATION = @"images\health_bar";
         public static Texture2D HEALTH_BAR_TEXTURE;
 
         protected float maxHealth;
@@ -28,7 +26,7 @@ namespace Library
         protected bool alive;
 
         protected Queue<Vector2> waypoints;
-        protected static float destinationLimit= 4.0f;
+        protected static float destinationLimit = 4.0f;
         protected bool at_end;
 
         public float Health
@@ -53,7 +51,7 @@ namespace Library
 
         public bool atEnd
         {
-            get { return at_end;}
+            get { return at_end; }
         }
 
         public bool Alive
@@ -65,7 +63,7 @@ namespace Library
         {
             get { return value; }
         }
-        
+
         public Enemy(Texture2D texture, Vector2 center, float maxHealth, int value, float move_speed)
             : base(texture, center)
         {
@@ -73,11 +71,25 @@ namespace Library
             this.health = maxHealth;
 
             this.value = value;
-            this.alive = true;          
+            this.alive = true;
 
             this.move_speed = move_speed;
             this.at_end = false;
-            this.layer_depth = 0.5f;
+            this.layer_depth = 0.6f;
+        }
+
+        public Enemy(Texture2D texture, Vector2 position, Anchor a, float maxHealth, int value, float move_speed)
+            : base(texture, position,a)
+        {
+            this.maxHealth = maxHealth;
+            this.health = maxHealth;
+
+            this.value = value;
+            this.alive = true;
+
+            this.move_speed = move_speed;
+            this.at_end = false;
+            this.layer_depth = 0.6f;
         }
 
         public void lostHealth(float amount)
@@ -87,12 +99,13 @@ namespace Library
                 health = health - amount;
             }
         }
-        
-        public void setWaypoints(Queue<Vector2> waypoints){
+
+        public void setWaypoints(Queue<Vector2> waypoints)
+        {
             this.waypoints = waypoints;
         }
 
-        public Vector2 getDirection() 
+        public Vector2 getDirection()
         {
             Vector2 direction = waypoints.Peek() - mCenter;
             direction.Normalize();
@@ -103,14 +116,16 @@ namespace Library
         {
             Vector2 direction = getDirection();
             Vector2 velocity = move_speed * direction;
-            if (DistanceToDestination > velocity.Length()) {
+            if (DistanceToDestination > velocity.Length())
+            {
                 mCenter += velocity;
             }
-            else {
+            else
+            {
                 mCenter = waypoints.Peek();
             }
         }
-        
+
         public void checkHit(Bullet b)
         {
             if (Vector2.Distance(mCenter, b.Center) < hit_radius)
@@ -128,19 +143,36 @@ namespace Library
                 if (atDestination) { waypoints.Dequeue(); }
                 else { Move(); }
             }
-            else
-            {
+            else{
                 at_end = true;
                 alive = false;
             }
 
-            if (health <= 0)
-            {
+            if (health <= 0) {
                 alive = false;
             }
             base.Update(gameTime);
         }
 
+        public override void Draw(SpriteBatch spriteBatch)
+        {
+            if (alive)
+            {
+                //Ve health bar
+                int healthHeight = HEALTH_BAR_TEXTURE.Bounds.Height;
+
+                spriteBatch.Draw(HEALTH_BAR_TEXTURE,new Vector2(mPosition.X,mPosition.Y - healthHeight), Color.Red);
+
+                float healthPercentage = health/maxHealth;
+                float current_healthWidth = (float)HEALTH_BAR_TEXTURE.Bounds.Width * healthPercentage;
+
+                spriteBatch.Draw(HEALTH_BAR_TEXTURE,
+                                new Rectangle((int)mPosition.X, (int)mPosition.Y - healthHeight, (int)current_healthWidth, healthHeight),
+                                Color.GreenYellow
+                );
+            }
+            base.Draw(spriteBatch);
+        }
     }
 
 }

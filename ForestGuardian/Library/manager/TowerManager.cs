@@ -16,6 +16,10 @@ namespace Library
             towers = new Dictionary<int,Tower>();
         }
 
+        public Tower GetTower(int key_pos)
+        {
+            return towers[key_pos];
+        }
         public void AddTower(int key_pos,Tower tower)
         {
             towers.Add(key_pos,tower);
@@ -25,7 +29,9 @@ namespace Library
             towers.Remove(key_pos);
         }
         public void UpgradeTower(int key_pos)
-        {   
+        {
+            Tower tower = towers[key_pos];
+            tower.Upgrade();
         }
 
         public void Update(GameTime gameTime,List<Enemy> enemies)
@@ -34,18 +40,13 @@ namespace Library
             foreach (var tower_pair in towers)
             {
                 tower = tower_pair.Value;
-                
                 tower.Update(gameTime);
                 if (tower.Target == null || !tower.Target.Alive)
-                {
                     tower.Target = tower.getClosestEnemy(enemies);
-                }
                 
                 if (tower.Target != null)
                 {
-                    //Console.WriteLine("BANG");
                     tower.Attack(tower.Target);
-                    //Console.WriteLine(tower.Target.Health.ToString());
                     if (tower.Target.atEnd)
                         tower.Target = null;
                 }

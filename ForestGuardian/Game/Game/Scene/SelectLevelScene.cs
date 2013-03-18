@@ -10,9 +10,9 @@ using Microsoft.Xna.Framework.Input;
 using Data;
 using Library;
 
-namespace Forest
+namespace CustomGame
 {
-    public class SelectLevelScene : GameScreen
+    public class SelectLevelScene : GameScene
     {
 
         public SelectLevelScene()
@@ -25,7 +25,7 @@ namespace Forest
 
         }
 
-        public override void HandleInput(GameTime gameTime)
+        public override void Update(GameTime gameTime)
         {
         }
 

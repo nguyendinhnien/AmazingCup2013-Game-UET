@@ -262,7 +262,6 @@ C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian
 C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\upgrade_disable_but.xnb
 C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\upgrade_enable_but.xnb
 C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\catus_tower_enable_but.xnb
-C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\acorn.xnb
 C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\b_back.xnb
 C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\b_back_clicked.xnb
 C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\credit.xnb
@@ -285,7 +284,6 @@ C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian
 C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\FadeScreen.xnb
 C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\increase_volume.xnb
 C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\increase_volume_clicked.xnb
-C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\slide_sound_button.xnb
 C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\sound_bar.xnb
 C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\tick_full_screen.xnb
 C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ScoreScene\b_back.xnb
@@ -396,3 +394,6 @@ D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\obj\x86\Deb
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\cactusbullet.xnb
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\oakbullet.xnb
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\pineapplebullet.xnb
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\cactusbullet.xnb
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\oakbullet.xnb
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\pineapplebullet.xnb

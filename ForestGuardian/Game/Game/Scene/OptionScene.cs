@@ -15,6 +15,7 @@ namespace CustomGame
     public class OptionScene : GameScene
     {
         private static bool isFullScreen = false;
+        private static int sound = 3; //sound (1, 2, 3, 4, 5)
 
         private Texture2D backgroundTexture;
         private Vector2 backgroundPosition;
@@ -32,7 +33,8 @@ namespace CustomGame
         private Button increButton;
         private Button decreButton;
 
-        public OptionScene() : base() 
+        public OptionScene()
+            : base()
         {
             IsPopup = true;
 
@@ -46,7 +48,7 @@ namespace CustomGame
 
             backgroundTexture = content.Load<Texture2D>(@"images\scene\OptionScene\dialog_options");
             loadingBlackTexture = content.Load<Texture2D>(@"images\scene\OptionScene\FadeScreen");
-            
+
             Viewport viewport = SceneManager.GraphicsDevice.Viewport;
             backgroundPosition = new Vector2(
                 (viewport.Width - backgroundTexture.Width) / 2,
@@ -65,16 +67,18 @@ namespace CustomGame
 
             texture = content.Load<Texture2D>(@"images\scene\OptionScene\decrease_volume");
             pressTexture = content.Load<Texture2D>(@"images\scene\OptionScene\decrease_volume_clicked");
-            position = backgroundPosition + new Vector2(280, 185);
+            position = backgroundPosition + new Vector2(283, 183);
             decreButton = new Button(texture, null, pressTexture, position);
+            decreButton.Clicked += DecreButtonClicked;
 
             texture = content.Load<Texture2D>(@"images\scene\OptionScene\increase_volume");
             pressTexture = content.Load<Texture2D>(@"images\scene\OptionScene\increase_volume_clicked");
-            position = backgroundPosition + new Vector2(620, 172);
+            position = backgroundPosition + new Vector2(632, 170);
             increButton = new Button(texture, null, pressTexture, position);
+            increButton.Clicked += IncreButtonClicked;
 
             soundBarTexture = content.Load<Texture2D>(@"images\scene\OptionScene\sound_bar");
-            soundBarPosition = backgroundPosition + new Vector2(300, 185);
+            soundBarPosition = backgroundPosition + new Vector2(330, 190);
         }
 
         public override void Update(GameTime gameTime)
@@ -101,16 +105,35 @@ namespace CustomGame
             closeButton.Draw(spriteBatch);
             increButton.Draw(spriteBatch);
             decreButton.Draw(spriteBatch);
-            spriteBatch.Draw(soundBarTexture, soundBarPosition, Color.White);
+
+            for (int i = 0; i < sound; i++)
+            {
+                spriteBatch.Draw(soundBarTexture, soundBarPosition + i * (new Vector2(60, 0)), Color.White);
+            }
+
             if (isFullScreen)
-                spriteBatch.Draw(tickTexture,tickPosition, Color.White);
+                spriteBatch.Draw(tickTexture, tickPosition, Color.White);
 
             spriteBatch.End();
+        }
+
+        private void DecreButtonClicked(object sender, EventArgs e)
+        {
+            if (sound > 0)
+                sound--;
+        }
+
+        private void IncreButtonClicked(object sender, EventArgs e)
+        {
+            if (sound < 5)
+                sound++;
         }
 
         private void CloseButtonClicked(object sender, EventArgs e)
         {
             this.ExitScreen();
         }
+
+
     }
 }

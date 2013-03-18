@@ -13,27 +13,22 @@ using Microsoft.Xna.Framework.Media;
 using Library;
 using Data;
 
-namespace Game
-{
-    public enum SceneType
-    {
-        MenuScene,
-        GamePlayScene
-    }
-    
-    public class GameManager : Microsoft.Xna.Framework.Game
+namespace Forest
+{   
+    public class ForestGuardian : Microsoft.Xna.Framework.Game
     {
         GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;
-
-        private List<Scene> scenes;
-        private SceneType current_scene_type;
+        ScreenManager screenManager;
         
-        public GameManager()
+        public ForestGuardian()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            IsMouseVisible = true;
+            graphics.PreferredBackBufferWidth = 1024;
+            graphics.PreferredBackBufferHeight = 768;
+
+            screenManager = new ScreenManager(this);
+            Components.Add(screenManager);
         }
 
         /// <summary>
@@ -44,30 +39,19 @@ namespace Game
         /// </summary>
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
-            scenes = new List<Scene>();
-            current_scene_type = SceneType.GamePlayScene;
+            IsMouseVisible = true;
+
             base.Initialize();
+
+            screenManager.AddScreen(new MainMenuScene());
         }
 
         /// <summary>
         /// LoadContent will be called once per game and is the place to load
         /// all of your content.
         /// </summary>
-        //Load va add scene theo thu tu
         protected override void LoadContent()
         {
-            spriteBatch = new SpriteBatch(GraphicsDevice);
-            //MenuScene
-            MenuScene menuScene = new MenuScene(this);
-            menuScene.LoadContent();
-            scenes.Add(menuScene);
-
-            //GamePlayScene
-            GamePlayScene gameplayScene = new GamePlayScene(this);
-            gameplayScene.LoadContent();
-            scenes.Add(gameplayScene);
-            
             base.LoadContent();
         }
 
@@ -77,7 +61,7 @@ namespace Game
         /// </summary>
         protected override void UnloadContent()
         {
-            // TODO: Unload any non ContentManager content here
+            base.UnloadContent();
         }
 
         /// <summary>
@@ -87,11 +71,8 @@ namespace Game
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            // Allows the game to exit
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
-                this.Exit();
+            InputManager.Update();
 
-            scenes[(int)current_scene_type].Update(gameTime);
             base.Update(gameTime);
         }
 
@@ -101,15 +82,14 @@ namespace Game
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.Green);
-            scenes[(int)current_scene_type].Draw(spriteBatch);
-            // TODO: Add your drawing code here
+            GraphicsDevice.Clear(Color.Transparent);
+
             base.Draw(gameTime);
         }
 
-        public void setScene(SceneType scene_type)
+        public void toggleFullscreen()
         {
-            current_scene_type = scene_type;
+            graphics.ToggleFullScreen();
         }
     }
 }

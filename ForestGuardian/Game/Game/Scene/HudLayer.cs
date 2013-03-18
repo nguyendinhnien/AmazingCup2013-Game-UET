@@ -8,7 +8,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 using Library;
 
-namespace Game
+namespace Forest
 {
     enum GamePlayButtons
     {
@@ -41,7 +41,7 @@ namespace Game
         {
             Button button;
             Texture2D texture, hoverTexture, pressTexture;
-            ContentManager Content = game_play.Content;
+            ContentManager Content = game_play.ScreenManager.Game.Content;
             
             ////Play button
             //texture = Content.Load<Texture2D>("");

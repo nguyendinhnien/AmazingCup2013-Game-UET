@@ -96,8 +96,10 @@
     <Compile Include="core\Cursor.cs" />
     <Compile Include="core\BackgroundLayer.cs" />
     <Compile Include="core\Sprite.cs" />
+    <Compile Include="entity\bullet\CatusBullet.cs" />
+    <Compile Include="entity\bullet\PineappleBullet.cs" />
     <Compile Include="gui\Label.cs" />
-    <Compile Include="entity\bullet\Arrow.cs" />
+    <Compile Include="entity\bullet\OakBullet.cs" />
     <Compile Include="entity\bullet\Bullet.cs" />
     <Compile Include="entity\enemy\AxeMan.cs" />
     <Compile Include="entity\enemy\Enemy.cs" />

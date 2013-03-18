@@ -126,13 +126,13 @@ namespace Library
             }
         }
 
-        public void checkHit(Bullet b)
-        {
-            if (Vector2.Distance(mCenter, b.Center) < hit_radius)
-            {
-                this.lostHealth(b.Damage);
-            }
-        }
+        //public void checkHit(Bullet b)
+        //{
+        //    if (Vector2.Distance(mCenter, b.Center) < hit_radius)
+        //    {
+        //        this.lostHealth(b.Damage);
+        //    }
+        //}
 
         public override void Update(GameTime gameTime)
         {

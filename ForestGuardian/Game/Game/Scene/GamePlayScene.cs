@@ -74,11 +74,13 @@ namespace CustomGame
             
             //Load Tower texture
             OakTower.TEXTURE = content.Load<Texture2D>(@"images\gameplay\towers\oak_tower_level1");
-            CatusTower.TEXTURE = content.Load<Texture2D>(@"images\gameplay\towers\catus_tower_level1");
+            CactusTower.TEXTURE = content.Load<Texture2D>(@"images\gameplay\towers\catus_tower_level1");
             PineappleTower.TEXTURE = content.Load<Texture2D>(@"images\gameplay\towers\pineapple_tower_level1");
 
             //Load bullets texture
-            OakTower.BULLET_TEXTURE = content.Load<Texture2D>(@"images\gameplay\bullets\acorn");
+            OakTower.BULLET_TEXTURE = content.Load<Texture2D>(@"images\gameplay\bullets\oakbullet");
+            CactusTower.BULLET_TEXTURE = content.Load<Texture2D>(@"images\gameplay\bullets\cactusbullet");
+            PineappleTower.BULLET_TEXTURE = content.Load<Texture2D>(@"images\gameplay\bullets\pineapplebullet");
 
             //Load cac label
             Texture2D texture;
@@ -91,7 +93,7 @@ namespace CustomGame
 
             textureEnable = content.Load<Texture2D>(@"images\gameplay\buttons\catus_tower_enable_but");
             textureDisable = content.Load<Texture2D>(@"images\gameplay\buttons\catus_tower_disable_but");
-            CatusTowerLabel = new ToggleValueLabel(textureEnable, textureDisable, new Vector2(700, 640), new Vector2(32, 72), CatusTower.COST);
+            CatusTowerLabel = new ToggleValueLabel(textureEnable, textureDisable, new Vector2(700, 640), new Vector2(32, 72), CactusTower.COST);
 
             textureEnable = content.Load<Texture2D>(@"images\gameplay\buttons\pineapple_tower_enable_but");
             textureDisable = content.Load<Texture2D>(@"images\gameplay\buttons\pineapple_tower_disable_but");
@@ -207,7 +209,7 @@ namespace CustomGame
         {
             Console.WriteLine("SlowTower is selected to add");
             tower_type = TowerType.CatusTower;
-            tower_texture = CatusTower.TEXTURE;
+            tower_texture = CactusTower.TEXTURE;
             is_tower_add = true;
         }
         private void PineappleTowerLabel_Clicked()
@@ -330,8 +332,8 @@ namespace CustomGame
                             
                             case TowerType.CatusTower:
                                 Console.WriteLine("Catus Tower is added");
-                                tower = new CatusTower(GetBottomLeftFromCell(tile_x, tile_y), Anchor.BOTTOMLEFT);
-                                tower_manager.AddTower(key_pos, tower); money -= CatusTower.COST;
+                                tower = new CactusTower(GetBottomLeftFromCell(tile_x, tile_y), Anchor.BOTTOMLEFT);
+                                tower_manager.AddTower(key_pos, tower); money -= CactusTower.COST;
                                 tower_map[key_pos] = CellType.TOWER;
                                 break;
 

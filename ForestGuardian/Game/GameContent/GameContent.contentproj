@@ -156,13 +156,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="images\gameplay\bullets\acorn.png">
-      <Name>acorn</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="images\scene\HelpScene\b_back.png">
       <Name>b_back</Name>
       <Importer>TextureImporter</Importer>
@@ -398,6 +391,23 @@
     </Compile>
     <Compile Include="images\scene\SelectLevelScene\unselect_card.png">
       <Name>unselect_card</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\gameplay\bullets\cactusbullet.png">
+      <Name>cactusbullet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\gameplay\bullets\oakbullet.png">
+      <Name>oakbullet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\gameplay\bullets\pineapplebullet.png">
+      <Name>pineapplebullet</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

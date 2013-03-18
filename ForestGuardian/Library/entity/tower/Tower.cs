@@ -176,10 +176,10 @@ namespace Library
 
             if (target != null && !isInRange(target.Center))
             {
-                target = null;
+                target = null;   
             }
 
-            if (bullet != null)
+            if (bullet != null && target != null)
             {
                 bullet.Update(gameTime);
                 if (!bullet.Alive)
@@ -197,7 +197,7 @@ namespace Library
         public override void Draw(SpriteBatch spriteBatch)
         {
             base.Draw(spriteBatch);
-            if (bullet != null)
+            if (bullet != null && target != null)
             {
                 bullet.Draw(spriteBatch);
             }

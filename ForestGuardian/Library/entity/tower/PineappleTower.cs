@@ -13,9 +13,9 @@ namespace Library
         public static Texture2D BULLET_TEXTURE;
 
         public static int COST = 3;
-        public static int RANGE;
-        public static int FIRE_RELOAD;
-        public static int DAMAGE;
+        public static int RANGE = 200;
+        public static int FIRE_RELOAD = 10;
+        public static int DAMAGE = 20;
 
         public PineappleTower(Vector2 pCenter)
             : base(TEXTURE, pCenter, COST, RANGE, DAMAGE, FIRE_RELOAD){}
@@ -25,10 +25,9 @@ namespace Library
 
         public override void createBullet()
         {
-            bullet = new Bullet(BULLET_TEXTURE, this.Center, this.damage, 5, this.fire_reload);
+            bullet = new PineappleBullet(BULLET_TEXTURE, this.Center);
 
             bullet.setTargetPos(this.Target.Center);
-            bullet.Move();
         }
 
 

@@ -13,7 +13,7 @@ namespace Library
         public static Texture2D BULLET_TEXTURE;
 
         public static int COST= 1;
-        public static int RANGE = 100;
+        public static int RANGE = 150;
         public static int FIRE_RELOAD = 10;
         public static int DAMAGE = 5;
 
@@ -26,7 +26,7 @@ namespace Library
 
         public override void createBullet()
         {
-            bullet = new Bullet(BULLET_TEXTURE, this.Center, this.damage, 5, this.fire_reload);
+            bullet = new OakBullet(BULLET_TEXTURE, this.Center);
 
             bullet.setTargetPos(this.Target.Center);
         }

@@ -9,11 +9,8 @@ namespace Library
 {
     public class Bullet : Sprite
     {
-        protected int damage;
         protected float speed;
-        //protected int max_age;
         protected int age;
-        //protected bool alive;
 
         protected Vector2 target_center;
         protected Vector2 mVelocity;
@@ -23,32 +20,22 @@ namespace Library
         {
             get { return speed; }
         }
-        public int Damage
-        {
-            get { return damage; }
-        }
 
         public bool Alive
         {
             get { return (age > 0); }
         }
 
-        public Bullet(Texture2D texture, Vector2 center, int damage, float speed, int max_age)
+        public Bullet(Texture2D texture, Vector2 center, float speed)
             : base(texture, center)
         {
-            this.damage = damage;
             this.speed = speed;
-            this.age = max_age;
         }
 
-        public Bullet(Texture2D texture, Vector2 center, int damage, float speed, int max_age, Vector2 target_center)
+        public Bullet(Texture2D texture, Vector2 center, float speed, Vector2 target_center)
             : base(texture, center)
         {
-            this.damage = damage;
             this.speed = speed;
-            //this.max_age = max_age;
-            this.age = max_age;
-            //this.alive = true;
             this.target_center = target_center;
         }
 
@@ -72,16 +59,16 @@ namespace Library
 
             mVelocity = speed * mDirection;
 
-            Console.Write("Start Age: ");
-            Console.WriteLine(age.ToString());
+            //Console.Write("Start Age: ");
+            //Console.WriteLine(age.ToString());
         }
 
         public void Move()
         {
             mCenter += mVelocity;
             age -= (int)mVelocity.Length();
-            Console.Write("Age: ");
-            Console.WriteLine(age.ToString());
+            //Console.Write("Age: ");
+            //Console.WriteLine(age.ToString());
         }
 
         public void setRotation(float value)

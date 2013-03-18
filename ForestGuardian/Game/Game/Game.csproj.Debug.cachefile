@@ -14,7 +14,6 @@ Content\images\gameplay\buttons\pineapple_tower_enable_but.xnb
 Content\images\gameplay\buttons\upgrade_disable_but.xnb
 Content\images\gameplay\buttons\upgrade_enable_but.xnb
 Content\images\gameplay\buttons\catus_tower_enable_but.xnb
-Content\images\gameplay\bullets\acorn.xnb
 Content\images\scene\HelpScene\b_back.xnb
 Content\images\scene\HelpScene\b_back_clicked.xnb
 Content\images\scene\HelpScene\credit.xnb
@@ -62,3 +61,6 @@ Content\images\scene\SelectLevelScene\map_level_3_preview.xnb
 Content\images\scene\SelectLevelScene\selectmaps.xnb
 Content\images\scene\SelectLevelScene\unselect_card.xnb
 Content\fonts\gameplay\value_font.xnb
+Content\images\gameplay\bullets\cactusbullet.xnb
+Content\images\gameplay\bullets\oakbullet.xnb
+Content\images\gameplay\bullets\pineapplebullet.xnb

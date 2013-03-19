@@ -36,7 +36,6 @@ Content\images\scene\OptionScene\dialog_options.xnb
 Content\images\scene\OptionScene\FadeScreen.xnb
 Content\images\scene\OptionScene\increase_volume.xnb
 Content\images\scene\OptionScene\increase_volume_clicked.xnb
-Content\images\scene\OptionScene\slide_sound_button.xnb
 Content\images\scene\OptionScene\sound_bar.xnb
 Content\images\scene\OptionScene\tick_full_screen.xnb
 Content\images\scene\ScoreScene\b_back.xnb
@@ -64,3 +63,4 @@ Content\images\gameplay\bullets\cactusbullet.xnb
 Content\images\gameplay\bullets\oakbullet.xnb
 Content\images\gameplay\bullets\pineapplebullet.xnb
 Content\fonts\gameplay\value_font.xnb
+Content\fonts\ScoreScene\score.xnb

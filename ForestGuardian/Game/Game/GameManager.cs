@@ -39,6 +39,10 @@ namespace CustomGame
         protected override void Initialize()
         {
             IsMouseVisible = true;
+            UserData.Init();
+
+            //for (int i = 1; i < 11; i++)
+              //  UserData.AddHighScore(i * 100, "tuan" + i.ToString());
 
             base.Initialize();
             sceneManager.AddScreen(new MainMenuScene());

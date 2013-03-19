@@ -63,3 +63,4 @@ Content\images\gameplay\bullets\cactusbullet.xnb
 Content\images\gameplay\bullets\oakbullet.xnb
 Content\images\gameplay\bullets\pineapplebullet.xnb
 Content\fonts\gameplay\value_font.xnb
+Content\fonts\ScoreScene\score.xnb

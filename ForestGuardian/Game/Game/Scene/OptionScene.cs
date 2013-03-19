@@ -14,9 +14,6 @@ namespace CustomGame
 {
     public class OptionScene : GameScene
     {
-        private static bool isFullScreen = false;
-        private static int sound = 3; //sound (1, 2, 3, 4, 5)
-
         private Texture2D backgroundTexture;
         private Vector2 backgroundPosition;
 
@@ -90,7 +87,7 @@ namespace CustomGame
             if (InputManager.IsMouseJustReleased() && InputManager.IsMouseHittedRectangle(new Rectangle(
                 (int)tickPosition.X, (int)tickPosition.Y, tickTexture.Width, tickTexture.Height)))
             {
-                isFullScreen = !isFullScreen;
+                UserData.isFullScreen = !UserData.isFullScreen;
                 SceneManager.ToggleFullScreen();
             }
         }
@@ -106,12 +103,12 @@ namespace CustomGame
             increButton.Draw(spriteBatch);
             decreButton.Draw(spriteBatch);
 
-            for (int i = 0; i < sound; i++)
+            for (int i = 0; i < UserData.sound; i++)
             {
                 spriteBatch.Draw(soundBarTexture, soundBarPosition + i * (new Vector2(60, 0)), Color.White);
             }
 
-            if (isFullScreen)
+            if (UserData.isFullScreen)
                 spriteBatch.Draw(tickTexture, tickPosition, Color.White);
 
             spriteBatch.End();
@@ -119,14 +116,14 @@ namespace CustomGame
 
         private void DecreButtonClicked(object sender, EventArgs e)
         {
-            if (sound > 0)
-                sound--;
+            if (UserData.sound > 0)
+                UserData.sound--;
         }
 
         private void IncreButtonClicked(object sender, EventArgs e)
         {
-            if (sound < 5)
-                sound++;
+            if (UserData.sound < 5)
+                UserData.sound++;
         }
 
         private void CloseButtonClicked(object sender, EventArgs e)

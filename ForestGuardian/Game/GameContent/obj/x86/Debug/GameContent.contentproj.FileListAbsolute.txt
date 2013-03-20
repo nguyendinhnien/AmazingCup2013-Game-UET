@@ -1,6 +1,3 @@
 C:\Users\KIEN\Documents\Visual Studio 2010\Projects\ForestGuardian\Game\GameContent\obj\x86\Debug\ResolveAssemblyReference.cache
 D:\Download\chuan\ForestGuardian\Game\GameContent\obj\x86\Debug\GameContent.contentprojResolveAssemblyReference.cache
 C:\Users\KIEN\Documents\Visual Studio 2010\Projects\GITHUB\ForestGuardian\Game\GameContent\obj\x86\Debug\ResolveAssemblyReference.cache
-E:\ForestGuardian\Game\GameContent\obj\x86\Debug\GameContent.contentprojResolveAssemblyReference.cache
-C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\GameContent\obj\x86\Debug\GameContent.contentprojResolveAssemblyReference.cache
-D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\GameContent\obj\x86\Debug\GameContent.contentprojResolveAssemblyReference.cache

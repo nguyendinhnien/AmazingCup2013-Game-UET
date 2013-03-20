@@ -45,7 +45,7 @@ namespace CustomGame
               //  UserData.AddHighScore(i * 100, "tuan" + i.ToString());
 
             base.Initialize();
-            sceneManager.AddScreen(new MainMenuScene());
+            sceneManager.AddScene(new MainMenuScene());
         }
 
         /// <summary>

@@ -43,8 +43,9 @@ namespace Library
             this.hoverTexture = hoverTexture;
             this.pressTexture = pressTexture;
             this.normalTexture = normalTexture;
-            this.position = position;
             this.texture = normalTexture;
+
+            this.position = position;
             this.bounds = new Rectangle((int)position.X, (int)position.Y, (int)(normalTexture.Width), (int)(normalTexture.Height));
         }
 
@@ -120,6 +121,7 @@ namespace Library
             //Cap nhat mouse state
             previousState = mouseState;
 
+<<<<<<< HEAD
             //Cap nhat texture
             if (state == ButtonStatus.Pressing && pressTexture != null)
                 texture = pressTexture;
@@ -131,7 +133,6 @@ namespace Library
 
         public virtual void Draw(SpriteBatch spriteBatch)
         {
-            
             spriteBatch.Draw(texture, this.position, null, Color.White, Rotation, Vector2.Zero, Scale, SpriteEffects.None, layer_depth);
         }
     }

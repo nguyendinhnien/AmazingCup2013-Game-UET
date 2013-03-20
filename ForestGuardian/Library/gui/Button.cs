@@ -22,8 +22,8 @@ namespace Library
         // The the different state textures.
         protected Texture2D hoverTexture;
         protected Texture2D pressTexture;
-        protected Texture2D buttonTexture;
-        protected Texture2D drawTexture;
+        protected Texture2D normalTexture;
+        protected Texture2D texture;
 
         protected Vector2 position;
         protected Rectangle bounds;
@@ -38,11 +38,12 @@ namespace Library
         public event EventHandler Pressed;
         public event EventHandler Hovered;
 
-        public Button(Texture2D texture, Texture2D hoverTexture, Texture2D pressTexture, Vector2 position)
+        public Button(Texture2D normalTexture, Texture2D hoverTexture, Texture2D pressTexture, Vector2 position)
         {
             this.hoverTexture = hoverTexture;
             this.pressTexture = pressTexture;
-            this.buttonTexture = texture;
+            this.normalTexture = normalTexture;
+            this.texture = normalTexture;
             this.position = position;
 
             this.bounds = new Rectangle((int)position.X, (int)position.Y, (int)(texture.Width), (int)(texture.Height));
@@ -51,16 +52,16 @@ namespace Library
         public Vector2 Position
         {
             get { return position; }
-            set { position = value; bounds = new Rectangle((int)position.X, (int)position.Y, (int)(buttonTexture.Width), (int)(buttonTexture.Height)); }
+            set { position = value; bounds = new Rectangle((int)position.X, (int)position.Y, (int)(normalTexture.Width), (int)(normalTexture.Height)); }
         }
 
         public Vector2 Center
         {
-            get { return new Vector2(position.X + buttonTexture.Bounds.Width / 2, position.Y + buttonTexture.Bounds.Height / 2); }
+            get { return new Vector2(position.X + normalTexture.Bounds.Width / 2, position.Y + normalTexture.Bounds.Height / 2); }
             set
             {
-                position.X = value.X - buttonTexture.Bounds.Width / 2; position.Y = value.Y - buttonTexture.Bounds.Height / 2;
-                bounds = new Rectangle((int)position.X, (int)position.Y, (int)(buttonTexture.Width), (int)(buttonTexture.Height));
+                position.X = value.X - normalTexture.Bounds.Width / 2; position.Y = value.Y - normalTexture.Bounds.Height / 2;
+                bounds = new Rectangle((int)position.X, (int)position.Y, (int)(normalTexture.Width), (int)(normalTexture.Height));
             }
         }
 
@@ -123,13 +124,16 @@ namespace Library
 
         public virtual void Draw(SpriteBatch spriteBatch)
         {
-            if (state == ButtonStatus.Pressing && pressTexture != null)
-                drawTexture = pressTexture;
-            else if (state == ButtonStatus.Hovering && hoverTexture != null)
-                drawTexture = hoverTexture;
-            else
-                drawTexture = buttonTexture;
-            spriteBatch.Draw(drawTexture, this.position, null, Color.White, Rotation, Vector2.Zero, Scale, SpriteEffects.None, layer_depth);
+            if (state == ButtonStatus.Pressing && pressTexture != null){
+                texture = pressTexture;
+            }
+            else if (state == ButtonStatus.Hovering && hoverTexture != null){
+                texture = hoverTexture;
+            }
+            else{
+                texture = normalTexture;
+            }
+            spriteBatch.Draw(texture, this.position, null, Color.White, Rotation, Vector2.Zero, Scale, SpriteEffects.None, layer_depth);
         }
     }
 }

@@ -83,22 +83,22 @@ namespace CustomGame
 
         private void PlayButtonClicked(object sender, EventArgs e)
         {
-            SceneManager.AddScreen(new GamePlayScene());     
+            SceneManager.AddScene(new GamePlayScene());     
         }
 
         private void ScoresButtonClicked(object sender, EventArgs e)
         {
-            SceneManager.AddScreen(new ScoreScene());
+            SceneManager.AddScene(new ScoreScene());
         }
 
         private void OptionsButtonClicked(object sender, EventArgs e)
         {
-            SceneManager.AddScreen(new OptionScene());
+            SceneManager.AddScene(new OptionScene());
         }
 
         private void HelpButtonClicked(object sender, EventArgs e)
         {
-            SceneManager.AddScreen(new HelpScene());
+            SceneManager.AddScene(new HelpScene());
         }
 
         private void QuitButtonClicked(object sender, EventArgs e)

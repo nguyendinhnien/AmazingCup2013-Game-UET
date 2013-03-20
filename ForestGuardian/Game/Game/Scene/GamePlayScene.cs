@@ -31,7 +31,7 @@ namespace CustomGame
         //Phan game play
         private int lives=20;
         private int money=1000;
-        private int points = 0;
+        private int points = 888888;
 
         //private HudLayer hud_layer;
         //private TowerHandleLayer tower_handle_layer;
@@ -53,6 +53,7 @@ namespace CustomGame
         ToggleValueLabel UpgradeLabel;
         ValueLabel SellLabel;
         #endregion
+        HUDLayer HudLayer;
 
         public GamePlayScene() : base(){}
 
@@ -74,9 +75,10 @@ namespace CustomGame
             
             //Load Tower texture
             OakTower.TEXTURE = content.Load<Texture2D>(@"images\gameplay\towers\oak_tower_level1");
-            CactusTower.TEXTURE = content.Load<Texture2D>(@"images\gameplay\towers\catus_tower_level1");
+            CactusTower.TEXTURE = content.Load<Texture2D>(@"images\gameplay\towers\cactus_tower_level1");
             PineappleTower.TEXTURE = content.Load<Texture2D>(@"images\gameplay\towers\pineapple_tower_level1");
 
+            //Load bullets texture
             //Load bullets texture
             OakTower.BULLET_TEXTURE = content.Load<Texture2D>(@"images\gameplay\bullets\oakbullet");
             CactusTower.BULLET_TEXTURE = content.Load<Texture2D>(@"images\gameplay\bullets\cactusbullet");
@@ -91,8 +93,8 @@ namespace CustomGame
             textureDisable = content.Load<Texture2D>(@"images\gameplay\buttons\oak_tower_disable_but");
             OakTowerLabel = new ToggleValueLabel(textureEnable, textureDisable, new Vector2(600, 640), new Vector2(32,72),OakTower.COST);
 
-            textureEnable = content.Load<Texture2D>(@"images\gameplay\buttons\catus_tower_enable_but");
-            textureDisable = content.Load<Texture2D>(@"images\gameplay\buttons\catus_tower_disable_but");
+            textureEnable = content.Load<Texture2D>(@"images\gameplay\buttons\cactus_tower_enable_but");
+            textureDisable = content.Load<Texture2D>(@"images\gameplay\buttons\cactus_tower_disable_but");
             CatusTowerLabel = new ToggleValueLabel(textureEnable, textureDisable, new Vector2(700, 640), new Vector2(32, 72), CactusTower.COST);
 
             textureEnable = content.Load<Texture2D>(@"images\gameplay\buttons\pineapple_tower_enable_but");
@@ -112,6 +114,9 @@ namespace CustomGame
             //Load du lieu cho camera
             Viewport viewport = SceneManager.GraphicsDevice.Viewport;
             Camera2D.Reset(viewport.Width,viewport.Height,background_layer.Width,background_layer.Height);
+
+            HudLayer = new HUDLayer(this);
+            HudLayer.LoadContent();
         }
 
         public void LoadMap(string map_file)
@@ -208,7 +213,7 @@ namespace CustomGame
         private void CatusTowerLabel_Clicked()
         {
             Console.WriteLine("SlowTower is selected to add");
-            tower_type = TowerType.CatusTower;
+            tower_type = TowerType.CactusTower;
             tower_texture = CactusTower.TEXTURE;
             is_tower_add = true;
         }
@@ -238,6 +243,7 @@ namespace CustomGame
 
         public override void  Update(GameTime gameTime)
         {
+            HudLayer.Update(gameTime);
             //Cap nhat Camera
             Camera2D.Update(gameTime);
 
@@ -330,7 +336,7 @@ namespace CustomGame
                                 tower_map[key_pos] = CellType.TOWER;
                                 break;
                             
-                            case TowerType.CatusTower:
+                            case TowerType.CactusTower:
                                 Console.WriteLine("Catus Tower is added");
                                 tower = new CactusTower(GetBottomLeftFromCell(tile_x, tile_y), Anchor.BOTTOMLEFT);
                                 tower_manager.AddTower(key_pos, tower); money -= CactusTower.COST;
@@ -401,6 +407,7 @@ namespace CustomGame
                 OakTowerLabel.Draw(spriteBatch);
                 CatusTowerLabel.Draw(spriteBatch);
                 PineappleTowerLabel.Draw(spriteBatch);
+                HudLayer.Draw(spriteBatch);
             spriteBatch.End();
         }
     }

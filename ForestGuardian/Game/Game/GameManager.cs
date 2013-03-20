@@ -41,7 +41,7 @@ namespace CustomGame
             IsMouseVisible = true;
 
             base.Initialize();
-            sceneManager.AddScreen(new MainMenuScene());
+            sceneManager.AddScene(new MainMenuScene());
         }
 
         /// <summary>

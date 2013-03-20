@@ -25,9 +25,6 @@ namespace CustomGame
         private Texture2D tickTexture;
         private Vector2 tickPosition;
 
-        private Texture2D soundBarTexture;
-        private Vector2 soundBarPosition;
-
         private Button closeButton;
         private Button increButton;
         private Button decreButton;
@@ -46,16 +43,15 @@ namespace CustomGame
 
             backgroundTexture = content.Load<Texture2D>(@"images\scene\OptionScene\dialog_options");
             loadingBlackTexture = content.Load<Texture2D>(@"images\scene\OptionScene\FadeScreen");
-            
+            tickTexture = content.Load<Texture2D>(@"images\scene\OptionScene\tick_full_screen");
+            tickPosition = backgroundPosition + new Vector2(70, 70);
+
             Viewport viewport = SceneManager.GraphicsDevice.Viewport;
             backgroundPosition = new Vector2(
                 (viewport.Width - backgroundTexture.Width) / 2,
                 (viewport.Height - backgroundTexture.Height) / 2);
             loadingBlackTextureDestination = new Rectangle(viewport.X, viewport.Y,
                 viewport.Width, viewport.Height);
-
-            tickTexture = content.Load<Texture2D>(@"images\scene\OptionScene\tick_full_screen");
-            tickPosition = backgroundPosition + new Vector2(70, 70);
 
             Texture2D texture = content.Load<Texture2D>(@"images\scene\OptionScene\b_close");
             Texture2D pressTexture = content.Load<Texture2D>(@"images\scene\OptionScene\b_close_clicked");
@@ -65,16 +61,13 @@ namespace CustomGame
 
             texture = content.Load<Texture2D>(@"images\scene\OptionScene\decrease_volume");
             pressTexture = content.Load<Texture2D>(@"images\scene\OptionScene\decrease_volume_clicked");
-            position = backgroundPosition + new Vector2(280, 185);
-            decreButton = new Button(texture, null, pressTexture, position);
+            position = backgroundPosition + new Vector2(290, 190);
+            increButton = new Button(texture, null, pressTexture, position);
 
             texture = content.Load<Texture2D>(@"images\scene\OptionScene\increase_volume");
             pressTexture = content.Load<Texture2D>(@"images\scene\OptionScene\increase_volume_clicked");
-            position = backgroundPosition + new Vector2(620, 172);
-            increButton = new Button(texture, null, pressTexture, position);
-
-            soundBarTexture = content.Load<Texture2D>(@"images\scene\OptionScene\sound_bar");
-            soundBarPosition = backgroundPosition + new Vector2(300, 185);
+            position = backgroundPosition + new Vector2(620, 183);
+            decreButton = new Button(texture, null, pressTexture, position);
         }
 
         public override void Update(GameTime gameTime)
@@ -101,7 +94,6 @@ namespace CustomGame
             closeButton.Draw(spriteBatch);
             increButton.Draw(spriteBatch);
             decreButton.Draw(spriteBatch);
-            spriteBatch.Draw(soundBarTexture, soundBarPosition, Color.White);
             if (isFullScreen)
                 spriteBatch.Draw(tickTexture,tickPosition, Color.White);
 

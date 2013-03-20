@@ -22,6 +22,9 @@ namespace CustomGame
 
         private Texture2D tickTexture;
         private Vector2 tickPosition;
+        
+        private Texture2D soundBarTexture;
+        private Vector2 soundBarPosition;
 
         private Button closeButton;
         private Button increButton;

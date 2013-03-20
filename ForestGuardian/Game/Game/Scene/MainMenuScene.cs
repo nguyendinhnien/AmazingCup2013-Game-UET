@@ -33,23 +33,23 @@ namespace CustomGame
 
             Texture2D texture = content.Load<Texture2D>(@"images\scene\MainMenuScene\b_play");
             Texture2D pressTexture = content.Load<Texture2D>(@"images\scene\MainMenuScene\b_play_clicked");
-            button[0] = new Button(texture, null, pressTexture, new Vector2(10, 680));
+            button[0] = new Button(texture, null, pressTexture, new Vector2(10, 670));
 
             texture = content.Load<Texture2D>(@"images\scene\MainMenuScene\b_scores");
             pressTexture = content.Load<Texture2D>(@"images\scene\MainMenuScene\b_scores_clicked");
-            button[1] = new Button(texture, null, pressTexture, new Vector2(190, 680));
+            button[1] = new Button(texture, null, pressTexture, new Vector2(190, 670));
 
             texture = content.Load<Texture2D>(@"images\scene\MainMenuScene\b_options");
             pressTexture = content.Load<Texture2D>(@"images\scene\MainMenuScene\b_options_clicked");
-            button[2] = new Button(texture, null, pressTexture, new Vector2(425, 680));
+            button[2] = new Button(texture, null, pressTexture, new Vector2(425, 670));
 
             texture = content.Load<Texture2D>(@"images\scene\MainMenuScene\b_help");
             pressTexture = content.Load<Texture2D>(@"images\scene\MainMenuScene\b_help_clicked");
-            button[3] = new Button(texture, null, pressTexture, new Vector2(660, 680));
+            button[3] = new Button(texture, null, pressTexture, new Vector2(660, 670));
 
             texture = content.Load<Texture2D>(@"images\scene\MainMenuScene\b_quit");
             pressTexture = content.Load<Texture2D>(@"images\scene\MainMenuScene\b_quit_clicked");
-            button[4] = new Button(texture, null, pressTexture, new Vector2(880, 680));
+            button[4] = new Button(texture, null, pressTexture, new Vector2(880, 670));
 
             button[0].Clicked += PlayButtonClicked;
             button[1].Clicked += ScoresButtonClicked;
@@ -83,22 +83,22 @@ namespace CustomGame
 
         private void PlayButtonClicked(object sender, EventArgs e)
         {
-            SceneManager.AddScene(new GamePlayScene());     
+            SceneManager.AddScreen(new GamePlayScene());     
         }
 
         private void ScoresButtonClicked(object sender, EventArgs e)
         {
-            SceneManager.AddScene(new ScoreScene());
+            SceneManager.AddScreen(new ScoreScene());
         }
 
         private void OptionsButtonClicked(object sender, EventArgs e)
         {
-            SceneManager.AddScene(new OptionScene());
+            SceneManager.AddScreen(new OptionScene());
         }
 
         private void HelpButtonClicked(object sender, EventArgs e)
         {
-            SceneManager.AddScene(new HelpScene());
+            SceneManager.AddScreen(new HelpScene());
         }
 
         private void QuitButtonClicked(object sender, EventArgs e)

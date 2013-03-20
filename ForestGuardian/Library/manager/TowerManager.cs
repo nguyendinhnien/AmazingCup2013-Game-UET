@@ -40,7 +40,7 @@ namespace Library
             foreach (var tower_pair in towers)
             {
                 tower = tower_pair.Value;
-                tower.Update(gameTime);
+                
                 if (tower.Target == null || !tower.Target.Alive)
                     tower.Target = tower.getClosestEnemy(enemies);
                 
@@ -51,6 +51,7 @@ namespace Library
                         tower.Target = null;
                 }
 
+                tower.Update(gameTime);
             }
         }
 

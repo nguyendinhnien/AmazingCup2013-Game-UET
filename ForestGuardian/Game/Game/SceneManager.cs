@@ -11,8 +11,10 @@ namespace CustomGame
 {
     public class SceneManager : DrawableGameComponent
     {
-        List<GameScene> scenes = new List<GameScene>();
-        List<GameScene> scenesToUpdate = new List<GameScene>();
+        #region Fields
+
+        List<GameScene> screens = new List<GameScene>();
+        List<GameScene> screensToUpdate = new List<GameScene>();
 
         SpriteBatch spriteBatch;
         GraphicsDeviceManager graphics;
@@ -20,23 +22,47 @@ namespace CustomGame
         bool isInitialized;
         bool traceEnabled;
 
+        #endregion
+
+
+        #region Properties
+        /// <summary>
+        /// A default SpriteBatch shared by all the screens. This saves
+        /// each screen having to bother creating their own local instance.
+        /// </summary>
         public SpriteBatch SpriteBatch
         {
             get { return spriteBatch; }
         }
 
+
+        /// <summary>
+        /// If true, the manager prints out a list of all the screens
+        /// each time it is updated. This can be useful for making sure
+        /// everything is being added and removed at the right times.
+        /// </summary>
         public bool TraceEnabled
         {
             get { return traceEnabled; }
             set { traceEnabled = value; }
         }
+        #endregion
 
+
+        #region Initialization
+        /// <summary>
+        /// Constructs a new screen manager component.
+        /// </summary>
         public SceneManager(Game game)
             : base(game)
         {
             this.graphics = ((GameManager)game).getGraphics();
         }
 
+
+        /// <summary>
+        /// Initializes the screen manager component.
+        /// </summary>
         public override void Initialize()
         {
             base.Initialize();
@@ -44,132 +70,179 @@ namespace CustomGame
             isInitialized = true;
         }
 
+
+        /// <summary>
+        /// Load your graphics content.
+        /// </summary>
         protected override void LoadContent()
         {
-            // Load content belonging to the scene manager.
+            // Load content belonging to the screen manager.
             ContentManager content = Game.Content;
+
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // Tell each of the screens to load their content.
-            foreach (GameScene scene in scenes)
+            foreach (GameScene screen in screens)
             {
-                scene.LoadContent();
+                screen.LoadContent();
             }
         }
 
+
+        /// <summary>
+        /// Unload your graphics content.
+        /// </summary>
         protected override void UnloadContent()
         {
             // Tell each of the screens to unload their content.
-            foreach (GameScene scene in scenes)
+            foreach (GameScene screen in screens)
             {
-                scene.UnloadContent();
+                screen.UnloadContent();
             }
         }
 
+        #endregion
+
+
+        #region Update and Draw
+
+
+        /// <summary>
+        /// Allows each screen to run logic.
+        /// </summary>
         public override void Update(GameTime gameTime)
         {
-            // Make a copy of the master scene list, to avoid confusion if
-            // the process of updating one scene adds or removes others.
-            scenesToUpdate.Clear();
+            // Make a copy of the master screen list, to avoid confusion if
+            // the process of updating one screen adds or removes others.
+            screensToUpdate.Clear();
 
-            foreach (GameScene scene in scenes)
-                scenesToUpdate.Add(scene);
+            foreach (GameScene screen in screens)
+                screensToUpdate.Add(screen);
 
-            bool otherSceneHasFocus = !Game.IsActive;
-            bool coveredByOtherScene = false;
+            bool otherScreenHasFocus = !Game.IsActive;
+            bool coveredByOtherScreen = false;
 
             // Loop as long as there are screens waiting to be updated.
-            while (scenesToUpdate.Count > 0)
+            while (screensToUpdate.Count > 0)
             {
-                // Pop the topmost scene off the waiting list.
-                GameScene scene = scenesToUpdate[scenesToUpdate.Count - 1];
+                // Pop the topmost screen off the waiting list.
+                GameScene screen = screensToUpdate[screensToUpdate.Count - 1];
 
-                scenesToUpdate.RemoveAt(scenesToUpdate.Count - 1);
+                screensToUpdate.RemoveAt(screensToUpdate.Count - 1);
 
-                // Update the scene.
-                scene.StateUpdate(gameTime, otherSceneHasFocus, coveredByOtherScene);
+                // Update the screen.
+                screen.StateUpdate(gameTime, otherScreenHasFocus, coveredByOtherScreen);
 
-                if (scene.SceneState == SceneState.TransitionOn ||
-                    scene.SceneState == SceneState.Active)
+                if (screen.ScreenState == ScreenState.TransitionOn ||
+                    screen.ScreenState == ScreenState.Active)
                 {
-                    // If this is the first active scene we came across,
+                    // If this is the first active screen we came across,
                     // give it a chance to handle input.
-                    if (!otherSceneHasFocus)
+                    if (!otherScreenHasFocus)
                     {
-                        //NTA change scene.HandleInput() to scene.Update(gameTime)
-                        scene.Update(gameTime);
-                        otherSceneHasFocus = true;
+                        //NTA change screen.HandleInput() to screen.Update(gameTime)
+                        screen.Update(gameTime);
+                        otherScreenHasFocus = true;
                     }
 
                     // If this is an active non-popup, inform any subsequent
                     // screens that they are covered by it.
-                    if (!scene.IsPopup)
-                        coveredByOtherScene = true;
+                    if (!screen.IsPopup)
+                        coveredByOtherScreen = true;
                 }
             }
 
             // Print debug trace?
             if (traceEnabled)
-                TraceScenes();
+                TraceScreens();
         }
 
-        void TraceScenes()
+
+        /// <summary>
+        /// Prints a list of all the screens, for debugging.
+        /// </summary>
+        void TraceScreens()
         {
-            List<string> sceneNames = new List<string>();
+            List<string> screenNames = new List<string>();
 
-            foreach (GameScene scene in scenes)
-                sceneNames.Add(scene.GetType().Name);
+            foreach (GameScene screen in screens)
+                screenNames.Add(screen.GetType().Name);
 
-            #if WINDOWS
-            Trace.WriteLine(string.Join(", ", sceneNames.ToArray()));
-            #endif
+#if WINDOWS
+            Trace.WriteLine(string.Join(", ", screenNames.ToArray()));
+#endif
         }
 
+
+        /// <summary>
+        /// Tells each screen to draw itself.
+        /// </summary>
         public override void Draw(GameTime gameTime)
         {
-            foreach (GameScene scene in scenes)
+            foreach (GameScene screen in screens)
             {
-                if (scene.SceneState == SceneState.Hidden)
+                if (screen.ScreenState == ScreenState.Hidden)
                     continue;
 
-                scene.Draw(spriteBatch);
+                screen.Draw(spriteBatch);
             }
         }
 
-        public void AddScene(GameScene scene)
-        {
-            scene.SceneManager = this;
-            scene.IsExiting = false;
+        #endregion
 
-            // If we have a graphics device, tell the scene to load content.
+
+        #region Public Methods
+        /// <summary>
+        /// Adds a new screen to the screen manager.
+        /// </summary>
+        public void AddScreen(GameScene screen)
+        {
+            screen.SceneManager = this;
+            screen.IsExiting = false;
+
+            // If we have a graphics device, tell the screen to load content.
             if (isInitialized)
             {
-                scene.LoadContent();
+                screen.LoadContent();
             }
 
-            scenes.Add(scene);
+            screens.Add(screen);
         }
 
-        public void RemoveScene(GameScene scene)
+
+        /// <summary>
+        /// Removes a screen from the screen manager. You should normally
+        /// use GameScreen.ExitScreen instead of calling this directly, so
+        /// the screen can gradually transition off rather than just being
+        /// instantly removed.
+        /// </summary>
+        public void RemoveScreen(GameScene screen)
         {
-            // If we have a graphics device, tell the scene to unload content.
+            // If we have a graphics device, tell the screen to unload content.
             if (isInitialized)
             {
-                scene.UnloadContent();
+                screen.UnloadContent();
             }
 
-            scenes.Remove(scene);
-            scenesToUpdate.Remove(scene);
+            screens.Remove(screen);
+            screensToUpdate.Remove(screen);
         }
 
-        public GameScene[] GetScenes()
+
+        /// <summary>
+        /// Expose an array holding all the screens. We return a copy rather
+        /// than the real master list, because screens should only ever be added
+        /// or removed using the AddScreen and RemoveScreen methods.
+        /// </summary>
+        public GameScene[] GetScreens()
         {
-            return scenes.ToArray();
+            return screens.ToArray();
         }
 
         public void ToggleFullScreen(){
             graphics.ToggleFullScreen();
         }
+        #endregion
     }
 }
 

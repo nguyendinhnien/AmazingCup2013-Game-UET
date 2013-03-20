@@ -10,7 +10,7 @@ namespace Library
     public enum TowerType{
         NONE,
         OakTower,
-        CactusTower,
+        CatusTower,
         PineappleTower
     }
     public class Tower : Sprite

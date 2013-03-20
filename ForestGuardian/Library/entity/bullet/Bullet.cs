@@ -17,7 +17,7 @@ namespace Library
         protected Vector2 mVelocity;
         Vector2 mDirection;
 
-        private bool mHit;
+        protected bool mHit;
 
         public float Speed
         {

@@ -34,12 +34,12 @@ namespace Library
         {
             foreach (Enemy enemy in mEnemies)
             {
-                if (isInRange(enemy.Center))
+                if (!mHit && isInRange(enemy.Center))
                 {
-                    //enemy.lostHealth(mDamage);
-                    base.HitTarget(enemy);
+                    enemy.lostHealth(mDamage);
                 }
             }
+            mHit = true;
         }
 
         public override void Update(GameTime gameTime)

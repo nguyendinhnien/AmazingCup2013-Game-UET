@@ -22,3 +22,27 @@ C:\Users\KIEN\Documents\Visual Studio 2010\Projects\GITHUB\ForestGuardian\Librar
 C:\Users\KIEN\Documents\Visual Studio 2010\Projects\GITHUB\ForestGuardian\Library\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\KIEN\Documents\Visual Studio 2010\Projects\GITHUB\ForestGuardian\Library\obj\x86\Debug\Library.dll
 C:\Users\KIEN\Documents\Visual Studio 2010\Projects\GITHUB\ForestGuardian\Library\obj\x86\Debug\Library.pdb
+E:\ForestGuardian\Library\bin\x86\Debug\Library.dll
+E:\ForestGuardian\Library\bin\x86\Debug\Library.pdb
+E:\ForestGuardian\Library\bin\x86\Debug\Data.dll
+E:\ForestGuardian\Library\bin\x86\Debug\Data.pdb
+E:\ForestGuardian\Library\obj\x86\Debug\Library.csprojResolveAssemblyReference.cache
+E:\ForestGuardian\Library\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\ForestGuardian\Library\obj\x86\Debug\Library.dll
+E:\ForestGuardian\Library\obj\x86\Debug\Library.pdb
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Library\bin\x86\Debug\Library.dll
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Library\bin\x86\Debug\Library.pdb
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Library\bin\x86\Debug\Data.dll
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Library\bin\x86\Debug\Data.pdb
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Library\obj\x86\Debug\Library.csprojResolveAssemblyReference.cache
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Library\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Library\obj\x86\Debug\Library.dll
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Library\obj\x86\Debug\Library.pdb
+D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Library\bin\x86\Debug\Library.dll
+D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Library\bin\x86\Debug\Library.pdb
+D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Library\bin\x86\Debug\Data.dll
+D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Library\bin\x86\Debug\Data.pdb
+D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Library\obj\x86\Debug\Library.csprojResolveAssemblyReference.cache
+D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Library\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Library\obj\x86\Debug\Library.dll
+D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Library\obj\x86\Debug\Library.pdb

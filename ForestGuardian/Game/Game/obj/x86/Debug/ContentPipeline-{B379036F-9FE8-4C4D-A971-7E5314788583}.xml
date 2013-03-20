@@ -8,7 +8,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\maps\map1.xnb</Output>
-      <Time>2013-03-13T07:57:32+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\maps\map1.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\maps\map1.xnb</Output>
-      <Time>2013-03-05T10:06:00+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\gameplay\buttons\sell_but.png</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\sell_but.xnb</Output>
-      <Time>2013-03-18T09:05:32+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\gameplay\health_bar.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\health_bar.xnb</Output>
-      <Time>2013-03-16T23:05:48+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\gameplay\enemies\axeman.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\enemies\axeman.xnb</Output>
-      <Time>2013-03-12T09:52:26+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\gameplay\towers\oak_tower_level1.png</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\oak_tower_level1.xnb</Output>
-      <Time>2013-03-11T16:25:50+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\gameplay\towers\catus_tower_level1.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\catus_tower_level1.xnb</Output>
-      <Time>2013-03-11T16:24:24+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\gameplay\towers\pineapple_tower_level1.png</Source>
@@ -71,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\pineapple_tower_level1.xnb</Output>
-      <Time>2013-03-11T16:25:56+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\gameplay\buttons\catus_tower_disable_but.png</Source>
@@ -80,7 +80,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\catus_tower_disable_but.xnb</Output>
-      <Time>2013-03-17T11:50:02+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\gameplay\buttons\oak_tower_disable_but.png</Source>
@@ -89,7 +89,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\oak_tower_disable_but.xnb</Output>
-      <Time>2013-03-17T11:51:20+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\gameplay\buttons\oak_tower_enable_but.png</Source>
@@ -98,7 +98,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\oak_tower_enable_but.xnb</Output>
-      <Time>2013-03-17T10:44:56+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\gameplay\buttons\pineapple_tower_disable_but.png</Source>
@@ -107,7 +107,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\pineapple_tower_disable_but.xnb</Output>
-      <Time>2013-03-17T11:50:30+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\gameplay\buttons\pineapple_tower_enable_but.png</Source>
@@ -116,7 +116,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\pineapple_tower_enable_but.xnb</Output>
-      <Time>2013-03-17T10:45:24+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\gameplay\buttons\upgrade_disable_but.png</Source>
@@ -125,7 +125,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\upgrade_disable_but.xnb</Output>
-      <Time>2013-03-18T09:06:58+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\gameplay\buttons\upgrade_enable_but.png</Source>
@@ -134,7 +134,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\upgrade_enable_but.xnb</Output>
-      <Time>2013-03-18T09:07:16+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\gameplay\buttons\catus_tower_enable_but.png</Source>
@@ -143,7 +143,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\catus_tower_enable_but.xnb</Output>
-      <Time>2013-03-17T10:45:58+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\HelpScene\b_back.png</Source>
@@ -152,7 +152,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\b_back.xnb</Output>
-      <Time>2013-03-18T10:54:06+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\HelpScene\b_back_clicked.png</Source>
@@ -161,7 +161,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\b_back_clicked.xnb</Output>
-      <Time>2013-03-18T10:54:06+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\HelpScene\credit.png</Source>
@@ -170,7 +170,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\credit.xnb</Output>
-      <Time>2013-03-18T10:54:06+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\MainMenuScene\b_help.png</Source>
@@ -179,7 +179,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_help.xnb</Output>
-      <Time>2013-03-18T10:54:20+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\MainMenuScene\b_help_clicked.png</Source>
@@ -188,7 +188,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_help_clicked.xnb</Output>
-      <Time>2013-03-18T10:54:20+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\MainMenuScene\b_options.png</Source>
@@ -197,7 +197,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_options.xnb</Output>
-      <Time>2013-03-18T10:54:20+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\MainMenuScene\b_options_clicked.png</Source>
@@ -206,7 +206,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_options_clicked.xnb</Output>
-      <Time>2013-03-18T10:54:20+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\MainMenuScene\b_play.png</Source>
@@ -215,7 +215,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_play.xnb</Output>
-      <Time>2013-03-18T10:54:20+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\MainMenuScene\b_play_clicked.png</Source>
@@ -224,7 +224,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_play_clicked.xnb</Output>
-      <Time>2013-03-18T10:54:20+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\MainMenuScene\b_quit.png</Source>
@@ -233,7 +233,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_quit.xnb</Output>
-      <Time>2013-03-18T10:54:20+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\MainMenuScene\b_quit_clicked.png</Source>
@@ -242,7 +242,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_quit_clicked.xnb</Output>
-      <Time>2013-03-18T10:54:20+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\MainMenuScene\b_scores.png</Source>
@@ -251,7 +251,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_scores.xnb</Output>
-      <Time>2013-03-18T10:54:20+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\MainMenuScene\b_scores_clicked.png</Source>
@@ -260,7 +260,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_scores_clicked.xnb</Output>
-      <Time>2013-03-18T10:54:20+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\MainMenuScene\main.png</Source>
@@ -269,7 +269,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\main.xnb</Output>
-      <Time>2013-03-18T10:54:20+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\OptionScene\b_close.png</Source>
@@ -278,7 +278,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\b_close.xnb</Output>
-      <Time>2013-03-18T10:54:44+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\OptionScene\b_close_clicked.png</Source>
@@ -287,7 +287,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\b_close_clicked.xnb</Output>
-      <Time>2013-03-18T10:54:44+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\OptionScene\decrease_volume.png</Source>
@@ -296,7 +296,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\decrease_volume.xnb</Output>
-      <Time>2013-03-18T10:54:44+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\OptionScene\decrease_volume_clicked.png</Source>
@@ -305,7 +305,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\decrease_volume_clicked.xnb</Output>
-      <Time>2013-03-18T10:54:44+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\OptionScene\dialog_options.png</Source>
@@ -314,7 +314,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\dialog_options.xnb</Output>
-      <Time>2013-03-18T10:54:44+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\OptionScene\FadeScreen.png</Source>
@@ -323,7 +323,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\FadeScreen.xnb</Output>
-      <Time>2013-03-18T10:54:44+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\OptionScene\increase_volume.png</Source>
@@ -332,7 +332,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\increase_volume.xnb</Output>
-      <Time>2013-03-18T10:54:44+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\OptionScene\increase_volume_clicked.png</Source>
@@ -341,16 +341,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\increase_volume_clicked.xnb</Output>
-      <Time>2013-03-18T10:54:44+07:00</Time>
-    </Item>
-    <Item>
-      <Source>images\scene\OptionScene\slide_sound_button.png</Source>
-      <Name>images\scene\OptionScene\slide_sound_button</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\slide_sound_button.xnb</Output>
-      <Time>2013-03-18T10:54:44+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\OptionScene\sound_bar.png</Source>
@@ -359,7 +350,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\sound_bar.xnb</Output>
-      <Time>2013-03-18T15:12:04+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\OptionScene\tick_full_screen.png</Source>
@@ -368,7 +359,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\tick_full_screen.xnb</Output>
-      <Time>2013-03-18T10:54:44+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\ScoreScene\b_back.png</Source>
@@ -377,7 +368,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ScoreScene\b_back.xnb</Output>
-      <Time>2013-03-18T10:56:18+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\ScoreScene\b_back_clicked.png</Source>
@@ -386,7 +377,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ScoreScene\b_back_clicked.xnb</Output>
-      <Time>2013-03-18T10:56:18+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\ScoreScene\scoreboard.png</Source>
@@ -395,7 +386,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ScoreScene\scoreboard.xnb</Output>
-      <Time>2013-03-18T10:56:18+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\SelectLevelScene\b_backward.png</Source>
@@ -404,7 +395,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_backward.xnb</Output>
-      <Time>2013-03-18T10:56:32+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\SelectLevelScene\b_backward_clicked.png</Source>
@@ -413,7 +404,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_backward_clicked.xnb</Output>
-      <Time>2013-03-18T10:56:32+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\SelectLevelScene\b_forward.png</Source>
@@ -422,7 +413,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_forward.xnb</Output>
-      <Time>2013-03-18T10:56:32+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\SelectLevelScene\b_forward_clicked.png</Source>
@@ -431,7 +422,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_forward_clicked.xnb</Output>
-      <Time>2013-03-18T10:56:32+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\SelectLevelScene\b_select_level.png</Source>
@@ -440,7 +431,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_select_level.xnb</Output>
-      <Time>2013-03-18T10:56:32+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\SelectLevelScene\b_start_game.png</Source>
@@ -449,7 +440,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_start_game.xnb</Output>
-      <Time>2013-03-18T10:56:32+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\SelectLevelScene\b_start_game_clicked.png</Source>
@@ -458,7 +449,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_start_game_clicked.xnb</Output>
-      <Time>2013-03-18T10:56:32+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\SelectLevelScene\demo_select_level.png</Source>
@@ -467,7 +458,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\demo_select_level.xnb</Output>
-      <Time>2013-03-18T10:56:32+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\SelectLevelScene\highline_select_card.png</Source>
@@ -476,7 +467,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\highline_select_card.xnb</Output>
-      <Time>2013-03-18T10:56:32+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\SelectLevelScene\lock_card.png</Source>
@@ -485,7 +476,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\lock_card.xnb</Output>
-      <Time>2013-03-18T10:56:32+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\SelectLevelScene\map_level1_thumb.png</Source>
@@ -494,7 +485,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level1_thumb.xnb</Output>
-      <Time>2013-03-18T10:56:32+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\SelectLevelScene\map_level2_thumb.png</Source>
@@ -503,7 +494,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level2_thumb.xnb</Output>
-      <Time>2013-03-18T10:56:32+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\SelectLevelScene\map_level3_thumb.png</Source>
@@ -512,7 +503,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level3_thumb.xnb</Output>
-      <Time>2013-03-18T10:56:32+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\SelectLevelScene\map_level_1_preview.png</Source>
@@ -521,7 +512,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_1_preview.xnb</Output>
-      <Time>2013-03-18T10:56:32+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\SelectLevelScene\map_level_2_preview.png</Source>
@@ -530,7 +521,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_2_preview.xnb</Output>
-      <Time>2013-03-18T10:56:32+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\SelectLevelScene\map_level_3_preview.png</Source>
@@ -539,7 +530,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_3_preview.xnb</Output>
-      <Time>2013-03-18T10:56:32+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\SelectLevelScene\selectmaps.png</Source>
@@ -548,7 +539,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\selectmaps.xnb</Output>
-      <Time>2013-03-18T10:56:32+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\SelectLevelScene\unselect_card.png</Source>
@@ -557,16 +548,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\unselect_card.xnb</Output>
-      <Time>2013-03-18T10:56:32+07:00</Time>
-    </Item>
-    <Item>
-      <Source>fonts\gameplay\value_font.spritefont</Source>
-      <Name>fonts\gameplay\value_font</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\gameplay\value_font.xnb</Output>
-      <Time>2013-03-17T12:44:44+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\gameplay\bullets\cactusbullet.png</Source>
@@ -575,7 +557,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\cactusbullet.xnb</Output>
-      <Time>2013-03-15T09:42:41+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\gameplay\bullets\oakbullet.png</Source>
@@ -584,7 +566,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\oakbullet.xnb</Output>
-      <Time>2013-03-18T00:48:08+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
       <Source>images\gameplay\bullets\pineapplebullet.png</Source>
@@ -593,7 +575,25 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\pineapplebullet.xnb</Output>
-      <Time>2013-03-15T09:42:41+07:00</Time>
+      <Time>2013-03-19T04:29:02+07:00</Time>
+    </Item>
+    <Item>
+      <Source>fonts\gameplay\value_font.spritefont</Source>
+      <Name>fonts\gameplay\value_font</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\gameplay\value_font.xnb</Output>
+      <Time>2013-03-19T04:29:02+07:00</Time>
+    </Item>
+    <Item>
+      <Source>fonts\ScoreScene\score.spritefont</Source>
+      <Name>fonts\ScoreScene\score</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\ScoreScene\score.xnb</Output>
+      <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -634,7 +634,7 @@
       </Assembly>
       <Assembly>
         <Key>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Data\bin\x86\Debug\Data.dll</Key>
-        <Value>2013-03-18T15:27:55.2456592+07:00</Value>
+        <Value>2013-03-19T04:29:02+07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>

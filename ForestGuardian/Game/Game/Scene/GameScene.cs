@@ -8,7 +8,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace CustomGame
 {
-    public enum SceneState
+    public enum ScreenState
     {
         TransitionOn,
         Active,
@@ -17,24 +17,14 @@ namespace CustomGame
     }
 
     public abstract class GameScene
-    {      
-        protected bool isPopup = false;
-        protected float transitionPosition = 1;
-        protected TimeSpan transitionOnTime = TimeSpan.FromSeconds(5);
-        protected TimeSpan transitionOffTime = TimeSpan.Zero;
-        SceneState sceneState = SceneState.TransitionOn;
-        protected bool otherSceneHasFocus;
-        protected bool isExiting = false;
-        protected SceneManager sceneManager;
-
-        public event EventHandler Exiting;
-
-
+    {
         public bool IsPopup
         {
             get { return isPopup; }
             protected set { isPopup = value; }
         }
+
+        bool isPopup = false;
 
         public TimeSpan TransitionOnTime
         {
@@ -42,28 +32,36 @@ namespace CustomGame
             protected set { transitionOnTime = value; }
         }
 
+        TimeSpan transitionOnTime = TimeSpan.FromSeconds(5);
+
         public TimeSpan TransitionOffTime
         {
             get { return transitionOffTime; }
             protected set { transitionOffTime = value; }
         }
-        
+
+        TimeSpan transitionOffTime = TimeSpan.Zero;
+
         public float TransitionPosition
         {
             get { return transitionPosition; }
             protected set { transitionPosition = value; }
         }
 
+        float transitionPosition = 1;
+
         public byte TransitionAlpha
         {
             get { return (byte)(255 - TransitionPosition * 255); }
         }
 
-        public SceneState SceneState
+        public ScreenState ScreenState
         {
-            get { return sceneState; }
-            protected set { sceneState = value; }
+            get { return screenState; }
+            protected set { screenState = value; }
         }
+
+        ScreenState screenState = ScreenState.TransitionOn;
 
         public bool IsExiting
         {
@@ -79,12 +77,17 @@ namespace CustomGame
             }
         }
 
+        bool isExiting = false;
+
         public bool IsActive
         {
-            get{
-                return !otherSceneHasFocus && (sceneState == SceneState.TransitionOn || sceneState == SceneState.Active);
+            get
+            {
+                return !otherScreenHasFocus && (screenState == ScreenState.TransitionOn || screenState == ScreenState.Active);
             }
         }
+
+        bool otherScreenHasFocus;
 
         public SceneManager SceneManager
         {
@@ -92,36 +95,40 @@ namespace CustomGame
             internal set { sceneManager = value; }
         }
 
+        SceneManager sceneManager;
+
+        public event EventHandler Exiting;
+
         public virtual void LoadContent() { }
         public virtual void UnloadContent() { }
 
-        public virtual void StateUpdate(GameTime gameTime, bool otherSceneHasFocus,bool coveredByOtherScene)
+        public virtual void StateUpdate(GameTime gameTime, bool otherScreenHasFocus,bool coveredByOtherScreen)
         {
-            this.otherSceneHasFocus = otherSceneHasFocus;
+            this.otherScreenHasFocus = otherScreenHasFocus;
 
             if (IsExiting)
             {
                 // If the screen is going away to die, it should transition off.
-                sceneState = SceneState.TransitionOff;
+                screenState = ScreenState.TransitionOff;
 
                 if (!UpdateTransition(gameTime, transitionOffTime, 1))
                 {
                     // When the transition finishes, remove the screen.
-                    SceneManager.RemoveScene(this);
+                    SceneManager.RemoveScreen(this);
                 }
             }
-            else if (coveredByOtherScene)
+            else if (coveredByOtherScreen)
             {
                 // If the screen is covered by another, it should transition off.
                 if (UpdateTransition(gameTime, transitionOffTime, 1))
                 {
                     // Still busy transitioning.
-                    sceneState = SceneState.TransitionOff;
+                    screenState = ScreenState.TransitionOff;
                 }
                 else
                 {
                     // Transition finished!
-                    sceneState = SceneState.Hidden;
+                    screenState = ScreenState.Hidden;
                 }
             }
             else
@@ -130,12 +137,12 @@ namespace CustomGame
                 if (UpdateTransition(gameTime, transitionOnTime, -1))
                 {
                     // Still busy transitioning.
-                    sceneState = SceneState.TransitionOn;
+                    screenState = ScreenState.TransitionOn;
                 }
                 else
                 {
                     // Transition finished!
-                    sceneState = SceneState.Active;
+                    screenState = ScreenState.Active;
                 }
             }
         }
@@ -178,7 +185,7 @@ namespace CustomGame
             // If the screen has a zero transition time, remove it immediately.
             if (TransitionOffTime == TimeSpan.Zero)
             {
-                SceneManager.RemoveScene(this);
+                SceneManager.RemoveScreen(this);
             }
         }
     }

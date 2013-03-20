@@ -91,6 +91,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="images\gameplay\towers\catus_tower_level1.png">
+      <Name>catus_tower_level1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="images\gameplay\towers\pineapple_tower_level1.png">
       <Name>pineapple_tower_level1</Name>
       <Importer>TextureImporter</Importer>
@@ -98,6 +105,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="images\gameplay\buttons\catus_tower_disable_but.png">
+      <Name>catus_tower_disable_but</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
     <Compile Include="images\gameplay\buttons\oak_tower_disable_but.png">
       <Name>oak_tower_disable_but</Name>
       <Importer>TextureImporter</Importer>
@@ -134,6 +146,13 @@
       <Name>value_font</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\gameplay\buttons\catus_tower_enable_but.png">
+      <Name>catus_tower_enable_but</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -372,68 +391,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="images\gameplay\buttons\fast_normal_but.png">
-      <Name>fast_normal_but</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\gameplay\buttons\fast_press_but.png">
-      <Name>fast_press_but</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\gameplay\buttons\pause_normal_but.png">
-      <Name>pause_normal_but</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\gameplay\buttons\pause_press_but.png">
-      <Name>pause_press_but</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\gameplay\buttons\play_normal_but.png">
-      <Name>play_normal_but</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\gameplay\buttons\play_press_but.png">
-      <Name>play_press_but</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\gameplay\buttons\setting_normal_but.png">
-      <Name>setting_normal_but</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\gameplay\buttons\setting_press_but.png">
-      <Name>setting_press_but</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="images\gameplay\buttons\life_label.png">
-      <Name>life_label</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\gameplay\buttons\money_label.png">
-      <Name>money_label</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="fonts\gameplay\hud_font.spritefont">
-      <Name>hud_font</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <SubType>Designer</SubType>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="images\gameplay\bullets\cactusbullet.png">
       <Name>cactusbullet</Name>
       <Importer>TextureImporter</Importer>
@@ -451,86 +408,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="fonts\ScoreScene\score.spritefont">
       <Name>score</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="images\scene\HelpScene\b_backward.png">
-      <Name>b_backward</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\HelpScene\b_backward_clicked.png">
-      <Name>b_backward_clicked</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\HelpScene\b_backward_disable.png">
-      <Name>b_backward_disable</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\HelpScene\b_forward.png">
-      <Name>b_forward</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\HelpScene\b_forward_clicked.png">
-      <Name>b_forward_clicked</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\HelpScene\b_forward_disable.png">
-      <Name>b_forward_disable</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\HelpScene\catus_card.png">
-      <Name>catus_card</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\HelpScene\lock_card.png">
-      <Name>lock_card</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\HelpScene\oak_card.png">
-      <Name>oak_card</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\HelpScene\pine_apple_card.png">
-      <Name>pine_apple_card</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\HelpScene\unselect_card.png">
-      <Name>unselect_card</Name>
-=======
-    <Compile Include="images\gameplay\towers\cactus_tower_level1.png">
-      <Name>cactus_tower_level1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="images\gameplay\buttons\cactus_tower_disable_but.png">
-      <Name>cactus_tower_disable_but</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="images\gameplay\buttons\cactus_tower_enable_but.png">
-      <Name>cactus_tower_enable_but</Name>
->>>>>>> 333c7dac9538105c2a7e31802993738116a69d27
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />

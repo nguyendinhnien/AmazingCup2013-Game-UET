@@ -34,7 +34,7 @@ namespace CustomGame
 
             Texture2D texture = content.Load<Texture2D>(@"images\scene\ScoreScene\b_back");
             Texture2D pressTexture = content.Load<Texture2D>(@"images\scene\ScoreScene\b_back_clicked");
-            button = new Button(texture, null, pressTexture, new Vector2(450, 690));
+            button = new Button(texture, null, pressTexture, new Vector2(10, 670));
 
             button.Clicked += BackButtonClicked;
 
@@ -61,7 +61,7 @@ namespace CustomGame
             spriteBatch.Begin();
 
             spriteBatch.Draw(backgroundTexture, backgroundPosition, Color.White);
-            button.Draw(spriteBatch);
+                button.Draw(spriteBatch);
 
             for (int i = 0; i < 8; i++)
             {

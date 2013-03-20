@@ -64,3 +64,14 @@ Content\images\gameplay\bullets\oakbullet.xnb
 Content\images\gameplay\bullets\pineapplebullet.xnb
 Content\fonts\gameplay\value_font.xnb
 Content\fonts\ScoreScene\score.xnb
+Content\images\scene\HelpScene\b_backward.xnb
+Content\images\scene\HelpScene\b_backward_clicked.xnb
+Content\images\scene\HelpScene\b_backward_disable.xnb
+Content\images\scene\HelpScene\b_forward.xnb
+Content\images\scene\HelpScene\b_forward_clicked.xnb
+Content\images\scene\HelpScene\b_forward_disable.xnb
+Content\images\scene\HelpScene\catus_card.xnb
+Content\images\scene\HelpScene\lock_card.xnb
+Content\images\scene\HelpScene\oak_card.xnb
+Content\images\scene\HelpScene\pine_apple_card.xnb
+Content\images\scene\HelpScene\unselect_card.xnb

@@ -170,7 +170,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\credit.xnb</Output>
-      <Time>2013-03-19T00:49:00.1685538+07:00</Time>
+      <Time>2013-03-20T09:20:19.0524178+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\MainMenuScene\b_help.png</Source>
@@ -594,6 +594,105 @@
       <Options>None</Options>
       <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\ScoreScene\score.xnb</Output>
       <Time>2013-03-19T10:14:17.0523912+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\HelpScene\b_backward.png</Source>
+      <Name>images\scene\HelpScene\b_backward</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\b_backward.xnb</Output>
+      <Time>2013-03-20T08:24:08.0486074+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\HelpScene\b_backward_clicked.png</Source>
+      <Name>images\scene\HelpScene\b_backward_clicked</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\b_backward_clicked.xnb</Output>
+      <Time>2013-03-20T08:24:08.0626082+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\HelpScene\b_backward_disable.png</Source>
+      <Name>images\scene\HelpScene\b_backward_disable</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\b_backward_disable.xnb</Output>
+      <Time>2013-03-20T08:24:08.0726088+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\HelpScene\b_forward.png</Source>
+      <Name>images\scene\HelpScene\b_forward</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\b_forward.xnb</Output>
+      <Time>2013-03-20T08:24:08.0886097+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\HelpScene\b_forward_clicked.png</Source>
+      <Name>images\scene\HelpScene\b_forward_clicked</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\b_forward_clicked.xnb</Output>
+      <Time>2013-03-20T08:24:08.0976102+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\HelpScene\b_forward_disable.png</Source>
+      <Name>images\scene\HelpScene\b_forward_disable</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\b_forward_disable.xnb</Output>
+      <Time>2013-03-20T08:24:08.1096109+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\HelpScene\catus_card.png</Source>
+      <Name>images\scene\HelpScene\catus_card</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\catus_card.xnb</Output>
+      <Time>2013-03-20T08:24:08.1226117+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\HelpScene\lock_card.png</Source>
+      <Name>images\scene\HelpScene\lock_card</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\lock_card.xnb</Output>
+      <Time>2013-03-20T08:24:08.1236117+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\HelpScene\oak_card.png</Source>
+      <Name>images\scene\HelpScene\oak_card</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\oak_card.xnb</Output>
+      <Time>2013-03-20T08:24:08.1526134+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\HelpScene\pine_apple_card.png</Source>
+      <Name>images\scene\HelpScene\pine_apple_card</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\pine_apple_card.xnb</Output>
+      <Time>2013-03-20T08:24:08.2056164+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\HelpScene\unselect_card.png</Source>
+      <Name>images\scene\HelpScene\unselect_card</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\unselect_card.xnb</Output>
+      <Time>2013-03-20T08:24:08.2076165+07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

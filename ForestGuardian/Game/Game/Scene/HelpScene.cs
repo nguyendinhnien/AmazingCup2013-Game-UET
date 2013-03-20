@@ -14,13 +14,25 @@ namespace CustomGame
 {
     public class HelpScene : GameScene
     {
-private Button button;
+        private Button backButton;
         private Texture2D backgroundTexture;
         private Vector2 backgroundPosition;
+
+        private ToggleButton backwardButton;
+        private ToggleButton forwardButton;
+
+        private int numberOfItems;
+        private Texture2D[] itemTexture;
+
+        private int startItem;
 
         public HelpScene()
             : base()
         {
+            numberOfItems = 5;
+            itemTexture = new Texture2D[numberOfItems];
+
+            startItem = 0;
         }
 
         public override void LoadContent()
@@ -31,19 +43,43 @@ private Button button;
 
             Texture2D texture = content.Load<Texture2D>(@"images\scene\HelpScene\b_back");
             Texture2D pressTexture = content.Load<Texture2D>(@"images\scene\HelpScene\b_back_clicked");
-            button = new Button(texture, null, pressTexture, new Vector2(10, 670));
+            backButton = new Button(texture, null, pressTexture, new Vector2(423, 690));
+            backButton.Clicked += BackButtonClicked;
 
-            button.Clicked += BackButtonClicked;
-        }
+            Texture2D disableButton = content.Load<Texture2D>(@"images\scene\HelpScene\b_backward_disable");
+            texture = content.Load<Texture2D>(@"images\scene\HelpScene\b_backward");
+            pressTexture = content.Load<Texture2D>(@"images\scene\HelpScene\b_backward_clicked");
+            backwardButton = new ToggleButton(texture, null, pressTexture, disableButton, new Vector2(50, 510));
+            backwardButton.Clicked += BackwardButtonClicked;
 
-        private void BackButtonClicked(object sender, EventArgs e)
-        {
-            this.ExitScreen();
+            disableButton = content.Load<Texture2D>(@"images\scene\HelpScene\b_forward_disable");
+            texture = content.Load<Texture2D>(@"images\scene\HelpScene\b_forward");
+            pressTexture = content.Load<Texture2D>(@"images\scene\HelpScene\b_forward_clicked");
+            forwardButton = new ToggleButton(texture, null, pressTexture, disableButton, new Vector2(900, 510));
+            forwardButton.Clicked += ForwardButtonClicked;
+
+            itemTexture[0] = content.Load<Texture2D>(@"images\scene\HelpScene\catus_card");
+            itemTexture[1] = content.Load<Texture2D>(@"images\scene\HelpScene\oak_card");
+            itemTexture[2] = content.Load<Texture2D>(@"images\scene\HelpScene\pine_apple_card");
+            itemTexture[3] = content.Load<Texture2D>(@"images\scene\HelpScene\pine_apple_card");
+            itemTexture[4] = content.Load<Texture2D>(@"images\scene\HelpScene\pine_apple_card");
         }
 
         public override void Update(GameTime gameTime)
         {
-            button.Update(gameTime);
+            backButton.Update(gameTime);
+            backwardButton.Update(gameTime);
+            forwardButton.Update(gameTime);
+            
+            if (startItem == 0)
+                backwardButton.Active = false;
+            else
+                backwardButton.Active = true;
+
+            if (startItem == numberOfItems - 3)
+                forwardButton.Active = false;
+            else
+                forwardButton.Active = true;
         }
 
 
@@ -52,9 +88,32 @@ private Button button;
             spriteBatch.Begin();
 
             spriteBatch.Draw(backgroundTexture, backgroundPosition, Color.White);
-                button.Draw(spriteBatch);
+            backButton.Draw(spriteBatch);
+            backwardButton.Draw(spriteBatch);
+            forwardButton.Draw(spriteBatch);
+            
+            for (int i = 0; i < 3; i++)
+                spriteBatch.Draw(itemTexture[i + startItem], new Vector2(190, 467)
+                    + i * new Vector2(230, 0), Color.White);
 
             spriteBatch.End();
+        }
+
+        private void BackwardButtonClicked(object sender, EventArgs e)
+        {
+            if (startItem > 0)
+                startItem--;
+        }
+
+        private void ForwardButtonClicked(object sender, EventArgs e)
+        {
+            if (startItem < numberOfItems - 3)
+                startItem++;
+        }
+
+        private void BackButtonClicked(object sender, EventArgs e)
+        {
+            this.ExitScreen();
         }
     }
 }

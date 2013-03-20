@@ -33,23 +33,23 @@ namespace CustomGame
 
             Texture2D texture = content.Load<Texture2D>(@"images\scene\MainMenuScene\b_play");
             Texture2D pressTexture = content.Load<Texture2D>(@"images\scene\MainMenuScene\b_play_clicked");
-            button[0] = new Button(texture, null, pressTexture, new Vector2(10, 670));
+            button[0] = new Button(texture, null, pressTexture, new Vector2(10, 680));
 
             texture = content.Load<Texture2D>(@"images\scene\MainMenuScene\b_scores");
             pressTexture = content.Load<Texture2D>(@"images\scene\MainMenuScene\b_scores_clicked");
-            button[1] = new Button(texture, null, pressTexture, new Vector2(190, 670));
+            button[1] = new Button(texture, null, pressTexture, new Vector2(190, 680));
 
             texture = content.Load<Texture2D>(@"images\scene\MainMenuScene\b_options");
             pressTexture = content.Load<Texture2D>(@"images\scene\MainMenuScene\b_options_clicked");
-            button[2] = new Button(texture, null, pressTexture, new Vector2(425, 670));
+            button[2] = new Button(texture, null, pressTexture, new Vector2(425, 680));
 
             texture = content.Load<Texture2D>(@"images\scene\MainMenuScene\b_help");
             pressTexture = content.Load<Texture2D>(@"images\scene\MainMenuScene\b_help_clicked");
-            button[3] = new Button(texture, null, pressTexture, new Vector2(660, 670));
+            button[3] = new Button(texture, null, pressTexture, new Vector2(660, 680));
 
             texture = content.Load<Texture2D>(@"images\scene\MainMenuScene\b_quit");
             pressTexture = content.Load<Texture2D>(@"images\scene\MainMenuScene\b_quit_clicked");
-            button[4] = new Button(texture, null, pressTexture, new Vector2(880, 670));
+            button[4] = new Button(texture, null, pressTexture, new Vector2(880, 680));
 
             button[0].Clicked += PlayButtonClicked;
             button[1].Clicked += ScoresButtonClicked;

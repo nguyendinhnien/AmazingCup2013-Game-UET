@@ -398,3 +398,14 @@ C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian
 C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\oakbullet.xnb
 C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\pineapplebullet.xnb
 C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\ScoreScene\score.xnb
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\b_backward.xnb
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\b_backward_clicked.xnb
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\b_backward_disable.xnb
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\b_forward.xnb
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\b_forward_clicked.xnb
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\b_forward_disable.xnb
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\catus_card.xnb
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\lock_card.xnb
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\oak_card.xnb
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\pine_apple_card.xnb
+C:\Users\Tuan Anh Nguyen\Documents\GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\unselect_card.xnb

@@ -108,6 +108,7 @@
     <Compile Include="entity\tower\PineappleTower.cs" />
     <Compile Include="entity\tower\CatusTower.cs" />
     <Compile Include="entity\tower\Tower.cs" />
+    <Compile Include="gui\ToggleButton.cs" />
     <Compile Include="gui\ToggleValueLabel.cs" />
     <Compile Include="gui\ValueLabel.cs" />
     <Compile Include="wave\Wave.cs" />

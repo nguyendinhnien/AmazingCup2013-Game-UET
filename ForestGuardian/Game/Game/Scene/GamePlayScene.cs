@@ -73,9 +73,15 @@ namespace CustomGame
             AxeMan.TEXTURE = content.Load<Texture2D>(@"images\gameplay\enemies\axeman");
             
             //Load Tower texture
-            OakTower.TEXTURE = content.Load<Texture2D>(@"images\gameplay\towers\oak_tower_level1");
-            CactusTower.TEXTURE = content.Load<Texture2D>(@"images\gameplay\towers\catus_tower_level1");
-            PineappleTower.TEXTURE = content.Load<Texture2D>(@"images\gameplay\towers\pineapple_tower_level1");
+            OakTower.TEXTURE_LV1 = content.Load<Texture2D>(@"images\gameplay\towers\oak_tower_level1");
+            CactusTower.TEXTURE_LV1 = content.Load<Texture2D>(@"images\gameplay\towers\catus_tower_level1");
+            PineappleTower.TEXTURE_LV1 = content.Load<Texture2D>(@"images\gameplay\towers\pineapple_tower_level1");
+            OakTower.TEXTURE_LV2 = content.Load<Texture2D>(@"images\gameplay\towers\oak_tower_level2");
+            CactusTower.TEXTURE_LV2 = content.Load<Texture2D>(@"images\gameplay\towers\catus_tower_level2");
+            PineappleTower.TEXTURE_LV2 = content.Load<Texture2D>(@"images\gameplay\towers\pineapple_tower_level2");
+            OakTower.TEXTURE_LV3 = content.Load<Texture2D>(@"images\gameplay\towers\oak_tower_level3");
+            CactusTower.TEXTURE_LV3 = content.Load<Texture2D>(@"images\gameplay\towers\catus_tower_level3");
+            PineappleTower.TEXTURE_LV3 = content.Load<Texture2D>(@"images\gameplay\towers\pineapple_tower_level3");
 
             //Load bullets texture
             OakTower.BULLET_TEXTURE = content.Load<Texture2D>(@"images\gameplay\bullets\oakbullet");
@@ -201,7 +207,7 @@ namespace CustomGame
         {
             Console.WriteLine("ArrowTower is selected to add");
             tower_type = TowerType.OakTower;
-            tower_texture = OakTower.TEXTURE;
+            tower_texture = OakTower.TEXTURE_LV1;
             is_tower_add = true;
         }
 
@@ -209,14 +215,14 @@ namespace CustomGame
         {
             Console.WriteLine("SlowTower is selected to add");
             tower_type = TowerType.CatusTower;
-            tower_texture = CactusTower.TEXTURE;
+            tower_texture = CactusTower.TEXTURE_LV1;
             is_tower_add = true;
         }
         private void PineappleTowerLabel_Clicked()
         {
             Console.WriteLine("SlowTower is selected to add");
             tower_type = TowerType.PineappleTower;
-            tower_texture = PineappleTower.TEXTURE;
+            tower_texture = PineappleTower.TEXTURE_LV1;
             is_tower_add = true;
         }
 

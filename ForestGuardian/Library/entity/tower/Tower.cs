@@ -16,8 +16,8 @@ namespace Library
     public class Tower : Sprite
     {
         //Cac thuoc tinh co ban cua moi tower
-        protected int range;
-        protected int damage;
+        protected int mRange;
+        protected int mDamage;
 
         protected float mFireReload;
         protected float reloadDuration;
@@ -37,7 +37,7 @@ namespace Library
         }
         public int Range
         {
-            get { return range; }
+            get { return mRange; }
         }
 
         #region Cost
@@ -59,8 +59,8 @@ namespace Library
             : base(texture, pCenter)
         {
             this.cost = cost;
-            this.range = range;
-            this.damage = damage;
+            this.mRange = range;
+            this.mDamage = damage;
             this.mFireReload = fire_reload;
 
             this.level = 1;
@@ -71,8 +71,8 @@ namespace Library
             : base(texture, pPosition,a)
         {
             this.cost = cost;
-            this.range = range;
-            this.damage = damage;
+            this.mRange = range;
+            this.mDamage = damage;
             this.mFireReload = fire_reload;
 
             this.level = 1;
@@ -81,19 +81,22 @@ namespace Library
 
         public virtual void Upgrade()
         {
-            level++;
+            if (level < 3)
+            {
+                level++;
+            }
         }
 
         public bool isInRange(Vector2 position)
         {
-            if (Vector2.Distance(mCenter, position) <= range) return true;
+            if (Vector2.Distance(mCenter, position) <= mRange) return true;
             else return false;
         }
 
         public virtual Enemy getClosestEnemy(List<Enemy> enemies)
         {
             Enemy closest_enemy = null;
-            float smallest_range = range;
+            float smallest_range = mRange;
 
             foreach (Enemy enemy in enemies)
             {

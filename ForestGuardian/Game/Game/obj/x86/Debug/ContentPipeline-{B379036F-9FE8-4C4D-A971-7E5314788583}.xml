@@ -578,24 +578,6 @@
       <Time>2013-03-19T04:29:02+07:00</Time>
     </Item>
     <Item>
-      <Source>fonts\gameplay\value_font.spritefont</Source>
-      <Name>fonts\gameplay\value_font</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\gameplay\value_font.xnb</Output>
-      <Time>2013-03-19T04:29:02+07:00</Time>
-    </Item>
-    <Item>
-      <Source>fonts\ScoreScene\score.spritefont</Source>
-      <Name>fonts\ScoreScene\score</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\ScoreScene\score.xnb</Output>
-      <Time>2013-03-19T04:29:02+07:00</Time>
-    </Item>
-    <Item>
       <Source>images\gameplay\towers\catus_tower_level2.png</Source>
       <Name>images\gameplay\towers\catus_tower_level2</Name>
       <Importer>TextureImporter</Importer>
@@ -649,6 +631,33 @@
       <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\pineapple_tower_level3.xnb</Output>
       <Time>2013-03-18T01:08:31+07:00</Time>
     </Item>
+    <Item>
+      <Source>fonts\gameplay\value_font.spritefont</Source>
+      <Name>fonts\gameplay\value_font</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\gameplay\value_font.xnb</Output>
+      <Time>2013-03-19T04:29:02+07:00</Time>
+    </Item>
+    <Item>
+      <Source>fonts\ScoreScene\score.spritefont</Source>
+      <Name>fonts\ScoreScene\score</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\ScoreScene\score.xnb</Output>
+      <Time>2013-03-19T04:29:02+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\gameplay\particle\BasicExplosion.xml</Source>
+      <Name>images\gameplay\particle\BasicExplosion</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\particle\BasicExplosion.xnb</Output>
+      <Time>2010-10-08T07:52:14+07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{B379036F-9FE8-4C4D-A971-7E5314788583}</ContentProjectGUID>
@@ -662,6 +671,14 @@
       <OutputDirectory>D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
+      <Assembly>
+        <Key>D:\WORK\_Programing\Mercury Particle Engine 3.1 for XNA 4.0 (Binaries)\Mercury Particle Engine 3.1 for XNA 4.0 (Binaries)\References\X86\ProjectMercury.dll</Key>
+        <Value>2010-10-08T07:57:20+07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>D:\WORK\_Programing\Mercury Particle Engine 3.1 for XNA 4.0 (Binaries)\Mercury Particle Engine 3.1 for XNA 4.0 (Binaries)\References\X86\ProjectMercury.ContentPipeline.dll</Key>
+        <Value>2010-10-08T07:57:20+07:00</Value>
+      </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
         <Value>2011-09-01T16:22:30+07:00</Value>

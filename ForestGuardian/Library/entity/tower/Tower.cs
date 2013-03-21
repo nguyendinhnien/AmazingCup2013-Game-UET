@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using ProjectMercury;
+using ProjectMercury.Emitters;
+using ProjectMercury.Modifiers;
+using ProjectMercury.Renderers;
 
 namespace Library
 {
@@ -21,14 +25,14 @@ namespace Library
 
         protected float mFireReload;
         protected float reloadDuration;
-        protected float timer = 0;
 
         protected int cost;
         protected int level;
 
         protected Enemy target;
-
         protected Bullet bullet;
+
+        protected ParticleEffect mEffect;
 
         public Enemy Target
         {
@@ -38,6 +42,17 @@ namespace Library
         public int Range
         {
             get { return mRange; }
+        }
+
+        public int Level
+        {
+            get { return level; }
+        }
+
+        public ParticleEffect Effect
+        {
+            get { return mEffect; }
+            set { mEffect = value; }
         }
 
         #region Cost
@@ -65,6 +80,8 @@ namespace Library
 
             this.level = 1;
             this.layer_depth = 0.5f;
+
+            mEffect = new ParticleEffect();
         }
 
         public Tower(Texture2D texture, Vector2 pPosition, Anchor a, int cost, int range, int damage, float fire_reload)
@@ -77,6 +94,8 @@ namespace Library
 
             this.level = 1;
             this.layer_depth = 0.5f;
+
+            mEffect = new ParticleEffect();
         }
 
         public virtual void Upgrade()

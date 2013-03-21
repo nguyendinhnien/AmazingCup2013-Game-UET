@@ -250,7 +250,6 @@ namespace CustomGame
             OakTowerLabel.Update(money);
             CatusTowerLabel.Update(money);
             PineappleTowerLabel.Update(money);
-            if(is_tower_select){ UpgradeLabel.Update(money);}
 
             MouseState mouseState = Mouse.GetState();
 
@@ -293,6 +292,17 @@ namespace CustomGame
 
                             UpgradeLabel.Center = tower.Center + new Vector2(tile_size, 0);
                             UpgradeLabel.Value = tower.UpgradeCost;
+
+                            UpgradeLabel.Max = false;
+                            if (tower.Level > 2)
+                            {
+                                UpgradeLabel.Deactive();
+                                UpgradeLabel.Max = true;
+                            }
+                            else
+                            {
+                                UpgradeLabel.Update(money);
+                            }
 
                             is_tower_select = true;
                         }

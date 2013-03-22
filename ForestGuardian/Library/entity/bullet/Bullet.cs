@@ -67,7 +67,7 @@ namespace Library
             {
                 mDirection = mTarget.Center - mCenter;
                 mTargetCenter = mTarget.Center;
-
+                
                 if (mDirection.Length() < 15)
                 {
                     age = -1;

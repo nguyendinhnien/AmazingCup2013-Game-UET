@@ -41,16 +41,18 @@ namespace Library
             {
                 tower = tower_pair.Value;
                 tower.Update(gameTime);
-                if (tower.Target == null || !tower.Target.Alive)
-                    tower.Target = tower.getClosestEnemy(enemies);
-                
-                if (tower.Target != null)
+                if (enemies != null)
                 {
-                    tower.Attack(tower.Target);
-                    if (tower.Target.atEnd)
-                        tower.Target = null;
-                }
+                    if (tower.Target == null || !tower.Target.Alive)
+                        tower.Target = tower.getClosestEnemy(enemies);
 
+                    if (tower.Target != null)
+                    {
+                        tower.Attack(tower.Target);
+                        if (tower.Target.atEnd)
+                            tower.Target = null;
+                    }
+                }
             }
         }
 

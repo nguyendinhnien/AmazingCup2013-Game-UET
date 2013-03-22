@@ -24,7 +24,7 @@ namespace CustomGame
         private int numberOfItems;
         private Texture2D[] itemTexture;
 
-        private int startItem;
+        private int currentItem;
 
         public HelpScene()
             : base()
@@ -32,7 +32,7 @@ namespace CustomGame
             numberOfItems = 5;
             itemTexture = new Texture2D[numberOfItems];
 
-            startItem = 0;
+            currentItem = 0;
         }
 
         public override void LoadContent()
@@ -71,12 +71,12 @@ namespace CustomGame
             backwardButton.Update(gameTime);
             forwardButton.Update(gameTime);
             
-            if (startItem == 0)
+            if (currentItem == 0)
                 backwardButton.Active = false;
             else
                 backwardButton.Active = true;
 
-            if (startItem == numberOfItems - 3)
+            if (currentItem == numberOfItems - 3)
                 forwardButton.Active = false;
             else
                 forwardButton.Active = true;
@@ -91,24 +91,25 @@ namespace CustomGame
             backButton.Draw(spriteBatch);
             backwardButton.Draw(spriteBatch);
             forwardButton.Draw(spriteBatch);
-            
-            for (int i = 0; i < 3; i++)
-                spriteBatch.Draw(itemTexture[i + startItem], new Vector2(190, 467)
-                    + i * new Vector2(230, 0), Color.White);
 
+            for (int i = 0; i < 3; i++)
+            {
+                spriteBatch.Draw(itemTexture[currentItem + i], new Vector2(190, 467)
+                    + i * new Vector2(230, 0), Color.White);
+            }
             spriteBatch.End();
         }
 
         private void BackwardButtonClicked(object sender, EventArgs e)
         {
-            if (startItem > 0)
-                startItem--;
+            if (currentItem > 0)
+                currentItem--;
         }
 
         private void ForwardButtonClicked(object sender, EventArgs e)
         {
-            if (startItem < numberOfItems - 3)
-                startItem++;
+            if (currentItem < numberOfItems - 3)
+                currentItem++;
         }
 
         private void BackButtonClicked(object sender, EventArgs e)

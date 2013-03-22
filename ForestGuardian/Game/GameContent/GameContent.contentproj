@@ -77,13 +77,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="images\gameplay\enemies\axeman.png">
-      <Name>axeman</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="images\gameplay\towers\oak_tower_level1.png">
       <Name>oak_tower_level1</Name>
       <Importer>TextureImporter</Importer>
@@ -451,7 +444,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="fonts\ScoreScene\score.spritefont">
       <Name>score</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -511,7 +503,9 @@
     </Compile>
     <Compile Include="images\scene\HelpScene\unselect_card.png">
       <Name>unselect_card</Name>
-=======
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
     <Compile Include="images\gameplay\towers\cactus_tower_level1.png">
       <Name>cactus_tower_level1</Name>
       <Importer>TextureImporter</Importer>
@@ -528,7 +522,66 @@
   <ItemGroup>
     <Compile Include="images\gameplay\buttons\cactus_tower_enable_but.png">
       <Name>cactus_tower_enable_but</Name>
->>>>>>> 333c7dac9538105c2a7e31802993738116a69d27
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\gameplay\disable_range.png">
+      <Name>disable_range</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\gameplay\enable_range.png">
+      <Name>enable_range</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\highscore\highscore.xml">
+      <Name>highscore</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\gameplay\enemies\axeman_walk.png">
+      <Name>axeman_walk</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="data\maps\map2.xml">
+      <Name>map2</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="data\maps\map3.xml">
+      <Name>map3</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\maps\map2.png">
+      <Name>map2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\maps\map3.png">
+      <Name>map3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\gameplay\enemies\sawman_walk.png">
+      <Name>sawman_walk</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

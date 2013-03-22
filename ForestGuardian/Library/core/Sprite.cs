@@ -32,20 +32,26 @@ namespace Library
         public Vector2 Center
         {
             get { return mCenter; }
-            set { mPosition = value; }
+            set { mCenter = value; }
         }
 
+        public float LayerDepth
+        {
+            get { return layer_depth; }
+            set { layer_depth = value; }
+        }
+
+        public Sprite() { }
+        public Sprite(Vector2 center)
+        {
+            mCenter = center;
+        }
         public Sprite(Texture2D texture)
         {
             this.mTexture = texture;
         }
-
         public Sprite(Texture2D texture, Vector2 center)
-        {
-            this.mTexture = texture;
-            this.mCenter = center;
-        }
-
+            :this(texture,center,Anchor.CENTER){}
         public Sprite(Texture2D texture, Vector2 position, Anchor anchor)
         {
             this.mTexture = texture;
@@ -72,6 +78,7 @@ namespace Library
                     break;
             }
         }
+
         public Rectangle BoundingBox()
         {
             return mTexture.Bounds;

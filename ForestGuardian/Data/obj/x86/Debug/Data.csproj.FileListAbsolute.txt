@@ -1,18 +1,6 @@
-C:\Users\KIEN\Documents\Visual Studio 2010\Projects\ForestGuardian\Data\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\KIEN\Documents\Visual Studio 2010\Projects\ForestGuardian\Data\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\KIEN\Documents\Visual Studio 2010\Projects\ForestGuardian\Data\bin\x86\Debug\Data.dll
-C:\Users\KIEN\Documents\Visual Studio 2010\Projects\ForestGuardian\Data\bin\x86\Debug\Data.pdb
-C:\Users\KIEN\Documents\Visual Studio 2010\Projects\ForestGuardian\Data\obj\x86\Debug\Data.dll
-C:\Users\KIEN\Documents\Visual Studio 2010\Projects\ForestGuardian\Data\obj\x86\Debug\Data.pdb
-D:\Download\chuan\ForestGuardian\Data\bin\x86\Debug\Data.dll
-D:\Download\chuan\ForestGuardian\Data\bin\x86\Debug\Data.pdb
-D:\Download\chuan\ForestGuardian\Data\obj\x86\Debug\Data.csprojResolveAssemblyReference.cache
-D:\Download\chuan\ForestGuardian\Data\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-D:\Download\chuan\ForestGuardian\Data\obj\x86\Debug\Data.dll
-D:\Download\chuan\ForestGuardian\Data\obj\x86\Debug\Data.pdb
-C:\Users\KIEN\Documents\Visual Studio 2010\Projects\GITHUB\ForestGuardian\Data\bin\x86\Debug\Data.dll
-C:\Users\KIEN\Documents\Visual Studio 2010\Projects\GITHUB\ForestGuardian\Data\bin\x86\Debug\Data.pdb
-C:\Users\KIEN\Documents\Visual Studio 2010\Projects\GITHUB\ForestGuardian\Data\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\KIEN\Documents\Visual Studio 2010\Projects\GITHUB\ForestGuardian\Data\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\KIEN\Documents\Visual Studio 2010\Projects\GITHUB\ForestGuardian\Data\obj\x86\Debug\Data.dll
-C:\Users\KIEN\Documents\Visual Studio 2010\Projects\GITHUB\ForestGuardian\Data\obj\x86\Debug\Data.pdb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Data\bin\x86\Debug\Data.dll
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Data\bin\x86\Debug\Data.pdb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Data\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Data\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Data\obj\x86\Debug\Data.dll
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Data\obj\x86\Debug\Data.pdb

@@ -15,6 +15,8 @@ namespace Library
         private Queue<Wave> waves;
 
         private bool finish=false;
+        private float maxWaveDelay = 2.0f;
+        private float timer = 0.0f;
 
         public Wave CurrentWave
         {
@@ -44,13 +46,32 @@ namespace Library
             if (waves.Count > 0)
             {
                 Wave current_wave = waves.Peek();
-                current_wave.Update(gameTime);
-                if (current_wave.Finish)
+                switch (current_wave.State)
                 {
-                    waves.Dequeue();
-                    if (current_wave_number < total_wave_number) { current_wave_number++; }
-                    else { finish = true; } 
+                    case WaveState.Start:
+                        timer += (float)gameTime.ElapsedGameTime.TotalSeconds;
+                        if (timer >= maxWaveDelay)
+                        {
+                            timer = 0.0f; current_wave.State = WaveState.Active;
+                        }
+                        break;
+                    case WaveState.Active:
+                        current_wave.Update(gameTime);
+                        break;
+                    case WaveState.InActive:
+                        current_wave.Update(gameTime);
+                        current_wave.State = WaveState.Finish;
+                        break;
+                    case WaveState.Finish:
+                        waves.Dequeue();
+                        if (current_wave_number < total_wave_number) { current_wave_number++; }
+                        else { finish = true; }
+                        break;
                 }
+            }
+            else
+            {
+                finish = true;
             }
         }
 

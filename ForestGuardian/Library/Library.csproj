@@ -92,6 +92,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="core\AnimatedSprite.cs" />
+    <Compile Include="core\Animation.cs" />
     <Compile Include="core\Camera2D.cs" />
     <Compile Include="core\Cursor.cs" />
     <Compile Include="core\BackgroundLayer.cs" />
@@ -109,6 +111,7 @@
     <Compile Include="entity\tower\CactusTower.cs" />
     <Compile Include="entity\tower\Tower.cs" />
     <Compile Include="gui\ToggleButton.cs" />
+    <Compile Include="gui\ToggleLabel.cs" />
     <Compile Include="gui\ToggleValueLabel.cs" />
     <Compile Include="gui\ValueLabel.cs" />
     <Compile Include="wave\Wave.cs" />

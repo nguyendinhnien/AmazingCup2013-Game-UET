@@ -41,7 +41,6 @@ namespace Library
             set { 
                 position = value;
                 value_position = position + value_offset;
-                bounds = new Rectangle((int)position.X, (int)position.Y, (int)(texture.Width), (int)(texture.Height)); 
             }
         }
 
@@ -52,7 +51,7 @@ namespace Library
             {
                 position.X = value.X - texture.Bounds.Width / 2; position.Y = value.Y - texture.Bounds.Height / 2;
                 value_position = position + value_offset;
-                bounds = new Rectangle((int)position.X, (int)position.Y, (int)(texture.Width), (int)(texture.Height));
+                //bounds = new Rectangle((int)position.X, (int)position.Y, (int)(texture.Width), (int)(texture.Height));
             }
         }
 

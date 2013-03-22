@@ -121,7 +121,6 @@ namespace Library
             //Cap nhat mouse state
             previousState = mouseState;
 
-<<<<<<< HEAD
             //Cap nhat texture
             if (state == ButtonStatus.Pressing && pressTexture != null)
                 texture = pressTexture;

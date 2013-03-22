@@ -9,16 +9,20 @@ namespace Library
 {
     public class AxeMan : Enemy
     {
-        public static Texture2D TEXTURE;
-        public static float MOVE_SPEED = 2.0f;
+        public static Animation WALK_ANIMATION;
+        public static float MOVE_SPEED = 10.0f;
         public static float MAX_HEALTH = 120.0f;
         public static int VALUE = 1;
 
         public AxeMan(Vector2 center)
-            : base(TEXTURE, center, MAX_HEALTH, VALUE, MOVE_SPEED){}
+            : base(center, MAX_HEALTH, VALUE, MOVE_SPEED){}
 
-        public AxeMan(Vector2 position, Anchor a)
-            : base(TEXTURE, position, a, MAX_HEALTH, VALUE, MOVE_SPEED) { }
+        public AxeMan(Animation animation, Vector2 position, Anchor a)
+            : base(animation, position, a, MAX_HEALTH, VALUE, MOVE_SPEED) { }
 
+        public override void setWalkAnimation()
+        {
+            animation = WALK_ANIMATION;
+        }
     }
 }

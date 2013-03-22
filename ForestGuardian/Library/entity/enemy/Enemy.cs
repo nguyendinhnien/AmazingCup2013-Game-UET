@@ -13,7 +13,7 @@ namespace Library
         public const string AXE_MAN = "AxeMan";
         public const string SAW_MAN = "SawMan";
     }
-    public class Enemy : Sprite
+    public class Enemy : AnimatedSprite
     {
         public static Texture2D HEALTH_BAR_TEXTURE;
 
@@ -79,8 +79,10 @@ namespace Library
             set { mSlowDuration = value; }
         }
 
-        public Enemy(Texture2D texture, Vector2 center, float maxHealth, int value, float move_speed)
-            : base(texture, center)
+        public virtual void setWalkAnimation() { }
+        
+        public Enemy(Vector2 center, float maxHealth, int value, float move_speed)
+            : base(center)
         {
             this.maxHealth = maxHealth;
             this.health = maxHealth;
@@ -93,8 +95,8 @@ namespace Library
             this.layer_depth = 0.6f;
         }
 
-        public Enemy(Texture2D texture, Vector2 position, Anchor a, float maxHealth, int value, float move_speed)
-            : base(texture, position,a)
+        public Enemy(Animation animation, Vector2 position, Anchor a, float maxHealth, int value, float move_speed)
+            : base(animation, position, a)
         {
             this.maxHealth = maxHealth;
             this.health = maxHealth;
@@ -141,10 +143,6 @@ namespace Library
             if (mSpeedReduce != 0 && mSlowDuration >= 0)
             {
                 tmpSpeed *= 1 - mSpeedReduce;
-                //Console.Write("Time: ");
-                //Console.WriteLine((float)gameTime.ElapsedGameTime.TotalSeconds);
-                //Console.Write("Duration: ");
-                //Console.WriteLine(mSlowDuration);
                 mSlowDuration -= (float)gameTime.ElapsedGameTime.TotalSeconds;
             }
 
@@ -160,31 +158,28 @@ namespace Library
             }
         }
 
-        //public void checkHit(Bullet b)
-        //{
-        //    if (Vector2.Distance(mCenter, b.Center) < hit_radius)
-        //    {
-        //        this.lostHealth(b.Damage);
-        //    }
-        //}
-
         public override void Update(GameTime gameTime)
         {
             //Neu chua di het duong
-            if (waypoints.Count > 0)
+            if (health > 0)
             {
-                //Neu da toi mot vi tri waypoint
-                if (atDestination) { waypoints.Dequeue(); }
-                else { Move(gameTime); }
+                setWalkAnimation();
+                if (waypoints.Count > 0)
+                {
+                    //Neu da toi mot vi tri waypoint
+                    if (atDestination) { waypoints.Dequeue(); }
+                    else {
+                        Move(gameTime); 
+                    }
+                }
+                else
+                {
+                    at_end = true;
+                    alive = false;
+                }
             }
-            else{
-                at_end = true;
-                alive = false;
-            }
-
-            if (health <= 0) {
-                alive = false;
-            }
+            else { alive = false; }
+            
             base.Update(gameTime);
         }
 
@@ -193,17 +188,18 @@ namespace Library
             if (alive)
             {
                 //Ve health bar
+                int healthWidth = HEALTH_BAR_TEXTURE.Bounds.Width;
                 int healthHeight = HEALTH_BAR_TEXTURE.Bounds.Height;
 
-                spriteBatch.Draw(HEALTH_BAR_TEXTURE,new Vector2(mPosition.X,mPosition.Y - healthHeight), Color.Red);
+                spriteBatch.Draw(HEALTH_BAR_TEXTURE, new Rectangle((int)mPosition.X, (int)mPosition.Y - healthHeight, healthWidth, healthHeight), null, Color.Red, 0.0f, Vector2.Zero, SpriteEffects.None, layer_depth);
 
                 float healthPercentage = health/maxHealth;
                 float current_healthWidth = (float)HEALTH_BAR_TEXTURE.Bounds.Width * healthPercentage;
 
                 spriteBatch.Draw(HEALTH_BAR_TEXTURE,
                                 new Rectangle((int)mPosition.X, (int)mPosition.Y - healthHeight, (int)current_healthWidth, healthHeight),
-                                Color.GreenYellow
-                );
+                                null,Color.GreenYellow,0.0f,Vector2.Zero,SpriteEffects.None,layer_depth - 0.01f);
+
             }
             base.Draw(spriteBatch);
         }

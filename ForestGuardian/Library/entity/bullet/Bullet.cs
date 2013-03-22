@@ -35,7 +35,7 @@ namespace Library
         }
 
         public Bullet(Texture2D texture, Vector2 center, float speed, int pDamage)
-            : base(texture, center)
+            : base(texture, center, Anchor.CENTER)
         {
             this.speed = speed;
             mDamage = pDamage;
@@ -43,7 +43,7 @@ namespace Library
         }
 
         public Bullet(Texture2D texture, Vector2 center, float speed, Vector2 target_center)
-            : base(texture, center)
+            : base(texture, center, Anchor.CENTER)
         {
             this.speed = speed;
             this.target_center = target_center;

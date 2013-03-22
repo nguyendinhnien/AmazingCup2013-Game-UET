@@ -36,11 +36,13 @@ namespace CustomGame
         //private HudLayer hud_layer;
         //private TowerHandleLayer tower_handle_layer;
         private bool is_tower_add = false;
-        private TowerType tower_type = TowerType.NONE;
-        private Texture2D tower_texture;
-        
+        private TowerType tower_type;
+        //private Texture2D tower_texture;     
+
         private bool is_tower_select = false;
         private int tower_keypos = -1;
+        private ToggleLabel RangeLabel;
+        private Label CursorLabel;
 
         private WaveManager wave_manager;
         private TowerManager tower_manager;
@@ -68,47 +70,58 @@ namespace CustomGame
 
         public void LoadGameContent()
         {
-            ContentManager content = SceneManager.Game.Content;
+            ContentManager Content = SceneManager.Game.Content;
+            Texture2D texture;
             //Load Enemy texture
-            Enemy.HEALTH_BAR_TEXTURE = content.Load<Texture2D>(@"images\gameplay\health_bar");
-            AxeMan.TEXTURE = content.Load<Texture2D>(@"images\gameplay\enemies\axeman");
-            
+            Enemy.HEALTH_BAR_TEXTURE = Content.Load<Texture2D>(@"images\gameplay\health_bar");
+            texture = Content.Load<Texture2D>(@"images\gameplay\enemies\axeman_walk");
+            AxeMan.WALK_ANIMATION = new Animation(texture, 6, 1, 0.2f, true);
+
+            texture = Content.Load<Texture2D>(@"images\gameplay\enemies\sawman_walk");
+            SawMan.WALK_ANIMATION = new Animation(texture, 6, 1, 0.2f, true);
+
+
             //Load Tower texture
-            OakTower.TEXTURE = content.Load<Texture2D>(@"images\gameplay\towers\oak_tower_level1");
-            CactusTower.TEXTURE = content.Load<Texture2D>(@"images\gameplay\towers\cactus_tower_level1");
-            PineappleTower.TEXTURE = content.Load<Texture2D>(@"images\gameplay\towers\pineapple_tower_level1");
+            OakTower.TEXTURE = Content.Load<Texture2D>(@"images\gameplay\towers\oak_tower_level1");
+            CactusTower.TEXTURE = Content.Load<Texture2D>(@"images\gameplay\towers\cactus_tower_level1");
+            PineappleTower.TEXTURE = Content.Load<Texture2D>(@"images\gameplay\towers\pineapple_tower_level1");
 
             //Load bullets texture
             //Load bullets texture
-            OakTower.BULLET_TEXTURE = content.Load<Texture2D>(@"images\gameplay\bullets\oakbullet");
-            CactusTower.BULLET_TEXTURE = content.Load<Texture2D>(@"images\gameplay\bullets\cactusbullet");
-            PineappleTower.BULLET_TEXTURE = content.Load<Texture2D>(@"images\gameplay\bullets\pineapplebullet");
+            OakTower.BULLET_TEXTURE = Content.Load<Texture2D>(@"images\gameplay\bullets\oakbullet");
+            CactusTower.BULLET_TEXTURE = Content.Load<Texture2D>(@"images\gameplay\bullets\cactusbullet");
+            PineappleTower.BULLET_TEXTURE = Content.Load<Texture2D>(@"images\gameplay\bullets\pineapplebullet");
 
             //Load cac label
-            Texture2D texture;
             Texture2D textureEnable, textureDisable;
 
-            ValueLabel.FONT = content.Load<SpriteFont>(@"fonts\gameplay\value_font");
-            textureEnable = content.Load<Texture2D>(@"images\gameplay\buttons\oak_tower_enable_but");
-            textureDisable = content.Load<Texture2D>(@"images\gameplay\buttons\oak_tower_disable_but");
+            ValueLabel.FONT = Content.Load<SpriteFont>(@"fonts\gameplay\value_font");
+            textureEnable = Content.Load<Texture2D>(@"images\gameplay\buttons\oak_tower_enable_but");
+            textureDisable = Content.Load<Texture2D>(@"images\gameplay\buttons\oak_tower_disable_but");
             OakTowerLabel = new ToggleValueLabel(textureEnable, textureDisable, new Vector2(600, 640), new Vector2(32,72),OakTower.COST);
 
-            textureEnable = content.Load<Texture2D>(@"images\gameplay\buttons\cactus_tower_enable_but");
-            textureDisable = content.Load<Texture2D>(@"images\gameplay\buttons\cactus_tower_disable_but");
+            textureEnable = Content.Load<Texture2D>(@"images\gameplay\buttons\cactus_tower_enable_but");
+            textureDisable = Content.Load<Texture2D>(@"images\gameplay\buttons\cactus_tower_disable_but");
             CatusTowerLabel = new ToggleValueLabel(textureEnable, textureDisable, new Vector2(700, 640), new Vector2(32, 72), CactusTower.COST);
 
-            textureEnable = content.Load<Texture2D>(@"images\gameplay\buttons\pineapple_tower_enable_but");
-            textureDisable = content.Load<Texture2D>(@"images\gameplay\buttons\pineapple_tower_disable_but");
+            textureEnable = Content.Load<Texture2D>(@"images\gameplay\buttons\pineapple_tower_enable_but");
+            textureDisable = Content.Load<Texture2D>(@"images\gameplay\buttons\pineapple_tower_disable_but");
             PineappleTowerLabel = new ToggleValueLabel(textureEnable, textureDisable, new Vector2(800, 640), new Vector2(32, 72), PineappleTower.COST);
 
-            textureEnable = content.Load<Texture2D>(@"images\gameplay\buttons\upgrade_enable_but");
-            textureDisable = content.Load<Texture2D>(@"images\gameplay\buttons\upgrade_disable_but");
-
+            textureEnable = Content.Load<Texture2D>(@"images\gameplay\buttons\upgrade_enable_but");
+            textureDisable = Content.Load<Texture2D>(@"images\gameplay\buttons\upgrade_disable_but");
             UpgradeLabel = new ToggleValueLabel(textureEnable, textureDisable, Vector2.Zero, new Vector2(12, 41));
 
-            texture = content.Load<Texture2D>(@"images\gameplay\buttons\sell_but");
+            texture = Content.Load<Texture2D>(@"images\gameplay\buttons\sell_but");
             SellLabel = new ValueLabel(texture, Vector2.Zero, new Vector2(12, 41));
-            
+
+            textureEnable = Content.Load<Texture2D>(@"images\gameplay\enable_range");
+            textureDisable = Content.Load<Texture2D>(@"images\gameplay\disable_range");
+            RangeLabel = new ToggleLabel(textureEnable, textureDisable, Vector2.Zero);
+
+            CursorLabel = new Label();
+            CursorLabel.LayerDepth = 0.3f;
+
             LoadMap(@"data\maps\map1");
             
             //Load du lieu cho camera
@@ -206,7 +219,7 @@ namespace CustomGame
         {
             Console.WriteLine("ArrowTower is selected to add");
             tower_type = TowerType.OakTower;
-            tower_texture = OakTower.TEXTURE;
+            CursorLabel.Texture = OakTower.TEXTURE;
             is_tower_add = true;
         }
 
@@ -214,14 +227,14 @@ namespace CustomGame
         {
             Console.WriteLine("SlowTower is selected to add");
             tower_type = TowerType.CactusTower;
-            tower_texture = CactusTower.TEXTURE;
+            CursorLabel.Texture = CactusTower.TEXTURE;
             is_tower_add = true;
         }
         private void PineappleTowerLabel_Clicked()
         {
             Console.WriteLine("SlowTower is selected to add");
             tower_type = TowerType.PineappleTower;
-            tower_texture = PineappleTower.TEXTURE;
+            CursorLabel.Texture = PineappleTower.TEXTURE;
             is_tower_add = true;
         }
 
@@ -258,7 +271,7 @@ namespace CustomGame
             if (mouseState.RightButton == ButtonState.Released && previousState.RightButton == ButtonState.Pressed)
             {
                 Console.WriteLine("Right mouse clicked");
-                is_tower_add = false; tower_type = TowerType.NONE;
+                is_tower_add = false;
                 is_tower_select = false; tower_keypos = -1;
             }
             //Neu la trang thai click chuot trai
@@ -288,11 +301,16 @@ namespace CustomGame
                             tower_keypos = tile_y * width + tile_x;
 
                             Tower tower = tower_manager.GetTower(tower_keypos);
+                            //Dat sell label
                             SellLabel.Center = tower.Center - new Vector2(tile_size, 0);
                             SellLabel.Value = tower.SellCost;
-
+                            //Dat upgrade label
                             UpgradeLabel.Center = tower.Center + new Vector2(tile_size, 0);
                             UpgradeLabel.Value = tower.UpgradeCost;
+                            //Dat range label
+                            RangeLabel.Center = tower.Center;
+                            RangeLabel.Active = true;
+                            RangeLabel.LayerDepth = tower.LayerDepth + 0.01f;
 
                             is_tower_select = true;
                         }
@@ -351,7 +369,7 @@ namespace CustomGame
                                 break;
                         }
                     }
-                    is_tower_add = false; tower_type = TowerType.NONE;
+                    is_tower_add = false;
 
                     goto exit;
                 }
@@ -367,23 +385,43 @@ namespace CustomGame
                 tile_x = (int)(mouseRealPosition.X / tile_size);
                 tile_y = (int)(mouseRealPosition.Y / tile_size);
 
+                RangeLabel.Center = mouseRealPosition;
+                RangeLabel.LayerDepth = CursorLabel.LayerDepth + 0.01f;
+                CursorLabel.Center = mouseRealPosition;
                 if (IsBlank(tile_x, tile_y)){
-                    Cursor.getInstance().SetCursor(tower_texture, mouseRealPosition, Color.Yellow);
+                    //Cursor.getInstance().SetCursor(tower_texture, mouseRealPosition, Color.Yellow);
+                    CursorLabel.Color = Color.Yellow;
+                    RangeLabel.Active = true;
                 }
                 else{
-                    Cursor.getInstance().SetCursor(tower_texture, mouseRealPosition, Color.Red);
+                    //Cursor.getInstance().SetCursor(tower_texture, mouseRealPosition, Color.Red);
+                    CursorLabel.Color = Color.Red;
+                    RangeLabel.Active = false;
                 }
             }
             
             previousState = mouseState;
-            
-            
+                       
             wave_manager.Update(gameTime);
+
             if (!wave_manager.Finish)
             {
-                tower_manager.Update(gameTime, wave_manager.CurrentWave.ActiveEnemies);
+                points += wave_manager.CurrentWave.DeathPoint;
+                lives -= wave_manager.CurrentWave.ReachedEndNumber;
+                lives = Math.Max(lives, 0);
+                if (lives <= 0){
+                    tower_manager.Update(gameTime, null);
+                    Console.WriteLine("You loose");
+                }
+                else{
+                    tower_manager.Update(gameTime, wave_manager.CurrentWave.ActiveEnemies);
+                }
             }
-            
+            else
+            {
+                tower_manager.Update(gameTime, null);
+                Console.WriteLine("You win");
+            }
         }
 
         public override void Draw(SpriteBatch spriteBatch)
@@ -395,11 +433,13 @@ namespace CustomGame
                 wave_manager.Draw(spriteBatch);
                 tower_manager.Draw(spriteBatch);                
                 if (is_tower_select){
+                    RangeLabel.Draw(spriteBatch);
                     UpgradeLabel.Draw(spriteBatch);
                     SellLabel.Draw(spriteBatch);
                 }
                 if (is_tower_add){
-                    Cursor.getInstance().Draw(spriteBatch);
+                    CursorLabel.Draw(spriteBatch);
+                    RangeLabel.Draw(spriteBatch);
                 }            
             spriteBatch.End();
 

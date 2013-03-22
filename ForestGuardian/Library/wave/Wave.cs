@@ -7,6 +7,13 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Library
 {
+    public enum WaveState
+    {
+        Start,
+        Active,
+        InActive,
+        Finish
+    }
     public class Wave
     {
         //Thoi gian giua cac dot enemy
@@ -21,12 +28,13 @@ namespace Library
         private int total_number;
         //So luong enemy toi duoc dich
         private int reached_end_number=0;
+        private int death_point = 0;
         //So luong enemy duoc sinh ra
         private int spawned_number=0;
 
         private Queue<Vector2> waypoints;
 
-        private bool finish=false;
+        private WaveState state = WaveState.Start;
 
 
         public Wave(string enemy_type ,int total_number, float spawn_rate, Queue<Vector2> waypoints)
@@ -39,9 +47,10 @@ namespace Library
             this.active_enemies = new List<Enemy>();
         }
 
-        public bool Finish
+        public WaveState State
         {
-            get { return finish; }
+            get { return state; }
+            set { state = value; }
         }
 
         public int ReachedEndNumber
@@ -59,7 +68,11 @@ namespace Library
         {
             get { return active_enemies; }
         }
-        
+
+        public int DeathPoint
+        {
+            get { return death_point; }
+        }
         public Enemy getNewEnemy()
         {
             Enemy enemy;
@@ -70,6 +83,10 @@ namespace Library
                     enemy = new AxeMan(waypoints.Peek());
                     enemy.setWaypoints(new Queue<Vector2>(waypoints));
                     break;
+                case EnemyType.SAW_MAN:
+                    enemy = new SawMan(waypoints.Peek());
+                    enemy.setWaypoints(new Queue<Vector2>(waypoints));
+                    break;
                 default:
                     enemy = null; break;
             }
@@ -78,7 +95,14 @@ namespace Library
         }
 
         public void Update(GameTime gameTime){
+            reached_end_number = 0;
+            death_point = 0;
             //Xem da bat dau them enemy moi vao chua (phai con de dua vao)
+            if (spawned_number >= total_number && active_enemies.Count == 0)
+            {
+                state = WaveState.InActive; return;
+            }
+            //Spawn  new enemy
             if (spawned_number < total_number)
             {
                 if (timer >= spawn_rate)
@@ -102,6 +126,7 @@ namespace Library
                 else
                 {
                     if (enemy.atEnd) { reached_end_number++; }
+                    else { death_point += enemy.Value; }
                     lock (active_enemies)
                     {
                         active_enemies.RemoveAt(i);
@@ -109,10 +134,6 @@ namespace Library
                 }
             }
             //Neu tat ca dau da di het
-            if (spawned_number >= total_number && active_enemies.Count == 0)
-            {
-                finish = true;
-            }
         }
 
         public void Draw(SpriteBatch spriteBatch)

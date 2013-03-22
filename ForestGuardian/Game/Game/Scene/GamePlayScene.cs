@@ -21,11 +21,12 @@ namespace CustomGame
     
     public class GamePlayScene : GameScene
     {
+        private float LAYER_DEPTH_CHANGE = 0.005f; 
         private BackgroundLayer background_layer;
 
+        //Phan map va kich thuoc map
         private int width, height;
-        private int tile_size;
-        
+        private int tile_size;      
         private byte[] tower_map;
         
         //Phan game play
@@ -33,16 +34,15 @@ namespace CustomGame
         private int money=1000;
         private int points = 888888;
 
-        //private HudLayer hud_layer;
-        //private TowerHandleLayer tower_handle_layer;
         private bool is_tower_add = false;
         private TowerType tower_type;
-        //private Texture2D tower_texture;     
+        private Label CursorLabel;   
 
         private bool is_tower_select = false;
         private int tower_keypos = -1;
+        private float tower_layer_depth;
         private ToggleLabel RangeLabel;
-        private Label CursorLabel;
+
 
         private WaveManager wave_manager;
         private TowerManager tower_manager;
@@ -62,6 +62,8 @@ namespace CustomGame
         public int Lives { get { return lives; } }
         public int Money { get { return money; } }
         public int Points { get { return points; } }
+        public int CurrentWaveNumber { get { return wave_manager.CurrentWaveNumber; } }
+        public int TotalWaveNumber { get { return wave_manager.TotalWaveNumber; } }
 
         public override void LoadContent()
         {
@@ -123,6 +125,7 @@ namespace CustomGame
             textureEnable = Content.Load<Texture2D>(@"images\gameplay\enable_range");
             textureDisable = Content.Load<Texture2D>(@"images\gameplay\disable_range");
             RangeLabel = new ToggleLabel(textureEnable, textureDisable, Vector2.Zero);
+            RangeLabel.LayerDepth = 0.31f;
 
             CursorLabel = new Label();
             CursorLabel.LayerDepth = 0.3f;
@@ -268,6 +271,10 @@ namespace CustomGame
             OakTowerLabel.Update(money);
             CatusTowerLabel.Update(money);
             PineappleTowerLabel.Update(money);
+            if (is_tower_select)
+            {
+                UpgradeLabel.Update(money);
+            }
 
             MouseState mouseState = Mouse.GetState();
 
@@ -276,7 +283,13 @@ namespace CustomGame
             {
                 Console.WriteLine("Right mouse clicked");
                 is_tower_add = false;
-                is_tower_select = false; tower_keypos = -1;
+                is_tower_select = false;
+                if (tower_keypos != -1)
+                {
+                    Tower tower = tower_manager.GetTower(tower_keypos);
+                    tower.LayerDepth = tower_layer_depth;
+                    tower_keypos = -1;
+                }
             }
             //Neu la trang thai click chuot trai
             else if (mouseState.LeftButton == ButtonState.Released && previousState.LeftButton == ButtonState.Pressed)
@@ -311,21 +324,15 @@ namespace CustomGame
                             //Dat upgrade label
                             UpgradeLabel.Center = tower.Center + new Vector2(tile_size, 0);
                             UpgradeLabel.Value = tower.UpgradeCost;
+                            Console.WriteLine(tower.Level);
+                            if (tower.Level == 3) { UpgradeLabel.Max = true; }
+                            Console.WriteLine(UpgradeLabel.Max);
                             //Dat range label
                             RangeLabel.Center = tower.Center;
                             RangeLabel.Active = true;
-                            RangeLabel.LayerDepth = tower.LayerDepth + 0.01f;
 
-                            UpgradeLabel.Max = false;
-                            if (tower.Level > 2)
-                            {
-                                UpgradeLabel.Deactive();
-                                UpgradeLabel.Max = true;
-                            }
-                            else
-                            {
-                                UpgradeLabel.Update(money);
-                            }
+                            tower_layer_depth = tower.LayerDepth;
+                            tower.LayerDepth = RangeLabel.LayerDepth - 0.01f;
 
                             is_tower_select = true;
                         }
@@ -339,10 +346,19 @@ namespace CustomGame
                     Matrix inverseTransform = Matrix.Invert(Camera2D.Transform);
                     Vector2 mouseRealPosition = Vector2.Transform(new Vector2(mouseState.X, mouseState.Y), inverseTransform);
 
+                    if (tower_keypos != -1){
+                        Tower tower = tower_manager.GetTower(tower_keypos);
+                        tower.LayerDepth = tower_layer_depth;
+                    }
+
                     if (UpgradeLabel.InBound(mouseRealPosition) && UpgradeLabel.Active) { UpgradeLabel_Clicked(); }
                     if (SellLabel.InBound(mouseRealPosition)) { SellLabel_Clicked(); }
                     //Neu click ra ngoai
-                    if (is_tower_select) { is_tower_select = false; tower_keypos = -1; }
+                    if (is_tower_select) { 
+                        is_tower_select = false;
+                        tower_keypos = -1;
+                    }
+                    
                     goto exit;
                 }
                 //Neu dang dinh add tower
@@ -365,6 +381,7 @@ namespace CustomGame
                             case TowerType.OakTower:
                                 Console.WriteLine("Oak Tower is added");
                                 tower = new OakTower(GetBottomLeftFromCell(tile_x, tile_y),Anchor.BOTTOMLEFT);
+                                tower.LayerDepth += (width - tile_x) * LAYER_DEPTH_CHANGE + (height - tile_y) * LAYER_DEPTH_CHANGE; 
                                 tower_manager.AddTower(key_pos, tower); money -= OakTower.COST;
                                 tower_map[key_pos] = CellType.TOWER;
                                 break;
@@ -372,6 +389,7 @@ namespace CustomGame
                             case TowerType.CactusTower:
                                 Console.WriteLine("Catus Tower is added");
                                 tower = new CactusTower(GetBottomLeftFromCell(tile_x, tile_y), Anchor.BOTTOMLEFT);
+                                tower.LayerDepth += (width - tile_x) * LAYER_DEPTH_CHANGE + (height - tile_y) * LAYER_DEPTH_CHANGE; 
                                 tower_manager.AddTower(key_pos, tower); money -= CactusTower.COST;
                                 tower_map[key_pos] = CellType.TOWER;
                                 break;
@@ -379,6 +397,7 @@ namespace CustomGame
                             case TowerType.PineappleTower:
                                 Console.WriteLine("Pineapple Tower is added");
                                 tower = new PineappleTower(GetBottomLeftFromCell(tile_x, tile_y), Anchor.BOTTOMLEFT);
+                                tower.LayerDepth += (width - tile_x) * LAYER_DEPTH_CHANGE + (height - tile_y) * LAYER_DEPTH_CHANGE; 
                                 tower_manager.AddTower(key_pos, tower); money -= PineappleTower.COST;
                                 tower_map[key_pos] = CellType.TOWER;
                                 break;
@@ -401,7 +420,6 @@ namespace CustomGame
                 tile_y = (int)(mouseRealPosition.Y / tile_size);
 
                 RangeLabel.Center = mouseRealPosition;
-                RangeLabel.LayerDepth = CursorLabel.LayerDepth + 0.01f;
                 CursorLabel.Center = mouseRealPosition;
                 if (IsBlank(tile_x, tile_y)){
                     //Cursor.getInstance().SetCursor(tower_texture, mouseRealPosition, Color.Yellow);

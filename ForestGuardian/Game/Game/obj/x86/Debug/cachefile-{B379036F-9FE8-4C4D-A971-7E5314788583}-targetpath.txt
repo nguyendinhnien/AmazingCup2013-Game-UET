@@ -57,14 +57,6 @@ Content\images\scene\SelectLevelScene\map_level_2_preview.xnb
 Content\images\scene\SelectLevelScene\map_level_3_preview.xnb
 Content\images\scene\SelectLevelScene\selectmaps.xnb
 Content\images\scene\SelectLevelScene\unselect_card.xnb
-Content\images\gameplay\buttons\fast_normal_but.xnb
-Content\images\gameplay\buttons\fast_press_but.xnb
-Content\images\gameplay\buttons\pause_normal_but.xnb
-Content\images\gameplay\buttons\pause_press_but.xnb
-Content\images\gameplay\buttons\play_normal_but.xnb
-Content\images\gameplay\buttons\play_press_but.xnb
-Content\images\gameplay\buttons\setting_normal_but.xnb
-Content\images\gameplay\buttons\setting_press_but.xnb
 Content\images\gameplay\buttons\life_label.xnb
 Content\images\gameplay\buttons\money_label.xnb
 Content\images\gameplay\bullets\cactusbullet.xnb
@@ -99,4 +91,12 @@ Content\images\gameplay\towers\cactus_tower_level3.xnb
 Content\fonts\gameplay\value_font.xnb
 Content\fonts\gameplay\hud_font.xnb
 Content\fonts\ScoreScene\score.xnb
+Content\images\gameplay\buttons\fast_disable_but.xnb
+Content\images\gameplay\buttons\fast_enable_but.xnb
+Content\images\gameplay\buttons\pause_disable_but.xnb
+Content\images\gameplay\buttons\pause_enable_but.xnb
+Content\images\gameplay\buttons\play_disable_but.xnb
+Content\images\gameplay\buttons\play_enable_but.xnb
+Content\images\gameplay\buttons\setting_disable_but.xnb
+Content\images\gameplay\buttons\setting_enable_but.xnb
 Content\data\highscore\highscore.xml

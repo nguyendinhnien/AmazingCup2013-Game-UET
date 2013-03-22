@@ -12,7 +12,6 @@ namespace CustomGame
         private static int screenWidth = 1024;
         private static int screenHeight = 768;
         private static bool fullscreen = false;
-        private GraphicsDeviceManager graphics;
 
         public static void InitSetting(GraphicsDeviceManager graphics){
             graphics.PreferredBackBufferWidth = screenWidth;

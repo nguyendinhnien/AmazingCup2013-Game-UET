@@ -188,13 +188,13 @@ namespace Library
             if (alive)
             {
                 //Ve health bar
-                int healthWidth = HEALTH_BAR_TEXTURE.Bounds.Width;
+                int healthWidth = Math.Min(HEALTH_BAR_TEXTURE.Bounds.Width, animation.FrameWidth);
                 int healthHeight = HEALTH_BAR_TEXTURE.Bounds.Height;
 
                 spriteBatch.Draw(HEALTH_BAR_TEXTURE, new Rectangle((int)mPosition.X, (int)mPosition.Y - healthHeight, healthWidth, healthHeight), null, Color.Red, 0.0f, Vector2.Zero, SpriteEffects.None, layer_depth);
 
                 float healthPercentage = health/maxHealth;
-                float current_healthWidth = (float)HEALTH_BAR_TEXTURE.Bounds.Width * healthPercentage;
+                float current_healthWidth = (float)healthWidth * healthPercentage;
 
                 spriteBatch.Draw(HEALTH_BAR_TEXTURE,
                                 new Rectangle((int)mPosition.X, (int)mPosition.Y - healthHeight, (int)current_healthWidth, healthHeight),

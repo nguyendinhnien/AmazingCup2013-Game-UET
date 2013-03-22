@@ -10,7 +10,7 @@ namespace Library
     public class AxeMan : Enemy
     {
         public static Animation WALK_ANIMATION;
-        public static float MOVE_SPEED = 10.0f;
+        public static float MOVE_SPEED = 2.0f;
         public static float MAX_HEALTH = 120.0f;
         public static int VALUE = 1;
 

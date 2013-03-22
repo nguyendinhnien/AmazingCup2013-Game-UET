@@ -39,7 +39,7 @@ namespace Library
         public bool Max
         {
             get { return max; }
-            set { this.max = value; }
+            set { max = value; }
         }
 
         public override Vector2 Position
@@ -58,7 +58,6 @@ namespace Library
             {
                 position.X = value.X - texture.Bounds.Width / 2; position.Y = value.Y - texture.Bounds.Height / 2;
                 value_position = position + value_offset;
-                //bounds = new Rectangle((int)position.X, (int)position.Y, (int)(texture.Width), (int)(texture.Height));
             }
         }
 
@@ -66,9 +65,7 @@ namespace Library
         {
             if (max)
             {
-                Vector2 tmpPos = value_position;
-                tmpPos.X -= 7;
-                spriteBatch.DrawString(FONT, "max", tmpPos, Color.Black, Rotation, Vector2.Zero, Scale * 0.8f, SpriteEffects.None, layer_depth - 0.05f);
+                spriteBatch.DrawString(FONT, "X", value_position, Color.Black, Rotation, Vector2.Zero, Scale, SpriteEffects.None, layer_depth - 0.05f);
             }
             else
             {

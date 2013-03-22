@@ -27,6 +27,11 @@ namespace Library
         {
             get { return current_wave_number; }
         }
+        public int TotalWaveNumber
+        {
+            get { return total_wave_number; }
+        }
+
         public bool Finish
         {
             get { return finish; }

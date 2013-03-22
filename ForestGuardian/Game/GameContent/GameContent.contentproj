@@ -365,48 +365,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="images\gameplay\buttons\fast_normal_but.png">
-      <Name>fast_normal_but</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\gameplay\buttons\fast_press_but.png">
-      <Name>fast_press_but</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\gameplay\buttons\pause_normal_but.png">
-      <Name>pause_normal_but</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\gameplay\buttons\pause_press_but.png">
-      <Name>pause_press_but</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\gameplay\buttons\play_normal_but.png">
-      <Name>play_normal_but</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\gameplay\buttons\play_press_but.png">
-      <Name>play_press_but</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\gameplay\buttons\setting_normal_but.png">
-      <Name>setting_normal_but</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\gameplay\buttons\setting_press_but.png">
-      <Name>setting_press_but</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="images\gameplay\buttons\life_label.png">
       <Name>life_label</Name>
       <Importer>TextureImporter</Importer>
@@ -616,6 +574,48 @@
     </Compile>
     <Compile Include="images\gameplay\towers\cactus_tower_level3.png">
       <Name>cactus_tower_level3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\gameplay\buttons\fast_disable_but.png">
+      <Name>fast_disable_but</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\gameplay\buttons\fast_enable_but.png">
+      <Name>fast_enable_but</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\gameplay\buttons\pause_disable_but.png">
+      <Name>pause_disable_but</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\gameplay\buttons\pause_enable_but.png">
+      <Name>pause_enable_but</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\gameplay\buttons\play_disable_but.png">
+      <Name>play_disable_but</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\gameplay\buttons\play_enable_but.png">
+      <Name>play_enable_but</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\gameplay\buttons\setting_disable_but.png">
+      <Name>setting_disable_but</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\gameplay\buttons\setting_enable_but.png">
+      <Name>setting_enable_but</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

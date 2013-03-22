@@ -55,14 +55,6 @@ E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\Amazing
 E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_3_preview.xnb
 E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\selectmaps.xnb
 E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\unselect_card.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\fast_normal_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\fast_press_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\pause_normal_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\pause_press_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\play_normal_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\play_press_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\setting_normal_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\setting_press_but.xnb
 E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\life_label.xnb
 E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\money_label.xnb
 E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\cactusbullet.xnb
@@ -328,3 +320,17 @@ D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\obj\x86\Deb
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\obj\x86\Debug\Game.exe
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\obj\x86\Debug\Game.pdb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\oak_tower_level2.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\oak_tower_level3.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\pineapple_tower_level2.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\pineapple_tower_level3.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\cactus_tower_level2.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\cactus_tower_level3.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\fast_disable_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\fast_enable_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\pause_disable_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\pause_enable_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\play_disable_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\play_enable_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\setting_disable_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\setting_enable_but.xnb

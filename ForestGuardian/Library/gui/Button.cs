@@ -121,17 +121,19 @@ namespace Library
             //Cap nhat mouse state
             previousState = mouseState;
 
-            //Cap nhat texture
-            if (state == ButtonStatus.Pressing && pressTexture != null)
-                texture = pressTexture;
-            else if (state == ButtonStatus.Hovering && hoverTexture != null)
-                texture = hoverTexture;
-            else
-                texture = normalTexture;
         }
 
         public virtual void Draw(SpriteBatch spriteBatch)
         {
+            switch (state)
+            {
+                case ButtonStatus.Pressing:
+                    if (pressTexture != null) { texture = pressTexture; } 
+                    break;
+                case ButtonStatus.Hovering:
+                    if (hoverTexture != null) { texture = hoverTexture; }
+                    break;
+            }
             spriteBatch.Draw(texture, this.position, null, Color.White, Rotation, Vector2.Zero, Scale, SpriteEffects.None, layer_depth);
         }
     }

@@ -23,7 +23,8 @@ namespace Library
         {
             get { return enable; }
             set { enable = value;
-            if (!enable) texture = disableTexture;
+                if (!enable) { texture = disableTexture; }
+                else { texture = normalTexture; }
             }
         }
     }

@@ -13,7 +13,5 @@ namespace Library
 
         public CactusBullet(Texture2D pTexture, Vector2 pCenter, int pDamage)
             : base(pTexture, pCenter, SPEED, pDamage) { }
-        public CactusBullet(Texture2D pTexture, Vector2 pCenter, Vector2 pTarget_center)
-            : base(pTexture, pCenter, SPEED, pTarget_center) { } 
     }
 }

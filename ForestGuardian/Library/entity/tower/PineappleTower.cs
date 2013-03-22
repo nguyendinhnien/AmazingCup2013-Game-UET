@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Library
 {
-    public class PineappleTower: Tower
+    public class PineappleTower : Tower
     {
         public static Texture2D TEXTURE_LV1;
         public static Texture2D TEXTURE_LV2;
@@ -23,16 +23,17 @@ namespace Library
         private List<Enemy> mEnemies;
 
         public PineappleTower(Vector2 pCenter)
-            : base(TEXTURE_LV1, pCenter, COST, RANGE, DAMAGE, FIRE_RELOAD){}
-        
+            : base(TEXTURE_LV1, pCenter, COST, RANGE, DAMAGE, FIRE_RELOAD) { }
+
         public PineappleTower(Vector2 pPosition, Anchor a)
             : base(TEXTURE_LV1, pPosition, a, COST, RANGE, DAMAGE, FIRE_RELOAD) { }
 
         public override void createBullet()
         {
             bullet = new PineappleBullet(BULLET_TEXTURE, this.Center, mDamage, mEnemies);
-            
-            bullet.setTargetPos(this.Target.Center);
+
+            bullet.setTarget(target);
+
         }
 
         public override void Upgrade()

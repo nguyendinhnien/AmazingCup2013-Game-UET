@@ -25,14 +25,14 @@ namespace Library
         private float mSlowDuration;
 
         public CactusTower(Vector2 pCenter)
-            : base(TEXTURE_LV1, pCenter, COST, RANGE, DAMAGE, FIRE_RELOAD) 
+            : base(TEXTURE_LV1, pCenter, COST, RANGE, DAMAGE, FIRE_RELOAD)
         {
             mSpeedReduce = REDUCE_SPEED;
             mSlowDuration = SLOW_DURATION;
         }
-        
+
         public CactusTower(Vector2 pPosition, Anchor a)
-            : base(TEXTURE_LV1, pPosition, a, COST, RANGE, DAMAGE, FIRE_RELOAD) 
+            : base(TEXTURE_LV1, pPosition, a, COST, RANGE, DAMAGE, FIRE_RELOAD)
         {
             mSpeedReduce = REDUCE_SPEED;
             mSlowDuration = SLOW_DURATION;
@@ -41,8 +41,8 @@ namespace Library
         public override void createBullet()
         {
             bullet = new CactusBullet(BULLET_TEXTURE, this.Center, mDamage);
-            
-            bullet.setTargetPos(this.Target.Center);
+
+            bullet.setTarget(target);
         }
 
         public override void Upgrade()

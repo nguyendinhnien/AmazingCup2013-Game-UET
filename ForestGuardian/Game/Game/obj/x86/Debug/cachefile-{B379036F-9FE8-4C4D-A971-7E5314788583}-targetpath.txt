@@ -94,9 +94,9 @@ Content\images\gameplay\towers\oak_tower_level2.xnb
 Content\images\gameplay\towers\oak_tower_level3.xnb
 Content\images\gameplay\towers\pineapple_tower_level2.xnb
 Content\images\gameplay\towers\pineapple_tower_level3.xnb
+Content\images\gameplay\towers\cactus_tower_level2.xnb
+Content\images\gameplay\towers\cactus_tower_level3.xnb
 Content\fonts\gameplay\value_font.xnb
 Content\fonts\gameplay\hud_font.xnb
 Content\fonts\ScoreScene\score.xnb
-Content\images\gameplay\towers\cactus_tower_level2.xnb
-Content\images\gameplay\towers\cactus_tower_level3.xnb
 Content\data\highscore\highscore.xml

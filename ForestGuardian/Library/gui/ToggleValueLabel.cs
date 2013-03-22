@@ -33,6 +33,12 @@ namespace Library
             set { enable = value; }
         }
 
+        public void Deactive()
+        {
+            enable = false;
+            texture = textureDisable;
+        }
+
         public void Update(int current_value)
         {
             if (value < current_value) { enable = true; texture = textureEnable;}

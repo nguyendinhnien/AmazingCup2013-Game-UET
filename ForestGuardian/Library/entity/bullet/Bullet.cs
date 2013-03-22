@@ -13,11 +13,12 @@ namespace Library
         protected int age;
         protected int mDamage;
 
-        protected Vector2 target_center;
+        protected Enemy mTarget;
+        protected Vector2 mTargetCenter;
         protected Vector2 mVelocity;
         Vector2 mDirection;
 
-        private bool mHit;
+        protected bool mHit;
 
         public float Speed
         {
@@ -35,18 +36,10 @@ namespace Library
         }
 
         public Bullet(Texture2D texture, Vector2 center, float speed, int pDamage)
-            : base(texture, center, Anchor.CENTER)
+            : base(texture, center)
         {
             this.speed = speed;
             mDamage = pDamage;
-            mHit = false;
-        }
-
-        public Bullet(Texture2D texture, Vector2 center, float speed, Vector2 target_center)
-            : base(texture, center, Anchor.CENTER)
-        {
-            this.speed = speed;
-            this.target_center = target_center;
             mHit = false;
         }
 
@@ -59,25 +52,53 @@ namespace Library
             }
         }
 
-        public void setTargetPos(Vector2 pTargetCenter)
+        public void setTarget(Enemy pTarget)
         {
-            this.target_center = pTargetCenter;
-            mDirection = pTargetCenter - mCenter;
+            mTarget = pTarget;
+            mTargetCenter = mTarget.Center;
+
+            mDirection = mTarget.Center - mCenter;
             age = (int)mDirection.Length();
-            mDirection.Normalize();
-
-            mVelocity = speed * mDirection;
-
-            //Console.Write("Start Age: ");
-            //Console.WriteLine(age.ToString());
         }
 
         public void Move()
         {
-            mCenter += mVelocity;
-            age -= (int)mVelocity.Length();
-            //Console.Write("Age: ");
-            //Console.WriteLine(age.ToString());
+            if (mTarget != null)
+            {
+                mDirection = mTarget.Center - mCenter;
+                mTargetCenter = mTarget.Center;
+
+                if (mDirection.Length() < 15)
+                {
+                    age = -1;
+                    mTarget = null;
+                }
+                else
+                {
+                    mDirection.Normalize();
+
+                    mVelocity = speed * mDirection;
+                    mCenter += mVelocity;
+                    age -= (int)mVelocity.Length();
+                }
+            }
+            else
+            {
+                mDirection = mTargetCenter - mCenter;
+                Console.WriteLine(mDirection.Length());
+                if (mDirection.Length() < 15)
+                {
+                    age = -1;
+                }
+                else
+                {
+                    mDirection.Normalize();
+
+                    mVelocity = speed * mDirection;
+                    mCenter += mVelocity;
+                    age -= (int)mVelocity.Length();
+                }
+            }
         }
 
         public void setRotation(float value)
@@ -89,7 +110,7 @@ namespace Library
 
         public override void Update(GameTime gameTime)
         {
-            if (target_center != null)
+            if (age > 0)
             {
                 Move();
             }

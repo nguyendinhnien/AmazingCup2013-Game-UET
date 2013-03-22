@@ -13,6 +13,7 @@ namespace Library
         protected int value;
         protected Vector2 value_offset;
         protected Vector2 value_position;
+        protected bool max = false;
 
         public ValueLabel(Texture2D texture, Vector2 position, Vector2 value_offset)
             :base(texture,position){
@@ -33,6 +34,12 @@ namespace Library
         {
             get { return value; }
             set { this.value = value; }
+        }
+
+        public bool Max
+        {
+            get { return max; }
+            set { this.max = value; }
         }
 
         public override Vector2 Position
@@ -57,7 +64,16 @@ namespace Library
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.DrawString(FONT, value.ToString(), value_position, Color.Black, Rotation, Vector2.Zero, Scale, SpriteEffects.None, layer_depth - 0.05f);
+            if (max)
+            {
+                Vector2 tmpPos = value_position;
+                tmpPos.X -= 7;
+                spriteBatch.DrawString(FONT, "max", tmpPos, Color.Black, Rotation, Vector2.Zero, Scale * 0.8f, SpriteEffects.None, layer_depth - 0.05f);
+            }
+            else
+            {
+                spriteBatch.DrawString(FONT, value.ToString(), value_position, Color.Black, Rotation, Vector2.Zero, Scale, SpriteEffects.None, layer_depth - 0.05f);
+            }
             base.Draw(spriteBatch);
         }
     }

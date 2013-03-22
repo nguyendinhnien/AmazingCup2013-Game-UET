@@ -14,12 +14,10 @@ namespace Library
 
         private List<Enemy> mEnemies;
 
-        public PineappleBullet( Texture2D pTexture, Vector2 pCenter, int pDamage)
+        public PineappleBullet(Texture2D pTexture, Vector2 pCenter, int pDamage)
             : base(pTexture, pCenter, SPEED, pDamage) { }
-        public PineappleBullet(Texture2D pTexture, Vector2 pCenter, Vector2 pTarget_center)
-            : base(pTexture, pCenter, SPEED, pTarget_center) { } 
         public PineappleBullet(Texture2D pTexture, Vector2 pCenter, int pDamage, List<Enemy> pEnemies)
-            : base(pTexture, pCenter, SPEED, pDamage) 
+            : base(pTexture, pCenter, SPEED, pDamage)
         {
             mEnemies = pEnemies;
         }
@@ -34,18 +32,16 @@ namespace Library
         {
             foreach (Enemy enemy in mEnemies)
             {
-                if (isInRange(enemy.Center))
+                if (!mHit && isInRange(enemy.Center))
                 {
-                    //enemy.lostHealth(mDamage);
-                    base.HitTarget(enemy);
+                    enemy.lostHealth(mDamage);
                 }
             }
+            mHit = true;
         }
 
         public override void Update(GameTime gameTime)
         {
-
-
             base.Update(gameTime);
         }
     }

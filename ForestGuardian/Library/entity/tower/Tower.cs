@@ -7,7 +7,9 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Library
 {
-    public enum TowerType{
+    public enum TowerType
+    {
+        NONE,
         OakTower,
         CactusTower,
         PineappleTower
@@ -42,7 +44,6 @@ namespace Library
             get { return level; }
         }
 
-
         #region Cost
         public int Cost
         {
@@ -59,10 +60,19 @@ namespace Library
         #endregion
 
         public Tower(Texture2D texture, Vector2 pCenter, int cost, int range, int damage, float fire_reload)
-            : this(texture, pCenter, Anchor.CENTER, cost, range, damage, fire_reload) { }
+            : base(texture, pCenter)
+        {
+            this.cost = cost;
+            this.mRange = range;
+            this.mDamage = damage;
+            this.mFireReload = fire_reload;
+
+            this.level = 1;
+            this.layer_depth = 0.5f;
+        }
 
         public Tower(Texture2D texture, Vector2 pPosition, Anchor a, int cost, int range, int damage, float fire_reload)
-            : base(texture, pPosition,a)
+            : base(texture, pPosition, a)
         {
             this.cost = cost;
             this.mRange = range;
@@ -146,6 +156,33 @@ namespace Library
         public override void Update(GameTime gameTime)
         {
 
+            /*
+            //Check xem co dang attack hay ko
+            if (target == null) { attacking = false; }
+            else if (!isInRange(target.Center))
+            {
+                target = null;
+                attacking = false;
+            }
+
+            //Neu chua den luc reload
+            if (fire_reload > 0) { fire_reload--; } //Tiep tuc doi
+            else if(attacking) { Reload(); }    //Neu dang tan cong moi reload
+
+            Console.WriteLine(bullets.Count);           
+            for (int i = 0; i < bullets.Count; i++)
+            {
+                Bullet b = bullets[i];
+                b.Update(gameTime);
+                if (target != null) { target.checkHit(b); }
+            }
+            */
+            base.Update(gameTime);
+
+            //Console.Write("Time: ");
+            //Console.WriteLine((float)gameTime.ElapsedGameTime.TotalSeconds);
+            //Console.Write("Duration: ");
+            //Console.WriteLine(reloadDuration);
             if (reloadDuration >= 0)
             {
                 reloadDuration -= (float)gameTime.ElapsedGameTime.TotalSeconds;
@@ -153,25 +190,23 @@ namespace Library
 
             if (target != null && !isInRange(target.Center))
             {
-                target = null;   
+                target = null;
             }
 
-            if (bullet != null && target != null)
+            if (bullet != null)
             {
                 bullet.Update(gameTime);
                 if (!bullet.Alive && target != null)
                 {
                     bullet.HitTarget(target);
                 }
-            } 
-            
-            base.Update(gameTime);
+            }
         }
 
         public override void Draw(SpriteBatch spriteBatch)
         {
             base.Draw(spriteBatch);
-            if (bullet != null && target != null)
+            if (bullet != null)
             {
                 bullet.Draw(spriteBatch);
             }

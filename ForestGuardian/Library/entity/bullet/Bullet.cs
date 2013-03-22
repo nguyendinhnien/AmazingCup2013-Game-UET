@@ -16,7 +16,7 @@ namespace Library
         protected Enemy mTarget;
         protected Vector2 mTargetCenter;
         protected Vector2 mVelocity;
-        Vector2 mDirection;
+        protected Vector2 mDirection;
 
         protected bool mHit;
 
@@ -78,6 +78,8 @@ namespace Library
                     mDirection.Normalize();
 
                     mVelocity = speed * mDirection;
+                    Rotation = findAngle(mVelocity, new Vector2(0, 1));
+
                     mCenter += mVelocity;
                     age -= (int)mVelocity.Length();
                 }
@@ -85,7 +87,7 @@ namespace Library
             else
             {
                 mDirection = mTargetCenter - mCenter;
-                Console.WriteLine(mDirection.Length());
+                
                 if (mDirection.Length() < 15)
                 {
                     age = -1;
@@ -95,17 +97,34 @@ namespace Library
                     mDirection.Normalize();
 
                     mVelocity = speed * mDirection;
+                    Rotation = findAngle(mVelocity, new Vector2(0, 1));
+
                     mCenter += mVelocity;
                     age -= (int)mVelocity.Length();
                 }
             }
         }
 
-        public void setRotation(float value)
+        protected float findAngle(Vector2 v1, Vector2 v2)
         {
-            mRotation = value;
+            float angle;
+            // turn vectors into unit vectors   
+            v1.Normalize();
+            v2.Normalize();
 
-            mVelocity = Vector2.Transform(mVelocity, Matrix.CreateRotationZ(mRotation));
+            angle = (float)Math.Acos(Vector2.Dot(v1, v2));
+            // if no noticable rotation is available return zero rotation  
+            // this way we avoid Cross product artifacts   
+            if (Math.Abs(angle) < 0.0001)
+                return 0;
+            angle *= signal(v1, v2);
+
+            return angle;
+        }
+
+        protected int signal(Vector2 v1, Vector2 v2)
+        {
+            return (v1.Y * v2.X - v2.Y * v1.X) > 0 ? 1 : -1;
         }
 
         public override void Update(GameTime gameTime)

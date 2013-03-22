@@ -21,7 +21,7 @@ namespace Library
         protected Vector2 mCenter;
 
         protected float layer_depth;
-        public float mRotation = 0.0f;
+        protected float mRotation = 0.0f;
         public float mScale = 1.0f;
 
         public Vector2 Position
@@ -41,17 +41,27 @@ namespace Library
             set { layer_depth = value; }
         }
 
+        public float Rotation
+        {
+            get { return mRotation; }
+            set { mRotation = value; }
+        }
+
         public Sprite() { }
+
         public Sprite(Vector2 center)
         {
             mCenter = center;
         }
+
         public Sprite(Texture2D texture)
         {
             this.mTexture = texture;
         }
+
         public Sprite(Texture2D texture, Vector2 center)
             :this(texture,center,Anchor.CENTER){}
+
         public Sprite(Texture2D texture, Vector2 position, Anchor anchor)
         {
             this.mTexture = texture;
@@ -83,6 +93,8 @@ namespace Library
         {
             return mTexture.Bounds;
         }
+
+        
 
         public virtual void Update(GameTime gameTime)
         {

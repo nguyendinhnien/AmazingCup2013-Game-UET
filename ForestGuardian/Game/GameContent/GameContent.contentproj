@@ -427,18 +427,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="images\gameplay\bullets\cactusbullet.png">
-      <Name>cactusbullet</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
     <Compile Include="images\gameplay\bullets\oakbullet.png">
       <Name>oakbullet</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\gameplay\bullets\pineapplebullet.png">
-      <Name>pineapplebullet</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
@@ -616,6 +606,18 @@
     </Compile>
     <Compile Include="images\gameplay\towers\cactus_tower_level3.png">
       <Name>cactus_tower_level3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\gameplay\bullets\cactusbullet.png">
+      <Name>cactusbullet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\gameplay\bullets\pineapplebullet.png">
+      <Name>pineapplebullet</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

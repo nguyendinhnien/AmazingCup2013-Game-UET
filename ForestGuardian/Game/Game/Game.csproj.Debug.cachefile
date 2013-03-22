@@ -67,9 +67,7 @@ Content\images\gameplay\buttons\setting_normal_but.xnb
 Content\images\gameplay\buttons\setting_press_but.xnb
 Content\images\gameplay\buttons\life_label.xnb
 Content\images\gameplay\buttons\money_label.xnb
-Content\images\gameplay\bullets\cactusbullet.xnb
 Content\images\gameplay\bullets\oakbullet.xnb
-Content\images\gameplay\bullets\pineapplebullet.xnb
 Content\images\scene\HelpScene\b_backward.xnb
 Content\images\scene\HelpScene\b_backward_clicked.xnb
 Content\images\scene\HelpScene\b_backward_disable.xnb
@@ -96,7 +94,17 @@ Content\images\gameplay\towers\pineapple_tower_level2.xnb
 Content\images\gameplay\towers\pineapple_tower_level3.xnb
 Content\images\gameplay\towers\cactus_tower_level2.xnb
 Content\images\gameplay\towers\cactus_tower_level3.xnb
+Content\images\gameplay\bullets\cactusbullet.xnb
+Content\images\gameplay\bullets\pineapplebullet.xnb
 Content\fonts\gameplay\value_font.xnb
 Content\fonts\gameplay\hud_font.xnb
 Content\fonts\ScoreScene\score.xnb
+Content\particles\BasicExplosion.xnb
+Content\Cloud001.xnb
+Content\Particle004.xnb
+Content\Particle005.xnb
+Content\particles\BasicFireball.xnb
+Content\particles\FlowerBloom.xnb
+Content\Cloud004.xnb
+Content\Particle007.xnb
 Content\data\highscore\highscore.xml

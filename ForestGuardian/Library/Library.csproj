@@ -73,6 +73,12 @@
     <Reference Include="mscorlib">
       <Private>False</Private>
     </Reference>
+    <Reference Include="ProjectMercury">
+      <HintPath>..\..\..\Mercury Particle Engine 3.1 for XNA 4.0 (Binaries)\Mercury Particle Engine 3.1 for XNA 4.0 (Binaries)\References\X86\ProjectMercury.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjectMercury.ContentPipeline">
+      <HintPath>..\..\..\Mercury Particle Engine 3.1 for XNA 4.0 (Binaries)\Mercury Particle Engine 3.1 for XNA 4.0 (Binaries)\References\X86\ProjectMercury.ContentPipeline.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <Private>False</Private>
     </Reference>
@@ -98,7 +104,7 @@
     <Compile Include="core\Cursor.cs" />
     <Compile Include="core\BackgroundLayer.cs" />
     <Compile Include="core\Sprite.cs" />
-    <Compile Include="entity\bullet\CatusBullet.cs" />
+    <Compile Include="entity\bullet\CactusBullet.cs" />
     <Compile Include="entity\bullet\OakBullet.cs" />
     <Compile Include="entity\bullet\PineappleBullet.cs" />
     <Compile Include="gui\Label.cs" />

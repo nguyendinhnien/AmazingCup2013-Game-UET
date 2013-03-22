@@ -5,6 +5,11 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
+using ProjectMercury;
+using ProjectMercury.Emitters;
+using ProjectMercury.Modifiers;
+using ProjectMercury.Renderers;
+
 namespace Library
 {
     public class Bullet : Sprite
@@ -17,6 +22,8 @@ namespace Library
         protected Vector2 mTargetCenter;
         protected Vector2 mVelocity;
         protected Vector2 mDirection;
+
+        protected ParticleEffect mEffect;
 
         protected bool mHit;
 
@@ -35,11 +42,12 @@ namespace Library
             get { return mDamage; }
         }
 
-        public Bullet(Texture2D texture, Vector2 center, float speed, int pDamage)
+        public Bullet(Texture2D texture, Vector2 center, float speed, int pDamage, ParticleEffect pEffect)
             : base(texture, center, Anchor.CENTER)
         {
             this.speed = speed;
             mDamage = pDamage;
+            mEffect = pEffect;
             mHit = false;
         }
 
@@ -48,6 +56,7 @@ namespace Library
             if (!mHit)
             {
                 pEnemy.lostHealth(mDamage);
+                mEffect.Trigger(pEnemy.Center);
                 mHit = true;
             }
         }
@@ -133,6 +142,10 @@ namespace Library
             {
                 Move();
             }
+
+            float seconds = (float)gameTime.ElapsedGameTime.TotalSeconds;
+            mEffect.Update(seconds);
+
             base.Update(gameTime);
         }
 

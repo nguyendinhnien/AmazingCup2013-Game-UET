@@ -8,6 +8,11 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
+using ProjectMercury;
+using ProjectMercury.Emitters;
+using ProjectMercury.Modifiers;
+using ProjectMercury.Renderers;
+
 using Data;
 using Library;
 
@@ -57,6 +62,8 @@ namespace CustomGame
         #endregion
         HUDLayer HudLayer;
 
+        private Renderer mRenderer = GameManager.renderer;
+
         public GamePlayScene() : base(){}
 
         public int Lives { get { return lives; } }
@@ -96,6 +103,17 @@ namespace CustomGame
             OakTower.BULLET_TEXTURE = Content.Load<Texture2D>(@"images\gameplay\bullets\oakbullet");
             CactusTower.BULLET_TEXTURE = Content.Load<Texture2D>(@"images\gameplay\bullets\cactusbullet");
             PineappleTower.BULLET_TEXTURE = Content.Load<Texture2D>(@"images\gameplay\bullets\pineapplebullet");
+
+            // Load particle effect
+            OakBullet.EFFECT = Content.Load<ParticleEffect>(@"particles\BasicExplosion").DeepCopy();
+            CactusBullet.EFFECT = Content.Load<ParticleEffect>(@"particles\FlowerBloom").DeepCopy();
+            PineappleBullet.EFFECT = Content.Load<ParticleEffect>(@"particles\BasicFireball").DeepCopy();
+            OakBullet.EFFECT.LoadContent(Content);
+            CactusBullet.EFFECT.LoadContent(Content);
+            PineappleBullet.EFFECT.LoadContent(Content);
+            OakBullet.EFFECT.Initialise();
+            CactusBullet.EFFECT.Initialise();
+            PineappleBullet.EFFECT.Initialise();
 
             //Load cac label
             Texture2D textureEnable, textureDisable;
@@ -464,6 +482,10 @@ namespace CustomGame
                 PineappleTowerLabel.Draw(spriteBatch);
                 HudLayer.Draw(spriteBatch);
             spriteBatch.End();
+
+            mRenderer.RenderEffect(OakBullet.EFFECT);
+            mRenderer.RenderEffect(CactusBullet.EFFECT);
+            mRenderer.RenderEffect(PineappleBullet.EFFECT);
         }
     }
 }

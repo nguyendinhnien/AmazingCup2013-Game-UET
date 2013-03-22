@@ -70,7 +70,7 @@ namespace CustomGame
             backButton.Update(gameTime);
             backwardButton.Update(gameTime);
             forwardButton.Update(gameTime);
-            
+
             if (currentItem == 0)
                 backwardButton.Active = false;
             else

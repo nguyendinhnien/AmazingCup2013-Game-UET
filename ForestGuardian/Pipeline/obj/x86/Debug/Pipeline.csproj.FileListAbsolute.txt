@@ -1,5 +1,0 @@
-C:\Users\KIEN\Documents\Visual Studio 2010\Projects\ForestGuardian\Pipeline\bin\x86\Debug\Pipeline.dll
-C:\Users\KIEN\Documents\Visual Studio 2010\Projects\ForestGuardian\Pipeline\bin\x86\Debug\Pipeline.pdb
-C:\Users\KIEN\Documents\Visual Studio 2010\Projects\ForestGuardian\Pipeline\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\KIEN\Documents\Visual Studio 2010\Projects\ForestGuardian\Pipeline\obj\x86\Debug\Pipeline.dll
-C:\Users\KIEN\Documents\Visual Studio 2010\Projects\ForestGuardian\Pipeline\obj\x86\Debug\Pipeline.pdb

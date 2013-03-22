@@ -52,6 +52,9 @@ namespace CustomGame
             loadingBlackTextureDestination = new Rectangle(viewport.X, viewport.Y,
                 viewport.Width, viewport.Height);
 
+            tickTexture = content.Load<Texture2D>(@"images\scene\OptionScene\tick_full_screen");
+            tickPosition = backgroundPosition + new Vector2(70, 70);
+
             Texture2D texture = content.Load<Texture2D>(@"images\scene\OptionScene\b_close");
             Texture2D pressTexture = content.Load<Texture2D>(@"images\scene\OptionScene\b_close_clicked");
             Vector2 position = backgroundPosition + new Vector2(backgroundTexture.Width - 70, 10);
@@ -60,7 +63,6 @@ namespace CustomGame
 
             texture = content.Load<Texture2D>(@"images\scene\OptionScene\decrease_volume");
             pressTexture = content.Load<Texture2D>(@"images\scene\OptionScene\decrease_volume_clicked");
-
             position = backgroundPosition + new Vector2(283, 183);
             decreButton = new Button(texture, null, pressTexture, position);
             decreButton.Clicked += DecreButtonClicked;

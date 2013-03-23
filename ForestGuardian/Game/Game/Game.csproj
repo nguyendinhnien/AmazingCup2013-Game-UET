@@ -93,11 +93,12 @@
     <Reference Include="mscorlib">
       <Private>False</Private>
     </Reference>
-    <Reference Include="ProjectMercury">
-      <HintPath>..\..\..\..\Mercury Particle Engine 3.1 for XNA 4.0 (Binaries)\Mercury Particle Engine 3.1 for XNA 4.0 (Binaries)\References\X86\ProjectMercury.dll</HintPath>
+    <Reference Include="ProjectMercury, Version=3.1.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ProjectMercury.dll</HintPath>
     </Reference>
     <Reference Include="ProjectMercury.ContentPipeline">
-      <HintPath>..\..\..\..\Mercury Particle Engine 3.1 for XNA 4.0 (Binaries)\Mercury Particle Engine 3.1 for XNA 4.0 (Binaries)\References\X86\ProjectMercury.ContentPipeline.dll</HintPath>
+      <HintPath>..\..\ProjectMercury.ContentPipeline.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Private>False</Private>

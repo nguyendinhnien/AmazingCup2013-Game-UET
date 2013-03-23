@@ -704,24 +704,6 @@
       <Time>2013-03-20T15:24:09.5189432+07:00</Time>
     </Item>
     <Item>
-      <Source>images\gameplay\disable_range.png</Source>
-      <Name>images\gameplay\disable_range</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\disable_range.xnb</Output>
-      <Time>2013-03-21T10:07:07.7247885+07:00</Time>
-    </Item>
-    <Item>
-      <Source>images\gameplay\enable_range.png</Source>
-      <Name>images\gameplay\enable_range</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\enable_range.xnb</Output>
-      <Time>2013-03-17T14:11:36.3413207+07:00</Time>
-    </Item>
-    <Item>
       <Source>images\gameplay\enemies\axeman_walk.png</Source>
       <Name>images\gameplay\enemies\axeman_walk</Name>
       <Importer>TextureImporter</Importer>
@@ -909,6 +891,141 @@
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\setting_enable_but.xnb</Output>
       <Time>2013-03-20T15:24:09.5839469+07:00</Time>
+    </Item>
+    <Item>
+      <Source>fonts\gameplay\wave_info.spritefont</Source>
+      <Name>fonts\gameplay\wave_info</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\gameplay\wave_info.xnb</Output>
+      <Time>2013-03-23T09:50:47.1587835+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\gameplay\EndGameLayer\mission_finished.png</Source>
+      <Name>images\gameplay\EndGameLayer\mission_finished</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\EndGameLayer\mission_finished.xnb</Output>
+      <Time>2013-03-21T14:40:55.9524614+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\gameplay\EndGameLayer\continue_normal_but.png</Source>
+      <Name>images\gameplay\EndGameLayer\continue_normal_but</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\EndGameLayer\continue_normal_but.xnb</Output>
+      <Time>2013-03-23T10:16:52.078361+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\gameplay\EndGameLayer\continue_press_but.png</Source>
+      <Name>images\gameplay\EndGameLayer\continue_press_but</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\EndGameLayer\continue_press_but.xnb</Output>
+      <Time>2013-03-23T10:16:54.5485023+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\gameplay\EndGameLayer\replay_normal_but.png</Source>
+      <Name>images\gameplay\EndGameLayer\replay_normal_but</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\EndGameLayer\replay_normal_but.xnb</Output>
+      <Time>2013-03-23T10:17:43.8265631+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\gameplay\EndGameLayer\replay_press_but.png</Source>
+      <Name>images\gameplay\EndGameLayer\replay_press_but</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\EndGameLayer\replay_press_but.xnb</Output>
+      <Time>2013-03-23T10:17:31.0172261+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\gameplay\EndGameLayer\defeat_label.png</Source>
+      <Name>images\gameplay\EndGameLayer\defeat_label</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\EndGameLayer\defeat_label.xnb</Output>
+      <Time>2013-03-17T15:10:49.0404558+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\gameplay\EndGameLayer\victory_label.png</Source>
+      <Name>images\gameplay\EndGameLayer\victory_label</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\EndGameLayer\victory_label.xnb</Output>
+      <Time>2013-03-17T15:07:43.3915871+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\gameplay\buttons\next_waves_label.png</Source>
+      <Name>images\gameplay\buttons\next_waves_label</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\next_waves_label.xnb</Output>
+      <Time>2013-03-23T16:01:53.7162433+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\gameplay\buttons\arrow_normal_but.png</Source>
+      <Name>images\gameplay\buttons\arrow_normal_but</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\arrow_normal_but.xnb</Output>
+      <Time>2013-03-23T10:17:14.4297297+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\gameplay\enemies\axeman.png</Source>
+      <Name>images\gameplay\enemies\axeman</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\enemies\axeman.xnb</Output>
+      <Time>2013-03-23T17:19:59.745004+07:00</Time>
+    </Item>
+    <Item>
+      <Source>fonts\gameplay\next_wave.spritefont</Source>
+      <Name>fonts\gameplay\next_wave</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\gameplay\next_wave.xnb</Output>
+      <Time>2013-03-23T20:31:07.8519859+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\gameplay\buttons\arrow_hover_but.png</Source>
+      <Name>images\gameplay\buttons\arrow_hover_but</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\arrow_hover_but.xnb</Output>
+      <Time>2013-03-23T10:16:43.1815917+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\gameplay\range_disable.png</Source>
+      <Name>images\gameplay\range_disable</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\range_disable.xnb</Output>
+      <Time>2013-03-23T21:43:43.3951087+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\gameplay\range_enable.png</Source>
+      <Name>images\gameplay\range_enable</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\range_enable.xnb</Output>
+      <Time>2013-03-23T21:43:32.6254928+07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

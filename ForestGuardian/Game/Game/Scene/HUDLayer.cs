@@ -112,7 +112,7 @@ namespace CustomGame
             pauseButton.Update(gameTime);
             fastButton.Update(gameTime);
             settingButton.Update(gameTime);
-            PointPosition.X = 512 - (30*gameplay.Points.ToString().Length)/2;
+            PointPosition.X = 512 - (font.MeasureString(gameplay.Points.ToString())).X / 2;
             PointPosition.Y = 48;
         }
 
@@ -121,8 +121,7 @@ namespace CustomGame
             spriteBatch.DrawString(font, gameplay.Lives.ToString(), new Vector2(877, 49), Color.Gold,0.0f,Vector2.Zero,1.0f,SpriteEffects.None,0.08f);
             spriteBatch.DrawString(font, gameplay.Money.ToString(), new Vector2(82, 49), Color.Gold, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, 0.08f);
             spriteBatch.DrawString(font, gameplay.Points.ToString(), PointPosition, Color.Gold, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, 0.08f);
-            spriteBatch.DrawString(font, "WAVE: " + gameplay.CurrentWaveNumber.ToString(), new Vector2(20,120), Color.White, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, 0.08f);
-            spriteBatch.DrawString(font, "TOTAL: " + gameplay.TotalWaveNumber.ToString(), new Vector2(20, 180), Color.White, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, 0.08f);
+            
 
             LifeLabel.Draw(spriteBatch);
             MoneyLabel.Draw(spriteBatch);

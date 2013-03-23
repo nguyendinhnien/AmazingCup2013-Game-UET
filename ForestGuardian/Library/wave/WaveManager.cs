@@ -15,8 +15,10 @@ namespace Library
         private Queue<Wave> waves;
 
         private bool finish=false;
-        private float maxWaveDelay = 2.0f;
-        private float timer = 0.0f;
+        //Dang cho doi giua cac wave
+        private bool waiting = true;
+        private float maxWaveDelay = 10.8f;
+        private float timer;
 
         public Wave CurrentWave
         {
@@ -36,12 +38,23 @@ namespace Library
         {
             get { return finish; }
         }
-        
+
+        public bool Waiting
+        {
+            get { return waiting; }
+        }
+
+        public float Timer
+        {
+            get { return timer; }
+        }
+
         public WaveManager(Queue<Wave> waves)
         {
             this.waves = waves;
             this.total_wave_number = waves.Count;
             this.current_wave_number = 1;
+            this.timer = maxWaveDelay;
         }
 
         
@@ -54,10 +67,11 @@ namespace Library
                 switch (current_wave.State)
                 {
                     case WaveState.Start:
-                        timer += (float)gameTime.ElapsedGameTime.TotalSeconds;
-                        if (timer >= maxWaveDelay)
+                        timer -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+                        if (timer <= 0.0f)
                         {
-                            timer = 0.0f; current_wave.State = WaveState.Active;
+                            timer = maxWaveDelay; current_wave.State = WaveState.Active;
+                            waiting = false;
                         }
                         break;
                     case WaveState.Active:
@@ -69,7 +83,7 @@ namespace Library
                         break;
                     case WaveState.Finish:
                         waves.Dequeue();
-                        if (current_wave_number < total_wave_number) { current_wave_number++; }
+                        if (current_wave_number < total_wave_number) { current_wave_number++; waiting = true; }
                         else { finish = true; }
                         break;
                 }

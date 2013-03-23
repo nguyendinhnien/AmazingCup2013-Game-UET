@@ -78,15 +78,15 @@ namespace Library
         {
             KeyboardState keyState = Keyboard.GetState();
             //Kiem tra xem co bi zoom khong
-            if (keyState.IsKeyDown(Keys.A)) { Zoom -= 0.01f; }
-            else if (keyState.IsKeyDown(Keys.S)) { Zoom += 0.01f; }
+            if (keyState.IsKeyDown(Keys.Q)) { Zoom -= 0.01f; }
+            else if (keyState.IsKeyDown(Keys.E)) { Zoom += 0.01f; }
             
             //Kiem tra xem co bi di chuyen khong
-            if (keyState.IsKeyDown(Keys.Left)){ X -= 3.0f; }
-            else if (keyState.IsKeyDown(Keys.Right)){ X += 3.0f; } 
+            if (keyState.IsKeyDown(Keys.A)){ X -= 3.0f; }
+            else if (keyState.IsKeyDown(Keys.D)){ X += 3.0f; } 
 
-            if (keyState.IsKeyDown(Keys.Up)){ Y -= 3.0f; }
-            else if (keyState.IsKeyDown(Keys.Down)){ Y += 3.0f; }
+            if (keyState.IsKeyDown(Keys.W)){ Y -= 3.0f; }
+            else if (keyState.IsKeyDown(Keys.S)){ Y += 3.0f; }
 
             if (is_changed)
             {

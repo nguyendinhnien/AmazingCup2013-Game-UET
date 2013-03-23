@@ -42,7 +42,7 @@ namespace Library
             set { max = value; }
         }
 
-        public override Vector2 Position
+        public Vector2 Position
         {
             get { return position; }
             set { 
@@ -51,7 +51,7 @@ namespace Library
             }
         }
 
-        public override Vector2 Center
+        public Vector2 Center
         {
             get { return new Vector2(position.X + texture.Bounds.Width / 2, position.Y + texture.Bounds.Height / 2); }
             set
@@ -65,11 +65,11 @@ namespace Library
         {
             if (max)
             {
-                spriteBatch.DrawString(FONT, "X", value_position, Color.Black, Rotation, Vector2.Zero, Scale, SpriteEffects.None, layer_depth - 0.05f);
+                spriteBatch.DrawString(FONT, "X", value_position, Color.Black, rotation, Vector2.Zero, scale, SpriteEffects.None, layer_depth - 0.05f);
             }
             else
             {
-                spriteBatch.DrawString(FONT, value.ToString(), value_position, Color.Black, Rotation, Vector2.Zero, Scale, SpriteEffects.None, layer_depth - 0.05f);
+                spriteBatch.DrawString(FONT, value.ToString(), value_position, Color.Black, rotation, Vector2.Zero, scale, SpriteEffects.None, layer_depth - 0.05f);
             }
             base.Draw(spriteBatch);
         }

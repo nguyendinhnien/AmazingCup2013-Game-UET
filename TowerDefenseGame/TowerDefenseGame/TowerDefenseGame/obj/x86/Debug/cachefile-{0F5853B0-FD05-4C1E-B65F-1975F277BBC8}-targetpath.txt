@@ -1,4 +1,0 @@
-Content\demo_enemy.xnb
-Content\images\enemy\axeman.xnb
-Content\images\tower\arrow_tower.xnb
-Content\images\bullet\arrow.xnb

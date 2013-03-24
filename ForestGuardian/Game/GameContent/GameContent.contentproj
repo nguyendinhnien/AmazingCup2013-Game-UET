@@ -136,23 +136,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="images\scene\HelpScene\b_back.png">
-      <Name>b_back</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\HelpScene\b_back_clicked.png">
-      <Name>b_back_clicked</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\HelpScene\credit.png">
-      <Name>credit</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="images\scene\MainMenuScene\b_help.png">
       <Name>b_help</Name>
       <Importer>TextureImporter</Importer>
@@ -262,115 +245,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="images\scene\ScoreScene\b_back.png">
-      <Name>b_back</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\ScoreScene\b_back_clicked.png">
-      <Name>b_back_clicked</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\ScoreScene\scoreboard.png">
-      <Name>scoreboard</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="images\scene\SelectLevelScene\b_backward.png">
-      <Name>b_backward</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\SelectLevelScene\b_backward_clicked.png">
-      <Name>b_backward_clicked</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\SelectLevelScene\b_forward.png">
-      <Name>b_forward</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\SelectLevelScene\b_forward_clicked.png">
-      <Name>b_forward_clicked</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\SelectLevelScene\b_select_level.png">
-      <Name>b_select_level</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\SelectLevelScene\b_start_game.png">
-      <Name>b_start_game</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\SelectLevelScene\b_start_game_clicked.png">
-      <Name>b_start_game_clicked</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\SelectLevelScene\demo_select_level.png">
-      <Name>demo_select_level</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\SelectLevelScene\highline_select_card.png">
-      <Name>highline_select_card</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\SelectLevelScene\lock_card.png">
-      <Name>lock_card</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\SelectLevelScene\map_level1_thumb.png">
-      <Name>map_level1_thumb</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\SelectLevelScene\map_level2_thumb.png">
-      <Name>map_level2_thumb</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\SelectLevelScene\map_level3_thumb.png">
-      <Name>map_level3_thumb</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\SelectLevelScene\map_level_1_preview.png">
-      <Name>map_level_1_preview</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\SelectLevelScene\map_level_2_preview.png">
-      <Name>map_level_2_preview</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\SelectLevelScene\map_level_3_preview.png">
-      <Name>map_level_3_preview</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\SelectLevelScene\selectmaps.png">
-      <Name>selectmaps</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\SelectLevelScene\unselect_card.png">
-      <Name>unselect_card</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="images\gameplay\buttons\fast_normal_but.png">
       <Name>fast_normal_but</Name>
       <Importer>TextureImporter</Importer>
@@ -447,61 +321,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="images\scene\HelpScene\b_backward.png">
-      <Name>b_backward</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\HelpScene\b_backward_clicked.png">
-      <Name>b_backward_clicked</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\HelpScene\b_backward_disable.png">
-      <Name>b_backward_disable</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\HelpScene\b_forward.png">
-      <Name>b_forward</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\HelpScene\b_forward_clicked.png">
-      <Name>b_forward_clicked</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\HelpScene\b_forward_disable.png">
-      <Name>b_forward_disable</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\HelpScene\catus_card.png">
-      <Name>catus_card</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\HelpScene\lock_card.png">
-      <Name>lock_card</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\HelpScene\oak_card.png">
-      <Name>oak_card</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\HelpScene\pine_apple_card.png">
-      <Name>pine_apple_card</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\HelpScene\unselect_card.png">
-      <Name>unselect_card</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
     <Compile Include="images\gameplay\towers\cactus_tower_level1.png">
       <Name>cactus_tower_level1</Name>
       <Importer>TextureImporter</Importer>
@@ -541,6 +360,11 @@
       <Processor>PassThroughProcessor</Processor>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <Compile Include="fonts\HelpScene\helpScene.spritefont">
+      <Name>helpScene</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="images\gameplay\enemies\axeman_walk.png">
@@ -680,6 +504,154 @@
   <ItemGroup>
     <Compile Include="Particle007.png">
       <Name>Particle007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\scene\ScoreScene\scoreboard.png">
+      <Name>scoreboard</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\scene\HelpScene\catus_card.png">
+      <Name>catus_card</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\HelpScene\help.png">
+      <Name>help</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\HelpScene\oak_card.png">
+      <Name>oak_card</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\HelpScene\pine_apple_card.png">
+      <Name>pine_apple_card</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\scene\SelectLevelScene\b_select_level.png">
+      <Name>b_select_level</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\SelectLevelScene\b_start_game.png">
+      <Name>b_start_game</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\SelectLevelScene\b_start_game_clicked.png">
+      <Name>b_start_game_clicked</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\SelectLevelScene\map_level1_thumb.png">
+      <Name>map_level1_thumb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\SelectLevelScene\map_level2_thumb.png">
+      <Name>map_level2_thumb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\SelectLevelScene\map_level3_thumb.png">
+      <Name>map_level3_thumb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\SelectLevelScene\map_level_1_preview.png">
+      <Name>map_level_1_preview</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\SelectLevelScene\map_level_1_thumb.png">
+      <Name>map_level_1_thumb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\SelectLevelScene\map_level_2_preview.png">
+      <Name>map_level_2_preview</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\SelectLevelScene\map_level_2_thumb.png">
+      <Name>map_level_2_thumb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\SelectLevelScene\map_level_3_preview.png">
+      <Name>map_level_3_preview</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\SelectLevelScene\map_level_3_thumb.png">
+      <Name>map_level_3_thumb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\SelectLevelScene\selectmaps.png">
+      <Name>selectmaps</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\scene\CommonButton\b_back.png">
+      <Name>b_back</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\CommonButton\b_backward.png">
+      <Name>b_backward</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\CommonButton\b_backward_clicked.png">
+      <Name>b_backward_clicked</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\CommonButton\b_backward_disable.png">
+      <Name>b_backward_disable</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\CommonButton\b_back_clicked.png">
+      <Name>b_back_clicked</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\CommonButton\b_forward.png">
+      <Name>b_forward</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\CommonButton\b_forward_clicked.png">
+      <Name>b_forward_clicked</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\CommonButton\b_forward_disable.png">
+      <Name>b_forward_disable</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\CommonButton\highlight_select_card.png">
+      <Name>highlight_select_card</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\CommonButton\lock_card.png">
+      <Name>lock_card</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

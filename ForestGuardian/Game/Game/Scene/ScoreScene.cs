@@ -33,9 +33,9 @@ namespace CustomGame
             backgroundTexture = content.Load<Texture2D>(@"images\scene\ScoreScene\scoreboard");
             backgroundPosition = new Vector2(0, 0);
 
-            Texture2D texture = content.Load<Texture2D>(@"images\scene\ScoreScene\b_back");
-            Texture2D pressTexture = content.Load<Texture2D>(@"images\scene\ScoreScene\b_back_clicked");
-            button = new Button(texture, null, pressTexture, new Vector2(450, 690));
+            Texture2D texture = content.Load<Texture2D>(@"images\scene\CommonButton\b_back");
+            Texture2D pressTexture = content.Load<Texture2D>(@"images\scene\CommonButton\b_back_clicked");
+            button = new Button(texture, null, pressTexture, new Vector2(403, 685));
             button.Clicked += BackButtonClicked;
 
             scoreFont = content.Load<SpriteFont>(@"fonts\ScoreScene\score");

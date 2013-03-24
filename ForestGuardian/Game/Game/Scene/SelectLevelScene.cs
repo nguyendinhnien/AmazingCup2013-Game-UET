@@ -59,25 +59,25 @@ namespace CustomGame
             backgroundTexture = content.Load<Texture2D>(@"images\scene\SelectLevelScene\selectmaps");
             backgroundPosition = new Vector2(0, 0);
 
-            Texture2D texture = content.Load<Texture2D>(@"images\scene\HelpScene\b_back");
-            Texture2D pressTexture = content.Load<Texture2D>(@"images\scene\HelpScene\b_back_clicked");
-            backButton = new Button(texture, null, pressTexture, new Vector2(500, 690));
+            Texture2D texture = content.Load<Texture2D>(@"images\scene\CommonButton\b_back");
+            Texture2D pressTexture = content.Load<Texture2D>(@"images\scene\CommonButton\b_back_clicked");
+            backButton = new Button(texture, null, pressTexture, new Vector2(520, 685));
             backButton.Clicked += BackButtonClicked;
 
             texture = content.Load<Texture2D>(@"images\scene\SelectLevelScene\b_start_game");
             pressTexture = content.Load<Texture2D>(@"images\scene\SelectLevelScene\b_start_game_clicked");
-            startButton = new Button(texture, null, pressTexture, new Vector2(300, 690));
+            startButton = new Button(texture, null, pressTexture, new Vector2(273, 685));
             startButton.Clicked += StartButtonClicked;
 
-            Texture2D disableButton = content.Load<Texture2D>(@"images\scene\HelpScene\b_backward_disable");
-            texture = content.Load<Texture2D>(@"images\scene\HelpScene\b_backward");
-            pressTexture = content.Load<Texture2D>(@"images\scene\HelpScene\b_backward_clicked");
+            Texture2D disableButton = content.Load<Texture2D>(@"images\scene\CommonButton\b_backward_disable");
+            texture = content.Load<Texture2D>(@"images\scene\CommonButton\b_backward");
+            pressTexture = content.Load<Texture2D>(@"images\scene\CommonButton\b_backward_clicked");
             backwardButton = new ToggleButton(texture, null, pressTexture, disableButton, new Vector2(50, 510));
             backwardButton.Clicked += BackwardButtonClicked;
 
-            disableButton = content.Load<Texture2D>(@"images\scene\HelpScene\b_forward_disable");
-            texture = content.Load<Texture2D>(@"images\scene\HelpScene\b_forward");
-            pressTexture = content.Load<Texture2D>(@"images\scene\HelpScene\b_forward_clicked");
+            disableButton = content.Load<Texture2D>(@"images\scene\CommonButton\b_forward_disable");
+            texture = content.Load<Texture2D>(@"images\scene\CommonButton\b_forward");
+            pressTexture = content.Load<Texture2D>(@"images\scene\CommonButton\b_forward_clicked");
             forwardButton = new ToggleButton(texture, null, pressTexture, disableButton, new Vector2(900, 510));
             forwardButton.Clicked += ForwardButtonClicked;
 
@@ -93,12 +93,13 @@ namespace CustomGame
             mapPreviewTexture[3] = content.Load<Texture2D>(@"images\scene\SelectLevelScene\map_level_2_preview");
             mapPreviewTexture[4] = content.Load<Texture2D>(@"images\scene\SelectLevelScene\map_level_1_preview");
 
-            hightlightSelectTexture = content.Load<Texture2D>(@"images\scene\HelpScene\highlight_select_card");
+            hightlightSelectTexture = content.Load<Texture2D>(@"images\scene\CommonButton\highlight_select_card");
             helpFont = content.Load<SpriteFont>(@"fonts\HelpScene\helpscene");
         }
 
         public override void Update(GameTime gameTime)
         {
+            startButton.Update(gameTime);
             backButton.Update(gameTime);
             backwardButton.Update(gameTime);
             forwardButton.Update(gameTime);
@@ -130,6 +131,7 @@ namespace CustomGame
             spriteBatch.Begin();
 
             spriteBatch.Draw(backgroundTexture, backgroundPosition, Color.White);
+            startButton.Draw(spriteBatch);
             backButton.Draw(spriteBatch);
             backwardButton.Draw(spriteBatch);
             forwardButton.Draw(spriteBatch);

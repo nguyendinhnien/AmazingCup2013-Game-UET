@@ -14,9 +14,14 @@ namespace CustomGame
 {
     public class HelpScene : GameScene
     {
-        private static int NUMBER_OF_ITEM_DISPLAY = 3;
+        private int NUMBER_OF_ITEM_DISPLAY = 3;
 
-        private static Vector2[] itemPosition;
+        private Texture2D[][] towerTexture;
+        private Texture2D[] towerInGameTexture;
+
+        private Vector2[] textPosition;
+
+        private Vector2[] itemPosition;
 
         private Button backButton;
         private Texture2D backgroundTexture;
@@ -37,7 +42,13 @@ namespace CustomGame
         public HelpScene()
             : base()
         {
-            numberOfItems = 5;
+            numberOfItems = 3;
+
+            towerInGameTexture = new Texture2D[numberOfItems];
+            towerTexture = new Texture2D[numberOfItems][];
+            for (int i = 0; i < numberOfItems; i++)
+                towerTexture[i] = new Texture2D[3];
+
             itemTexture = new Texture2D[numberOfItems];
             itemPosition = new Vector2[NUMBER_OF_ITEM_DISPLAY];
 
@@ -45,6 +56,17 @@ namespace CustomGame
             itemPosition[1] = itemPosition[0] + new Vector2(230, 0);
             itemPosition[2] = itemPosition[1] + new Vector2(230, 0);
 
+            textPosition = new Vector2[10];
+            textPosition[0] = new Vector2(160, 120); //Infor text
+            textPosition[1] = new Vector2(430, 120); //Ingame text
+            textPosition[2] = new Vector2(732, 120); //Upgrade text
+
+            textPosition[3] = new Vector2(75, 190); //History
+            textPosition[4] = new Vector2(100, 200); //Damage
+            textPosition[5] = new Vector2(75, 343); //Range
+            textPosition[6] = new Vector2(160, 500); //Cost
+            textPosition[7] = new Vector2(160, 600); //Slow, Splash damage
+            textPosition[9] = new Vector2(160, 700); //Slash range
             startItem = currentItemShow = 0;
         }
 
@@ -74,11 +96,25 @@ namespace CustomGame
             itemTexture[0] = content.Load<Texture2D>(@"images\scene\HelpScene\catus_card");
             itemTexture[1] = content.Load<Texture2D>(@"images\scene\HelpScene\oak_card");
             itemTexture[2] = content.Load<Texture2D>(@"images\scene\HelpScene\pine_apple_card");
-            itemTexture[3] = content.Load<Texture2D>(@"images\scene\HelpScene\pine_apple_card");
-            itemTexture[4] = content.Load<Texture2D>(@"images\scene\HelpScene\pine_apple_card");
 
             hightlightSelectTexture = content.Load<Texture2D>(@"images\scene\CommonButton\highlight_select_card");
-            helpFont = content.Load<SpriteFont>(@"fonts\HelpScene\helpscene");
+            helpFont = content.Load<SpriteFont>(@"fonts\HelpScene\helpScene");
+
+            towerTexture[0][0] = content.Load<Texture2D>(@"images\gameplay\towers\oak_tower_level1");
+            towerTexture[0][1] = content.Load<Texture2D>(@"images\gameplay\towers\oak_tower_level2");
+            towerTexture[0][2] = content.Load<Texture2D>(@"images\gameplay\towers\oak_tower_level3");
+
+            towerTexture[1][0] = content.Load<Texture2D>(@"images\gameplay\towers\cactus_tower_level1");
+            towerTexture[1][1] = content.Load<Texture2D>(@"images\gameplay\towers\cactus_tower_level2");
+            towerTexture[1][2] = content.Load<Texture2D>(@"images\gameplay\towers\cactus_tower_level3");
+
+            towerTexture[2][0] = content.Load<Texture2D>(@"images\gameplay\towers\pineapple_tower_level1");
+            towerTexture[2][1] = content.Load<Texture2D>(@"images\gameplay\towers\pineapple_tower_level2");
+            towerTexture[2][2] = content.Load<Texture2D>(@"images\gameplay\towers\pineapple_tower_level3");
+
+            towerInGameTexture[0] = content.Load<Texture2D>(@"images\scene\HelpScene\oak_in_game");
+            towerInGameTexture[1] = content.Load<Texture2D>(@"images\scene\HelpScene\oak_in_game");
+            towerInGameTexture[2] = content.Load<Texture2D>(@"images\scene\HelpScene\oak_in_game");
         }
 
         public override void Update(GameTime gameTime)
@@ -97,7 +133,7 @@ namespace CustomGame
             else
                 forwardButton.Active = true;
 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < NUMBER_OF_ITEM_DISPLAY; i++)
             {
                 if (InputManager.IsMouseJustReleased() && InputManager.IsMouseHittedRectangle(new Rectangle(
                     (int)itemPosition[i].X, (int)itemPosition[i].Y,
@@ -108,12 +144,20 @@ namespace CustomGame
             }
         }
 
-
         public override void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Begin();
 
             spriteBatch.Draw(backgroundTexture, backgroundPosition, Color.White);
+
+            
+            spriteBatch.DrawString(helpFont, "Info", textPosition[0], Color.Black);
+            spriteBatch.DrawString(helpFont, "In Game", textPosition[1], Color.Black);
+            spriteBatch.DrawString(helpFont, "Upgrade", textPosition[2], Color.Black);
+
+            spriteBatch.DrawString(helpFont, UserData.tower[currentItemShow], textPosition[3], Color.Black, 0, Vector2.Zero,
+                .5f, SpriteEffects.None, 1.0f);
+            
             backButton.Draw(spriteBatch);
             backwardButton.Draw(spriteBatch);
             forwardButton.Draw(spriteBatch);
@@ -124,7 +168,19 @@ namespace CustomGame
             }
 
             spriteBatch.Draw(hightlightSelectTexture, itemPosition[currentItemShow], Color.White);
-            spriteBatch.DrawString(helpFont, "con meo con. anh tuan anh", new Vector2(500, 100), Color.White);
+
+            spriteBatch.Draw(towerTexture[currentItemShow][0], new Vector2(700, 315), Color.White);
+            spriteBatch.Draw(towerTexture[currentItemShow][1], new Vector2(780, 240), Color.White);
+            spriteBatch.Draw(towerTexture[currentItemShow][2], new Vector2(860, 165), Color.White);
+
+
+            spriteBatch.DrawString(helpFont, "level 1", new Vector2(780, 347), Color.Black, 0, Vector2.Zero,
+                .5f, SpriteEffects.None, 1.0f);
+            spriteBatch.DrawString(helpFont, "level 2", new Vector2(700, 272), Color.Black, 0, Vector2.Zero,
+                .5f, SpriteEffects.None, 1.0f);
+            spriteBatch.DrawString(helpFont, "level 3", new Vector2(780, 197), Color.Black, 0, Vector2.Zero,
+                .5f, SpriteEffects.None, 1.0f);
+            spriteBatch.Draw(towerInGameTexture[currentItemShow], new Vector2(400, 200), Color.White);
 
             spriteBatch.End();
         }

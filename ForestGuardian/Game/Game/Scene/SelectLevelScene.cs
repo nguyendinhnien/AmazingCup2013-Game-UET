@@ -18,6 +18,8 @@ namespace CustomGame
 
         private static Vector2[] itemPosition;
 
+        private Texture2D selectLevelTexture;
+
         private Button backButton;
         private Button startButton;
 
@@ -33,7 +35,7 @@ namespace CustomGame
         private Texture2D hightlightSelectTexture;
         private Texture2D[] mapPreviewTexture;
 
-        private SpriteFont helpFont;
+        private SpriteFont selectLevelFont;
 
         private int startItem;
         private int currentItemShow;
@@ -41,7 +43,7 @@ namespace CustomGame
         public SelectLevelScene()
             : base()
         {
-            numberOfItems = 5;
+            numberOfItems = 3;
             itemTexture = new Texture2D[numberOfItems];
             itemPosition = new Vector2[NUMBER_OF_ITEM_DISPLAY];
             mapPreviewTexture = new Texture2D[numberOfItems];
@@ -84,17 +86,15 @@ namespace CustomGame
             itemTexture[0] = content.Load<Texture2D>(@"images\scene\SelectLevelScene\map_level_1_thumb");
             itemTexture[1] = content.Load<Texture2D>(@"images\scene\SelectLevelScene\map_level_2_thumb");
             itemTexture[2] = content.Load<Texture2D>(@"images\scene\SelectLevelScene\map_level_3_thumb");
-            itemTexture[3] = content.Load<Texture2D>(@"images\scene\SelectLevelScene\map_level_2_thumb");
-            itemTexture[4] = content.Load<Texture2D>(@"images\scene\SelectLevelScene\map_level_1_thumb");
 
             mapPreviewTexture[0] = content.Load<Texture2D>(@"images\scene\SelectLevelScene\map_level_1_preview");
             mapPreviewTexture[1] = content.Load<Texture2D>(@"images\scene\SelectLevelScene\map_level_2_preview");
             mapPreviewTexture[2] = content.Load<Texture2D>(@"images\scene\SelectLevelScene\map_level_3_preview");
-            mapPreviewTexture[3] = content.Load<Texture2D>(@"images\scene\SelectLevelScene\map_level_2_preview");
-            mapPreviewTexture[4] = content.Load<Texture2D>(@"images\scene\SelectLevelScene\map_level_1_preview");
 
             hightlightSelectTexture = content.Load<Texture2D>(@"images\scene\CommonButton\highlight_select_card");
-            helpFont = content.Load<SpriteFont>(@"fonts\HelpScene\helpscene");
+            selectLevelFont = content.Load<SpriteFont>(@"fonts\HelpScene\helpscene");
+
+            selectLevelTexture = content.Load<Texture2D>(@"images\scene\SelectLevelScene\b_select_level");
         }
 
         public override void Update(GameTime gameTime)
@@ -114,13 +114,19 @@ namespace CustomGame
             else
                 forwardButton.Active = true;
 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < NUMBER_OF_ITEM_DISPLAY; i++)
             {
                 if (InputManager.IsMouseJustReleased() && InputManager.IsMouseHittedRectangle(new Rectangle(
                     (int)itemPosition[i].X, (int)itemPosition[i].Y,
                     itemTexture[startItem + i].Width, itemTexture[startItem + i].Height)))
                 {
                     currentItemShow = i;
+                }
+
+                if (InputManager.IsMouseJustReleased() && InputManager.IsMouseHittedRectangle(new Rectangle(
+                    458, 167 + 40*i, 101, 40)))
+                {
+                    UserData.level = i;
                 }
             }
         }
@@ -142,7 +148,14 @@ namespace CustomGame
             }
 
             spriteBatch.Draw(hightlightSelectTexture, itemPosition[currentItemShow], Color.White);
-            spriteBatch.Draw(mapPreviewTexture[currentItemShow], new Vector2(40, 103), Color.White);
+            spriteBatch.Draw(mapPreviewTexture[currentItemShow], new Vector2(44, 107), Color.White);
+            spriteBatch.Draw(selectLevelTexture, new Vector2(456, 168) + new Vector2(0, 43) * UserData.level, Color.White);
+
+            spriteBatch.DrawString(selectLevelFont, UserData.levelScene[currentItemShow][0], new Vector2(686, 119), Color.Black, 0, Vector2.Zero,
+                0.7f, SpriteEffects.None, 1.0f);
+
+            spriteBatch.DrawString(selectLevelFont, UserData.levelScene[currentItemShow][1], new Vector2(629, 167), Color.Black, 0, Vector2.Zero,
+                0.5f, SpriteEffects.None, 1.0f);
 
             spriteBatch.End();
         }

@@ -5,7 +5,9 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
-using Library; 
+using Library;
+
+using CustomGame;
 
 namespace CustomGame
 {
@@ -76,7 +78,7 @@ namespace CustomGame
         }
         private void SettingButton_Clicked(object sender, EventArgs e)
         {
-
+            gameplay.SceneManager.AddScene(new MenuPause());
         }
         
         public void Update(GameTime gameTime)

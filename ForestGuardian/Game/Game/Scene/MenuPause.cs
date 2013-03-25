@@ -105,7 +105,7 @@ namespace CustomGame
 
         private void ResetButtonClicked(object sender, EventArgs e)
         {
-            //tinh sau
+            sceneManager.ResetGame();
         }
 
         private void OptionButtonClicked(object sender, EventArgs e)
@@ -115,6 +115,7 @@ namespace CustomGame
 
         private void ExitButtonClicked(object sender, EventArgs e)
         {
+            
             SceneManager.AddScene(new ConfirmScene());
         }
     }

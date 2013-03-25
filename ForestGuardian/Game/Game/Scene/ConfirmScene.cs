@@ -87,7 +87,8 @@ namespace CustomGame
 
         private void YesButtonClicked(object sender, EventArgs e)
         {
-            SceneManager.Game.Exit();
+            SceneManager.ExitGame();
+            //SceneManager.Game.Exit();
         }
     }
 }

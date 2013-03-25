@@ -167,8 +167,22 @@ namespace CustomGame
             return scenes.ToArray();
         }
 
-        public void ToggleFullScreen(){
+        public void ToggleFullScreen()
+        {
             graphics.ToggleFullScreen();
+        }
+
+        public void ResetGame()
+        {
+            scenes.Clear();
+            this.AddScene(new GamePlayScene());
+        }
+
+        //back to main menu
+        public void ExitGame()
+        {
+            scenes.Clear();
+            this.AddScene(new MainMenuScene());
         }
     }
 }

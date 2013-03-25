@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XnaContent xmlns:Modifiers="ProjectMercury.Modifiers">
+<XnaContent>
   <Asset Type="ProjectMercury.ParticleEffect">
     <Item>
       <Name>Flower Petals</Name>
       <Budget>500</Budget>
-      <Term>2</Term>
-      <ReleaseQuantity>3</ReleaseQuantity>
-      <Enabled>true</Enabled>
+      <Term>0.5</Term>
+      <ReleaseQuantity>11</ReleaseQuantity>
+      <Enabled>True</Enabled>
       <ReleaseSpeed>
-        <Value>48</Value>
-        <Variation>16</Variation>
+        <Value>50</Value>
+        <Variation>0</Variation>
       </ReleaseSpeed>
       <ReleaseColour>
-        <Value>1 1 1</Value>
+        <Value>0 1 0</Value>
         <Variation>0 0 0</Variation>
       </ReleaseColour>
       <ReleaseOpacity>
@@ -30,24 +30,15 @@
       <ReleaseImpulse>0 0</ReleaseImpulse>
       <ParticleTextureAssetName>Particle007</ParticleTextureAssetName>
       <Modifiers>
-        <Item Type="Modifiers:TrajectoryRotationModifier">
-          <RotationOffset>0</RotationOffset>
-        </Item>
-        <Item Type="Modifiers:ScaleModifier">
+        <Item Type="ProjectMercury.Modifiers.ScaleModifier">
           <InitialScale>16</InitialScale>
-          <UltimateScale>128</UltimateScale>
+          <UltimateScale>32</UltimateScale>
         </Item>
-        <Item Type="Modifiers:OpacityInterpolatorModifier">
-          <InitialOpacity>1</InitialOpacity>
-          <MiddleOpacity>1</MiddleOpacity>
-          <MiddlePosition>0.8</MiddlePosition>
-          <FinalOpacity>0</FinalOpacity>
+        <Item Type="ProjectMercury.Modifiers.DampingModifier">
+          <DampingCoefficient>0</DampingCoefficient>
         </Item>
-        <Item Type="Modifiers:ColourInterpolatorModifier">
-          <InitialColour>0 0.5019608 0</InitialColour>
-          <MiddleColour>1 1 1</MiddleColour>
-          <MiddlePosition>0.5</MiddlePosition>
-          <FinalColour>1 0 1</FinalColour>
+        <Item Type="ProjectMercury.Modifiers.TrajectoryRotationModifier">
+          <RotationOffset>0</RotationOffset>
         </Item>
       </Modifiers>
       <BlendMode>Alpha</BlendMode>

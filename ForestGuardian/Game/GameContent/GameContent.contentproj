@@ -302,13 +302,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="images\gameplay\bullets\oakbullet.png">
-      <Name>oakbullet</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="fonts\ScoreScene\score.spritefont">
       <Name>score</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -456,13 +449,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="particles\BasicExplosion.xml">
-      <Name>BasicExplosion</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Particle004.png">
       <Name>Particle004</Name>
       <Importer>TextureImporter</Importer>
@@ -474,13 +460,6 @@
       <Name>Particle005</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="particles\BasicFireball.xml">
-      <Name>BasicFireball</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -498,11 +477,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="particles\FlowerBloom.xml">
-      <Name>FlowerBloom</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-    </Compile>
     <Compile Include="images\scene\ScoreScene\scoreboard.png">
       <Name>scoreboard</Name>
       <Importer>TextureImporter</Importer>
@@ -726,10 +700,36 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="particles\sloweffect.xml">
-      <Name>sloweffect</Name>
+    <Compile Include="particles\slowEffect.xml">
+      <Name>slowEffect</Name>
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="particles\explosionEffect.xml">
+      <Name>explosionEffect</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="particles\treeEffect.xml">
+      <Name>treeEffect</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LensFlare.png">
+      <Name>LensFlare</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\gameplay\bullets\oakbullet.png">
+      <Name>oakbullet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />

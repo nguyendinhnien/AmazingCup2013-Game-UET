@@ -105,9 +105,9 @@ namespace CustomGame
             PineappleTower.BULLET_TEXTURE = Content.Load<Texture2D>(@"images\gameplay\bullets\pineapplebullet");
 
             // Load particle effect
-            OakBullet.EFFECT = Content.Load<ParticleEffect>(@"particles\BasicExplosion").DeepCopy();
-            CactusBullet.EFFECT = Content.Load<ParticleEffect>(@"particles\sloweffect").DeepCopy();
-            PineappleBullet.EFFECT = Content.Load<ParticleEffect>(@"particles\BasicFireball").DeepCopy();
+            OakBullet.EFFECT = Content.Load<ParticleEffect>(@"particles\treeEffect").DeepCopy();
+            CactusBullet.EFFECT = Content.Load<ParticleEffect>(@"particles\slowEffect").DeepCopy();
+            PineappleBullet.EFFECT = Content.Load<ParticleEffect>(@"particles\explosionEffect").DeepCopy();
             OakBullet.EFFECT.LoadContent(Content);
             CactusBullet.EFFECT.LoadContent(Content);
             PineappleBullet.EFFECT.LoadContent(Content);

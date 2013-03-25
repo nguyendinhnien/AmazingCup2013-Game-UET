@@ -43,7 +43,7 @@ namespace CustomGame
             ContentManager content = SceneManager.Game.Content;
 
             backgroundTexture = content.Load<Texture2D>(@"images\scene\OptionScene\dialog_options");
-            loadingBlackTexture = content.Load<Texture2D>(@"images\scene\OptionScene\FadeScreen");
+            loadingBlackTexture = content.Load<Texture2D>(@"images\scene\CommonButton\FadeScreen");
 
             Viewport viewport = SceneManager.GraphicsDevice.Viewport;
             backgroundPosition = new Vector2(

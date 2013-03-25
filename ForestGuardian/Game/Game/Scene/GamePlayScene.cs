@@ -106,7 +106,7 @@ namespace CustomGame
 
             // Load particle effect
             OakBullet.EFFECT = Content.Load<ParticleEffect>(@"particles\BasicExplosion").DeepCopy();
-            CactusBullet.EFFECT = Content.Load<ParticleEffect>(@"particles\FlowerBloom").DeepCopy();
+            CactusBullet.EFFECT = Content.Load<ParticleEffect>(@"particles\sloweffect").DeepCopy();
             PineappleBullet.EFFECT = Content.Load<ParticleEffect>(@"particles\BasicFireball").DeepCopy();
             OakBullet.EFFECT.LoadContent(Content);
             CactusBullet.EFFECT.LoadContent(Content);

@@ -19,7 +19,7 @@ namespace CustomGame
     {
         GraphicsDeviceManager graphics;
         SceneManager sceneManager;
-        
+
         public GameManager()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -38,11 +38,8 @@ namespace CustomGame
         /// </summary>
         protected override void Initialize()
         {
-            IsMouseVisible = true;
-            UserData.Init();
-
-            //for (int i = 1; i < 11; i++)
-              //  UserData.AddHighScore(i * 100, "tuan" + i.ToString());
+            //IsMouseVisible = true;
+            //UserData.Init();
 
             base.Initialize();
             sceneManager.AddScene(new MainMenuScene());
@@ -54,6 +51,7 @@ namespace CustomGame
         /// </summary>
         protected override void LoadContent()
         {
+
             base.LoadContent();
         }
 
@@ -74,7 +72,6 @@ namespace CustomGame
         protected override void Update(GameTime gameTime)
         {
             InputManager.Update();
-
             base.Update(gameTime);
         }
 
@@ -85,7 +82,6 @@ namespace CustomGame
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.Transparent);
-
             base.Draw(gameTime);
         }
 

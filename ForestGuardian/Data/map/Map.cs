@@ -34,6 +34,7 @@ namespace Data
         public Cell StartCell;
         public Cell EndCell;
         public List<Wave> Waves;
+        public List<string> SongFiles;
         //[XmlElement]
         //public List<Path> Paths;
         [ContentSerializerIgnore]

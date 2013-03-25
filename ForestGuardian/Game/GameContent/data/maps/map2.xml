@@ -38,5 +38,12 @@
       <Item> <EnemyType>AxeMan</EnemyType> <EnemyNumber>5</EnemyNumber> <SpawnRate>2.3</SpawnRate></Item>
       <Item> <EnemyType>AxeMan</EnemyType> <EnemyNumber>7</EnemyNumber> <SpawnRate>2.2</SpawnRate></Item>
     </Waves>
+    <SongFiles>
+      <Item>musics/Song6</Item>
+      <Item>musics/Song5</Item>
+      <Item>musics/Song7</Item>
+      <Item>musics/Song4</Item>
+      <Item>musics/Song1</Item>
+    </SongFiles>
   </Asset>
 </XnaContent>

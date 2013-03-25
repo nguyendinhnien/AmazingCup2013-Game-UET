@@ -7,6 +7,8 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Media;
 
 using Data;
 using Library;
@@ -29,10 +31,13 @@ namespace CustomGame
         private int tile_size;      
         private byte[] tower_map;
         
+        private List<Song> songs;
+        private int currentSongIndex;
+
         //Phan game play
         private int lives=20;
-        private int money=1000;
-        private int points = 888888;
+        private int money=100;
+        private int points = 0;
 
         private bool is_tower_add = false;
         private TowerType tower_type;
@@ -148,14 +153,15 @@ namespace CustomGame
 
         public void LoadMap(string map_file)
         {
-            Map map = SceneManager.Game.Content.Load<Map>(map_file);
+            ContentManager Content = sceneManager.Game.Content;
+            Map map = Content.Load<Map>(map_file);
             map.PostReading();
 
             width = map.Width;
             height = map.Height;
             tile_size = map.TileSize;
             
-            Texture2D background_texture = SceneManager.Game.Content.Load<Texture2D>(map.BackgroundFile);
+            Texture2D background_texture = Content.Load<Texture2D>(map.BackgroundFile);
             background_layer = new BackgroundLayer(Vector2.Zero, background_texture);
             
             tower_map = new byte[width*height];
@@ -188,6 +194,16 @@ namespace CustomGame
             //Khoi tao manager
             wave_manager = new WaveManager(waves);
             tower_manager = new TowerManager();
+
+            //Phan sound
+            songs = new List<Song>();
+            Song song;
+            for (int i = 0; i < map.SongFiles.Count; i++)
+            {
+                song = Content.Load<Song>(map.SongFiles[i]);
+                songs.Add(song);
+            }
+            currentSongIndex = 0;
         }
 
         public int TileSize { get { return tile_size; } }
@@ -274,6 +290,11 @@ namespace CustomGame
 
         public override void  Update(GameTime gameTime)
         {
+            if (MediaPlayer.State == MediaState.Stopped)
+            {
+                MediaPlayer.Play(songs[currentSongIndex]);
+                currentSongIndex = (currentSongIndex + 1) % songs.Count;
+            }
             HudLayer.Update(gameTime);
             
             if (wave_manager.Waiting){ WaveTable.Update(gameTime, wave_manager.CurrentWaveNumber); }

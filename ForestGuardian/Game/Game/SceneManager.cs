@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 using System.Diagnostics;
 
 namespace CustomGame
@@ -19,6 +20,9 @@ namespace CustomGame
 
         bool isInitialized;
         bool traceEnabled;
+
+        Texture2D CursorTexture;
+        Vector2 CursorPosition;
 
         public SpriteBatch SpriteBatch
         {
@@ -50,6 +54,7 @@ namespace CustomGame
             ContentManager content = Game.Content;
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            CursorTexture = content.Load<Texture2D>(@"images\cursor");
             // Tell each of the screens to load their content.
             foreach (GameScene scene in scenes)
             {
@@ -70,6 +75,9 @@ namespace CustomGame
         {
             // Make a copy of the master scene list, to avoid confusion if
             // the process of updating one scene adds or removes others.
+            CursorPosition.X = Mouse.GetState().X;
+            CursorPosition.Y = Mouse.GetState().Y;
+
             scenesToUpdate.Clear();
 
             foreach (GameScene scene in scenes)
@@ -126,7 +134,7 @@ namespace CustomGame
         }
 
         public override void Draw(GameTime gameTime)
-        {
+        {          
             foreach (GameScene scene in scenes)
             {
                 if (scene.SceneState == SceneState.Hidden)
@@ -134,6 +142,9 @@ namespace CustomGame
 
                 scene.Draw(spriteBatch);
             }
+            spriteBatch.Begin();
+            spriteBatch.Draw(CursorTexture, CursorPosition, Color.White);
+            spriteBatch.End();
         }
 
         public void AddScene(GameScene scene)

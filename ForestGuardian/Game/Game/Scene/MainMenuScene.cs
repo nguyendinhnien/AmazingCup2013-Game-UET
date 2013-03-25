@@ -75,9 +75,8 @@ namespace CustomGame
             spriteBatch.Draw(backgroundTexture, backgroundPosition, Color.White);
             for (int i = 0; i < NUMBER_OF_BUTTONS; i++)
                 button[i].Draw(spriteBatch);
-
-
-                spriteBatch.End();
+            
+            spriteBatch.End();
         }
 
 

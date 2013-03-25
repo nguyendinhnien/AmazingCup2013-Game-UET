@@ -32,7 +32,7 @@ namespace Library
         //protected float Rotation = 0.0f;
         //protected float Scale = 1.0f;
 
-        private ButtonStatus state = ButtonStatus.Normal;
+        protected ButtonStatus state = ButtonStatus.Normal;
 
         public event EventHandler Clicked;
         public event EventHandler Pressed;
@@ -148,6 +148,8 @@ namespace Library
                 case ButtonStatus.Hovering:
                     if (hoverTexture != null) { texture = hoverTexture; }
                     break;
+                case ButtonStatus.Normal:
+                    texture = normalTexture;break;
             }
             spriteBatch.Draw(texture, this.position, null, Color.White, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, layer_depth);
         }

@@ -19,7 +19,6 @@ namespace CustomGame
         private Vector2 PointPosition;
 
         private ToggleButton playButton;
-        private ToggleButton pauseButton;
         private ToggleButton fastButton;
         private ToggleButton settingButton;
 
@@ -31,8 +30,8 @@ namespace CustomGame
         {
             ContentManager Content = gameplay.SceneManager.Game.Content;
             Texture2D texture;
-            Texture2D textureEnable;
-            Texture2D textureDisable;
+            Texture2D textureActive;
+            Texture2D textureInactive;
 
             font = Content.Load<SpriteFont>(@"fonts\gameplay\hud_font");
             texture = Content.Load<Texture2D>(@"images\gameplay\buttons\life_label");
@@ -41,49 +40,37 @@ namespace CustomGame
             texture = Content.Load<Texture2D>(@"images\gameplay\buttons\money_label");
             MoneyLabel = new Label(texture, new Vector2(20,35));
 
-            textureEnable = Content.Load<Texture2D>(@"images\gameplay\buttons\play_enable_but");
-            textureDisable = Content.Load<Texture2D>(@"images\gameplay\buttons\play_disable_but");
-            playButton = new ToggleButton(textureEnable, null, null, textureDisable, new Vector2(75,675));
+            textureActive = Content.Load<Texture2D>(@"images\gameplay\buttons\play_enable_but");
+            textureInactive = Content.Load<Texture2D>(@"images\gameplay\buttons\pause_enable_but");
+            playButton = new ToggleButton(textureActive, null, null, textureInactive, new Vector2(75,675));
             playButton.Clicked += PlayButton_Clicked;
             playButton.Active = true;
 
-            textureEnable = Content.Load<Texture2D>(@"images\gameplay\buttons\pause_enable_but");
-            textureDisable = Content.Load<Texture2D>(@"images\gameplay\buttons\pause_disable_but");
-            pauseButton = new ToggleButton(textureEnable, null, null, textureDisable, new Vector2(130, 675));
-            pauseButton.Clicked += PauseButton_Clicked;
-            pauseButton.Active = false;
-
-            textureEnable = Content.Load<Texture2D>(@"images\gameplay\buttons\fast_enable_but");
-            textureDisable = Content.Load<Texture2D>(@"images\gameplay\buttons\fast_disable_but");
-            fastButton = new ToggleButton(textureEnable, null, null, textureDisable, new Vector2(184,675));
+            textureActive = Content.Load<Texture2D>(@"images\gameplay\buttons\fast_enable_but");
+            textureInactive = Content.Load<Texture2D>(@"images\gameplay\buttons\fast_disable_but");
+            fastButton = new ToggleButton(textureActive, null, null, textureInactive, new Vector2(135,675));
             fastButton.Clicked += FastButton_Clicked;
             fastButton.Active = false;
 
-            textureEnable = Content.Load<Texture2D>(@"images\gameplay\buttons\setting_enable_but");
-            textureDisable = Content.Load<Texture2D>(@"images\gameplay\buttons\setting_disable_but");
-            settingButton = new ToggleButton(textureEnable,null, null, textureDisable, new Vector2(246,675));
+            textureActive = Content.Load<Texture2D>(@"images\gameplay\buttons\setting_enable_but");
+            textureInactive = Content.Load<Texture2D>(@"images\gameplay\buttons\setting_disable_but");
+            settingButton = new ToggleButton(textureActive,null, null, textureInactive, new Vector2(203,675));
             settingButton.Clicked += SettingButton_Clicked;
             settingButton.Active = false;
         }
 
         private void PlayButton_Clicked(object sender, EventArgs e)
         {
-            if (!playButton.Active)
+            if (playButton.Active)
             {
-                playButton.Active = true;
-                pauseButton.Active = false;
-                Console.WriteLine("Game play");
-            }
-        }
-        private void PauseButton_Clicked(object sender, EventArgs e)
-        {
-            if (!pauseButton.Active)
-            {
-                pauseButton.Active = true;
                 playButton.Active = false;
                 Console.WriteLine("Game pause");
             }
+            else { playButton.Active = true; Console.WriteLine("Game play"); }
+            
+
         }
+
         private void FastButton_Clicked(object sender, EventArgs e)
         {
             if (fastButton.Active)
@@ -109,7 +96,6 @@ namespace CustomGame
         public void Update(GameTime gameTime)
         {
             playButton.Update(gameTime);
-            pauseButton.Update(gameTime);
             fastButton.Update(gameTime);
             settingButton.Update(gameTime);
             PointPosition.X = 512 - (font.MeasureString(gameplay.Points.ToString())).X / 2;
@@ -122,12 +108,10 @@ namespace CustomGame
             spriteBatch.DrawString(font, gameplay.Money.ToString(), new Vector2(82, 49), Color.Gold, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, 0.08f);
             spriteBatch.DrawString(font, gameplay.Points.ToString(), PointPosition, Color.Gold, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, 0.08f);
             
-
             LifeLabel.Draw(spriteBatch);
             MoneyLabel.Draw(spriteBatch);
             
             playButton.Draw(spriteBatch);
-            pauseButton.Draw(spriteBatch);
             fastButton.Draw(spriteBatch);
             settingButton.Draw(spriteBatch);
         }

@@ -29,7 +29,7 @@ namespace Data
             map.StartCell = input.ReadObject<Cell>();
             map.EndCell = input.ReadObject<Cell>();
             map.Waves = input.ReadObject <List<Wave>>();
-
+            map.SongFiles = input.ReadObject<List<string>>();
             //map.PostReading();
             return map;
         }

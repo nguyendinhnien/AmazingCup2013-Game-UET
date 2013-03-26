@@ -12,6 +12,7 @@ namespace Library
     {
         public const string AXE_MAN = "AxeMan";
         public const string SAW_MAN = "SawMan";
+        public const string DOZER = "Dozer";
     }
     public class Enemy : AnimatedSprite
     {
@@ -79,7 +80,7 @@ namespace Library
             set { mSlowDuration = value; }
         }
 
-        public virtual void setWalkAnimation() { }
+        public virtual void setMoveAnimation() { }
         
         public Enemy(Vector2 center, float maxHealth, int value, float move_speed)
             : base(center)
@@ -163,7 +164,7 @@ namespace Library
             //Neu chua di het duong
             if (health > 0)
             {
-                setWalkAnimation();
+                setMoveAnimation();
                 if (waypoints.Count > 0)
                 {
                     //Neu da toi mot vi tri waypoint

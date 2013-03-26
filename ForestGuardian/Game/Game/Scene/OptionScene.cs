@@ -22,12 +22,15 @@ namespace CustomGame
 
         private Texture2D tickTexture;
         private Vector2 tickPosition;
-        private Texture2D soundBarTexture;
+        private Texture2D barTexture;
+        private Vector2 musicBarPosition;
         private Vector2 soundBarPosition;
 
         private Button closeButton;
-        private Button increButton;
-        private Button decreButton;
+        private Button increMusicButton;
+        private Button decreMusicButton;
+        private Button increSoundButton;
+        private Button decreSoundButton;
 
         public OptionScene()
             : base()
@@ -43,7 +46,7 @@ namespace CustomGame
             ContentManager content = SceneManager.Game.Content;
 
             backgroundTexture = content.Load<Texture2D>(@"images\scene\OptionScene\dialog_options");
-            loadingBlackTexture = content.Load<Texture2D>(@"images\scene\OptionScene\FadeScreen");
+            loadingBlackTexture = content.Load<Texture2D>(@"images\scene\CommonButton\FadeScreen");
 
             Viewport viewport = SceneManager.GraphicsDevice.Viewport;
             backgroundPosition = new Vector2(
@@ -53,35 +56,46 @@ namespace CustomGame
                 viewport.Width, viewport.Height);
 
             tickTexture = content.Load<Texture2D>(@"images\scene\OptionScene\tick_full_screen");
-            tickPosition = backgroundPosition + new Vector2(70, 70);
+            tickPosition = backgroundPosition + new Vector2(78, 76);
 
             Texture2D texture = content.Load<Texture2D>(@"images\scene\OptionScene\b_close");
             Texture2D pressTexture = content.Load<Texture2D>(@"images\scene\OptionScene\b_close_clicked");
-            Vector2 position = backgroundPosition + new Vector2(backgroundTexture.Width - 70, 10);
+            Vector2 position = backgroundPosition + new Vector2(645, 15);
             closeButton = new Button(texture, null, pressTexture, position);
             closeButton.Clicked += CloseButtonClicked;
 
             texture = content.Load<Texture2D>(@"images\scene\OptionScene\decrease_volume");
             pressTexture = content.Load<Texture2D>(@"images\scene\OptionScene\decrease_volume_clicked");
-            position = backgroundPosition + new Vector2(283, 183);
-            decreButton = new Button(texture, null, pressTexture, position);
-            decreButton.Clicked += DecreButtonClicked;
+            position = backgroundPosition + new Vector2(294, 179);//300 185
+            decreMusicButton = new Button(texture, null, pressTexture, position);
+            decreMusicButton.Clicked += DecreMusicButtonClicked;
+
+            position = backgroundPosition + new Vector2(294, 247);
+            decreSoundButton = new Button(texture, null, pressTexture, position);
+            decreSoundButton.Clicked += DecreSoundButtonClicked;
 
             texture = content.Load<Texture2D>(@"images\scene\OptionScene\increase_volume");
             pressTexture = content.Load<Texture2D>(@"images\scene\OptionScene\increase_volume_clicked");
-            position = backgroundPosition + new Vector2(632, 170);
-            increButton = new Button(texture, null, pressTexture, position);
-            increButton.Clicked += IncreButtonClicked;
+            position = backgroundPosition + new Vector2(640, 164); //650.176
+            increMusicButton = new Button(texture, null, pressTexture, position);
+            increMusicButton.Clicked += IncreMusicButtonClicked;
 
-            soundBarTexture = content.Load<Texture2D>(@"images\scene\OptionScene\sound_bar");
-            soundBarPosition = backgroundPosition + new Vector2(330, 190);
+            position = backgroundPosition + new Vector2(640, 233);
+            increSoundButton = new Button(texture, null, pressTexture, position);
+            increSoundButton.Clicked += IncreSoundButtonClicked;
+
+            barTexture = content.Load<Texture2D>(@"images\scene\OptionScene\sound_bar");
+            musicBarPosition = backgroundPosition + new Vector2(338, 183);
+            soundBarPosition = backgroundPosition + new Vector2(338, 251);
         }
 
         public override void Update(GameTime gameTime)
         {
             closeButton.Update(gameTime);
-            increButton.Update(gameTime);
-            decreButton.Update(gameTime);
+            increMusicButton.Update(gameTime);
+            decreMusicButton.Update(gameTime);
+            increSoundButton.Update(gameTime);
+            decreSoundButton.Update(gameTime);
 
             if (InputManager.IsMouseJustReleased() && InputManager.IsMouseHittedRectangle(new Rectangle(
                 (int)tickPosition.X, (int)tickPosition.Y, tickTexture.Width, tickTexture.Height)))
@@ -91,21 +105,22 @@ namespace CustomGame
             }
         }
 
-        public override void Draw(SpriteBatch spriteBatch)
+        public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {
             spriteBatch.Begin();
 
             spriteBatch.Draw(loadingBlackTexture, loadingBlackTextureDestination,
                 Color.White);
             spriteBatch.Draw(backgroundTexture, backgroundPosition, Color.White);
-            closeButton.Draw(spriteBatch);
-            increButton.Draw(spriteBatch);
-            decreButton.Draw(spriteBatch);
 
-            for (int i = 0; i < UserData.sound; i++)
-            {
-                spriteBatch.Draw(soundBarTexture, soundBarPosition + i * (new Vector2(60, 0)), Color.White);
-            }
+            closeButton.Draw(spriteBatch);
+            increMusicButton.Draw(spriteBatch);
+            decreMusicButton.Draw(spriteBatch);
+            increSoundButton.Draw(spriteBatch);
+            decreSoundButton.Draw(spriteBatch);
+
+            spriteBatch.Draw(barTexture, musicBarPosition, new Rectangle(0, 0, (300 * UserData.music) / 5, 14), Color.White);
+            spriteBatch.Draw(barTexture, soundBarPosition, new Rectangle(0, 0, (300 * UserData.sound) / 5, 14), Color.White);
 
             if (UserData.isFullScreen)
                 spriteBatch.Draw(tickTexture, tickPosition, Color.White);
@@ -113,13 +128,25 @@ namespace CustomGame
             spriteBatch.End();
         }
 
-        private void DecreButtonClicked(object sender, EventArgs e)
+        private void DecreMusicButtonClicked(object sender, EventArgs e)
+        {
+            if (UserData.music > 0)
+                UserData.music--;
+        }
+
+        private void IncreMusicButtonClicked(object sender, EventArgs e)
+        {
+            if (UserData.music < 5)
+                UserData.music++;
+        }
+
+        private void DecreSoundButtonClicked(object sender, EventArgs e)
         {
             if (UserData.sound > 0)
                 UserData.sound--;
         }
 
-        private void IncreButtonClicked(object sender, EventArgs e)
+        private void IncreSoundButtonClicked(object sender, EventArgs e)
         {
             if (UserData.sound < 5)
                 UserData.sound++;
@@ -129,7 +156,5 @@ namespace CustomGame
         {
             this.ExitScreen();
         }
-
-
     }
 }

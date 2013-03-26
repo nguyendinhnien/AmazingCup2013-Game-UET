@@ -87,6 +87,10 @@ namespace Library
                     enemy = new SawMan(waypoints.Peek());
                     enemy.setWaypoints(new Queue<Vector2>(waypoints));
                     break;
+                case EnemyType.DOZER:
+                    enemy = new Dozer(waypoints.Peek());
+                    enemy.setWaypoints(new Queue<Vector2>(waypoints));
+                    break;
                 default:
                     enemy = null; break;
             }

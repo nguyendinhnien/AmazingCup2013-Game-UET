@@ -9,6 +9,8 @@ namespace Library
 {
     public class TowerManager
     {
+        public static bool isPause = false;
+
         private Dictionary<int,Tower> towers;
 
         public TowerManager()
@@ -40,8 +42,9 @@ namespace Library
             foreach (var tower_pair in towers)
             {
                 tower = tower_pair.Value;
+
                 tower.Update(gameTime);
-                if (enemies != null)
+                if (enemies != null && !isPause)
                 {
                     if (tower.Target == null || !tower.Target.Alive)
                         tower.Target = tower.getClosestEnemy(enemies);

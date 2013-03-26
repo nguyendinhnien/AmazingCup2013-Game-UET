@@ -82,6 +82,9 @@ namespace CustomGame
                             case EnemyType.SAW_MAN:
                                 next_wave_texture[i] = SawMan.TEXTURE;
                                 break;
+                            case EnemyType.DOZER:
+                                next_wave_texture[i] = Dozer.TEXTURE;
+                                break;
                         }
                     }
                 }

@@ -73,9 +73,18 @@
     <Reference Include="mscorlib">
       <Private>False</Private>
     </Reference>
+    <Reference Include="ProjectMercury, Version=3.1.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProjectMercury.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjectMercury.ContentPipeline">
+      <HintPath>..\ProjectMercury.ContentPipeline.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <Private>False</Private>
     </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Input.Manipulations" />
     <Reference Include="System.Xml">
       <Private>False</Private>
     </Reference>
@@ -98,9 +107,10 @@
     <Compile Include="core\Cursor.cs" />
     <Compile Include="core\BackgroundLayer.cs" />
     <Compile Include="core\Sprite.cs" />
-    <Compile Include="entity\bullet\CatusBullet.cs" />
+    <Compile Include="entity\bullet\CactusBullet.cs" />
     <Compile Include="entity\bullet\OakBullet.cs" />
     <Compile Include="entity\bullet\PineappleBullet.cs" />
+    <Compile Include="entity\enemy\Dozer.cs" />
     <Compile Include="gui\Label.cs" />
     <Compile Include="entity\bullet\Bullet.cs" />
     <Compile Include="entity\enemy\AxeMan.cs" />
@@ -114,6 +124,9 @@
     <Compile Include="gui\ToggleLabel.cs" />
     <Compile Include="gui\ToggleValueLabel.cs" />
     <Compile Include="gui\ValueLabel.cs" />
+    <Compile Include="textbox\KeyboardDispatcher.cs" />
+    <Compile Include="EventInput.cs" />
+    <Compile Include="textbox\TextBox.cs" />
     <Compile Include="wave\Wave.cs" />
     <Compile Include="wave\WaveManager.cs" />
     <Compile Include="gui\Button.cs" />

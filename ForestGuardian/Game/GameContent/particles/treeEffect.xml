@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+  <Asset Type="ProjectMercury.ParticleEffect">
+    <Item>
+      <Name>Stars</Name>
+      <Budget>5000</Budget>
+      <Term>1.5</Term>
+      <ReleaseQuantity>11</ReleaseQuantity>
+      <Enabled>True</Enabled>
+      <ReleaseSpeed>
+        <Value>50</Value>
+        <Variation>0</Variation>
+      </ReleaseSpeed>
+      <ReleaseColour>
+        <Value>1 1 0</Value>
+        <Variation>0 0 0</Variation>
+      </ReleaseColour>
+      <ReleaseOpacity>
+        <Value>1</Value>
+        <Variation>0</Variation>
+      </ReleaseOpacity>
+      <ReleaseScale>
+        <Value>32</Value>
+        <Variation>0</Variation>
+      </ReleaseScale>
+      <ReleaseRotation>
+        <Value>0</Value>
+        <Variation>3.14</Variation>
+      </ReleaseRotation>
+      <ReleaseImpulse>0 0</ReleaseImpulse>
+      <ParticleTextureAssetName>LensFlare</ParticleTextureAssetName>
+      <Modifiers>
+        <Item Type="ProjectMercury.Modifiers.DampingModifier">
+          <DampingCoefficient>2</DampingCoefficient>
+        </Item>
+      </Modifiers>
+      <BlendMode>Alpha</BlendMode>
+      <TriggerOffset>0 0</TriggerOffset>
+      <MinimumTriggerPeriod>0</MinimumTriggerPeriod>
+    </Item>
+    <Name>Star Trail</Name>
+    <Author>Matt Davey</Author>
+    <Description />
+  </Asset>
+</XnaContent>

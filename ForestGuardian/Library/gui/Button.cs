@@ -143,10 +143,12 @@ namespace Library
             switch (state)
             {
                 case ButtonStatus.Pressing:
-                    if (pressTexture != null) { texture = pressTexture; } 
+                    if (pressTexture != null) { texture = pressTexture; }
+                    else { texture = normalTexture; }
                     break;
                 case ButtonStatus.Hovering:
                     if (hoverTexture != null) { texture = hoverTexture; }
+                    else { texture = normalTexture; }
                     break;
                 case ButtonStatus.Normal:
                     texture = normalTexture;break;

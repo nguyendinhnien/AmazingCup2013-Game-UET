@@ -20,7 +20,7 @@ namespace CustomGame
 
         private ToggleButton playButton;
         private ToggleButton fastButton;
-        private ToggleButton settingButton;
+        private Button settingButton;
 
         public HUDLayer(GamePlayScene gameplay)
         {
@@ -40,8 +40,8 @@ namespace CustomGame
             texture = Content.Load<Texture2D>(@"images\gameplay\buttons\money_label");
             MoneyLabel = new Label(texture, new Vector2(20,35));
 
-            textureActive = Content.Load<Texture2D>(@"images\gameplay\buttons\play_enable_but");
-            textureInactive = Content.Load<Texture2D>(@"images\gameplay\buttons\pause_enable_but");
+            textureActive = Content.Load<Texture2D>(@"images\gameplay\buttons\pause_enable_but");
+            textureInactive = Content.Load<Texture2D>(@"images\gameplay\buttons\play_enable_but");
             playButton = new ToggleButton(textureActive, null, null, textureInactive, new Vector2(75,675));
             playButton.Clicked += PlayButton_Clicked;
             playButton.Active = true;
@@ -54,21 +54,15 @@ namespace CustomGame
 
             textureActive = Content.Load<Texture2D>(@"images\gameplay\buttons\setting_enable_but");
             textureInactive = Content.Load<Texture2D>(@"images\gameplay\buttons\setting_disable_but");
-            settingButton = new ToggleButton(textureActive,null, null, textureInactive, new Vector2(203,675));
+            settingButton = new Button(textureInactive,null, textureActive, new Vector2(203,675));
             settingButton.Clicked += SettingButton_Clicked;
-            settingButton.Active = false;
+
         }
 
         private void PlayButton_Clicked(object sender, EventArgs e)
         {
-            if (playButton.Active)
-            {
-                playButton.Active = false;
-                Console.WriteLine("Game pause");
-            }
-            else { playButton.Active = true; Console.WriteLine("Game play"); }
-            
-
+            TowerManager.isPause = !TowerManager.isPause;
+            playButton.Active = !playButton.Active;
         }
 
         private void FastButton_Clicked(object sender, EventArgs e)
@@ -86,11 +80,7 @@ namespace CustomGame
         }
         private void SettingButton_Clicked(object sender, EventArgs e)
         {
-            if (!settingButton.Active)
-            {
-                settingButton.Active = true;
-                Console.WriteLine("Game Setting");
-            }           
+            gameplay.SceneManager.AddScene(new MenuPause());        
         }
         
         public void Update(GameTime gameTime)

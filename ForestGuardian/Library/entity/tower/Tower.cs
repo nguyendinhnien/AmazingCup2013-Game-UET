@@ -125,22 +125,25 @@ namespace Library
         {
             base.Update(gameTime);
 
-            if (reloadDuration >= 0)
+            if (!TowerManager.isPause) //NTA added
             {
-                reloadDuration -= (float)gameTime.ElapsedGameTime.TotalSeconds;
-            }
-
-            if (target != null && !isInRange(target.Center))
-            {
-                target = null;
-            }
-
-            if (bullet != null)
-            {
-                bullet.Update(gameTime);
-                if (!bullet.Alive && target != null)
+                if (reloadDuration >= 0)
                 {
-                    bullet.HitTarget(target);
+                    reloadDuration -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+                }
+
+                if (target != null && !isInRange(target.Center))
+                {
+                    target = null;
+                }
+
+                if (bullet != null)
+                {
+                    bullet.Update(gameTime);
+                    if (!bullet.Alive && target != null)
+                    {
+                        bullet.HitTarget(target);
+                    }
                 }
             }
         }

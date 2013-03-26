@@ -1,2 +1,0 @@
-C:\Users\KIEN\Documents\Visual Studio 2010\Projects\TowerDefenseGame\TowerDefenseGame\TowerDefenseGameContent\obj\x86\Debug\ResolveAssemblyReference.cache
-D:\WORK\_Programing\AmazingCup2013-Game-UET\TowerDefenseGame\TowerDefenseGame\TowerDefenseGameContent\obj\x86\Debug\ResolveAssemblyReference.cache

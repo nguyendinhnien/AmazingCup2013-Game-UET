@@ -10,6 +10,11 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Media;
 
+using ProjectMercury;
+using ProjectMercury.Emitters;
+using ProjectMercury.Modifiers;
+using ProjectMercury.Renderers;
+
 using Data;
 using Library;
 
@@ -35,7 +40,7 @@ namespace CustomGame
         private int currentSongIndex;
 
         //Phan game play
-        private int lives=20;
+        private int lives=1;
         private int money=100;
         private int points = 0;
 
@@ -64,6 +69,8 @@ namespace CustomGame
         private NextWavesTable WaveTable;
         private HUDLayer HudLayer;
 
+        private Renderer mRenderer = GameManager.renderer;
+
         public GamePlayScene() : base(){}
 
         public int Lives { get { return lives; } }
@@ -83,12 +90,16 @@ namespace CustomGame
             Enemy.HEALTH_BAR_TEXTURE = Content.Load<Texture2D>(@"images\gameplay\health_bar");
 
             AxeMan.TEXTURE = Content.Load<Texture2D>(@"images\gameplay\enemies\axeman");
-            texture = Content.Load<Texture2D>(@"images\gameplay\enemies\axeman_walk");
-            AxeMan.WALK_ANIMATION = new Animation(texture, 6, 1, 0.2f, true);
+            texture = Content.Load<Texture2D>(@"images\gameplay\enemies\axeman_move");
+            AxeMan.MOVE_ANIMATION = new Animation(texture, 6, 1, 0.2f, true);
 
-            texture = Content.Load<Texture2D>(@"images\gameplay\enemies\sawman_walk");
-            SawMan.WALK_ANIMATION = new Animation(texture, 6, 1, 0.2f, true);
+            SawMan.TEXTURE = Content.Load<Texture2D>(@"images\gameplay\enemies\sawman");
+            texture = Content.Load<Texture2D>(@"images\gameplay\enemies\sawman_move");
+            SawMan.MOVE_ANIMATION = new Animation(texture, 6, 1, 0.2f, true);
 
+            Dozer.TEXTURE = Content.Load<Texture2D>(@"images\gameplay\enemies\dozer");
+            texture = Content.Load<Texture2D>(@"images\gameplay\enemies\dozer_move");
+            Dozer.MOVE_ANIMATION = new Animation(texture, 4, 3, 0.2f, true);
 
             //Load Tower texture
             OakTower.TEXTURE_LV1 = Content.Load<Texture2D>(@"images\gameplay\towers\oak_tower_level1");
@@ -105,6 +116,17 @@ namespace CustomGame
             OakTower.BULLET_TEXTURE = Content.Load<Texture2D>(@"images\gameplay\bullets\oakbullet");
             CactusTower.BULLET_TEXTURE = Content.Load<Texture2D>(@"images\gameplay\bullets\cactusbullet");
             PineappleTower.BULLET_TEXTURE = Content.Load<Texture2D>(@"images\gameplay\bullets\pineapplebullet");
+
+            // Load particle effect
+            OakBullet.EFFECT = Content.Load<ParticleEffect>(@"particles\treeEffect").DeepCopy();
+            CactusBullet.EFFECT = Content.Load<ParticleEffect>(@"particles\slowEffect").DeepCopy();
+            PineappleBullet.EFFECT = Content.Load<ParticleEffect>(@"particles\explosionEffect").DeepCopy();
+            OakBullet.EFFECT.LoadContent(Content);
+            CactusBullet.EFFECT.LoadContent(Content);
+            PineappleBullet.EFFECT.LoadContent(Content);
+            OakBullet.EFFECT.Initialise();
+            CactusBullet.EFFECT.Initialise();
+            PineappleBullet.EFFECT.Initialise();
 
             //Load cac label
             Texture2D textureEnable, textureDisable;
@@ -138,7 +160,7 @@ namespace CustomGame
             CursorLabel.LayerDepth = 0.3f;
 
             wave_font = Content.Load<SpriteFont>(@"fonts\gameplay\wave_info");
-            LoadMap(@"data\maps\map1");
+            LoadMap(UserData.mapFile);
             
             //Load du lieu cho camera
             Viewport viewport = SceneManager.GraphicsDevice.Viewport;
@@ -470,8 +492,9 @@ namespace CustomGame
             }
             
             previousState = mouseState;
-                       
-            wave_manager.Update(gameTime);
+            
+            if (!TowerManager.isPause) //NTA added
+                wave_manager.Update(gameTime);
 
             if (!wave_manager.Finish)
             {
@@ -481,6 +504,8 @@ namespace CustomGame
                 if (lives <= 0){
                     tower_manager.Update(gameTime, null);
                     Console.WriteLine("You loose");
+                    //this.SceneManager.AddScene(new DefeatScene());
+                    this.SceneManager.AddScene(new TextBoxScene());
                 }
                 else{
                     tower_manager.Update(gameTime, wave_manager.CurrentWave.ActiveEnemies);
@@ -489,11 +514,11 @@ namespace CustomGame
             else
             {
                 tower_manager.Update(gameTime, null);
-                Console.WriteLine("You win");
+                this.SceneManager.AddScene(new VictoryScene());
             }
         }
 
-        public override void Draw(SpriteBatch spriteBatch)
+        public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {
             //Ve background 1 lan thoi
             spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend,null,null,null,null,Camera2D.Transform);
@@ -525,6 +550,10 @@ namespace CustomGame
                 WaveTable.Draw(spriteBatch);
                 HudLayer.Draw(spriteBatch);
             spriteBatch.End();
+
+            mRenderer.RenderEffect(OakBullet.EFFECT);
+            mRenderer.RenderEffect(CactusBullet.EFFECT);
+            mRenderer.RenderEffect(PineappleBullet.EFFECT);
         }
     }
 }

@@ -17,7 +17,7 @@ namespace Library
         private bool finish=false;
         //Dang cho doi giua cac wave
         private bool waiting = true;
-        private float maxWaveDelay = 10.8f;
+        private float maxWaveDelay = 3.8f;
         private float timer;
 
         public Wave CurrentWave

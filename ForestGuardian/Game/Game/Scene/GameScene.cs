@@ -168,8 +168,9 @@ namespace CustomGame
 
         public virtual void Update(GameTime gameTime) { }
 
-        public virtual void Draw(SpriteBatch spriteBatch) { }
+        //public virtual void Draw(SpriteBatch spriteBatch) { }
 
+        public virtual void Draw(SpriteBatch spriteBatch, GameTime gameTime) { }
 
         public void ExitScreen()
         {

@@ -44,7 +44,6 @@ namespace CustomGame
         public override void Initialize()
         {
             base.Initialize();
-
             isInitialized = true;
         }
 
@@ -140,7 +139,8 @@ namespace CustomGame
                 if (scene.SceneState == SceneState.Hidden)
                     continue;
 
-                scene.Draw(spriteBatch);
+                //scene.Draw(spriteBatch);
+                scene.Draw(spriteBatch, gameTime);
             }
             spriteBatch.Begin();
             spriteBatch.Draw(CursorTexture, CursorPosition, Color.White);
@@ -178,8 +178,22 @@ namespace CustomGame
             return scenes.ToArray();
         }
 
-        public void ToggleFullScreen(){
+        public void ToggleFullScreen()
+        {
             graphics.ToggleFullScreen();
+        }
+
+        public void ResetGame()
+        {
+            scenes.Clear();
+            this.AddScene(new GamePlayScene());
+        }
+
+        //back to main menu
+        public void ExitGame()
+        {
+            scenes.Clear();
+            this.AddScene(new MainMenuScene());
         }
     }
 }

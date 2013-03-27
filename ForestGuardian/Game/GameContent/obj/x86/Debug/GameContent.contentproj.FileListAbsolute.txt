@@ -1,2 +1,3 @@
 C:\Users\KIEN\Desktop\ForestGuardian\Game\GameContent\obj\x86\Debug\ResolveAssemblyReference.cache
 E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\GameContent\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\GameContent\obj\x86\Debug\GameContent.contentprojResolveAssemblyReference.cache

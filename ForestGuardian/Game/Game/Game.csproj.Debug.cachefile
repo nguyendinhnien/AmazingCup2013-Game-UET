@@ -127,6 +127,9 @@ Content\images\gameplay\enemies\dozer_move.xnb
 Content\images\gameplay\enemies\sawman_move.xnb
 Content\images\scene\HelpScene\cactus_card.xnb
 Content\images\scene\HelpScene\hulk_card.xnb
+Content\images\scene\TextBoxScene\textbox_dialog.xnb
+Content\images\scene\TextBoxScene\b_save_normal.xnb
+Content\images\scene\TextBoxScene\b_save_press.xnb
 Content\fonts\gameplay\value_font.xnb
 Content\fonts\gameplay\hud_font.xnb
 Content\fonts\ScoreScene\score.xnb
@@ -134,6 +137,7 @@ Content\fonts\HelpScene\helpScene.xnb
 Content\fonts\gameplay\wave_info.xnb
 Content\fonts\gameplay\next_wave.xnb
 Content\fonts\EndGameScene\end_game.xnb
+Content\fonts\TextBoxScene\textinput.xnb
 Content\musics\Song1.xnb
 Content\musics\Song2.xnb
 Content\musics\Song3.xnb
@@ -142,10 +146,6 @@ Content\musics\Song5.xnb
 Content\musics\Song6.xnb
 Content\musics\Song7.xnb
 Content\musics\Song8.xnb
-Content\images\scene\TextBoxScene\textbox_dialog.xnb
-Content\fonts\TextBoxScene\textinput.xnb
-Content\images\scene\TextBoxScene\b_save_normal.xnb
-Content\images\scene\TextBoxScene\b_save_press.xnb
 Content\musics\Song1.wma
 Content\musics\Song2.wma
 Content\musics\Song3.wma

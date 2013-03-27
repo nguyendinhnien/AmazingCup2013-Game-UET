@@ -46,7 +46,8 @@ namespace Library
 
             if (!mHit)
             {
-                mEffect.Trigger(pEnemy.Center);
+                Vector2 tmp = pEnemy.Center - Camera2D.Position;
+                mEffect.Trigger(ref tmp);
                 mHit = true;
             }
         }

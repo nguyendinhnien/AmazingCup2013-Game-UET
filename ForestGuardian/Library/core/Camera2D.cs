@@ -11,10 +11,7 @@ namespace Library
     public class Camera2D
     {
         private static Matrix transform;
-        public static Matrix Transform
-        {
-            get { return transform; }
-        }
+        
         private static Vector2 position;
 
         private static Vector2 minPosition;
@@ -30,6 +27,16 @@ namespace Library
         
         //Kiem tra xem co su thay doi voi camera ko
         private static bool is_changed = true;
+
+        public static Matrix Transform
+        {
+            get { return transform; }
+        }
+
+        public static Vector2 Position
+        {
+            get { return position; }
+        }
 
         public static float X
         {

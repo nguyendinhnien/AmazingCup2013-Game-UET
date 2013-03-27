@@ -497,3 +497,5 @@ D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\obj\x86\Deb
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\obj\x86\Debug\Game.exe
 D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\obj\x86\Debug\Game.pdb
+D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Game.exe
+D:\WORK\_Programing\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Game.pdb

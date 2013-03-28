@@ -24,6 +24,7 @@ namespace Library
         protected float reloadDuration;
 
         protected int cost;
+        protected int upgradeCost;
         protected int level;
 
         protected Enemy target;
@@ -44,28 +45,27 @@ namespace Library
             get { return level; }
         }
 
-        #region Cost
         public int Cost
         {
             get { return cost; }
         }
         public int UpgradeCost
         {
-            get { return cost; }
+            get { return upgradeCost; }
         }
         public int SellCost
         {
-            get { return cost; }
+            get { return (cost/2); }
         }
-        #endregion
 
-        public Tower(Texture2D texture, Vector2 pCenter, int cost, int range, int damage, float fire_reload)
-            : this(texture, pCenter, Anchor.CENTER, cost, range, damage, fire_reload) { }
+        public Tower(Texture2D texture, Vector2 pCenter, int cost, int upgradeCost, int range, int damage, float fire_reload)
+            : this(texture, pCenter, Anchor.CENTER, cost, upgradeCost, range, damage, fire_reload) { }
 
-        public Tower(Texture2D texture, Vector2 pPosition, Anchor a, int cost, int range, int damage, float fire_reload)
+        public Tower(Texture2D texture, Vector2 pPosition, Anchor a, int cost, int upgradeCost, int range, int damage, float fire_reload)
             : base(texture, pPosition, a)
         {
             this.cost = cost;
+            this.upgradeCost = upgradeCost;
             this.mRange = range;
             this.mDamage = damage;
             this.mFireReload = fire_reload;

@@ -103,8 +103,8 @@ namespace Library
                 maxPosition.Y = Math.Max(0, world_height - viewport_height / zoom);
                 position = Vector2.Clamp(position, minPosition, maxPosition);
 
-                transform = Matrix.CreateTranslation(new Vector3(-position.X, -position.Y, 0)) *
-                        Matrix.CreateScale(new Vector3(zoom, zoom, 1.0f));
+                transform = Matrix.CreateScale(new Vector3(zoom, zoom, 1.0f))
+                *Matrix.CreateTranslation(new Vector3(-position.X, -position.Y, 0));
                 is_changed = false;
             }
         }

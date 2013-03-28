@@ -13,7 +13,7 @@ namespace Library
         public static Animation MOVE_ANIMATION;
         public static float MOVE_SPEED = 2.0f;
         public static float MAX_HEALTH = 120.0f;
-        public static int VALUE = 100;
+        public static int VALUE = 1;
 
         public AxeMan(Vector2 center)
             : base(center, MAX_HEALTH, VALUE, MOVE_SPEED){}

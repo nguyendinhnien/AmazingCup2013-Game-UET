@@ -52,7 +52,8 @@ namespace CustomGame
         {
             //IsMouseVisible = true;
             keyboard_dispatcher = new KeyboardDispatcher(this.Window);
-            UserData.Init();
+            DataSerializer.Initialize();
+            //UserData.Init();
 
             base.Initialize();
             sceneManager.AddScene(new MainMenuScene());
@@ -65,6 +66,8 @@ namespace CustomGame
         protected override void LoadContent()
         {
             renderer.LoadContent(Content);
+            //DataSerializer.CheckDirectory(UserData.HighScoreDirectory);
+            UserData.LoadSetting();
             base.LoadContent();
         }
 

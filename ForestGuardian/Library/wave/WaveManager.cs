@@ -24,7 +24,6 @@ namespace Library
         {
             get { return waves.Peek(); }
         }
-
         public int CurrentWaveNumber
         {
             get { return current_wave_number; }
@@ -33,17 +32,14 @@ namespace Library
         {
             get { return total_wave_number; }
         }
-
         public bool Finish
         {
             get { return finish; }
         }
-
         public bool Waiting
         {
             get { return waiting; }
         }
-
         public float Timer
         {
             get { return timer; }
@@ -56,8 +52,7 @@ namespace Library
             this.current_wave_number = 1;
             this.timer = maxWaveDelay;
         }
-
-        
+      
         public void Update(GameTime gameTime)
         {           
             //Neu van con wave

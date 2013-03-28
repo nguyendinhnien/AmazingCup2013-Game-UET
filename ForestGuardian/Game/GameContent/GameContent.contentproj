@@ -406,11 +406,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="images\scene\HelpScene\catus_card.png">
-      <Name>catus_card</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
     <Compile Include="images\scene\HelpScene\help.png">
       <Name>help</Name>
       <Importer>TextureImporter</Importer>
@@ -418,11 +413,6 @@
     </Compile>
     <Compile Include="images\scene\HelpScene\oak_card.png">
       <Name>oak_card</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\HelpScene\pine_apple_card.png">
-      <Name>pine_apple_card</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
@@ -718,16 +708,6 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="images\scene\EndGameScene\replay_normal_but.png">
-      <Name>replay_normal_but</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\EndGameScene\replay_press_but.png">
-      <Name>replay_press_but</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="images\scene\EndGameScene\defeat_label.png">
@@ -789,41 +769,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="musics\Song1.mp3">
-      <Name>Song1</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-    </Compile>
-    <Compile Include="musics\Song2.mp3">
-      <Name>Song2</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-    </Compile>
-    <Compile Include="musics\Song3.mp3">
-      <Name>Song3</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-    </Compile>
-    <Compile Include="musics\Song4.mp3">
-      <Name>Song4</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-    </Compile>
-    <Compile Include="musics\Song5.mp3">
-      <Name>Song5</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-    </Compile>
-    <Compile Include="musics\Song6.mp3">
-      <Name>Song6</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-    </Compile>
-    <Compile Include="musics\Song7.mp3">
-      <Name>Song7</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-    </Compile>
     <Compile Include="musics\Song8.mp3">
       <Name>Song8</Name>
       <Importer>Mp3Importer</Importer>
@@ -838,13 +783,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="data\highscore\highscore.xml">
-      <Name>highscore</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-      <SubType>Designer</SubType>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <Compile Include="fonts\EndGameScene\end_game.spritefont">
       <Name>end_game</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -855,18 +793,6 @@
       <Name>textinput</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="images\scene\EndGameScene\caret.png">
-      <Name>caret</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\EndGameScene\textbox.png">
-      <Name>textbox</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -928,6 +854,54 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\scene\TextBoxScene\b_cancel_press.png">
+      <Name>b_cancel_press</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\scene\TextBoxScene\caret.png">
+      <Name>caret</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\scene\TextBoxScene\b_cancel_normal.png">
+      <Name>b_cancel_normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\scene\EndGameScene\replay_normal_but.png">
+      <Name>replay_normal_but</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\EndGameScene\replay_press_but.png">
+      <Name>replay_press_but</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\scene\HelpScene\pineapple_card.png">
+      <Name>pineapple_card</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\default_setting\setting.xml">
+      <Name>setting</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
   <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 

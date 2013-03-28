@@ -21,7 +21,7 @@ namespace CustomGame
         private Rectangle loadingBlackTextureDestination;
 
         private Button resumeButton;
-        private Button resetButton;
+        private Button restartButton;
         private Button optionButton;
         private Button exitButton;
 
@@ -57,8 +57,8 @@ namespace CustomGame
             texture = content.Load<Texture2D>(@"images\scene\MenuPause\b_reset");
             pressTexture = content.Load<Texture2D>(@"images\scene\MenuPause\b_reset_clicked");
             position = backgroundPosition + new Vector2(49, 200);
-            resetButton = new Button(texture, null, pressTexture, position);
-            resetButton.Clicked += ResetButtonClicked;
+            restartButton = new Button(texture, null, pressTexture, position);
+            restartButton.Clicked += ResetButtonClicked;
 
             texture = content.Load<Texture2D>(@"images\scene\MenuPause\b_options");
             pressTexture = content.Load<Texture2D>(@"images\scene\MenuPause\b_options_clicked");
@@ -76,7 +76,7 @@ namespace CustomGame
         public override void Update(GameTime gameTime)
         {
             resumeButton.Update(gameTime);
-            resetButton.Update(gameTime);
+            restartButton.Update(gameTime);
             optionButton.Update(gameTime);
             exitButton.Update(gameTime);
         }
@@ -90,7 +90,7 @@ namespace CustomGame
             spriteBatch.Draw(backgroundTexture, backgroundPosition, Color.White);
 
             resumeButton.Draw(spriteBatch);
-            resetButton.Draw(spriteBatch);
+            restartButton.Draw(spriteBatch);
             optionButton.Draw(spriteBatch);
             exitButton.Draw(spriteBatch);
 
@@ -100,12 +100,14 @@ namespace CustomGame
 
         private void ResumeButtonClicked(object sender, EventArgs e)
         {
-            this.ExitScreen();
+            this.ExitScene();
         }
 
         private void ResetButtonClicked(object sender, EventArgs e)
         {
-            sceneManager.ResetGame();
+            //sceneManager.ResetGame();
+            GamePlayScene.Instance.LoadNewGame();
+            this.ExitScene();
         }
 
         private void OptionButtonClicked(object sender, EventArgs e)
@@ -114,8 +116,7 @@ namespace CustomGame
         }
 
         private void ExitButtonClicked(object sender, EventArgs e)
-        {
-            
+        {          
             SceneManager.AddScene(new ConfirmScene());
         }
     }

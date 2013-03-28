@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Setting>
+  <MusicVolume>50</MusicVolume>
+  <SoundVolume>50</SoundVolume>
+  <TowerLockIndex>3</TowerLockIndex>
+  <MapLockIndex>3</MapLockIndex>
+</Setting>

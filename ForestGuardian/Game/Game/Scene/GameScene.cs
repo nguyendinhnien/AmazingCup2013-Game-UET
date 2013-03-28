@@ -20,7 +20,7 @@ namespace CustomGame
     {      
         protected bool isPopup = false;
         protected float transitionPosition = 1;
-        protected TimeSpan transitionOnTime = TimeSpan.FromSeconds(5);
+        protected TimeSpan transitionOnTime = TimeSpan.Zero;
         protected TimeSpan transitionOffTime = TimeSpan.Zero;
         SceneState sceneState = SceneState.TransitionOn;
         protected bool otherSceneHasFocus;
@@ -146,12 +146,11 @@ namespace CustomGame
             // How much should we move by?
             float transitionDelta;
 
-            if (time == TimeSpan.Zero)
-                transitionDelta = 1;
+            if (time == TimeSpan.Zero) { transitionDelta = 1; }
             else
-                transitionDelta = (float)(gameTime.ElapsedGameTime.TotalMilliseconds /
-                                          time.TotalMilliseconds);
-
+            {
+                transitionDelta = (float)(gameTime.ElapsedGameTime.TotalMilliseconds / time.TotalMilliseconds);
+            }
             // Update the transition position.
             transitionPosition += transitionDelta * direction;
 
@@ -172,7 +171,7 @@ namespace CustomGame
 
         public virtual void Draw(SpriteBatch spriteBatch, GameTime gameTime) { }
 
-        public void ExitScreen()
+        public void ExitScene()
         {
             // flag that it should transition off and then exit.
             IsExiting = true;

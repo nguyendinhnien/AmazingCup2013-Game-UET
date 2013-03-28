@@ -13,6 +13,9 @@ namespace CustomGame
     {
         private Label DefeatLabel;
 
+        public DefeatScene(int total_point, int total_kill)
+            :base(total_point,total_kill){}
+
         public override void LoadContent()
         {
             ContentManager Content = sceneManager.Game.Content;

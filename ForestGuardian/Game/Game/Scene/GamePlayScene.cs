@@ -28,7 +28,10 @@ namespace CustomGame
     
     public class GamePlayScene : GameScene
     {
-        private float LAYER_DEPTH_CHANGE = 0.005f; 
+        private float LAYER_DEPTH_CHANGE = 0.005f;
+        private int MAX_LIVES = 1;
+        private int MAX_MONEY = 20;
+        
         private BackgroundLayer background_layer;
 
         //Phan map va kich thuoc map
@@ -37,12 +40,13 @@ namespace CustomGame
         private byte[] tower_map;
         
         private List<Song> songs;
-        private int currentSongIndex;
+        private int currentSongIndex = 0;
 
         //Phan game play
-        private int lives=1;
-        private int money=100;
+        private int lives;
+        private int money;
         private int points = 0;
+        private int enemies_killed = 0;
 
         private bool is_tower_add = false;
         private TowerType tower_type;
@@ -71,18 +75,30 @@ namespace CustomGame
 
         private Renderer mRenderer = GameManager.renderer;
 
-        public GamePlayScene() : base(){}
+        //Singleton
+        private static GamePlayScene GamePlay;
+
+        private GamePlayScene() {
+            transitionOnTime = TimeSpan.FromSeconds(10);
+        }
+        public static GamePlayScene Instance
+        {
+            get{
+                if (GamePlay == null){ GamePlay = new GamePlayScene(); }
+                return GamePlay;
+            }
+        }
 
         public int Lives { get { return lives; } }
         public int Money { get { return money; } }
         public int Points { get { return points; } }
 
-        public override void LoadContent()
+        public bool Pause
         {
-            LoadGameContent();
+            get { return tower_manager.isPause; }
+            set { tower_manager.isPause = value; }
         }
-
-        public void LoadGameContent()
+        public override void LoadContent()
         {
             ContentManager Content = SceneManager.Game.Content;
             Texture2D texture;
@@ -160,17 +176,26 @@ namespace CustomGame
             CursorLabel.LayerDepth = 0.3f;
 
             wave_font = Content.Load<SpriteFont>(@"fonts\gameplay\wave_info");
-            LoadMap(UserData.mapFile);
-            
-            //Load du lieu cho camera
-            Viewport viewport = SceneManager.GraphicsDevice.Viewport;
-            Camera2D.Reset(viewport.Width,viewport.Height,background_layer.Width,background_layer.Height);
-
+                     
             //Load content sau khi LoadMap
+            WaveTable = new NextWavesTable();
             WaveTable.LoadContent(Content);
 
             HudLayer = new HUDLayer(this);
             HudLayer.LoadContent();
+
+            LoadNewGame();
+        }
+
+        public void LoadNewGame()
+        {
+            lives = MAX_LIVES; money = MAX_MONEY;
+            is_tower_add = false;
+            is_tower_select = false; tower_keypos = -1;
+            points = 0;
+            enemies_killed = 0;
+            currentSongIndex = 0;
+            LoadMap(UserData.mapFile);
         }
 
         public void LoadMap(string map_file)
@@ -185,6 +210,9 @@ namespace CustomGame
             
             Texture2D background_texture = Content.Load<Texture2D>(map.BackgroundFile);
             background_layer = new BackgroundLayer(Vector2.Zero, background_texture);
+            //Set luon vi tri camera
+            Viewport viewport = SceneManager.GraphicsDevice.Viewport;
+            Camera2D.Reset(viewport.Width, viewport.Height, background_layer.Width, background_layer.Height);
             
             tower_map = new byte[width*height];
             for (int i = 0; i < tower_map.Length; i++)
@@ -193,7 +221,7 @@ namespace CustomGame
                 else tower_map[i] = CellType.OTHER; 
             }
             //Dat waves info cho WaveTable
-            WaveTable = new NextWavesTable(map.Waves);
+            WaveTable.SetWaves(map.Waves);
 
             Queue<Library.Wave> waves = new Queue<Library.Wave>();
             Library.Wave wave; Path path;
@@ -225,7 +253,6 @@ namespace CustomGame
                 song = Content.Load<Song>(map.SongFiles[i]);
                 songs.Add(song);
             }
-            currentSongIndex = 0;
         }
 
         public int TileSize { get { return tile_size; } }
@@ -492,20 +519,23 @@ namespace CustomGame
             }
             
             previousState = mouseState;
-            
-            if (!TowerManager.isPause) //NTA added
+
+            if (!tower_manager.isPause)
+            { //NTA added
                 wave_manager.Update(gameTime);
+            }
 
             if (!wave_manager.Finish)
             {
+                money += wave_manager.CurrentWave.DeathValue;
                 points += wave_manager.CurrentWave.DeathPoint;
+                enemies_killed += wave_manager.CurrentWave.DeathNumber;
+
                 lives -= wave_manager.CurrentWave.ReachedEndNumber;
                 lives = Math.Max(lives, 0);
                 if (lives <= 0){
-                    tower_manager.Update(gameTime, null);
-                    Console.WriteLine("You loose");
-                    //this.SceneManager.AddScene(new DefeatScene());
-                    this.SceneManager.AddScene(new TextBoxScene());
+                    tower_manager.isPause = true;
+                    this.SceneManager.AddScene(new DefeatScene(points,enemies_killed));
                 }
                 else{
                     tower_manager.Update(gameTime, wave_manager.CurrentWave.ActiveEnemies);
@@ -513,8 +543,8 @@ namespace CustomGame
             }
             else
             {
-                tower_manager.Update(gameTime, null);
-                this.SceneManager.AddScene(new VictoryScene());
+                tower_manager.isPause = true;
+                this.SceneManager.AddScene(new VictoryScene(points, enemies_killed));
             }
         }
 

@@ -28,7 +28,7 @@ namespace Library
         private int total_number;
         //So luong enemy toi duoc dich
         private int reached_end_number=0;
-        private int death_point = 0;
+        private int death_number = 0, death_point, death_value;
         //So luong enemy duoc sinh ra
         private int spawned_number=0;
 
@@ -58,7 +58,6 @@ namespace Library
             get { return reached_end_number; }
             set { reached_end_number = value; }
         }
-
         public int SpawnedNumber
         {
             get { return spawned_number; }
@@ -68,11 +67,19 @@ namespace Library
         {
             get { return active_enemies; }
         }
-
+        public int DeathValue
+        {
+            get { return death_value; }
+        }
         public int DeathPoint
         {
             get { return death_point; }
         }
+        public int DeathNumber
+        {
+            get { return death_number; }
+        }
+
         public Enemy getNewEnemy()
         {
             Enemy enemy;
@@ -100,7 +107,7 @@ namespace Library
 
         public void Update(GameTime gameTime){
             reached_end_number = 0;
-            death_point = 0;
+            death_number = 0; death_value = 0; death_point = 0;
             //Xem da bat dau them enemy moi vao chua (phai con de dua vao)
             if (spawned_number >= total_number && active_enemies.Count == 0)
             {
@@ -130,7 +137,11 @@ namespace Library
                 else
                 {
                     if (enemy.atEnd) { reached_end_number++; }
-                    else { death_point += enemy.Value; }
+                    else {
+                        death_number += 1;
+                        death_value += enemy.Value;
+                        death_point += 10 * enemy.Value;
+                    }
                     lock (active_enemies)
                     {
                         active_enemies.RemoveAt(i);

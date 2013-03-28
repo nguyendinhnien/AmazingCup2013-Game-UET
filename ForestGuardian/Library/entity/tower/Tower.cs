@@ -9,7 +9,6 @@ namespace Library
 {
     public enum TowerType
     {
-        NONE,
         OakTower,
         CactusTower,
         PineappleTower
@@ -121,11 +120,11 @@ namespace Library
 
         public virtual void createBullet() { }
 
-        public override void Update(GameTime gameTime)
+        public void Update(GameTime gameTime , bool isPause)
         {
             base.Update(gameTime);
 
-            if (!TowerManager.isPause) //NTA added
+            if (!isPause) //NTA added
             {
                 if (reloadDuration >= 0)
                 {

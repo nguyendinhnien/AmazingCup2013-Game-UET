@@ -9,8 +9,7 @@ namespace Library
 {
     public class TowerManager
     {
-        public static bool isPause = false;
-
+        public bool isPause = false;
         private Dictionary<int,Tower> towers;
 
         public TowerManager()
@@ -43,7 +42,7 @@ namespace Library
             {
                 tower = tower_pair.Value;
 
-                tower.Update(gameTime);
+                tower.Update(gameTime, isPause);
                 if (enemies != null && !isPause)
                 {
                     if (tower.Target == null || !tower.Target.Alive)

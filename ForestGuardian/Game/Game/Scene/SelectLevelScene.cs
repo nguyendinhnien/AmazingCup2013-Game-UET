@@ -48,7 +48,7 @@ namespace CustomGame
             itemPosition = new Vector2[NUMBER_OF_ITEM_DISPLAY];
             mapPreviewTexture = new Texture2D[numberOfItems];
 
-            itemPosition[0] = new Vector2(190, 467);
+            itemPosition[0] = new Vector2(190, 462);
             itemPosition[1] = itemPosition[0] + new Vector2(230, 0);
             itemPosition[2] = itemPosition[1] + new Vector2(230, 0);
 
@@ -63,12 +63,12 @@ namespace CustomGame
 
             Texture2D texture = content.Load<Texture2D>(@"images\scene\CommonButton\b_back");
             Texture2D pressTexture = content.Load<Texture2D>(@"images\scene\CommonButton\b_back_clicked");
-            backButton = new Button(texture, null, pressTexture, new Vector2(520, 685));
+            backButton = new Button(texture, null, pressTexture, new Vector2(627, 685));
             backButton.Clicked += BackButtonClicked;
 
             texture = content.Load<Texture2D>(@"images\scene\SelectLevelScene\b_start_game");
             pressTexture = content.Load<Texture2D>(@"images\scene\SelectLevelScene\b_start_game_clicked");
-            startButton = new Button(texture, null, pressTexture, new Vector2(273, 685));
+            startButton = new Button(texture, null, pressTexture, new Vector2(180, 685));
             startButton.Clicked += StartButtonClicked;
 
             Texture2D disableButton = content.Load<Texture2D>(@"images\scene\CommonButton\b_backward_disable");
@@ -150,7 +150,7 @@ namespace CustomGame
                 spriteBatch.Draw(itemTexture[startItem + i], itemPosition[i], Color.White);
             }
 
-            spriteBatch.Draw(hightlightSelectTexture, itemPosition[currentItemShow], Color.White);
+            spriteBatch.Draw(hightlightSelectTexture, itemPosition[currentItemShow]- new Vector2(2,2), Color.White);
             spriteBatch.Draw(mapPreviewTexture[currentItemShow], new Vector2(44, 107), Color.White);
             spriteBatch.Draw(selectLevelTexture, new Vector2(456, 168) + new Vector2(0, 43) * UserData.level, Color.White);
 
@@ -165,7 +165,8 @@ namespace CustomGame
 
         private void StartButtonClicked(object sender, EventArgs e)
         {
-            SceneManager.AddScene(new GamePlayScene());
+            SceneManager.AddScene(GamePlayScene.Instance);
+            this.ExitScene();
         }
 
         private void BackwardButtonClicked(object sender, EventArgs e)
@@ -182,7 +183,7 @@ namespace CustomGame
 
         private void BackButtonClicked(object sender, EventArgs e)
         {
-            this.ExitScreen();
+            this.ExitScene();
         }
     }
 }

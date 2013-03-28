@@ -127,6 +127,7 @@
     <Compile Include="textbox\KeyboardDispatcher.cs" />
     <Compile Include="EventInput.cs" />
     <Compile Include="textbox\TextBox.cs" />
+    <Compile Include="TowerLoadManager.cs" />
     <Compile Include="wave\Wave.cs" />
     <Compile Include="wave\WaveManager.cs" />
     <Compile Include="gui\Button.cs" />

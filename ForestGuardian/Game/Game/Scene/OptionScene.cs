@@ -119,8 +119,8 @@ namespace CustomGame
             increSoundButton.Draw(spriteBatch);
             decreSoundButton.Draw(spriteBatch);
 
-            spriteBatch.Draw(barTexture, musicBarPosition, new Rectangle(0, 0, (300 * UserData.music) / 5, 14), Color.White);
-            spriteBatch.Draw(barTexture, soundBarPosition, new Rectangle(0, 0, (300 * UserData.sound) / 5, 14), Color.White);
+            spriteBatch.Draw(barTexture, musicBarPosition, new Rectangle(0, 0, (300 * UserData.setting.music_volume) / 100, 14), Color.White);
+            spriteBatch.Draw(barTexture, soundBarPosition, new Rectangle(0, 0, (300 * UserData.setting.sound_volume) / 100, 14), Color.White);
 
             if (UserData.isFullScreen)
                 spriteBatch.Draw(tickTexture, tickPosition, Color.White);
@@ -130,31 +130,32 @@ namespace CustomGame
 
         private void DecreMusicButtonClicked(object sender, EventArgs e)
         {
-            if (UserData.music > 0)
-                UserData.music--;
+            UserData.setting.music_volume -= 10;
+            UserData.setting.music_volume = Math.Max(UserData.setting.music_volume, 0);
         }
 
         private void IncreMusicButtonClicked(object sender, EventArgs e)
         {
-            if (UserData.music < 5)
-                UserData.music++;
+            UserData.setting.music_volume += 10;
+            UserData.setting.music_volume = Math.Min(UserData.setting.music_volume, 100);   
         }
 
         private void DecreSoundButtonClicked(object sender, EventArgs e)
         {
-            if (UserData.sound > 0)
-                UserData.sound--;
+            UserData.setting.sound_volume -= 10;
+            UserData.setting.sound_volume = Math.Max(UserData.setting.sound_volume, 0);
         }
 
         private void IncreSoundButtonClicked(object sender, EventArgs e)
         {
-            if (UserData.sound < 5)
-                UserData.sound++;
+            UserData.setting.sound_volume += 10;
+            UserData.setting.sound_volume = Math.Min(UserData.setting.sound_volume, 100);
         }
 
         private void CloseButtonClicked(object sender, EventArgs e)
         {
-            this.ExitScreen();
+            DataSerializer.SaveData(UserData.setting, UserData.CustomSettingDirectory, UserData.CustomSettingFile);
+            this.ExitScene();
         }
     }
 }

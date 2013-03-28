@@ -49,6 +49,7 @@ namespace Library
             mDamage = pDamage;
             mEffect = pEffect;
             mHit = false;
+            layer_depth = 0.55f;
         }
 
         public virtual void HitTarget(Enemy pEnemy)

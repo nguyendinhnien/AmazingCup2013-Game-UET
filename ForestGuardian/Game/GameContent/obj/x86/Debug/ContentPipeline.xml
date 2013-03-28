@@ -44,7 +44,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\maps\map1.xnb</Output>
-      <Time>2013-03-26T21:22:44.2843811+07:00</Time>
+      <Time>2013-03-28T14:26:00.89336+07:00</Time>
     </Item>
     <Item>
       <Source>data\maps\map2.xml</Source>
@@ -533,15 +533,6 @@
       <Time>2013-03-26T16:12:24+07:00</Time>
     </Item>
     <Item>
-      <Source>images\scene\HelpScene\catus_card.png</Source>
-      <Name>images\scene\HelpScene\catus_card</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\catus_card.xnb</Output>
-      <Time>2013-03-20T15:24:10+07:00</Time>
-    </Item>
-    <Item>
       <Source>images\scene\HelpScene\help.png</Source>
       <Name>images\scene\HelpScene\help</Name>
       <Importer>TextureImporter</Importer>
@@ -557,15 +548,6 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\oak_card.xnb</Output>
-      <Time>2013-03-26T15:17:56+07:00</Time>
-    </Item>
-    <Item>
-      <Source>images\scene\HelpScene\pine_apple_card.png</Source>
-      <Name>images\scene\HelpScene\pine_apple_card</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\pine_apple_card.xnb</Output>
       <Time>2013-03-26T15:17:56+07:00</Time>
     </Item>
     <Item>
@@ -800,7 +782,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_reset.xnb</Output>
-      <Time>2013-03-25T14:15:24+07:00</Time>
+      <Time>2013-03-25T21:03:03.909139+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\MenuPause\b_reset_clicked.png</Source>
@@ -809,7 +791,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_reset_clicked.xnb</Output>
-      <Time>2013-03-25T14:15:24+07:00</Time>
+      <Time>2013-03-25T21:03:22.2615941+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\MenuPause\b_resume.png</Source>
@@ -992,24 +974,6 @@
       <Time>2013-03-23T10:16:56+07:00</Time>
     </Item>
     <Item>
-      <Source>images\scene\EndGameScene\replay_normal_but.png</Source>
-      <Name>images\scene\EndGameScene\replay_normal_but</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\replay_normal_but.xnb</Output>
-      <Time>2013-03-23T10:17:44+07:00</Time>
-    </Item>
-    <Item>
-      <Source>images\scene\EndGameScene\replay_press_but.png</Source>
-      <Name>images\scene\EndGameScene\replay_press_but</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\replay_press_but.xnb</Output>
-      <Time>2013-03-23T10:17:32+07:00</Time>
-    </Item>
-    <Item>
       <Source>images\scene\EndGameScene\defeat_label.png</Source>
       <Name>images\scene\EndGameScene\defeat_label</Name>
       <Importer>TextureImporter</Importer>
@@ -1082,24 +1046,6 @@
       <Time>2013-03-24T00:24:38+07:00</Time>
     </Item>
     <Item>
-      <Source>images\scene\EndGameScene\caret.png</Source>
-      <Name>images\scene\EndGameScene\caret</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\caret.xnb</Output>
-      <Time>2013-03-26T09:14:44+07:00</Time>
-    </Item>
-    <Item>
-      <Source>images\scene\EndGameScene\textbox.png</Source>
-      <Name>images\scene\EndGameScene\textbox</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\textbox.xnb</Output>
-      <Time>2013-03-26T09:14:08+07:00</Time>
-    </Item>
-    <Item>
       <Source>images\gameplay\enemies\dozer.png</Source>
       <Name>images\gameplay\enemies\dozer</Name>
       <Importer>TextureImporter</Importer>
@@ -1160,6 +1106,87 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\hulk_card.xnb</Output>
+      <Time>2013-03-26T15:17:56+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\TextBoxScene\textbox_dialog.png</Source>
+      <Name>images\scene\TextBoxScene\textbox_dialog</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\TextBoxScene\textbox_dialog.xnb</Output>
+      <Time>2013-03-27T08:12:46.1566065+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\TextBoxScene\b_save_normal.png</Source>
+      <Name>images\scene\TextBoxScene\b_save_normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\TextBoxScene\b_save_normal.xnb</Output>
+      <Time>2013-03-27T08:12:24.1024012+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\TextBoxScene\b_save_press.png</Source>
+      <Name>images\scene\TextBoxScene\b_save_press</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\TextBoxScene\b_save_press.xnb</Output>
+      <Time>2013-03-27T08:11:59.6940064+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\TextBoxScene\b_cancel_press.png</Source>
+      <Name>images\scene\TextBoxScene\b_cancel_press</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\TextBoxScene\b_cancel_press.xnb</Output>
+      <Time>2013-03-27T08:12:09.1788136+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\TextBoxScene\caret.png</Source>
+      <Name>images\scene\TextBoxScene\caret</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\TextBoxScene\caret.xnb</Output>
+      <Time>2013-03-27T09:18:37.3173224+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\TextBoxScene\b_cancel_normal.png</Source>
+      <Name>images\scene\TextBoxScene\b_cancel_normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\TextBoxScene\b_cancel_normal.xnb</Output>
+      <Time>2013-03-27T08:12:33.807012+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\EndGameScene\replay_normal_but.png</Source>
+      <Name>images\scene\EndGameScene\replay_normal_but</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\replay_normal_but.xnb</Output>
+      <Time>2013-03-23T10:17:44+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\EndGameScene\replay_press_but.png</Source>
+      <Name>images\scene\EndGameScene\replay_press_but</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\replay_press_but.xnb</Output>
+      <Time>2013-03-23T10:17:32+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\HelpScene\pineapple_card.png</Source>
+      <Name>images\scene\HelpScene\pineapple_card</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\pineapple_card.xnb</Output>
       <Time>2013-03-26T15:17:56+07:00</Time>
     </Item>
     <Item>
@@ -1226,74 +1253,13 @@
       <Time>2013-03-25T20:09:34+07:00</Time>
     </Item>
     <Item>
-      <Source>musics\Song1.mp3</Source>
-      <Name>musics\Song1</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
+      <Source>fonts\TextBoxScene\textinput.spritefont</Source>
+      <Name>fonts\TextBoxScene\textinput</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song1.xnb</Output>
-      <Extra>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song1.wma</Extra>
-      <Time>2013-03-24T16:42:40+07:00</Time>
-    </Item>
-    <Item>
-      <Source>musics\Song2.mp3</Source>
-      <Name>musics\Song2</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song2.xnb</Output>
-      <Extra>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song2.wma</Extra>
-      <Time>2013-03-24T10:36:18+07:00</Time>
-    </Item>
-    <Item>
-      <Source>musics\Song3.mp3</Source>
-      <Name>musics\Song3</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song3.xnb</Output>
-      <Extra>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song3.wma</Extra>
-      <Time>2012-11-11T22:59:30+07:00</Time>
-    </Item>
-    <Item>
-      <Source>musics\Song4.mp3</Source>
-      <Name>musics\Song4</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song4.xnb</Output>
-      <Extra>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song4.wma</Extra>
-      <Time>2013-03-24T10:24:44+07:00</Time>
-    </Item>
-    <Item>
-      <Source>musics\Song5.mp3</Source>
-      <Name>musics\Song5</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song5.xnb</Output>
-      <Extra>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song5.wma</Extra>
-      <Time>2012-11-11T23:31:42+07:00</Time>
-    </Item>
-    <Item>
-      <Source>musics\Song6.mp3</Source>
-      <Name>musics\Song6</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song6.xnb</Output>
-      <Extra>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song6.wma</Extra>
-      <Time>2013-03-24T16:19:00+07:00</Time>
-    </Item>
-    <Item>
-      <Source>musics\Song7.mp3</Source>
-      <Name>musics\Song7</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song7.xnb</Output>
-      <Extra>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song7.wma</Extra>
-      <Time>2012-11-14T11:43:48+07:00</Time>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\TextBoxScene\textinput.xnb</Output>
+      <Time>2013-03-26T20:47:59.5171392+07:00</Time>
     </Item>
     <Item>
       <Source>musics\Song8.mp3</Source>
@@ -1304,42 +1270,6 @@
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song8.xnb</Output>
       <Extra>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song8.wma</Extra>
       <Time>2013-03-24T16:20:58+07:00</Time>
-    </Item>
-    <Item>
-      <Source>images\scene\TextBoxScene\textbox_dialog.png</Source>
-      <Name>images\scene\TextBoxScene\textbox_dialog</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\TextBoxScene\textbox_dialog.xnb</Output>
-      <Time>2013-03-26T20:55:26.5897103+07:00</Time>
-    </Item>
-    <Item>
-      <Source>fonts\TextBoxScene\textinput.spritefont</Source>
-      <Name>fonts\TextBoxScene\textinput</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\TextBoxScene\textinput.xnb</Output>
-      <Time>2013-03-26T20:47:59.5171392+07:00</Time>
-    </Item>
-    <Item>
-      <Source>images\scene\TextBoxScene\b_save_normal.png</Source>
-      <Name>images\scene\TextBoxScene\b_save_normal</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\TextBoxScene\b_save_normal.xnb</Output>
-      <Time>2013-03-26T20:55:26.5517081+07:00</Time>
-    </Item>
-    <Item>
-      <Source>images\scene\TextBoxScene\b_save_press.png</Source>
-      <Name>images\scene\TextBoxScene\b_save_press</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\TextBoxScene\b_save_press.xnb</Output>
-      <Time>2013-03-26T20:55:26.5717093+07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -1387,7 +1317,7 @@
       </Assembly>
       <Assembly>
         <Key>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Data\bin\x86\Debug\Data.dll</Key>
-        <Value>2013-03-26T16:20:53.041816+07:00</Value>
+        <Value>2013-03-28T20:19:18.5434752+07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>

@@ -12,6 +12,8 @@ namespace Library
         public static Texture2D TEXTURE_LV1;
         public static Texture2D TEXTURE_LV2;
         public static Texture2D TEXTURE_LV3;
+        public static string NAME = "Oak-The Protector";
+
         public static Texture2D BULLET_TEXTURE;
 
         public static float FIRE_RELOAD = 1.0f;

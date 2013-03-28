@@ -82,12 +82,12 @@ namespace CustomGame
 
         private void NoButtonClicked(object sender, EventArgs e)
         {
-            this.ExitScreen();
+            this.ExitScene();
         }
 
         private void YesButtonClicked(object sender, EventArgs e)
         {
-            SceneManager.ExitGame();
+            SceneManager.ExitToMainMenu();
             //SceneManager.Game.Exit();
         }
     }

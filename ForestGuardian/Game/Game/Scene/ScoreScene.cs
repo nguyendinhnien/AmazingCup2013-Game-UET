@@ -19,7 +19,6 @@ namespace CustomGame
         private Vector2 backgroundPosition;
         private SpriteFont scoreFont;
         private Vector2[] scorePosition;
-        private HighScore highscore;
 
         public ScoreScene()
             : base()
@@ -43,12 +42,11 @@ namespace CustomGame
             {
                 scorePosition[i] = new Vector2(260, 115) + i * (new Vector2(0, 70));
             }
-            highscore = DataSerializer.LoadData<HighScore>("Content/data/highscore/highscore.xml");
         }
 
         private void BackButtonClicked(object sender, EventArgs e)
         {
-            this.ExitScreen();
+            this.ExitScene();
         }
 
         public override void Update(GameTime gameTime)
@@ -64,11 +62,11 @@ namespace CustomGame
             spriteBatch.Draw(backgroundTexture, backgroundPosition, Color.White);
             button.Draw(spriteBatch);
 
-            for (int i = 0; i < highscore.Count; i++)
+            for (int i = 0; i < UserData.highscore.Count; i++)
             {
-                spriteBatch.DrawString(scoreFont, highscore.scores[i].player_name, scorePosition[i],
+                spriteBatch.DrawString(scoreFont, UserData.highscore.scores[i].player_name, scorePosition[i],
                     UserData.colors[i]);
-                spriteBatch.DrawString(scoreFont, highscore.scores[i].point.ToString(), scorePosition[i]
+                spriteBatch.DrawString(scoreFont, UserData.highscore.scores[i].points.ToString(), scorePosition[i]
                     + new Vector2(500, 0), UserData.colors[i]);
             }
 

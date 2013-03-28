@@ -61,7 +61,7 @@ namespace CustomGame
 
         private void PlayButton_Clicked(object sender, EventArgs e)
         {
-            TowerManager.isPause = !TowerManager.isPause;
+            gameplay.Pause = !gameplay.Pause;
             playButton.Active = !playButton.Active;
         }
 

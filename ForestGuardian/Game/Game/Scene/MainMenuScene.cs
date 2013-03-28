@@ -58,7 +58,6 @@ namespace CustomGame
             button[4].Clicked += QuitButtonClicked;
         }
 
-
         public override void  Update(GameTime gameTime)
         {
             for (int i = 0; i < NUMBER_OF_BUTTONS; i++)
@@ -66,7 +65,6 @@ namespace CustomGame
                 button[i].Update(gameTime);
             }
         }
-
 
         public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {

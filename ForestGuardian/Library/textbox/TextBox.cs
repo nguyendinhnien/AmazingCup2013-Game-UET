@@ -137,7 +137,7 @@ namespace Library
 
             Vector2 size = _font.MeasureString(toDraw);
             Vector2 text_position = _position + _textOffset;
-            Vector2 caret_position = text_position + new Vector2(size.X + 2, 0);
+            Vector2 caret_position = text_position + new Vector2(size.X + 2, 2);
 
             if (caretVisible && Selected)
             {

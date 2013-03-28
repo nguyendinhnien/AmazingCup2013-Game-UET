@@ -23,11 +23,8 @@ namespace CustomGame
                                            Color.Lime, Color.Lime, Color.Lime, Color.Lime, Color.Lime};
         
         //Do kho
-        public static int level;
-        
+        public static int level;        
         public static string mapFile = @"data\maps\map1";
-
-        public static string[][] levelScene;
 
         public static void LoadSetting()
         {

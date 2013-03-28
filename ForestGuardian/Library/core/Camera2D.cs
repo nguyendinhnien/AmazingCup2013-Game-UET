@@ -11,10 +11,7 @@ namespace Library
     public class Camera2D
     {
         private static Matrix transform;
-        public static Matrix Transform
-        {
-            get { return transform; }
-        }
+        
         private static Vector2 position;
 
         private static Vector2 minPosition;
@@ -30,6 +27,16 @@ namespace Library
         
         //Kiem tra xem co su thay doi voi camera ko
         private static bool is_changed = true;
+
+        public static Matrix Transform
+        {
+            get { return transform; }
+        }
+
+        public static Vector2 Position
+        {
+            get { return position; }
+        }
 
         public static float X
         {
@@ -96,8 +103,8 @@ namespace Library
                 maxPosition.Y = Math.Max(0, world_height - viewport_height / zoom);
                 position = Vector2.Clamp(position, minPosition, maxPosition);
 
-                transform = Matrix.CreateTranslation(new Vector3(-position.X, -position.Y, 0)) *
-                        Matrix.CreateScale(new Vector3(zoom, zoom, 1.0f));
+                transform = Matrix.CreateScale(new Vector3(zoom, zoom, 1.0f))
+                *Matrix.CreateTranslation(new Vector3(-position.X, -position.Y, 0));
                 is_changed = false;
             }
         }

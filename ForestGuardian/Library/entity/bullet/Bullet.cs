@@ -57,7 +57,8 @@ namespace Library
             if (!mHit)
             {
                 pEnemy.lostHealth(mDamage);
-                mEffect.Trigger(pEnemy.Center);
+                Vector2 tmp = pEnemy.Center - Camera2D.Position;
+                mEffect.Trigger(ref tmp);
                 mHit = true;
             }
         }

@@ -154,11 +154,11 @@ namespace CustomGame
             spriteBatch.Draw(mapPreviewTexture[currentItemShow], new Vector2(44, 107), Color.White);
             spriteBatch.Draw(selectLevelTexture, new Vector2(456, 168) + new Vector2(0, 43) * UserData.level, Color.White);
 
-            spriteBatch.DrawString(selectLevelFont, UserData.levelScene[currentItemShow][0], new Vector2(686, 119), Color.Black, 0, Vector2.Zero,
-                0.7f, SpriteEffects.None, 1.0f);
+            //spriteBatch.DrawString(selectLevelFont, UserData.levelScene[currentItemShow][0], new Vector2(686, 119), Color.Black, 0, Vector2.Zero,
+            //    0.7f, SpriteEffects.None, 1.0f);
 
-            spriteBatch.DrawString(selectLevelFont, UserData.levelScene[currentItemShow][1], new Vector2(629, 167), Color.Black, 0, Vector2.Zero,
-                0.5f, SpriteEffects.None, 1.0f);
+            //spriteBatch.DrawString(selectLevelFont, UserData.levelScene[currentItemShow][1], new Vector2(629, 167), Color.Black, 0, Vector2.Zero,
+            //    0.5f, SpriteEffects.None, 1.0f);
 
             spriteBatch.End();
         }

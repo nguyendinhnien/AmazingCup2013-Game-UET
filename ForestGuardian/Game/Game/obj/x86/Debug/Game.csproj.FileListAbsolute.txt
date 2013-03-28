@@ -1,319 +1,154 @@
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\maps\map3.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\particles\slowEffect.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\particles\explosionEffect.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\particles\treeEffect.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\maps\map1.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\maps\map2.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\arrow_hover_but.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\maps\map1.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\sell_but.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\health_bar.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\oak_tower_level1.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\pineapple_tower_level1.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\oak_tower_disable_but.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\oak_tower_enable_but.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\pineapple_tower_disable_but.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\pineapple_tower_enable_but.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\upgrade_disable_but.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\upgrade_enable_but.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_help.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_help_clicked.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_options.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_options_clicked.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_play.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_play_clicked.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_quit.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_quit_clicked.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_scores.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_scores_clicked.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\main.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\b_close.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\b_close_clicked.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\decrease_volume.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\decrease_volume_clicked.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\dialog_options.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\increase_volume.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\increase_volume_clicked.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\sound_bar.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\tick_full_screen.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\life_label.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\money_label.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\cactus_tower_level1.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\cactus_tower_disable_but.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\cactus_tower_enable_but.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\maps\map2.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\maps\map3.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\oak_tower_level2.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\oak_tower_level3.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\pineapple_tower_level2.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\pineapple_tower_level3.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\cactus_tower_level2.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\cactus_tower_level3.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\cactusbullet.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\pineapplebullet.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\Cloud001.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\Particle004.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\Particle005.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\Cloud004.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\Particle007.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ScoreScene\scoreboard.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\catus_card.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\help.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\oak_card.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\pine_apple_card.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_select_level.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_start_game.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_start_game_clicked.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_1_preview.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_2_preview.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_3_preview.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\selectmaps.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_back.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_backward.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_backward_clicked.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_backward_disable.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_back_clicked.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_forward.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_forward_clicked.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_forward_disable.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\highlight_select_card.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\lock_card.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\oak_in_game.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_1_thumb.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_2_thumb.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_3_thumb.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_exits.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_exits_clicked.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_options.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_options_clicked.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_reset.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_reset_clicked.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_resume.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_resume_clicked.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\menu.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\FadeScreen.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ConfirmScene\b_no.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ConfirmScene\b_no_clicked.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ConfirmScene\b_yes.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ConfirmScene\b_yes_clicked.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ConfirmScene\confirm_form.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\LensFlare.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\oakbullet.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\fast_disable_but.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\fast_enable_but.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\pause_enable_but.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\play_enable_but.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\setting_disable_but.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\setting_enable_but.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\mission_finished.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\continue_normal_but.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\continue_press_but.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\replay_normal_but.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\replay_press_but.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\defeat_label.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\victory_label.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\next_waves_label.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\arrow_normal_but.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\enemies\axeman.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\range_disable.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\range_enable.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\cursor.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\caret.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\textbox.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\enemies\dozer.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\enemies\sawman.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\enemies\axeman_move.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\enemies\dozer_move.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\enemies\sawman_move.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\cactus_card.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\hulk_card.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\gameplay\value_font.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\gameplay\hud_font.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\ScoreScene\score.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\HelpScene\helpScene.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\gameplay\wave_info.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\gameplay\next_wave.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\EndGameScene\end_game.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\EndGameScene\textbox.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song1.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song2.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song3.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song4.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song5.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song6.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song7.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song8.xnb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song1.wma
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song2.wma
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song3.wma
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song4.wma
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song5.wma
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song6.wma
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song7.wma
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song8.wma
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\highscore\highscore.xml
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Game.exe
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Game.pdb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Data.dll
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Library.dll
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\ProjectMercury.dll
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Data.pdb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\bin\x86\Debug\Library.pdb
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\obj\x86\Debug\Game.exe
-C:\Users\KIEN\Desktop\ForestGuardian\Game\Game\obj\x86\Debug\Game.pdb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\maps\map3.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\particles\slowEffect.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\particles\explosionEffect.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\particles\treeEffect.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\maps\map1.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\maps\map2.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\arrow_hover_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\maps\map1.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\sell_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\health_bar.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\oak_tower_level1.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\pineapple_tower_level1.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\oak_tower_disable_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\oak_tower_enable_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\pineapple_tower_disable_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\pineapple_tower_enable_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\upgrade_disable_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\upgrade_enable_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_help.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_help_clicked.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_options.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_options_clicked.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_play.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_play_clicked.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_quit.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_quit_clicked.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_scores.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_scores_clicked.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\main.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\b_close.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\b_close_clicked.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\decrease_volume.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\decrease_volume_clicked.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\dialog_options.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\increase_volume.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\increase_volume_clicked.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\sound_bar.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\tick_full_screen.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\life_label.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\money_label.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\cactus_tower_level1.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\cactus_tower_disable_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\cactus_tower_enable_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\maps\map2.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\maps\map3.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\oak_tower_level2.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\oak_tower_level3.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\pineapple_tower_level2.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\pineapple_tower_level3.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\cactus_tower_level2.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\cactus_tower_level3.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\cactusbullet.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\pineapplebullet.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\Cloud001.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\Particle004.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\Particle005.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\Cloud004.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\Particle007.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ScoreScene\scoreboard.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\help.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\oak_card.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_select_level.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_start_game.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_start_game_clicked.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_1_preview.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_2_preview.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_3_preview.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\selectmaps.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_back.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_backward.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_backward_clicked.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_backward_disable.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_back_clicked.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_forward.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_forward_clicked.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_forward_disable.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\highlight_select_card.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\lock_card.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\oak_in_game.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_1_thumb.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_2_thumb.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_3_thumb.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_exits.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_exits_clicked.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_options.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_options_clicked.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_reset.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_reset_clicked.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_resume.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_resume_clicked.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\menu.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\FadeScreen.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ConfirmScene\b_no.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ConfirmScene\b_no_clicked.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ConfirmScene\b_yes.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ConfirmScene\b_yes_clicked.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ConfirmScene\confirm_form.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\LensFlare.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\oakbullet.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\fast_disable_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\fast_enable_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\pause_enable_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\play_enable_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\setting_disable_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\setting_enable_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\mission_finished.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\continue_normal_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\continue_press_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\defeat_label.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\victory_label.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\next_waves_label.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\arrow_normal_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\enemies\axeman.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\range_disable.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\range_enable.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\cursor.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\enemies\dozer.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\enemies\sawman.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\enemies\axeman_move.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\enemies\dozer_move.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\enemies\sawman_move.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\cactus_card.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\hulk_card.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\gameplay\value_font.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\gameplay\hud_font.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\ScoreScene\score.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\HelpScene\helpScene.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\gameplay\wave_info.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\gameplay\next_wave.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\EndGameScene\end_game.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song8.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song8.wma
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Game.exe
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Game.pdb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Data.dll
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Library.dll
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\ProjectMercury.dll
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Data.pdb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Library.pdb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\obj\x86\Debug\ResolveAssemblyReference.cache
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\obj\x86\Debug\Game.exe
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\obj\x86\Debug\Game.pdb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\TextBoxScene\textbox_dialog.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\TextBoxScene\textinput.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\TextBoxScene\b_save_normal.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\TextBoxScene\b_save_press.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\TextBoxScene\b_cancel_press.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\TextBoxScene\caret.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\TextBoxScene\b_cancel_normal.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\replay_normal_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\replay_press_but.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\pineapple_card.xnb
-E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\default_setting\setting.xml
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\maps\map3.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\particles\slowEffect.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\particles\explosionEffect.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\particles\treeEffect.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\maps\map1.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\maps\map2.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\arrow_hover_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\maps\map1.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\sell_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\health_bar.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\oak_tower_level1.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\pineapple_tower_level1.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\oak_tower_disable_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\oak_tower_enable_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\pineapple_tower_disable_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\pineapple_tower_enable_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\upgrade_disable_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\upgrade_enable_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_help.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_help_clicked.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_options.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_options_clicked.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_play.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_play_clicked.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_quit.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_quit_clicked.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_scores.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\b_scores_clicked.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MainMenuScene\main.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\b_close.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\b_close_clicked.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\decrease_volume.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\decrease_volume_clicked.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\dialog_options.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\increase_volume.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\increase_volume_clicked.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\sound_bar.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\tick_full_screen.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\life_label.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\money_label.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\cactus_tower_level1.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\cactus_tower_disable_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\cactus_tower_enable_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\maps\map2.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\maps\map3.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\oak_tower_level2.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\oak_tower_level3.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\pineapple_tower_level2.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\pineapple_tower_level3.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\cactus_tower_level2.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\towers\cactus_tower_level3.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\cactusbullet.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\pineapplebullet.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\Cloud001.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\Particle004.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\Particle005.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\Cloud004.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\Particle007.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ScoreScene\scoreboard.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\help.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\oak_card.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_select_level.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_start_game.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\b_start_game_clicked.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_1_preview.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_2_preview.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_3_preview.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\selectmaps.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_back.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_backward.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_backward_clicked.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_backward_disable.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_back_clicked.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_forward.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_forward_clicked.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\b_forward_disable.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\highlight_select_card.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\lock_card.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\oak_in_game.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_1_thumb.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_2_thumb.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\map_level_3_thumb.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_exits.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_exits_clicked.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_options.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_options_clicked.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_reset.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_reset_clicked.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_resume.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\b_resume_clicked.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\MenuPause\menu.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\CommonButton\FadeScreen.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ConfirmScene\b_no.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ConfirmScene\b_no_clicked.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ConfirmScene\b_yes.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ConfirmScene\b_yes_clicked.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ConfirmScene\confirm_form.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\LensFlare.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\bullets\oakbullet.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\fast_disable_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\fast_enable_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\pause_enable_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\play_enable_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\setting_disable_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\setting_enable_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\mission_finished.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\continue_normal_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\continue_press_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\defeat_label.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\victory_label.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\next_waves_label.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\buttons\arrow_normal_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\enemies\axeman.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\range_disable.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\range_enable.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\cursor.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\enemies\dozer.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\enemies\sawman.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\enemies\axeman_move.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\enemies\dozer_move.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\gameplay\enemies\sawman_move.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\cactus_card.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\hulk_card.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\TextBoxScene\textbox_dialog.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\TextBoxScene\b_save_normal.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\TextBoxScene\b_save_press.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\TextBoxScene\b_cancel_press.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\TextBoxScene\caret.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\TextBoxScene\b_cancel_normal.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\replay_normal_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\EndGameScene\replay_press_but.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\pineapple_card.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\gameplay\value_font.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\gameplay\hud_font.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\ScoreScene\score.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\HelpScene\helpScene.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\gameplay\wave_info.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\gameplay\next_wave.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\EndGameScene\end_game.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\TextBoxScene\textinput.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song8.xnb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song8.wma
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\default_setting\setting.xml
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Game.exe
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Game.pdb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Data.dll
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Library.dll
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\ProjectMercury.dll
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Data.pdb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Library.pdb
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\obj\x86\Debug\Game.exe
+E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\obj\x86\Debug\Game.pdb

@@ -564,7 +564,7 @@ namespace CustomGame
                 if (is_tower_add){
                     CursorLabel.Draw(spriteBatch);
                     RangeLabel.Draw(spriteBatch);
-                }            
+                }
             spriteBatch.End();
 
             spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
@@ -581,9 +581,16 @@ namespace CustomGame
                 HudLayer.Draw(spriteBatch);
             spriteBatch.End();
 
-            mRenderer.RenderEffect(OakBullet.EFFECT);
-            mRenderer.RenderEffect(CactusBullet.EFFECT);
-            mRenderer.RenderEffect(PineappleBullet.EFFECT);
+            //mRenderer.RenderEffect(OakBullet.EFFECT);
+            //mRenderer.RenderEffect(CactusBullet.EFFECT);
+            //mRenderer.RenderEffect(PineappleBullet.EFFECT);
+
+            Matrix resolution = Camera2D.Transform;
+            //Console.WriteLine(resolution.ToString());
+
+            mRenderer.RenderEffect(OakBullet.EFFECT, ref resolution);
+            mRenderer.RenderEffect(CactusBullet.EFFECT, ref resolution);
+            mRenderer.RenderEffect(PineappleBullet.EFFECT, ref resolution);
         }
     }
 }

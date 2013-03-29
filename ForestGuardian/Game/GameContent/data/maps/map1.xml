@@ -2,6 +2,7 @@
 <XnaContent>
   <Asset Type="Data.Map">
     <Name>Forest 1</Name>
+    <Description>A single road that enemies&#xA;must pass to get deep into&#xA;the forest.&#xA;Be carefull, they will move&#xA;very fast</Description>
     <Width>16</Width>
     <Height>12</Height>
     <TileSize>64</TileSize>
@@ -30,11 +31,12 @@
       <Item> 
         <EnemyType>AxeMan</EnemyType> 
         <EnemyNumber>5</EnemyNumber> 
-        <SpawnRate>1.2</SpawnRate></Item>
+        <SpawnRate>1.2</SpawnRate>
+      </Item>
       <Item>
         <EnemyType>AxeMan</EnemyType>
-        <EnemyNumber>7</EnemyNumber>
-        <SpawnRate>1.0</SpawnRate>
+        <EnemyNumber>2</EnemyNumber>
+        <SpawnRate>0.3</SpawnRate>
       </Item>
       <Item>
         <EnemyType>SawMan</EnemyType>

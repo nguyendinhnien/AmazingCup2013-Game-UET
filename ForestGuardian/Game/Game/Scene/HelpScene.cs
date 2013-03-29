@@ -56,11 +56,7 @@ namespace CustomGame
             {
                 itemPosition[i] = new Vector2(190, 467) +i * new Vector2(230, 0);
             }
-            //textPosition = new Vector2[10];
-            //textPosition[0] = new Vector2(160, 120); //Infor text
-            //textPosition[1] = new Vector2(430, 120); //Ingame text
-            //textPosition[2] = new Vector2(732, 120); //Upgrade text
-            //textPosition[3] = new Vector2(75, 190); //History
+
             startItem = currentItemShow = 0;
         }
 
@@ -95,17 +91,7 @@ namespace CustomGame
             towerInGameTexture[1] = content.Load<Texture2D>(@"images\scene\HelpScene\oak_in_game");
             towerInGameTexture[2] = content.Load<Texture2D>(@"images\scene\HelpScene\oak_in_game");
 
-            OakTower.TEXTURE_LV1 = content.Load<Texture2D>(@"images\gameplay\towers\oak_tower_level1");
-            OakTower.TEXTURE_LV2 = content.Load<Texture2D>(@"images\gameplay\towers\oak_tower_level2");
-            OakTower.TEXTURE_LV3 = content.Load<Texture2D>(@"images\gameplay\towers\oak_tower_level3");
-
-            CactusTower.TEXTURE_LV1 = content.Load<Texture2D>(@"images\gameplay\towers\cactus_tower_level1");
-            CactusTower.TEXTURE_LV2 = content.Load<Texture2D>(@"images\gameplay\towers\cactus_tower_level2");
-            CactusTower.TEXTURE_LV3 = content.Load<Texture2D>(@"images\gameplay\towers\cactus_tower_level3");
-
-            PineappleTower.TEXTURE_LV1 = content.Load<Texture2D>(@"images\gameplay\towers\pineapple_tower_level1");
-            PineappleTower.TEXTURE_LV2 = content.Load<Texture2D>(@"images\gameplay\towers\pineapple_tower_level2");
-            PineappleTower.TEXTURE_LV3 = content.Load<Texture2D>(@"images\gameplay\towers\pineapple_tower_level3");
+            TowerLoadManager.LoadContent(content);
 
             hightlightSelectTexture = content.Load<Texture2D>(@"images\scene\CommonButton\highlight_select_card");
             lockTexture = content.Load<Texture2D>(@"images\scene\CommonButton\lock_card");
@@ -136,8 +122,6 @@ namespace CustomGame
                     currentItemShow = i; break;
                 }
             }
-            //Console.WriteLine(currentItemShow);
-            //Console.WriteLine((int)TowerType.OakTower);
             switch (currentItemShow)
             {
                 case (int)TowerType.OakTower:

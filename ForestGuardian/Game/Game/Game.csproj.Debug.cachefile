@@ -62,9 +62,6 @@ Content\images\scene\HelpScene\oak_card.xnb
 Content\images\scene\SelectLevelScene\b_select_level.xnb
 Content\images\scene\SelectLevelScene\b_start_game.xnb
 Content\images\scene\SelectLevelScene\b_start_game_clicked.xnb
-Content\images\scene\SelectLevelScene\map_level_1_preview.xnb
-Content\images\scene\SelectLevelScene\map_level_2_preview.xnb
-Content\images\scene\SelectLevelScene\map_level_3_preview.xnb
 Content\images\scene\SelectLevelScene\selectmaps.xnb
 Content\images\scene\CommonButton\b_back.xnb
 Content\images\scene\CommonButton\b_backward.xnb
@@ -77,9 +74,9 @@ Content\images\scene\CommonButton\b_forward_disable.xnb
 Content\images\scene\CommonButton\highlight_select_card.xnb
 Content\images\scene\CommonButton\lock_card.xnb
 Content\images\scene\HelpScene\oak_in_game.xnb
-Content\images\scene\SelectLevelScene\map_level_1_thumb.xnb
-Content\images\scene\SelectLevelScene\map_level_2_thumb.xnb
-Content\images\scene\SelectLevelScene\map_level_3_thumb.xnb
+Content\images\maps\map_level_1_thumb.xnb
+Content\images\maps\map_level_2_thumb.xnb
+Content\images\maps\map_level_3_thumb.xnb
 Content\images\scene\MenuPause\b_exits.xnb
 Content\images\scene\MenuPause\b_exits_clicked.xnb
 Content\images\scene\MenuPause\b_options.xnb
@@ -138,6 +135,7 @@ Content\fonts\gameplay\wave_info.xnb
 Content\fonts\gameplay\next_wave.xnb
 Content\fonts\EndGameScene\end_game.xnb
 Content\fonts\TextBoxScene\textinput.xnb
+Content\fonts\SelectLevelScene\select_level.xnb
 Content\musics\Song8.xnb
 Content\musics\Song8.wma
 Content\data\default_setting\setting.xml

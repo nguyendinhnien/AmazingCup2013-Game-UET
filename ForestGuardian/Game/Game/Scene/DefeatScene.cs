@@ -13,8 +13,8 @@ namespace CustomGame
     {
         private Label DefeatLabel;
 
-        public DefeatScene(int total_point, int total_kill)
-            :base(total_point,total_kill){}
+        public DefeatScene(int total_point, int total_kill, string map_name)
+            :base(total_point,total_kill, map_name){}
 
         public override void LoadContent()
         {

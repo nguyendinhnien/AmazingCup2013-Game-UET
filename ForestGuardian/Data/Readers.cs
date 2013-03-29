@@ -21,6 +21,7 @@ namespace Data
                 map = new Map();
             }
             map.Name = input.ReadString();
+            map.Description = input.ReadString();
             map.Width = input.ReadInt32(); 
             map.Height = input.ReadInt32();
             map.TileSize = input.ReadInt32();
@@ -30,7 +31,6 @@ namespace Data
             map.EndCell = input.ReadObject<Cell>();
             map.Waves = input.ReadObject <List<Wave>>();
             map.SongFiles = input.ReadObject<List<string>>();
-            //map.PostReading();
             return map;
         }
     }

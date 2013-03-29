@@ -29,8 +29,8 @@ namespace CustomGame
     public class GamePlayScene : GameScene
     {
         private float LAYER_DEPTH_CHANGE = 0.005f;
-        private int MAX_LIVES = 1;
-        private int MAX_MONEY = 20;
+        private int MAX_LIVES = 100;
+        private int MAX_MONEY = 2000;
         
         private BackgroundLayer background_layer;
 
@@ -47,6 +47,8 @@ namespace CustomGame
         private int money;
         private int points = 0;
         private int enemies_killed = 0;
+
+        private TimeSpan timer;
 
         private bool is_tower_add = false;
         private TowerType tower_type;
@@ -73,13 +75,12 @@ namespace CustomGame
         private NextWavesTable WaveTable;
         private HUDLayer HudLayer;
 
-        private Renderer mRenderer = GameManager.renderer;
+        private CustomRenderer mRenderer = GameManager.renderer;
 
         //Singleton
         private static GamePlayScene GamePlay;
 
         private GamePlayScene() {
-            transitionOnTime = TimeSpan.FromSeconds(10);
         }
         public static GamePlayScene Instance
         {
@@ -117,17 +118,8 @@ namespace CustomGame
             texture = Content.Load<Texture2D>(@"images\gameplay\enemies\dozer_move");
             Dozer.MOVE_ANIMATION = new Animation(texture, 4, 3, 0.2f, true);
 
-            //Load Tower texture
-            OakTower.TEXTURE_LV1 = Content.Load<Texture2D>(@"images\gameplay\towers\oak_tower_level1");
-            CactusTower.TEXTURE_LV1 = Content.Load<Texture2D>(@"images\gameplay\towers\cactus_tower_level1");
-            PineappleTower.TEXTURE_LV1 = Content.Load<Texture2D>(@"images\gameplay\towers\pineapple_tower_level1");
-            OakTower.TEXTURE_LV2 = Content.Load<Texture2D>(@"images\gameplay\towers\oak_tower_level2");
-            CactusTower.TEXTURE_LV2 = Content.Load<Texture2D>(@"images\gameplay\towers\cactus_tower_level2");
-            PineappleTower.TEXTURE_LV2 = Content.Load<Texture2D>(@"images\gameplay\towers\pineapple_tower_level2");
-            OakTower.TEXTURE_LV3 = Content.Load<Texture2D>(@"images\gameplay\towers\oak_tower_level3");
-            CactusTower.TEXTURE_LV3 = Content.Load<Texture2D>(@"images\gameplay\towers\cactus_tower_level3");
-            PineappleTower.TEXTURE_LV3 = Content.Load<Texture2D>(@"images\gameplay\towers\pineapple_tower_level3");
-            
+            TowerLoadManager.LoadContent(Content);
+
             //Load bullets texture
             OakTower.BULLET_TEXTURE = Content.Load<Texture2D>(@"images\gameplay\bullets\oakbullet");
             CactusTower.BULLET_TEXTURE = Content.Load<Texture2D>(@"images\gameplay\bullets\cactusbullet");
@@ -189,19 +181,29 @@ namespace CustomGame
 
         public void LoadNewGame()
         {
-            lives = MAX_LIVES; money = MAX_MONEY;
+            switch (UserData.mode)
+            {
+                case (int)Mode.Classic:
+                    lives = MAX_LIVES; break;
+                case (int)Mode.Death:
+                    lives = 1; break;
+                case (int)Mode.Time:
+                    lives = MAX_LIVES;
+                    timer = TimeSpan.FromMinutes(15.0f);
+                    break;
+            }
+            money = MAX_MONEY;
             is_tower_add = false;
             is_tower_select = false; tower_keypos = -1;
-            points = 0;
-            enemies_killed = 0;
+            points = 0; enemies_killed = 0;
             currentSongIndex = 0;
-            LoadMap(UserData.mapFile);
+            LoadMap(UserData.mapIndex);
         }
 
-        public void LoadMap(string map_file)
+        public void LoadMap(int mapIndex)
         {
             ContentManager Content = sceneManager.Game.Content;
-            Map map = Content.Load<Map>(map_file);
+            Map map = MapLoadManager.getMap(mapIndex);
             map.PostReading();
 
             width = map.Width;
@@ -236,7 +238,7 @@ namespace CustomGame
                 wave = new Library.Wave(map.Waves[i].EnemyType,
                                         map.Waves[i].EnemyNumber,
                                         map.Waves[i].SpawnRate,
-                                        GetWaypoints(path));
+                                        GetWaypoints(path),map.Waves[i].GrowRate);
                 //Dua wave moi tao vao queue
                 waves.Enqueue(wave);
             }
@@ -298,7 +300,7 @@ namespace CustomGame
 
         private void OakTowerLabel_Clicked()
         {
-            Console.WriteLine("ArrowTower is selected to add");
+            //Console.WriteLine("ArrowTower is selected to add");
             tower_type = TowerType.OakTower;
             CursorLabel.Texture = OakTower.TEXTURE_LV1;
             RangeLabel.Scale = (float)OakTower.RANGE / 250;
@@ -306,7 +308,7 @@ namespace CustomGame
         }
         private void CatusTowerLabel_Clicked()
         {
-            Console.WriteLine("SlowTower is selected to add");
+            //Console.WriteLine("SlowTower is selected to add");
             tower_type = TowerType.CactusTower;
             CursorLabel.Texture = CactusTower.TEXTURE_LV1;
             RangeLabel.Scale = (float)CactusTower.RANGE / 250;
@@ -314,7 +316,7 @@ namespace CustomGame
         }
         private void PineappleTowerLabel_Clicked()
         {
-            Console.WriteLine("SlowTower is selected to add");
+            //Console.WriteLine("SlowTower is selected to add");
             tower_type = TowerType.PineappleTower;
             CursorLabel.Texture = PineappleTower.TEXTURE_LV1;
             RangeLabel.Scale = (float)PineappleTower.RANGE / 250;
@@ -323,7 +325,7 @@ namespace CustomGame
 
         private void SellLabel_Clicked()
         {
-            Console.WriteLine("Tower is sold");
+            //Console.WriteLine("Tower is sold");
             tower_manager.RemoveTower(tower_keypos);
             money += SellLabel.Value;
             tower_map[tower_keypos] = CellType.BLANK;
@@ -331,7 +333,7 @@ namespace CustomGame
         }
         private void UpgradeLabel_Clicked()
         {
-            Console.WriteLine("Tower is upgraded");
+            //Console.WriteLine("Tower is upgraded");
             tower_manager.UpgradeTower(tower_keypos);
             money -= UpgradeLabel.Value;
             tower_keypos = -1; is_tower_select = false;
@@ -345,7 +347,17 @@ namespace CustomGame
                 currentSongIndex = (currentSongIndex + 1) % songs.Count;
             }
             HudLayer.Update(gameTime);
-            
+
+            if (UserData.mode == (int)Mode.Time)
+            {
+                timer -= gameTime.ElapsedGameTime;
+                if (timer.TotalSeconds <= 0.0f)
+                {
+                    tower_manager.isPause = true;
+                    this.SceneManager.AddScene(new VictoryScene(points, enemies_killed, MapLoadManager.getMap(UserData.mapIndex).Name));
+                }
+            }
+
             if (wave_manager.Waiting){ WaveTable.Update(gameTime, wave_manager.CurrentWaveNumber); }
             else { WaveTable.Update(gameTime, wave_manager.CurrentWaveNumber + 1); }
             //Cap nhat Camera
@@ -364,7 +376,7 @@ namespace CustomGame
             //Neu la trang thai click chuot phai
             if (mouseState.RightButton == ButtonState.Released && previousState.RightButton == ButtonState.Pressed)
             {
-                Console.WriteLine("Right mouse clicked");
+                //Console.WriteLine("Right mouse clicked");
                 is_tower_add = false;
                 is_tower_select = false;
                 if (tower_keypos != -1)
@@ -397,7 +409,7 @@ namespace CustomGame
 
                         if (IsTower(tile_x, tile_y))
                         {
-                            Console.WriteLine("Tower is selected");
+                            //Console.WriteLine("Tower is selected");
                             tower_keypos = tile_y * width + tile_x;
 
                             Tower tower = tower_manager.GetTower(tower_keypos);
@@ -464,7 +476,7 @@ namespace CustomGame
                         switch (tower_type)
                         {
                             case TowerType.OakTower:
-                                Console.WriteLine("Oak Tower is added");
+                                //Console.WriteLine("Oak Tower is added");
                                 tower = new OakTower(GetBottomLeftFromCell(tile_x, tile_y),Anchor.BOTTOMLEFT);
                                 tower.LayerDepth += (width - tile_x) * LAYER_DEPTH_CHANGE + (height - tile_y) * LAYER_DEPTH_CHANGE; 
                                 tower_manager.AddTower(key_pos, tower); money -= OakTower.COST;
@@ -472,7 +484,7 @@ namespace CustomGame
                                 break;
                             
                             case TowerType.CactusTower:
-                                Console.WriteLine("Catus Tower is added");
+                                //Console.WriteLine("Catus Tower is added");
                                 tower = new CactusTower(GetBottomLeftFromCell(tile_x, tile_y), Anchor.BOTTOMLEFT);
                                 tower.LayerDepth += (width - tile_x) * LAYER_DEPTH_CHANGE + (height - tile_y) * LAYER_DEPTH_CHANGE; 
                                 tower_manager.AddTower(key_pos, tower); money -= CactusTower.COST;
@@ -480,7 +492,7 @@ namespace CustomGame
                                 break;
 
                             case TowerType.PineappleTower:
-                                Console.WriteLine("Pineapple Tower is added");
+                                //Console.WriteLine("Pineapple Tower is added");
                                 tower = new PineappleTower(GetBottomLeftFromCell(tile_x, tile_y), Anchor.BOTTOMLEFT);
                                 tower.LayerDepth += (width - tile_x) * LAYER_DEPTH_CHANGE + (height - tile_y) * LAYER_DEPTH_CHANGE; 
                                 tower_manager.AddTower(key_pos, tower); money -= PineappleTower.COST;
@@ -507,12 +519,10 @@ namespace CustomGame
                 RangeLabel.Center = mouseRealPosition;
                 CursorLabel.Center = mouseRealPosition;
                 if (IsBlank(tile_x, tile_y)){
-                    //Cursor.getInstance().SetCursor(tower_texture, mouseRealPosition, Color.Yellow);
                     CursorLabel.Color = Color.Yellow;
                     RangeLabel.Active = true;
                 }
                 else{
-                    //Cursor.getInstance().SetCursor(tower_texture, mouseRealPosition, Color.Red);
                     CursorLabel.Color = Color.Red;
                     RangeLabel.Active = false;
                 }
@@ -535,7 +545,7 @@ namespace CustomGame
                 lives = Math.Max(lives, 0);
                 if (lives <= 0){
                     tower_manager.isPause = true;
-                    this.SceneManager.AddScene(new DefeatScene(points,enemies_killed));
+                    this.SceneManager.AddScene(new DefeatScene(points,enemies_killed,MapLoadManager.getMap(UserData.mapIndex).Name));
                 }
                 else{
                     tower_manager.Update(gameTime, wave_manager.CurrentWave.ActiveEnemies);
@@ -544,7 +554,7 @@ namespace CustomGame
             else
             {
                 tower_manager.isPause = true;
-                this.SceneManager.AddScene(new VictoryScene(points, enemies_killed));
+                this.SceneManager.AddScene(new VictoryScene(points, enemies_killed, MapLoadManager.getMap(UserData.mapIndex).Name));
             }
         }
 
@@ -572,6 +582,13 @@ namespace CustomGame
                 {
                     spriteBatch.DrawString(wave_font, "Waiting: " + (int)wave_manager.Timer, new Vector2(430, 110), Color.White, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, 0.08f);
                 }
+                if (UserData.mode == (int)Mode.Time)
+                {
+                    int minute,second;
+                    minute = ((int)timer.TotalSeconds)/60;
+                    second = ((int)timer.TotalSeconds)%60;
+                    spriteBatch.DrawString(wave_font, "Time: " + minute + ":" + second, new Vector2(430, 160), Color.Blue, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, 0.08f);
+                }
                 spriteBatch.DrawString(wave_font, "Wave: " + wave_manager.CurrentWaveNumber, new Vector2(20, 110), Color.White, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, 0.08f);
                 spriteBatch.DrawString(wave_font, "Total: " + wave_manager.TotalWaveNumber, new Vector2(20, 160), Color.White, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, 0.08f);
                 OakTowerLabel.Draw(spriteBatch);
@@ -581,12 +598,7 @@ namespace CustomGame
                 HudLayer.Draw(spriteBatch);
             spriteBatch.End();
 
-            //mRenderer.RenderEffect(OakBullet.EFFECT);
-            //mRenderer.RenderEffect(CactusBullet.EFFECT);
-            //mRenderer.RenderEffect(PineappleBullet.EFFECT);
-
             Matrix resolution = Camera2D.Transform;
-            //Console.WriteLine(resolution.ToString());
 
             mRenderer.RenderEffect(OakBullet.EFFECT, ref resolution);
             mRenderer.RenderEffect(CactusBullet.EFFECT, ref resolution);

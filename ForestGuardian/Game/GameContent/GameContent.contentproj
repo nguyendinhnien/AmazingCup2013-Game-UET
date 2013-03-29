@@ -433,21 +433,6 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="images\scene\SelectLevelScene\map_level_1_preview.png">
-      <Name>map_level_1_preview</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\SelectLevelScene\map_level_2_preview.png">
-      <Name>map_level_2_preview</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\scene\SelectLevelScene\map_level_3_preview.png">
-      <Name>map_level_3_preview</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
     <Compile Include="images\scene\SelectLevelScene\selectmaps.png">
       <Name>selectmaps</Name>
       <Importer>TextureImporter</Importer>
@@ -514,17 +499,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="images\scene\SelectLevelScene\map_level_1_thumb.png">
+    <Compile Include="images\maps\map_level_1_thumb.png">
       <Name>map_level_1_thumb</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="images\scene\SelectLevelScene\map_level_2_thumb.png">
+    <Compile Include="images\maps\map_level_2_thumb.png">
       <Name>map_level_2_thumb</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="images\scene\SelectLevelScene\map_level_3_thumb.png">
+    <Compile Include="images\maps\map_level_3_thumb.png">
       <Name>map_level_3_thumb</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
@@ -904,6 +889,12 @@
       <Processor>PassThroughProcessor</Processor>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <Compile Include="fonts\SelectLevelScene\select_level.spritefont">
+      <SubType>Designer</SubType>
+      <Name>select_level</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
   <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 

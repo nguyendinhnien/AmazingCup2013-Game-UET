@@ -23,13 +23,21 @@ namespace Data
         [ContentSerializerIgnore]
         public static byte OTHER = 2;
 
-        public string Name;        
+        public string Name;
+        public string Description;
         public int Width;
         public int Height;
         public int TileSize;
         public string BackgroundFile;
-        //[ContentSerializerIgnore]
-        //public Texture2D BackgroundTexture;
+        private Texture2D mBackgroundTexture;
+
+        [ContentSerializerIgnore]
+        public Texture2D BackgroundTexture
+        {
+            get { return mBackgroundTexture; }
+            set { mBackgroundTexture = value; }
+        }
+
         public byte[] InteractiveMap;
         public Cell StartCell;
         public Cell EndCell;
@@ -58,9 +66,10 @@ namespace Data
             DFS_Search(StartCell.tile_x, StartCell.tile_y, path, -1, visit);
 
             Random random = new Random();
-            foreach (Wave wave in Waves)
+            for (int i = 0; i < Waves.Count;i++ )
             {
-                wave.path_order = random.Next(Waves.Count);
+                Waves[i].path_order = random.Next(Waves.Count);
+                Waves[i].GrowRate = i / Data.Wave.NUMBER_BETWEEN_GROW * Data.Wave.BASE_GROW_RATE;
             }
         }
 

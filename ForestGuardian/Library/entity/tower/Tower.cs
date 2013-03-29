@@ -111,9 +111,7 @@ namespace Library
             if (reloadDuration <= 0)
             {
                 reloadDuration = mFireReload;
-
                 target = enemy;
-
                 createBullet();
             }
         }

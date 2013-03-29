@@ -89,18 +89,18 @@ namespace Library
             else if (keyState.IsKeyDown(Keys.E)) { Zoom += 0.01f; }
             
             //Kiem tra xem co bi di chuyen khong
-            if (keyState.IsKeyDown(Keys.A)){ X -= 3.0f; }
-            else if (keyState.IsKeyDown(Keys.D)){ X += 3.0f; } 
+            if (keyState.IsKeyDown(Keys.A)){ X -= 5.0f; }
+            else if (keyState.IsKeyDown(Keys.D)){ X += 5.0f; } 
 
-            if (keyState.IsKeyDown(Keys.W)){ Y -= 3.0f; }
-            else if (keyState.IsKeyDown(Keys.S)){ Y += 3.0f; }
+            if (keyState.IsKeyDown(Keys.W)){ Y -= 5.0f; }
+            else if (keyState.IsKeyDown(Keys.S)){ Y += 5.0f; }
 
             if (is_changed)
             {
                 zoom = Math.Max(Math.Min(zoom, maxZoom), minZoom);
  
-                maxPosition.X = Math.Max(0, world_width - viewport_width / zoom);
-                maxPosition.Y = Math.Max(0, world_height - viewport_height / zoom);
+                maxPosition.X = Math.Max(0, world_width * zoom- viewport_width);
+                maxPosition.Y = Math.Max(0, world_height * zoom - viewport_height);
                 position = Vector2.Clamp(position, minPosition, maxPosition);
 
                 transform = Matrix.CreateScale(new Vector3(zoom, zoom, 1.0f))

@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <XnaContent>
   <Asset Type="Data.Map">
-    <Name>Forest 3</Name>
+    <Name>Forest 2</Name>
+    <Description>A tortuous road seem to be &#xA;helpful for the trees but, &#xA;what happen if the enemies&#xA;is... a lot.   
+    </Description>
     <Width>28</Width>
     <Height>18</Height>
     <TileSize>64</TileSize>
@@ -39,11 +41,7 @@
       <Item> <EnemyType>AxeMan</EnemyType> <EnemyNumber>7</EnemyNumber> <SpawnRate>2.2</SpawnRate></Item>
     </Waves>
     <SongFiles>
-      <Item>musics/Song6</Item>
-      <Item>musics/Song5</Item>
-      <Item>musics/Song7</Item>
-      <Item>musics/Song4</Item>
-      <Item>musics/Song1</Item>
+      <Item>musics/Song8</Item>
     </SongFiles>
   </Asset>
 </XnaContent>

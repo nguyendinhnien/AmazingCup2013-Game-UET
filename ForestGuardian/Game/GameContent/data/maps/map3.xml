@@ -2,6 +2,8 @@
 <XnaContent>
   <Asset Type="Data.Map">
     <Name>Forest 3</Name>
+    <Description>A road with many paths makes&#xA;the trees difficult to decide&#xA;where to guard.&#xA;How will they do to hinder&#xA;the waves of enemies ?    
+    </Description>
     <Width>24</Width>
     <Height>18</Height>
     <TileSize>64</TileSize>
@@ -40,10 +42,6 @@
     </Waves>
     <SongFiles>
       <Item>musics/Song8</Item>
-      <Item>musics/Song2</Item>
-      <Item>musics/Song5</Item>
-      <Item>musics/Song7</Item>
-      <Item>musics/Song3</Item>
     </SongFiles>
   </Asset>
 </XnaContent>

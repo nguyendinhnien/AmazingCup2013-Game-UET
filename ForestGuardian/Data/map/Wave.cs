@@ -8,10 +8,18 @@ namespace Data
 {
     public class Wave
     {
+        [ContentSerializerIgnore]
+        public static int NUMBER_BETWEEN_GROW = 1;
+        
+        [ContentSerializerIgnore]
+        public static float BASE_GROW_RATE = 0.1f;
+        
         public string EnemyType;
         public int EnemyNumber;
         public float SpawnRate;
         [ContentSerializerIgnore]
         public int path_order;
+        [ContentSerializerIgnore]
+        public float GrowRate;
     }
 }

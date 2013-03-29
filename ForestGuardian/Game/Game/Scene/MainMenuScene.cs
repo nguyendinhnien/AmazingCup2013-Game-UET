@@ -80,7 +80,7 @@ namespace CustomGame
 
         private void PlayButtonClicked(object sender, EventArgs e)
         {
-            SceneManager.AddScene(new SelectLevelScene());     
+            SceneManager.AddScene(new MapSelectScene());     
         }
 
         private void ScoresButtonClicked(object sender, EventArgs e)

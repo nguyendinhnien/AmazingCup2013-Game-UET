@@ -12,12 +12,12 @@ using Library;
 
 namespace CustomGame
 {
-    public class SelectLevelScene : GameScene
+    public class MapSelectScene : GameScene
     {
         private static int NUMBER_OF_ITEM_DISPLAY = 3;
         //private static int MAX_DEFAULT_MAPS = 3;
 
-        private Texture2D selectLevelTexture;
+        private Texture2D selectModeTexture;
 
         private ToggleButton backwardButton;
         private ToggleButton forwardButton;
@@ -40,7 +40,7 @@ namespace CustomGame
         private Texture2D backgroundTexture;
         private Vector2 backgroundPosition;
 
-        public SelectLevelScene()
+        public MapSelectScene()
             : base()
         {
             numberOfItems = MapLoadManager.MAX_DEFAULT_MAPS;
@@ -91,7 +91,7 @@ namespace CustomGame
             hightlightSelectTexture = content.Load<Texture2D>(@"images\scene\CommonButton\highlight_select_card");
             selectLevelFont = content.Load<SpriteFont>(@"fonts\SelectLevelScene\select_level");
 
-            selectLevelTexture = content.Load<Texture2D>(@"images\scene\SelectLevelScene\b_select_level");
+            selectModeTexture = content.Load<Texture2D>(@"images\scene\SelectLevelScene\b_select_level");
         }
 
         public override void Update(GameTime gameTime)
@@ -148,14 +148,14 @@ namespace CustomGame
             
             spriteBatch.Draw(hightlightSelectTexture, itemPosition[currentItemShow]- new Vector2(2,2), Color.White);
             spriteBatch.Draw(MapLoadManager.getMap(currentItemShow).BackgroundTexture, new Vector2(44, 107), null, Color.White, 0.0f, Vector2.Zero,PreviewScale,SpriteEffects.None,0.0f);
-            spriteBatch.Draw(selectLevelTexture, new Vector2(456, 168) + new Vector2(0, 43) * UserData.mode, Color.White);
+            spriteBatch.Draw(selectModeTexture, new Vector2(456, 168) + new Vector2(0, 43) * UserData.mode, Color.White);
 
             Vector2 mapNamePos = new Vector2(780, 120);
             mapNamePos.X -= selectLevelFont.MeasureString(MapLoadManager.getMap(currentItemShow).Name).X / 2;
 
             spriteBatch.DrawString(selectLevelFont, MapLoadManager.getMap(currentItemShow).Name, mapNamePos, Color.Green);
 
-            spriteBatch.DrawString(selectLevelFont, MapLoadManager.getMap(currentItemShow).Description, new Vector2(629, 167), Color.Black, 0, Vector2.Zero,0.8f, SpriteEffects.None, 1.0f);
+            spriteBatch.DrawString(selectLevelFont, MapLoadManager.getMap(currentItemShow).Description, new Vector2(610, 167), Color.Black, 0, Vector2.Zero,0.8f, SpriteEffects.None, 1.0f);
 
             spriteBatch.End();
         }

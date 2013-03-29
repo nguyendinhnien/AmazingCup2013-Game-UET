@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <XnaContent>
   <Asset Type="Data.Map">
-    <Name>Forest 3</Name>
-    <Description></Description>
+    <Name>Forest 2</Name>
+    <Description>A tortuous road seem to be &#xA;helpful for the trees but, &#xA;what happen if the enemies&#xA;is... a lot.   
+    </Description>
     <Width>28</Width>
     <Height>18</Height>
     <TileSize>64</TileSize>

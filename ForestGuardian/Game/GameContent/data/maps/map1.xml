@@ -2,7 +2,7 @@
 <XnaContent>
   <Asset Type="Data.Map">
     <Name>Forest 1</Name>
-    <Description>Forest with panda&#xA;need to be protected</Description>
+    <Description>A single road that enemies&#xA;must pass to get deep into&#xA;the forest.&#xA;Be carefull, they will move&#xA;very fast</Description>
     <Width>16</Width>
     <Height>12</Height>
     <TileSize>64</TileSize>

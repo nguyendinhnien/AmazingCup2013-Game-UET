@@ -21,8 +21,8 @@ namespace Library
         public static int UP_COST = 5;
         public static int RANGE = 150;
         public static int DAMAGE = 0;
-        public static float REDUCE_SPEED = 0.40f;
-        public static float SLOW_DURATION = 3;
+        public static float REDUCE_SPEED = 0.4f;
+        public static float SLOW_DURATION = 3.0f;
 
         private float mSpeedReduce;
         private float mSlowDuration;
@@ -44,7 +44,6 @@ namespace Library
         public override void createBullet()
         {
             bullet = new CactusBullet(BULLET_TEXTURE, this.Center, mDamage);
-
             bullet.setTarget(target);
         }
 
@@ -55,20 +54,23 @@ namespace Library
             if (level == 2)
             {
                 mTexture = TEXTURE_LV2;
+                mDamage = (int) (DAMAGE * 1.5f);
                 mSpeedReduce = REDUCE_SPEED + 0.15f;
+                mSlowDuration = SLOW_DURATION + 0.5f; 
             }
             else if (level == 3)
             {
                 mTexture = TEXTURE_LV3;
+                mDamage = (int)(DAMAGE * 1.8f);
                 mSpeedReduce = REDUCE_SPEED + 0.3f;
+                mSlowDuration = SLOW_DURATION + 1.0f; 
             }
         }
 
-        public override void Update(GameTime gameTime)
+        public override void Update(GameTime gameTime, bool isPause)
         {
-            base.Update(gameTime);
-
-            if (target != null && !bullet.Alive && target.SlowDuration < mSlowDuration)
+            base.Update(gameTime,isPause);
+            if (!isPause && target != null && !bullet.Alive && target.SlowDuration < mSlowDuration)
             {
                 target.SpeedReduce = mSpeedReduce;
                 target.SlowDuration = mSlowDuration;

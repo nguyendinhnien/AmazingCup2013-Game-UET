@@ -15,11 +15,6 @@ namespace Library
         public const string DOZER = "Dozer";
     }
 
-    public enum Difficulty
-    {
-        EASY, NORMAL, HARD
-    }
-
     public class Enemy : AnimatedSprite
     {
         public static Texture2D HEALTH_BAR_TEXTURE;
@@ -115,20 +110,6 @@ namespace Library
             this.at_end = false;
             this.layer_depth = 0.6f;
         }
-
-        //private void setDifficulty(int difficulty){
-        //    switch (difficulty)
-        //    {
-        //        case (int)Difficulty.EASY:
-        //            maxHealth = maxHealth * 0.8f;
-        //            break;
-        //        case (int)Difficulty.NORMAL:
-        //            break;
-        //        case (int)Difficulty.HARD:
-        //            maxHealth = maxHealth * 1.2f;
-        //            break;
-        //    }
-        //}
 
         public void Grow(float grow_rate)
         {

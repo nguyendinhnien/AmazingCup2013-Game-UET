@@ -17,10 +17,10 @@ namespace Library
         public static Texture2D BULLET_TEXTURE;
 
         public static float FIRE_RELOAD = 0.5f;
-        public static int COST = 20;
+        public static int COST = 25;
         public static int UP_COST = 15;
         public static int RANGE = 250;
-        public static int DAMAGE = 75;
+        public static int DAMAGE = 25;
 
         private List<Enemy> mEnemies;
 
@@ -45,12 +45,12 @@ namespace Library
             if (level == 2)
             {
                 mTexture = TEXTURE_LV2;
-                mDamage = 2 * DAMAGE;
+                mDamage = (int)(DAMAGE * 1.5f);
             }
             else if (level == 3)
             {
                 mTexture = TEXTURE_LV3;
-                mDamage = 3 * DAMAGE;
+                mDamage = (int)(DAMAGE * 1.8f);
             }
         }
 
@@ -61,9 +61,5 @@ namespace Library
             return base.getClosestEnemy(enemies);
         }
 
-        public override void Update(GameTime gameTime)
-        {
-            base.Update(gameTime);
-        }
     }
 }

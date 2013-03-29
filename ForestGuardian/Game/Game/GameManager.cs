@@ -68,7 +68,7 @@ namespace CustomGame
             renderer.LoadContent(Content);
             //DataSerializer.CheckDirectory(UserData.HighScoreDirectory);
             UserData.LoadSetting();
-            MapLoadManager.LoadAllMap(Content);
+            //MapLoadManager.LoadAllMap(Content);
             base.LoadContent();
         }
 

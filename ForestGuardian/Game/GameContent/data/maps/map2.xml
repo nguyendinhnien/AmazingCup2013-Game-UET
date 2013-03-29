@@ -36,9 +36,6 @@
     </EndCell>
     <Waves>
       <Item> <EnemyType>AxeMan</EnemyType> <EnemyNumber>2</EnemyNumber> <SpawnRate>2.0</SpawnRate></Item>
-      <Item> <EnemyType>AxeMan</EnemyType> <EnemyNumber>2</EnemyNumber> <SpawnRate>2.2</SpawnRate></Item>
-      <Item> <EnemyType>AxeMan</EnemyType> <EnemyNumber>5</EnemyNumber> <SpawnRate>2.3</SpawnRate></Item>
-      <Item> <EnemyType>AxeMan</EnemyType> <EnemyNumber>7</EnemyNumber> <SpawnRate>2.2</SpawnRate></Item>
     </Waves>
     <SongFiles>
       <Item>musics/Song8</Item>

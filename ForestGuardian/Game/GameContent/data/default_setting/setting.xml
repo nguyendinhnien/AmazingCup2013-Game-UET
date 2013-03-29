@@ -2,6 +2,6 @@
 <Setting>
   <MusicVolume>50</MusicVolume>
   <SoundVolume>50</SoundVolume>
-  <TowerLockIndex>3</TowerLockIndex>
-  <MapLockIndex>3</MapLockIndex>
+  <TowerLockIndex>1</TowerLockIndex>
+  <MapLockIndex>1</MapLockIndex>
 </Setting>

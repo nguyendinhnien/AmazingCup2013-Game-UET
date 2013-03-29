@@ -117,7 +117,6 @@ Content\images\gameplay\enemies\axeman_move.xnb
 Content\images\gameplay\enemies\dozer_move.xnb
 Content\images\gameplay\enemies\sawman_move.xnb
 Content\images\scene\HelpScene\cactus_card.xnb
-Content\images\scene\HelpScene\hulk_card.xnb
 Content\images\scene\TextBoxScene\textbox_dialog.xnb
 Content\images\scene\TextBoxScene\b_save_normal.xnb
 Content\images\scene\TextBoxScene\b_save_press.xnb
@@ -138,4 +137,9 @@ Content\fonts\TextBoxScene\textinput.xnb
 Content\fonts\SelectLevelScene\select_level.xnb
 Content\musics\Song8.xnb
 Content\musics\Song8.wma
+Content\images\scene\HelpScene\cactus_in_game.xnb
+Content\images\scene\HelpScene\pineapple_in_game.xnb
+Content\fonts\VictoryScene\unlock_font.xnb
+Content\fonts\VictoryScene\normal_font.xnb
+Content\fonts\DefeatScene\normal_font.xnb
 Content\data\default_setting\setting.xml

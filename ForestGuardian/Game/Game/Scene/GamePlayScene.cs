@@ -29,8 +29,8 @@ namespace CustomGame
     public class GamePlayScene : GameScene
     {
         private float LAYER_DEPTH_CHANGE = 0.005f;
-        private int MAX_LIVES = 100;
-        private int MAX_MONEY = 2000;
+        private int MAX_LIVES = 1;
+        private int MAX_MONEY = 20;
         
         private BackgroundLayer background_layer;
 
@@ -181,7 +181,7 @@ namespace CustomGame
 
         public void LoadNewGame()
         {
-            switch (UserData.mode)
+            switch (UserData.currentMapMode)
             {
                 case (int)Mode.Classic:
                     lives = MAX_LIVES; break;
@@ -197,7 +197,7 @@ namespace CustomGame
             is_tower_select = false; tower_keypos = -1;
             points = 0; enemies_killed = 0;
             currentSongIndex = 0;
-            LoadMap(UserData.mapIndex);
+            LoadMap(UserData.currentMapIndex);
         }
 
         public void LoadMap(int mapIndex)
@@ -301,7 +301,7 @@ namespace CustomGame
         private void OakTowerLabel_Clicked()
         {
             //Console.WriteLine("ArrowTower is selected to add");
-            tower_type = TowerType.OakTower;
+            tower_type = TowerType.Oak;
             CursorLabel.Texture = OakTower.TEXTURE_LV1;
             RangeLabel.Scale = (float)OakTower.RANGE / 250;
             is_tower_add = true;
@@ -309,7 +309,7 @@ namespace CustomGame
         private void CatusTowerLabel_Clicked()
         {
             //Console.WriteLine("SlowTower is selected to add");
-            tower_type = TowerType.CactusTower;
+            tower_type = TowerType.Cactus;
             CursorLabel.Texture = CactusTower.TEXTURE_LV1;
             RangeLabel.Scale = (float)CactusTower.RANGE / 250;
             is_tower_add = true;
@@ -317,7 +317,7 @@ namespace CustomGame
         private void PineappleTowerLabel_Clicked()
         {
             //Console.WriteLine("SlowTower is selected to add");
-            tower_type = TowerType.PineappleTower;
+            tower_type = TowerType.Pineapple;
             CursorLabel.Texture = PineappleTower.TEXTURE_LV1;
             RangeLabel.Scale = (float)PineappleTower.RANGE / 250;
             is_tower_add = true;
@@ -348,13 +348,13 @@ namespace CustomGame
             }
             HudLayer.Update(gameTime);
 
-            if (UserData.mode == (int)Mode.Time)
+            if (UserData.currentMapMode == (int)Mode.Time)
             {
                 timer -= gameTime.ElapsedGameTime;
                 if (timer.TotalSeconds <= 0.0f)
                 {
                     tower_manager.isPause = true;
-                    this.SceneManager.AddScene(new VictoryScene(points, enemies_killed, MapLoadManager.getMap(UserData.mapIndex).Name));
+                    this.SceneManager.AddScene(new VictoryScene(points, enemies_killed, MapLoadManager.getMap(UserData.currentMapIndex).Name));
                 }
             }
 
@@ -475,7 +475,7 @@ namespace CustomGame
                         Tower tower;
                         switch (tower_type)
                         {
-                            case TowerType.OakTower:
+                            case TowerType.Oak:
                                 //Console.WriteLine("Oak Tower is added");
                                 tower = new OakTower(GetBottomLeftFromCell(tile_x, tile_y),Anchor.BOTTOMLEFT);
                                 tower.LayerDepth += (width - tile_x) * LAYER_DEPTH_CHANGE + (height - tile_y) * LAYER_DEPTH_CHANGE; 
@@ -483,7 +483,7 @@ namespace CustomGame
                                 tower_map[key_pos] = CellType.TOWER;
                                 break;
                             
-                            case TowerType.CactusTower:
+                            case TowerType.Cactus:
                                 //Console.WriteLine("Catus Tower is added");
                                 tower = new CactusTower(GetBottomLeftFromCell(tile_x, tile_y), Anchor.BOTTOMLEFT);
                                 tower.LayerDepth += (width - tile_x) * LAYER_DEPTH_CHANGE + (height - tile_y) * LAYER_DEPTH_CHANGE; 
@@ -491,7 +491,7 @@ namespace CustomGame
                                 tower_map[key_pos] = CellType.TOWER;
                                 break;
 
-                            case TowerType.PineappleTower:
+                            case TowerType.Pineapple:
                                 //Console.WriteLine("Pineapple Tower is added");
                                 tower = new PineappleTower(GetBottomLeftFromCell(tile_x, tile_y), Anchor.BOTTOMLEFT);
                                 tower.LayerDepth += (width - tile_x) * LAYER_DEPTH_CHANGE + (height - tile_y) * LAYER_DEPTH_CHANGE; 
@@ -545,7 +545,7 @@ namespace CustomGame
                 lives = Math.Max(lives, 0);
                 if (lives <= 0){
                     tower_manager.isPause = true;
-                    this.SceneManager.AddScene(new DefeatScene(points,enemies_killed,MapLoadManager.getMap(UserData.mapIndex).Name));
+                    this.SceneManager.AddScene(new DefeatScene(points,enemies_killed,MapLoadManager.getMap(UserData.currentMapIndex).Name));
                 }
                 else{
                     tower_manager.Update(gameTime, wave_manager.CurrentWave.ActiveEnemies);
@@ -554,7 +554,7 @@ namespace CustomGame
             else
             {
                 tower_manager.isPause = true;
-                this.SceneManager.AddScene(new VictoryScene(points, enemies_killed, MapLoadManager.getMap(UserData.mapIndex).Name));
+                this.SceneManager.AddScene(new VictoryScene(points, enemies_killed, MapLoadManager.getMap(UserData.currentMapIndex).Name));
             }
         }
 
@@ -582,7 +582,7 @@ namespace CustomGame
                 {
                     spriteBatch.DrawString(wave_font, "Waiting: " + (int)wave_manager.Timer, new Vector2(430, 110), Color.White, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, 0.08f);
                 }
-                if (UserData.mode == (int)Mode.Time)
+                if (UserData.currentMapMode == (int)Mode.Time)
                 {
                     int minute,second;
                     minute = ((int)timer.TotalSeconds)/60;

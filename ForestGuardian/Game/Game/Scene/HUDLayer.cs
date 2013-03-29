@@ -94,8 +94,12 @@ namespace CustomGame
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.DrawString(font, gameplay.Lives.ToString(), new Vector2(877, 49), Color.Gold,0.0f,Vector2.Zero,1.0f,SpriteEffects.None,0.08f);
-            spriteBatch.DrawString(font, gameplay.Money.ToString(), new Vector2(82, 49), Color.Gold, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, 0.08f);
+            spriteBatch.DrawString(font, gameplay.Lives.ToString(), new Vector2(877, 49), Color.OrangeRed,0.0f,Vector2.Zero,1.0f,SpriteEffects.None,0.08f);
+            
+            Vector2 moneyPosition = new Vector2(138, 54);
+            moneyPosition.X -= 0.8f * font.MeasureString(gameplay.Money.ToString()).X / 2;
+            spriteBatch.DrawString(font, gameplay.Money.ToString(), moneyPosition, Color.YellowGreen, 0.0f, Vector2.Zero, 0.8f, SpriteEffects.None, 0.08f);
+            
             spriteBatch.DrawString(font, gameplay.Points.ToString(), PointPosition, Color.Gold, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, 0.08f);
             
             LifeLabel.Draw(spriteBatch);

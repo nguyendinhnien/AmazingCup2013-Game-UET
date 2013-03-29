@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Library
 {
+    
     public class TowerManager
     {
         public bool isPause = false;

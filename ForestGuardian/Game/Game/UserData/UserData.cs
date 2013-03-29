@@ -12,7 +12,9 @@ namespace CustomGame
         Classic,Death,Time
     }
     public static class UserData
-    {     
+    {
+        public static int MAX_TOWER_NUMBER = 3;
+        public static int MAX_MAP_NUMBER = 3;
         public static bool isFullScreen = false;
 
         public static Setting setting;
@@ -27,8 +29,8 @@ namespace CustomGame
                                            Color.Lime, Color.Lime, Color.Lime, Color.Lime, Color.Lime};
         
         //Do kho
-        public static int mode;        
-        public static int mapIndex = 0;
+        public static int currentMapMode;        
+        public static int currentMapIndex = 0;
 
         public static void LoadSetting()
         {
@@ -53,10 +55,36 @@ namespace CustomGame
                 setting = DataSerializer.LoadStaticData<Setting>(DefaultSettingFilePath);
             }
         }
+        public static int UnlockNewMap()
+        {
+            if (currentMapIndex < MAX_MAP_NUMBER && currentMapIndex == (setting.mapLockIndex-1))
+            {
+                setting.mapLockIndex++;
+                DataSerializer.SaveData<Setting>(setting, CustomSettingDirectory, CustomSettingFile);
+                return currentMapIndex+1;
+            }
+            else return -1;           
+        }
+
+        public static int UnlockNewTower()
+        {
+            if (currentMapIndex < MAX_TOWER_NUMBER && currentMapIndex == (setting.towerLockIndex-1))
+            {
+                setting.towerLockIndex++;
+                DataSerializer.SaveData<Setting>(setting, CustomSettingDirectory, CustomSettingFile);
+                return currentMapIndex+1;
+            }
+            else return -1;
+
+        }
 
         public static bool isTowerLock(int towerIndex)
         {
             return towerIndex >= setting.towerLockIndex;
+        }
+        public static bool isMapLock(int mapIndex)
+        {
+            return mapIndex >= setting.mapLockIndex;
         }
     }
 }

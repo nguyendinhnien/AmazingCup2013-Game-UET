@@ -44,8 +44,7 @@ namespace CustomGame
 
         public HelpScene():base()
         {
-            numberOfItems = Enum.GetNames(typeof(TowerType)).Length;
-
+            numberOfItems = UserData.MAX_TOWER_NUMBER;
             towerInGameTexture = new Texture2D[numberOfItems];
             
             itemCard = new Texture2D[numberOfItems];
@@ -88,8 +87,8 @@ namespace CustomGame
             itemCard[2] = content.Load<Texture2D>(@"images\scene\HelpScene\pineapple_card");
 
             towerInGameTexture[0] = content.Load<Texture2D>(@"images\scene\HelpScene\oak_in_game");
-            towerInGameTexture[1] = content.Load<Texture2D>(@"images\scene\HelpScene\oak_in_game");
-            towerInGameTexture[2] = content.Load<Texture2D>(@"images\scene\HelpScene\oak_in_game");
+            towerInGameTexture[1] = content.Load<Texture2D>(@"images\scene\HelpScene\cactus_in_game");
+            towerInGameTexture[2] = content.Load<Texture2D>(@"images\scene\HelpScene\pineapple_in_game");
 
             TowerLoadManager.LoadContent(content);
 
@@ -124,19 +123,19 @@ namespace CustomGame
             }
             switch (currentItemShow)
             {
-                case (int)TowerType.OakTower:
+                case (int)TowerType.Oak:
                     TowerName = OakTower.NAME; TowerDamage = OakTower.DAMAGE; TowerRange = OakTower.RANGE; TowerCost = OakTower.COST;
                     towerLevelTexture[0] = OakTower.TEXTURE_LV1;
                     towerLevelTexture[1] = OakTower.TEXTURE_LV2;
                     towerLevelTexture[2] = OakTower.TEXTURE_LV3;
                     break;
-                case (int)TowerType.CactusTower:
+                case (int)TowerType.Cactus:
                     TowerName = CactusTower.NAME; TowerDamage = CactusTower.DAMAGE; TowerRange = CactusTower.RANGE; TowerCost = CactusTower.COST;
                     towerLevelTexture[0] = CactusTower.TEXTURE_LV1;
                     towerLevelTexture[1] = CactusTower.TEXTURE_LV2;
                     towerLevelTexture[2] = CactusTower.TEXTURE_LV3;
                     break;
-                case (int)TowerType.PineappleTower:
+                case (int)TowerType.Pineapple:
                     TowerName = PineappleTower.NAME; TowerDamage = PineappleTower.DAMAGE; TowerRange = PineappleTower.RANGE; TowerCost = PineappleTower.COST;
                     towerLevelTexture[0] = PineappleTower.TEXTURE_LV1;
                     towerLevelTexture[1] = PineappleTower.TEXTURE_LV2;
@@ -158,17 +157,19 @@ namespace CustomGame
                 for (int i = 0; i < NUMBER_OF_ITEM_DISPLAY; i++)
                 {
                     spriteBatch.Draw(itemCard[startItem + i], itemPosition[i], Color.White);
-                    if (startItem + i >= UserData.setting.towerLockIndex)
+                    if (UserData.isTowerLock(startItem + i))
+                    {
                         spriteBatch.Draw(lockTexture, itemPosition[i], Color.White);
+                    }
                 }
-            
-                if (! UserData.isTowerLock(currentItemShow + startItem))
-                {
-                    //Highlight phan duoc select
-                    spriteBatch.Draw(hightlightSelectTexture, itemPosition[currentItemShow] - new Vector2(2,2), Color.White);
 
+                int towerIndex = currentItemShow + startItem;
+                //Highlight phan duoc select
+                spriteBatch.Draw(hightlightSelectTexture, itemPosition[towerIndex] - new Vector2(2, 2), Color.White);
+                if (! UserData.isTowerLock(towerIndex))
+                {
                     string TowerInfo = "Name: " + TowerName + "\n" +
-                                        "Damage: " + TowerDamage + "/" + (int)(TowerDamage * 1.5) + "/" + TowerDamage * 2 + "\n" +
+                                        "Damage: " + TowerDamage + "/" + (int)(TowerDamage * 1.5f) + "/" + (int)(TowerDamage * 1.8f) + "\n" +
                                         "Range: " + TowerRange + "\n" + "Cost: " + TowerCost;
 
                     spriteBatch.DrawString(helpFont, TowerInfo, new Vector2(75,190) , Color.Black, 0, Vector2.Zero,0.5f, SpriteEffects.None, 1.0f);
@@ -176,7 +177,7 @@ namespace CustomGame
                     spriteBatch.Draw(towerLevelTexture[0], new Vector2(700, 315), Color.White);
                     spriteBatch.Draw(towerLevelTexture[1], new Vector2(780, 240), Color.White);
                     spriteBatch.Draw(towerLevelTexture[2], new Vector2(860, 165), Color.White);
-                    spriteBatch.Draw(towerInGameTexture[currentItemShow + startItem], new Vector2(400, 200), Color.White);
+                    spriteBatch.Draw(towerInGameTexture[towerIndex], new Vector2(400, 200), Color.White);
 
                     spriteBatch.DrawString(helpFont, "level 1", new Vector2(780, 347), Color.Black, 0,
                         Vector2.Zero, 0.5f, SpriteEffects.None, 1.0f);
@@ -184,10 +185,6 @@ namespace CustomGame
                         Vector2.Zero, 0.5f, SpriteEffects.None, 1.0f);
                     spriteBatch.DrawString(helpFont, "level 3", new Vector2(780, 197), Color.Black, 0,
                         Vector2.Zero, 0.5f, SpriteEffects.None, 1.0f);
-                }
-                else
-                {
-                    currentItemShow = 0;
                 }
 
                 backButton.Draw(spriteBatch);

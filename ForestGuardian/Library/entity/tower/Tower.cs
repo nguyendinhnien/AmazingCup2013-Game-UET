@@ -9,10 +9,11 @@ namespace Library
 {
     public enum TowerType
     {
-        OakTower,
-        CactusTower,
-        PineappleTower
+        Oak,
+        Cactus,
+        Pineapple
     }
+
     public class Tower : Sprite
     {
         //Cac thuoc tinh co ban cua moi tower
@@ -118,10 +119,9 @@ namespace Library
 
         public virtual void createBullet() { }
 
-        public void Update(GameTime gameTime , bool isPause)
+        public virtual void Update(GameTime gameTime , bool isPause)
         {
             base.Update(gameTime);
-
             if (!isPause) //NTA added
             {
                 if (reloadDuration >= 0)

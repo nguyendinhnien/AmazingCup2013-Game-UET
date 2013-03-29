@@ -134,7 +134,7 @@
     <Compile Include="Scene\MenuPause.cs" />
     <Compile Include="Scene\OptionScene.cs" />
     <Compile Include="Scene\ScoreScene.cs" />
-    <Compile Include="Scene\SelectLevelScene.cs" />
+    <Compile Include="Scene\MapSelectScene.cs" />
     <Compile Include="SceneManager.cs" />
     <Compile Include="Scene\TextBoxScene.cs" />
     <Compile Include="Scene\VictoryScene.cs" />

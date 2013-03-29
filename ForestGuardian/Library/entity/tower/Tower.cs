@@ -118,7 +118,7 @@ namespace Library
 
         public virtual void createBullet() { }
 
-        public void Update(GameTime gameTime , bool isPause)
+        public virtual void Update(GameTime gameTime , bool isPause)
         {
             base.Update(gameTime);
 

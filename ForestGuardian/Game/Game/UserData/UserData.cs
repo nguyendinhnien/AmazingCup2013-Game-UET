@@ -7,6 +7,10 @@ using Microsoft.Xna.Framework;
 using Data;
 namespace CustomGame
 {
+    public enum Mode
+    {
+        Classic,Death,Time
+    }
     public static class UserData
     {     
         public static bool isFullScreen = false;
@@ -23,8 +27,8 @@ namespace CustomGame
                                            Color.Lime, Color.Lime, Color.Lime, Color.Lime, Color.Lime};
         
         //Do kho
-        public static int level;        
-        public static string mapFile = @"data\maps\map1";
+        public static int mode;        
+        public static int mapIndex = 0;
 
         public static void LoadSetting()
         {
@@ -47,7 +51,6 @@ namespace CustomGame
             else
             {
                 setting = DataSerializer.LoadStaticData<Setting>(DefaultSettingFilePath);
-                Console.WriteLine(setting.music_volume);
             }
         }
 

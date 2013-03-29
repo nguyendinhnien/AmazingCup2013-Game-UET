@@ -14,6 +14,12 @@ namespace Library
         public const string SAW_MAN = "SawMan";
         public const string DOZER = "Dozer";
     }
+
+    public enum Difficulty
+    {
+        EASY, NORMAL, HARD
+    }
+
     public class Enemy : AnimatedSprite
     {
         public static Texture2D HEALTH_BAR_TEXTURE;
@@ -33,36 +39,34 @@ namespace Library
         private float mSpeedReduce;
         private float mSlowDuration;
 
+        public float MaxHealth
+        {
+            get { return maxHealth; }
+        }
         public float Health
         {
             get { return health; }
         }
-
         public float Speed
         {
             get { return mSpeed; }
         }
-
         public float DistanceToDestination
         {
             get { return Vector2.Distance(mCenter, waypoints.Peek()); }
         }
-
         public bool atDestination
         {
             get { return DistanceToDestination <= destinationLimit; }
         }
-
         public bool atEnd
         {
             get { return at_end; }
         }
-
         public bool Alive
         {
             get { return alive; }
         }
-
         public int Value
         {
             get { return value; }
@@ -86,12 +90,13 @@ namespace Library
             : base(center)
         {
             this.maxHealth = maxHealth;
-            this.health = maxHealth;
-
+            //this.setDifficulty(difficulty);
+            
             this.value = value;
             this.alive = true;
 
             this.mSpeed = move_speed;
+            this.health = maxHealth;
             this.at_end = false;
             this.layer_depth = 0.6f;
         }
@@ -100,14 +105,35 @@ namespace Library
             : base(animation, position, a)
         {
             this.maxHealth = maxHealth;
-            this.health = maxHealth;
+            //this.setDifficulty(difficulty);
 
             this.value = value;
             this.alive = true;
 
             this.mSpeed = move_speed;
+            this.health = maxHealth;
             this.at_end = false;
             this.layer_depth = 0.6f;
+        }
+
+        //private void setDifficulty(int difficulty){
+        //    switch (difficulty)
+        //    {
+        //        case (int)Difficulty.EASY:
+        //            maxHealth = maxHealth * 0.8f;
+        //            break;
+        //        case (int)Difficulty.NORMAL:
+        //            break;
+        //        case (int)Difficulty.HARD:
+        //            maxHealth = maxHealth * 1.2f;
+        //            break;
+        //    }
+        //}
+
+        public void Grow(float grow_rate)
+        {
+            maxHealth = maxHealth * (1+grow_rate);
+            health = maxHealth;
         }
 
         public void lostHealth(float amount)

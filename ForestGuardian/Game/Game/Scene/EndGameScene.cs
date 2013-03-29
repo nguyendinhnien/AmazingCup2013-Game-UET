@@ -19,15 +19,18 @@ namespace CustomGame
         protected Rectangle BackgroundRectangle;
 
         protected SpriteFont font;
+        protected string map_name;
+        protected Vector2 MapNamePosition; 
         protected int total_points;
         protected Vector2 TotalPointPosition; 
         protected int total_killed;
         protected Vector2 TotalKillPosition;
 
-        public EndGameScene(int total_points, int total_killed):base()
+        public EndGameScene(int total_points, int total_killed, string map_name):base()
         {
             this.total_points = total_points;
             this.total_killed = total_killed;
+            this.map_name = map_name;
             isPopup = true;
         }
         public override void LoadContent()
@@ -78,15 +81,19 @@ namespace CustomGame
         {
             spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
                 spriteBatch.Draw(BackgroundTexture, BackgroundRectangle, null, Color.White ,0.0f,Vector2.Zero,SpriteEffects.None,1.0f);
-                MissionLabel.Draw(spriteBatch);
+                MissionLabel.Draw(spriteBatch);  
+
                 RestartButton.Draw(spriteBatch);
                 ContinueButton.Draw(spriteBatch);
-                
+
+                MapNamePosition = new Vector2(512, 300);
+                MapNamePosition.X -= (font.MeasureString(map_name)).X / 2;
                 TotalPointPosition = new Vector2(670,480); 
                 TotalPointPosition.X -= (font.MeasureString(total_points.ToString())).X/2;
                 TotalKillPosition = new Vector2(670,530);
                 TotalKillPosition.X -= (font.MeasureString(total_killed.ToString())).X/2;
 
+                spriteBatch.DrawString(font, map_name, MapNamePosition, Color.Red, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, 0.1f);
                 spriteBatch.DrawString(font, total_points.ToString(), TotalPointPosition, Color.Cyan, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, 0.1f);
                 spriteBatch.DrawString(font, total_killed.ToString(), TotalKillPosition, Color.Cyan, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, 0.1f);
             spriteBatch.End();

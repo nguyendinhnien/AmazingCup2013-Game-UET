@@ -60,7 +60,8 @@ namespace Data
                 file_stream = container.OpenFile(file_path, FileMode.Create, FileAccess.Write);
                 XmlSerializer serializer = new XmlSerializer(typeof(T));
                 serializer.Serialize(file_stream, data);
-
+                
+                file_stream.Close();
                 container.Dispose();
             }
         }

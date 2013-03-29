@@ -24,7 +24,7 @@ namespace CustomGame
     {
         GraphicsDeviceManager graphics;
         SceneManager sceneManager;
-        public static Renderer renderer;
+        public static CustomRenderer renderer;
         public static KeyboardDispatcher keyboard_dispatcher;
 
         public GameManager()
@@ -33,7 +33,7 @@ namespace CustomGame
             GameSetting.InitSetting(graphics);
             Content.RootDirectory = "Content";
 
-            renderer = new SpriteBatchRenderer
+            renderer = new CustomRenderer
             {
                 GraphicsDeviceService = graphics
             };
@@ -68,6 +68,7 @@ namespace CustomGame
             renderer.LoadContent(Content);
             //DataSerializer.CheckDirectory(UserData.HighScoreDirectory);
             UserData.LoadSetting();
+            MapLoadManager.LoadAllMap(Content);
             base.LoadContent();
         }
 

@@ -20,6 +20,7 @@ namespace Library
         private float spawn_rate;
         private float timer=0.0f;
         
+        private float grow_rate;
         //Cac enemy da duoc goi ra
         private string enemy_type;
         private List<Enemy> active_enemies; 
@@ -37,13 +38,13 @@ namespace Library
         private WaveState state = WaveState.Start;
 
 
-        public Wave(string enemy_type ,int total_number, float spawn_rate, Queue<Vector2> waypoints)
+        public Wave(string enemy_type ,int total_number, float spawn_rate, Queue<Vector2> waypoints, float grow_rate)
         {
             this.spawn_rate = spawn_rate;
+            this.grow_rate = grow_rate;
             this.enemy_type = enemy_type;
             this.total_number = total_number;
             this.waypoints = waypoints;
-
             this.active_enemies = new List<Enemy>();
         }
 
@@ -88,18 +89,24 @@ namespace Library
                 case EnemyType.AXE_MAN:
                     //Lay ra waitpoint dau tien lam vi tri xuat phat
                     enemy = new AxeMan(waypoints.Peek());
-                    enemy.setWaypoints(new Queue<Vector2>(waypoints));
+                    //enemy.setWaypoints(new Queue<Vector2>(waypoints));
+                    //enemy.Grow(grow_rate);
                     break;
                 case EnemyType.SAW_MAN:
                     enemy = new SawMan(waypoints.Peek());
-                    enemy.setWaypoints(new Queue<Vector2>(waypoints));
+                    //enemy.setWaypoints(new Queue<Vector2>(waypoints));
+                    //enemy.Grow(grow_rate);
                     break;
                 case EnemyType.DOZER:
                     enemy = new Dozer(waypoints.Peek());
-                    enemy.setWaypoints(new Queue<Vector2>(waypoints));
                     break;
                 default:
                     enemy = null; break;
+            }
+            if (enemy != null)
+            {
+                enemy.setWaypoints(new Queue<Vector2>(waypoints));
+                enemy.Grow(grow_rate);
             }
             return enemy;
             

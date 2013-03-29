@@ -2,6 +2,7 @@
 <XnaContent>
   <Asset Type="Data.Map">
     <Name>Forest 3</Name>
+    <Description></Description>
     <Width>24</Width>
     <Height>18</Height>
     <TileSize>64</TileSize>

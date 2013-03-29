@@ -305,6 +305,8 @@ namespace CustomGame
             CursorLabel.Texture = OakTower.TEXTURE_LV1;
             RangeLabel.Scale = (float)OakTower.RANGE / 250;
             is_tower_add = true;
+
+            AudioManager.soundBank.GetCue("mouse_click").Play();
         }
         private void CatusTowerLabel_Clicked()
         {
@@ -313,6 +315,8 @@ namespace CustomGame
             CursorLabel.Texture = CactusTower.TEXTURE_LV1;
             RangeLabel.Scale = (float)CactusTower.RANGE / 250;
             is_tower_add = true;
+
+            AudioManager.soundBank.GetCue("mouse_click").Play();
         }
         private void PineappleTowerLabel_Clicked()
         {
@@ -321,6 +325,8 @@ namespace CustomGame
             CursorLabel.Texture = PineappleTower.TEXTURE_LV1;
             RangeLabel.Scale = (float)PineappleTower.RANGE / 250;
             is_tower_add = true;
+
+            AudioManager.soundBank.GetCue("mouse_click").Play();
         }
 
         private void SellLabel_Clicked()
@@ -330,6 +336,8 @@ namespace CustomGame
             money += SellLabel.Value;
             tower_map[tower_keypos] = CellType.BLANK;
             tower_keypos = -1; is_tower_select = false;
+
+            AudioManager.soundBank.GetCue("sell_tower").Play();
         }
         private void UpgradeLabel_Clicked()
         {
@@ -337,6 +345,8 @@ namespace CustomGame
             tower_manager.UpgradeTower(tower_keypos);
             money -= UpgradeLabel.Value;
             tower_keypos = -1; is_tower_select = false;
+
+            AudioManager.soundBank.GetCue("upgrade_tower").Play();
         }
 
         public override void  Update(GameTime gameTime)
@@ -432,6 +442,8 @@ namespace CustomGame
                             tower.LayerDepth = RangeLabel.LayerDepth - 0.01f;
 
                             is_tower_select = true;
+
+                            AudioManager.soundBank.GetCue("tower_select").Play();
                         }
                     }
                     goto exit;
@@ -499,7 +511,10 @@ namespace CustomGame
                                 tower_map[key_pos] = CellType.TOWER;
                                 break;
                         }
+                        AudioManager.soundBank.GetCue("place_tower").Play();
                     }
+
+
                     is_tower_add = false;
 
                     goto exit;
@@ -542,6 +557,10 @@ namespace CustomGame
                 enemies_killed += wave_manager.CurrentWave.DeathNumber;
 
                 lives -= wave_manager.CurrentWave.ReachedEndNumber;
+
+                if (wave_manager.CurrentWave.ReachedEndNumber > 0)
+                    AudioManager.soundBank.GetCue("escape").Play();
+
                 lives = Math.Max(lives, 0);
                 if (lives <= 0){
                     tower_manager.isPause = true;

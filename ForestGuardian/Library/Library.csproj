@@ -101,6 +101,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AudioManager.cs" />
     <Compile Include="core\AnimatedSprite.cs" />
     <Compile Include="core\Animation.cs" />
     <Compile Include="core\Camera2D.cs" />

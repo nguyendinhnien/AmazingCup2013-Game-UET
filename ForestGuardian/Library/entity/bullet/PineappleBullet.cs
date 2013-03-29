@@ -49,12 +49,19 @@ namespace Library
                 Vector2 tmp = pEnemy.Center;
                 mEffect.Trigger(ref tmp);
                 mHit = true;
+
+                BulletSound();
             }
         }
 
         public override void Update(GameTime gameTime)
         {
             base.Update(gameTime);
+        }
+
+        public override void BulletSound()
+        {
+            AudioManager.soundBank.GetCue("bullet_3").Play();
         }
     }
 }

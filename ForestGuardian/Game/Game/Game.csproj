@@ -129,6 +129,7 @@
     <Compile Include="Scene\GameScene.cs" />
     <Compile Include="Scene\HelpScene.cs" />
     <Compile Include="Scene\HUDLayer.cs" />
+    <Compile Include="Scene\LoadingScene.cs" />
     <Compile Include="Scene\MainMenuScene.cs" />
     <Compile Include="NextWavesTable.cs" />
     <Compile Include="Scene\MenuPause.cs" />

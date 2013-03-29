@@ -883,6 +883,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="audio\AudioProject.xgs">
+      <Name>AudioProject</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="audio\MusicBank.xsb">
+      <Name>MusicBank</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="audio\SoundBank.xsb">
+      <Name>SoundBank</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="audio\WaveBank.xwb">
+      <Name>WaveBank</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="data\default_setting\setting.xml">
       <Name>setting</Name>
       <Importer>XmlImporter</Importer>
@@ -894,6 +910,23 @@
       <Name>select_level</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\scene\LoadingScene\loading_bar.png">
+      <Name>loading_bar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\LoadingScene\loading_border.png">
+      <Name>loading_border</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\LoadingScene\loading_text.png">
+      <Name>loading_text</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />

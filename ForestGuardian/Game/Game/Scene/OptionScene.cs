@@ -101,6 +101,7 @@ namespace CustomGame
                 (int)tickPosition.X, (int)tickPosition.Y, tickTexture.Width, tickTexture.Height)))
             {
                 UserData.isFullScreen = !UserData.isFullScreen;
+                AudioManager.soundBank.PlayCue("mouse_click");
                 SceneManager.ToggleFullScreen();
             }
         }

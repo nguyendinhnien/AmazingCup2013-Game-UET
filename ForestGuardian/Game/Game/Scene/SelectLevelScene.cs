@@ -117,6 +117,7 @@ namespace CustomGame
                     UserData.mapIndex = i;
                     PreviewScale = Math.Min(368 / (float)MapLoadManager.getMap(i).BackgroundTexture.Width,
                                             276 / (float)MapLoadManager.getMap(i).BackgroundTexture.Height);
+                    AudioManager.soundBank.PlayCue("mouse_click");
                     break;
                 }
             }
@@ -125,6 +126,7 @@ namespace CustomGame
                 if (InputManager.IsMouseJustReleased() && InputManager.IsMouseHittedRectangle(new Rectangle(
                     458, 167 + 40 * i, 101, 40)))
                 {
+                    AudioManager.soundBank.PlayCue("mouse_click");
                     UserData.mode = i;
                 }
             }

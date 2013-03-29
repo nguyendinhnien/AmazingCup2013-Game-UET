@@ -119,7 +119,9 @@ namespace CustomGame
                 if (InputManager.IsMouseJustReleased() && InputManager.IsMouseHittedRectangle(new Rectangle(
                     (int)itemPosition[i].X, (int)itemPosition[i].Y, itemCard[0].Width, itemCard[0].Height)))
                 {
-                    currentItemShow = i; break;
+                    currentItemShow = i;
+                    AudioManager.soundBank.PlayCue("mouse_click");
+                    break;
                 }
             }
             switch (currentItemShow)

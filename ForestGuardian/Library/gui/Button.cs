@@ -18,6 +18,7 @@ namespace Library
     public class  Button
     {
         protected MouseState previousState;
+        protected MouseState currentState;
 
         // The the different state textures.
         protected Texture2D hoverTexture;
@@ -87,9 +88,9 @@ namespace Library
 
         public virtual void Update(GameTime gameTime)
         {
-            MouseState mouseState = Mouse.GetState();
+            currentState = Mouse.GetState();
 
-            bool isMouseOver = InBound(mouseState.X, mouseState.Y);
+            bool isMouseOver = InBound(currentState.X, currentState.Y);
 
             if (isMouseOver && state != ButtonStatus.Pressing)
             {
@@ -104,7 +105,7 @@ namespace Library
             }
 
             //Trang thai Pressed
-            if (mouseState.LeftButton == ButtonState.Pressed)
+            if (currentState.LeftButton == ButtonState.Pressed)
             {
                 if (isMouseOver == true)
                 {
@@ -119,7 +120,7 @@ namespace Library
             }
 
             //Trang thai Clicked
-            if (mouseState.LeftButton == ButtonState.Released &&
+            if (currentState.LeftButton == ButtonState.Released &&
                 previousState.LeftButton == ButtonState.Pressed)
             {
                 if (isMouseOver == true)
@@ -133,14 +134,20 @@ namespace Library
                     state = ButtonStatus.Normal;
                 }
             }
+
+            MouseSound();
+
             //Cap nhat mouse state
-            previousState = mouseState;
+            previousState = currentState;
 
-            if (mouseState.LeftButton == ButtonState.Pressed &&
-                    previousState.LeftButton != ButtonState.Pressed &&
-                    state == ButtonStatus.Pressing)
-                AudioManager.soundBank.GetCue("mouse_click").Play();
+        }
 
+        public virtual void MouseSound()
+        {
+            if (currentState.LeftButton == ButtonState.Pressed &&
+                        previousState.LeftButton != ButtonState.Pressed &&
+                        state == ButtonStatus.Pressing)
+                AudioManager.soundBank.PlayCue("mouse_click");
         }
 
         public virtual void Draw(SpriteBatch spriteBatch)

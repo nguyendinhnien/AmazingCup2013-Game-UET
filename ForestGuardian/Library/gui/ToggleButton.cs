@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
 
 namespace Library
 {
@@ -26,6 +27,14 @@ namespace Library
                 if (!enable) { texture = disableTexture; }
                 else { texture = normalTexture; }
             }
+        }
+
+        public override void MouseSound()
+        {
+            if (currentState.LeftButton == ButtonState.Pressed &&
+                        previousState.LeftButton != ButtonState.Pressed &&
+                        state == ButtonStatus.Pressing && enable)
+                AudioManager.soundBank.PlayCue("mouse_click");
         }
 
         public override void Draw(SpriteBatch spriteBatch)

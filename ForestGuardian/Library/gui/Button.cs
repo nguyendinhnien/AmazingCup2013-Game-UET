@@ -136,6 +136,11 @@ namespace Library
             //Cap nhat mouse state
             previousState = mouseState;
 
+            if (mouseState.LeftButton == ButtonState.Pressed &&
+                    previousState.LeftButton != ButtonState.Pressed &&
+                    state == ButtonStatus.Pressing)
+                AudioManager.soundBank.PlayCue("mouse_click");
+
         }
 
         public virtual void Draw(SpriteBatch spriteBatch)

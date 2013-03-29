@@ -127,6 +127,9 @@ Content\images\scene\TextBoxScene\b_cancel_normal.xnb
 Content\images\scene\EndGameScene\replay_normal_but.xnb
 Content\images\scene\EndGameScene\replay_press_but.xnb
 Content\images\scene\HelpScene\pineapple_card.xnb
+Content\images\scene\LoadingScene\loading_bar.xnb
+Content\images\scene\LoadingScene\loading_border.xnb
+Content\images\scene\LoadingScene\loading_text.xnb
 Content\fonts\gameplay\value_font.xnb
 Content\fonts\gameplay\hud_font.xnb
 Content\fonts\ScoreScene\score.xnb
@@ -138,4 +141,8 @@ Content\fonts\TextBoxScene\textinput.xnb
 Content\fonts\SelectLevelScene\select_level.xnb
 Content\musics\Song8.xnb
 Content\musics\Song8.wma
+Content\audio\AudioProject.xgs
+Content\audio\MusicBank.xsb
+Content\audio\SoundBank.xsb
+Content\audio\WaveBank.xwb
 Content\data\default_setting\setting.xml

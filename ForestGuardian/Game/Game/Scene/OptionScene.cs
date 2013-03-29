@@ -132,24 +132,28 @@ namespace CustomGame
         {
             UserData.setting.music_volume -= 10;
             UserData.setting.music_volume = Math.Max(UserData.setting.music_volume, 0);
+            AudioManager.SetMusicVolume(UserData.setting.music_volume);
         }
 
         private void IncreMusicButtonClicked(object sender, EventArgs e)
         {
             UserData.setting.music_volume += 10;
-            UserData.setting.music_volume = Math.Min(UserData.setting.music_volume, 100);   
+            UserData.setting.music_volume = Math.Min(UserData.setting.music_volume, 100);
+            AudioManager.SetMusicVolume(UserData.setting.music_volume);
         }
 
         private void DecreSoundButtonClicked(object sender, EventArgs e)
         {
             UserData.setting.sound_volume -= 10;
             UserData.setting.sound_volume = Math.Max(UserData.setting.sound_volume, 0);
+            AudioManager.SetSoundVolume(UserData.setting.sound_volume);
         }
 
         private void IncreSoundButtonClicked(object sender, EventArgs e)
         {
             UserData.setting.sound_volume += 10;
             UserData.setting.sound_volume = Math.Min(UserData.setting.sound_volume, 100);
+            AudioManager.SetSoundVolume(UserData.setting.sound_volume);
         }
 
         private void CloseButtonClicked(object sender, EventArgs e)

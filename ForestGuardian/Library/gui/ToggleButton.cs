@@ -30,19 +30,24 @@ namespace Library
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            switch (state)
+            if (enable)
             {
-                case ButtonStatus.Pressing:
-                    if (pressTexture != null) { texture = pressTexture; }
-                    break;
-                case ButtonStatus.Hovering:
-                    if (hoverTexture != null) { texture = hoverTexture; }
-                    break;
-                case ButtonStatus.Normal:
-                    if (enable && normalTexture != null) { texture = normalTexture; }
-                    else { texture = disableTexture; }
-                    break;
+                switch (state)
+                {
+                    case ButtonStatus.Pressing:
+                        if (pressTexture != null) { texture = pressTexture; }
+                        break;
+                    case ButtonStatus.Hovering:
+                        if (hoverTexture != null) { texture = hoverTexture; }
+                        break;
+                    case ButtonStatus.Normal:
+                        if (enable && normalTexture != null) { texture = normalTexture; }
+                        else { texture = disableTexture; }
+                        break;
+                }
             }
+            else
+                texture = disableTexture;
             spriteBatch.Draw(texture, this.position, null, Color.White, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, layer_depth);
         }
     }

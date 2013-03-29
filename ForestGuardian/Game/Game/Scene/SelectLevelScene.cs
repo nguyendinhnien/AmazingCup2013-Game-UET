@@ -162,7 +162,7 @@ namespace CustomGame
 
         private void StartButtonClicked(object sender, EventArgs e)
         {
-            SceneManager.AddScene(GamePlayScene.Instance);
+            SceneManager.AddScene(new LoadingScene());
             this.ExitScene();
         }
 

@@ -35,7 +35,7 @@
       </Item>
       <Item>
         <EnemyType>AxeMan</EnemyType>
-        <EnemyNumber>2</EnemyNumber>
+        <EnemyNumber>7</EnemyNumber>
         <SpawnRate>0.3</SpawnRate>
       </Item>
       <Item>

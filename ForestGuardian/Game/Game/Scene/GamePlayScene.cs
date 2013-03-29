@@ -29,8 +29,8 @@ namespace CustomGame
     public class GamePlayScene : GameScene
     {
         private float LAYER_DEPTH_CHANGE = 0.005f;
-        private int MAX_LIVES = 100;
-        private int MAX_MONEY = 2000;
+        private int MAX_LIVES = 20;
+        private int MAX_MONEY = 15;
         
         private BackgroundLayer background_layer;
 

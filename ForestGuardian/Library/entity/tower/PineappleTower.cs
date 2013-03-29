@@ -16,7 +16,7 @@ namespace Library
 
         public static Texture2D BULLET_TEXTURE;
 
-        public static float FIRE_RELOAD = 0.5f;
+        public static float FIRE_RELOAD = 1.5f;
         public static int COST = 20;
         public static int UP_COST = 15;
         public static int RANGE = 250;

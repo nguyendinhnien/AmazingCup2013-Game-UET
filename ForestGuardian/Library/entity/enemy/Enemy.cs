@@ -39,6 +39,8 @@ namespace Library
         private float mSpeedReduce;
         private float mSlowDuration;
 
+        public string deathSound;
+
         public float MaxHealth
         {
             get { return maxHealth; }
@@ -205,7 +207,11 @@ namespace Library
                     alive = false;
                 }
             }
-            else { alive = false; }
+            else
+            { 
+                alive = false;
+                AudioManager.soundBank.GetCue(deathSound).Play();
+            }
             
             base.Update(gameTime);
         }

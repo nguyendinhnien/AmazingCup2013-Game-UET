@@ -14,16 +14,18 @@ namespace Library
         public static float MOVE_SPEED = 1.7f;
         public static float MAX_HEALTH = 250.0f;
         public static int VALUE = 2;
+        public static string DEATH_SOUND = "death_2";
+
 
         //public static String TextureLocation{
         //    get { return TEXTURE_LOCATION; }
         //}
         
         public SawMan(Vector2 center)
-            : base(center, MAX_HEALTH, VALUE, MOVE_SPEED){}
+            : base(center, MAX_HEALTH, VALUE, MOVE_SPEED) { deathSound = DEATH_SOUND; }
 
         public SawMan(Animation animation, Vector2 position, Anchor a)
-            : base(animation, position, a, MAX_HEALTH, VALUE, MOVE_SPEED) { }
+            : base(animation, position, a, MAX_HEALTH, VALUE, MOVE_SPEED) { deathSound = DEATH_SOUND; }
 
         public override void setMoveAnimation()
         {

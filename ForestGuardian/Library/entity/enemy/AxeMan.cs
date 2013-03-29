@@ -14,12 +14,13 @@ namespace Library
         public static float MOVE_SPEED = 2.0f;
         public static float MAX_HEALTH = 120.0f;
         public static int VALUE = 100;
+        public static string DEATH_SOUND = "death_1";
 
         public AxeMan(Vector2 center)
-            : base(center, MAX_HEALTH, VALUE, MOVE_SPEED){}
+            : base(center, MAX_HEALTH, VALUE, MOVE_SPEED) { deathSound = DEATH_SOUND; }
 
         public AxeMan(Animation animation, Vector2 position, Anchor a)
-            : base(animation, position, a, MAX_HEALTH, VALUE, MOVE_SPEED) { }
+            : base(animation, position, a, MAX_HEALTH, VALUE, MOVE_SPEED) { deathSound = DEATH_SOUND; }
 
         public override void setMoveAnimation()
         {

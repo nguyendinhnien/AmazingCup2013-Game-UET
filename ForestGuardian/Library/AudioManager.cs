@@ -51,7 +51,7 @@ namespace Library
             soundCategory = audioEngine.GetCategory("Sound");
 
             openGame = musicBank.GetCue("open_game");
-            //openGame.Play();
+
             song1 = musicBank.GetCue("song_1");
             song2 = musicBank.GetCue("song_2");
             song3 = musicBank.GetCue("song_3");

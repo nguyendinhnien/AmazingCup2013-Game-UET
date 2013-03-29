@@ -139,7 +139,7 @@ namespace Library
             if (mouseState.LeftButton == ButtonState.Pressed &&
                     previousState.LeftButton != ButtonState.Pressed &&
                     state == ButtonStatus.Pressing)
-                AudioManager.soundBank.PlayCue("mouse_click");
+                AudioManager.soundBank.GetCue("mouse_click").Play();
 
         }
 

@@ -29,8 +29,8 @@ namespace CustomGame
     public class GamePlayScene : GameScene
     {
         private float LAYER_DEPTH_CHANGE = 0.005f;
-        private int MAX_LIVES = 100;
-        private int MAX_MONEY = 2000;
+        private int MAX_LIVES = 20;
+        private int MAX_MONEY = 15;
         
         private BackgroundLayer background_layer;
 
@@ -80,8 +80,7 @@ namespace CustomGame
         //Singleton
         private static GamePlayScene GamePlay;
 
-        private GamePlayScene() {
-        }
+        private GamePlayScene() { }
         public static GamePlayScene Instance
         {
             get{
@@ -255,6 +254,7 @@ namespace CustomGame
                 song = Content.Load<Song>(map.SongFiles[i]);
                 songs.Add(song);
             }
+            MediaPlayer.Stop();
         }
 
         public int TileSize { get { return tile_size; } }

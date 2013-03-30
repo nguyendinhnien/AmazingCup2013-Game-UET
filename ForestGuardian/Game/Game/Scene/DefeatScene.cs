@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
 using Library;
+using Microsoft.Xna.Framework.Media;
 namespace CustomGame
 {
     public class DefeatScene: EndGameScene
@@ -23,6 +24,8 @@ namespace CustomGame
             DefeatLabel = new Label();
             DefeatLabel.Texture = texture;
             DefeatLabel.Center = new Vector2(512, 100);
+
+            endGameSong = Content.Load<Song>(@"audio\song\defeat");
             base.LoadContent();
         }
 

@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 
 using Data;
 using Library;
@@ -19,6 +20,7 @@ namespace CustomGame
         private Texture2D backgroundTexture;
         private Vector2 backgroundPosition;
 
+        public static Song openGameSong;
 
         public MainMenuScene() : base()
         {
@@ -56,10 +58,14 @@ namespace CustomGame
             button[2].Clicked += OptionsButtonClicked;
             button[3].Clicked += HelpButtonClicked;
             button[4].Clicked += QuitButtonClicked;
+
+            openGameSong = content.Load<Song>(@"audio\song\open_game");
         }
 
         public override void  Update(GameTime gameTime)
         {
+            if (MediaPlayer.State == MediaState.Stopped)
+                MediaPlayer.Play(openGameSong);
             for (int i = 0; i < NUMBER_OF_BUTTONS; i++)
             {
                 button[i].Update(gameTime);

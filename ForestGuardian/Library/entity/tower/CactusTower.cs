@@ -64,9 +64,9 @@ namespace Library
             }
         }
 
-        public override void Update(GameTime gameTime)
+        public override void Update(GameTime gameTime, bool isPause)
         {
-            base.Update(gameTime);
+            base.Update(gameTime, isPause);
 
             if (target != null && !bullet.Alive && target.SlowDuration < mSlowDuration)
             {

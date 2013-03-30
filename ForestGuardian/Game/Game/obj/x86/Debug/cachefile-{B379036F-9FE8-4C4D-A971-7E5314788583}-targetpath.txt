@@ -4,6 +4,7 @@ Content\particles\explosionEffect.xnb
 Content\particles\treeEffect.xnb
 Content\data\maps\map1.xnb
 Content\data\maps\map2.xnb
+Content\data\maps\map4.xnb
 Content\images\gameplay\buttons\arrow_hover_but.xnb
 Content\images\maps\map1.xnb
 Content\images\gameplay\buttons\sell_but.xnb
@@ -131,6 +132,8 @@ Content\images\scene\HelpScene\pineapple_in_game.xnb
 Content\images\scene\LoadingScene\loading_bar.xnb
 Content\images\scene\LoadingScene\loading_border.xnb
 Content\images\scene\LoadingScene\loading_text.xnb
+Content\images\maps\map4.xnb
+Content\images\maps\map_level_4_thumb.xnb
 Content\fonts\gameplay\value_font.xnb
 Content\fonts\gameplay\hud_font.xnb
 Content\fonts\ScoreScene\score.xnb
@@ -145,9 +148,6 @@ Content\fonts\VictoryScene\normal_font.xnb
 Content\fonts\DefeatScene\normal_font.xnb
 Content\musics\Song8.xnb
 Content\musics\Song8.wma
-Content\data\maps\map4.xnb
-Content\images\maps\map4.xnb
-Content\images\maps\map_level_4_thumb.xnb
 Content\audio\AudioProject.xgs
 Content\audio\MusicBank.xsb
 Content\audio\SoundBank.xsb

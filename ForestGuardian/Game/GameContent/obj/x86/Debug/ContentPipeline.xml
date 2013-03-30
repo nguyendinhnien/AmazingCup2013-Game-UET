@@ -56,6 +56,15 @@
       <Time>2013-03-29T16:28:39.5349925+07:00</Time>
     </Item>
     <Item>
+      <Source>data\maps\map4.xml</Source>
+      <Name>data\maps\map4</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\maps\map4.xnb</Output>
+      <Time>2013-03-30T15:12:09.6185744+07:00</Time>
+    </Item>
+    <Item>
       <Source>images\gameplay\buttons\arrow_hover_but.png</Source>
       <Name>images\gameplay\buttons\arrow_hover_but</Name>
       <Importer>TextureImporter</Importer>
@@ -1199,6 +1208,24 @@
       <Time>2013-03-29T23:49:01.7789053+07:00</Time>
     </Item>
     <Item>
+      <Source>images\maps\map4.png</Source>
+      <Name>images\maps\map4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\maps\map4.xnb</Output>
+      <Time>2013-03-30T14:57:18.0629408+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\maps\map_level_4_thumb.png</Source>
+      <Name>images\maps\map_level_4_thumb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\maps\map_level_4_thumb.xnb</Output>
+      <Time>2013-03-30T15:09:24.8709351+07:00</Time>
+    </Item>
+    <Item>
       <Source>fonts\gameplay\value_font.spritefont</Source>
       <Name>fonts\gameplay\value_font</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -1316,33 +1343,6 @@
       <Extra>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song8.wma</Extra>
       <Time>2013-03-24T16:20:58+07:00</Time>
     </Item>
-    <Item>
-      <Source>data\maps\map4.xml</Source>
-      <Name>data\maps\map4</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\maps\map4.xnb</Output>
-      <Time>2013-03-30T14:27:58.3019759+07:00</Time>
-    </Item>
-    <Item>
-      <Source>images\maps\map4.png</Source>
-      <Name>images\maps\map4</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\maps\map4.xnb</Output>
-      <Time>2013-03-29T16:16:51.3528643+07:00</Time>
-    </Item>
-    <Item>
-      <Source>images\maps\map_level_4_thumb.png</Source>
-      <Name>images\maps\map_level_4_thumb</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\maps\map_level_4_thumb.xnb</Output>
-      <Time>2013-03-30T13:46:47.0730583+07:00</Time>
-    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
@@ -1389,7 +1389,7 @@
       </Assembly>
       <Assembly>
         <Key>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Data\bin\x86\Debug\Data.dll</Key>
-        <Value>2013-03-30T08:47:17.5651074+07:00</Value>
+        <Value>2013-03-30T15:12:25.7824834+07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>

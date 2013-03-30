@@ -8,7 +8,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\maps\map3.xnb</Output>
-      <Time>2013-03-29T13:44:42.2459226+07:00</Time>
+      <Time>2013-03-30T14:26:05.0725603+07:00</Time>
     </Item>
     <Item>
       <Source>particles\slowEffect.xml</Source>
@@ -305,7 +305,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\OptionScene\dialog_options.xnb</Output>
-      <Time>2013-03-26T15:17:28+07:00</Time>
+      <Time>2013-03-29T15:07:16.2510677+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\OptionScene\increase_volume.png</Source>
@@ -530,7 +530,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ScoreScene\scoreboard.xnb</Output>
-      <Time>2013-03-26T16:12:24+07:00</Time>
+      <Time>2013-03-29T15:09:04.2840569+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\HelpScene\help.png</Source>
@@ -539,7 +539,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\help.xnb</Output>
-      <Time>2013-03-26T16:12:06+07:00</Time>
+      <Time>2013-03-29T15:08:16.434515+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\HelpScene\oak_card.png</Source>
@@ -584,7 +584,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\SelectLevelScene\selectmaps.xnb</Output>
-      <Time>2013-03-26T16:12:48+07:00</Time>
+      <Time>2013-03-30T13:22:05.7885273+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\CommonButton\b_back.png</Source>
@@ -809,7 +809,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ConfirmScene\b_no.xnb</Output>
-      <Time>2013-03-26T15:52:14+07:00</Time>
+      <Time>2013-03-29T23:49:01.7679046+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\ConfirmScene\b_no_clicked.png</Source>
@@ -818,7 +818,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ConfirmScene\b_no_clicked.xnb</Output>
-      <Time>2013-03-26T15:52:14+07:00</Time>
+      <Time>2013-03-29T23:49:01.7689047+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\ConfirmScene\b_yes.png</Source>
@@ -827,7 +827,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ConfirmScene\b_yes.xnb</Output>
-      <Time>2013-03-26T15:52:14+07:00</Time>
+      <Time>2013-03-29T23:49:01.7689047+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\ConfirmScene\b_yes_clicked.png</Source>
@@ -836,7 +836,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\ConfirmScene\b_yes_clicked.xnb</Output>
-      <Time>2013-03-26T15:52:14+07:00</Time>
+      <Time>2013-03-29T23:49:01.7709048+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\ConfirmScene\confirm_form.png</Source>
@@ -1070,7 +1070,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\cactus_card.xnb</Output>
-      <Time>2013-03-26T15:17:52+07:00</Time>
+      <Time>2013-03-30T09:48:39.7704787+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\TextBoxScene\textbox_dialog.png</Source>
@@ -1079,7 +1079,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\TextBoxScene\textbox_dialog.xnb</Output>
-      <Time>2013-03-27T08:12:46.1566065+07:00</Time>
+      <Time>2013-03-29T15:10:04.3598687+07:00</Time>
     </Item>
     <Item>
       <Source>images\scene\TextBoxScene\b_save_normal.png</Source>
@@ -1152,6 +1152,51 @@
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\pineapple_card.xnb</Output>
       <Time>2013-03-26T15:17:56+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\HelpScene\cactus_in_game.png</Source>
+      <Name>images\scene\HelpScene\cactus_in_game</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\cactus_in_game.xnb</Output>
+      <Time>2013-03-30T09:57:52.2640796+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\HelpScene\pineapple_in_game.PNG</Source>
+      <Name>images\scene\HelpScene\pineapple_in_game</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\pineapple_in_game.xnb</Output>
+      <Time>2013-03-29T09:01:24.7423186+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\LoadingScene\loading_bar.png</Source>
+      <Name>images\scene\LoadingScene\loading_bar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\LoadingScene\loading_bar.xnb</Output>
+      <Time>2013-03-29T23:49:01.7719049+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\LoadingScene\loading_border.png</Source>
+      <Name>images\scene\LoadingScene\loading_border</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\LoadingScene\loading_border.xnb</Output>
+      <Time>2013-03-29T23:49:01.7779052+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\scene\LoadingScene\loading_text.png</Source>
+      <Name>images\scene\LoadingScene\loading_text</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\LoadingScene\loading_text.xnb</Output>
+      <Time>2013-03-29T23:49:01.7789053+07:00</Time>
     </Item>
     <Item>
       <Source>fonts\gameplay\value_font.spritefont</Source>
@@ -1235,34 +1280,6 @@
       <Time>2013-03-28T23:01:42.2667843+07:00</Time>
     </Item>
     <Item>
-      <Source>musics\Song8.mp3</Source>
-      <Name>musics\Song8</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song8.xnb</Output>
-      <Extra>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song8.wma</Extra>
-      <Time>2013-03-24T16:20:58+07:00</Time>
-    </Item>
-    <Item>
-      <Source>images\scene\HelpScene\cactus_in_game.png</Source>
-      <Name>images\scene\HelpScene\cactus_in_game</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\cactus_in_game.xnb</Output>
-      <Time>2013-03-26T15:17:56+07:00</Time>
-    </Item>
-    <Item>
-      <Source>images\scene\HelpScene\pineapple_in_game.PNG</Source>
-      <Name>images\scene\HelpScene\pineapple_in_game</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\HelpScene\pineapple_in_game.xnb</Output>
-      <Time>2013-03-29T09:01:24.7423186+07:00</Time>
-    </Item>
-    <Item>
       <Source>fonts\VictoryScene\unlock_font.spritefont</Source>
       <Name>fonts\VictoryScene\unlock_font</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -1288,6 +1305,43 @@
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\fonts\DefeatScene\normal_font.xnb</Output>
       <Time>2013-03-29T22:25:19.7816635+07:00</Time>
+    </Item>
+    <Item>
+      <Source>musics\Song8.mp3</Source>
+      <Name>musics\Song8</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song8.xnb</Output>
+      <Extra>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song8.wma</Extra>
+      <Time>2013-03-24T16:20:58+07:00</Time>
+    </Item>
+    <Item>
+      <Source>data\maps\map4.xml</Source>
+      <Name>data\maps\map4</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\maps\map4.xnb</Output>
+      <Time>2013-03-30T14:27:58.3019759+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\maps\map4.png</Source>
+      <Name>images\maps\map4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\maps\map4.xnb</Output>
+      <Time>2013-03-29T16:16:51.3528643+07:00</Time>
+    </Item>
+    <Item>
+      <Source>images\maps\map_level_4_thumb.png</Source>
+      <Name>images\maps\map_level_4_thumb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\maps\map_level_4_thumb.xnb</Output>
+      <Time>2013-03-30T13:46:47.0730583+07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -1335,7 +1389,7 @@
       </Assembly>
       <Assembly>
         <Key>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Data\bin\x86\Debug\Data.dll</Key>
-        <Value>2013-03-29T13:06:09.2551714+07:00</Value>
+        <Value>2013-03-30T08:47:17.5651074+07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>

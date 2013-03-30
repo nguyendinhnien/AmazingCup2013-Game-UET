@@ -18,7 +18,7 @@ namespace Library
 
         public static float FIRE_RELOAD = 0.5f;
         public static int COST = 25;
-        public static int UP_COST = 15;
+        public static int UP_COST = 20;
         public static int RANGE = 250;
         public static int DAMAGE = 25;
 

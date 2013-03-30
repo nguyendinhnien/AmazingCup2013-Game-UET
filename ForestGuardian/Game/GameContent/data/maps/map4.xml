@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="Data.Map">
+    <Name>Forest 4</Name>
+    <Description></Description>
+    <Width>36</Width>
+    <Height>32</Height>
+    <TileSize>64</TileSize>
+    <BackgroundFile>images/maps/map4</BackgroundFile>
+    <InteractiveMap>
+      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+      2 2 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 2
+      2 2 0 0 1 1 1 1 1 1 0 0 0 0 2 2 2 2 2 2 0 0 0 0 1 1 1 1 1 1 1 0 0 0 2 2
+      2 2 0 1 1 0 0 0 0 1 0 0 0 0 2 2 2 2 2 2 0 0 0 0 1 0 0 0 0 0 1 1 0 0 2 2
+      2 2 0 1 0 0 2 0 0 1 0 0 0 0 0 2 2 2 2 0 0 0 0 0 1 0 0 0 2 0 0 1 0 0 2 2
+      2 2 0 1 0 2 2 0 0 1 1 1 1 0 0 2 2 2 2 0 0 1 1 1 1 0 0 2 2 2 0 1 0 0 2 2
+      2 2 0 1 0 2 2 2 0 0 0 0 1 0 0 0 2 2 0 0 0 1 0 0 0 0 2 2 2 2 0 1 0 0 2 2
+      2 2 0 1 0 0 0 0 2 2 2 0 1 0 0 0 0 0 0 0 0 1 0 0 2 2 2 0 0 0 0 1 0 2 2 2
+      2 2 0 1 1 1 1 0 2 2 2 0 1 1 1 0 0 0 0 1 1 1 0 0 2 2 2 0 1 1 1 1 0 2 2 2
+      2 2 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 2
+      2 0 0 1 0 0 1 1 1 1 1 0 0 0 1 0 0 0 0 1 0 0 0 1 1 1 1 1 1 0 0 1 0 0 0 2
+      2 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 1 1 1 1 0 0 0 1 0 0 0 0 0 0 0 1 0 2 0 2
+      2 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 2
+      2 0 0 1 0 0 2 2 0 0 1 1 1 0 0 0 0 0 0 0 0 1 1 1 0 0 2 2 2 0 0 1 0 0 0 2
+      1 1 1 1 0 0 2 2 0 0 0 0 1 1 1 1 1 1 1 1 1 1 0 0 0 0 2 2 2 0 0 1 1 1 1 1
+      2 0 0 1 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 1 0 0 0 2
+      2 0 0 1 0 0 0 0 0 0 1 0 0 0 2 2 2 2 2 2 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 2
+      2 0 0 1 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 0 0 1 0 2 2 2
+      2 0 0 1 0 0 1 0 0 0 0 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 0 0 1 0 0 1 0 2 2 2
+      2 0 0 1 0 0 1 0 0 2 2 0 0 0 1 0 0 0 0 1 0 0 0 2 2 2 0 0 1 0 0 1 0 2 2 2
+      2 0 0 1 1 1 1 0 0 2 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 2 0 0 1 1 1 1 0 2 2 2
+      2 0 0 1 0 0 0 0 0 2 0 0 1 1 1 0 0 0 0 1 1 1 0 0 0 2 0 0 0 0 0 1 0 0 2 2
+      2 0 0 1 0 2 2 2 2 2 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 2 2 2 2 2 0 1 0 0 2 2
+      2 0 0 1 0 2 2 2 0 0 0 0 1 0 0 0 2 2 0 0 0 1 0 0 0 0 2 2 2 2 0 1 0 0 2 2
+      2 0 0 1 0 2 2 2 0 1 1 1 1 0 0 0 2 2 0 0 0 1 1 1 1 0 2 2 2 2 0 1 0 0 2 2
+      2 0 0 1 0 0 2 2 0 1 0 0 0 0 2 2 2 2 2 2 0 0 0 0 1 0 2 2 2 0 0 1 0 0 2 2
+      2 0 0 1 1 0 0 0 0 1 0 0 0 0 2 2 2 2 2 2 0 0 0 0 1 0 0 0 0 0 1 1 0 0 2 2
+      2 0 0 0 1 1 1 1 1 1 0 0 0 0 2 2 2 2 2 2 0 0 0 0 1 1 1 1 1 1 1 0 0 0 2 2
+      2 2 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 2
+      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+    </InteractiveMap>
+    <StartCell Type="Data.Cell">
+      <tile_x>0</tile_x>
+      <tile_y>15</tile_y>
+    </StartCell>
+    <EndCell Type="Data.Cell">
+      <tile_x>35</tile_x>
+      <tile_y>15</tile_y>
+    </EndCell>
+    <Waves>
+      <Item>
+        <EnemyType>AxeMan</EnemyType> <EnemyNumber>1</EnemyNumber> <SpawnRate>1.0</SpawnRate>
+      </Item>
+      <!--
+      <Item>
+        <EnemyType>AxeMan</EnemyType> <EnemyNumber>1</EnemyNumber> <SpawnRate>1.0</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>AxeMan</EnemyType> <EnemyNumber>1</EnemyNumber> <SpawnRate>1.0</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>AxeMan</EnemyType> <EnemyNumber>1</EnemyNumber> <SpawnRate>1.0</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>AxeMan</EnemyType> <EnemyNumber>1</EnemyNumber> <SpawnRate>1.0</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>AxeMan</EnemyType> <EnemyNumber>1</EnemyNumber> <SpawnRate>1.0</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>AxeMan</EnemyType> <EnemyNumber>1</EnemyNumber> <SpawnRate>1.0</SpawnRate>
+      </Item>
+      -->
+    </Waves>
+    <SongFiles>
+      <Item>musics/Song8</Item>
+    </SongFiles>
+  </Asset>
+</XnaContent>

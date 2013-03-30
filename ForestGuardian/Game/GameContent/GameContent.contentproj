@@ -876,6 +876,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="audio\AudioProject.xgs">
+      <Name>AudioProject</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="audio\MusicBank.xsb">
+      <Name>MusicBank</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="audio\SoundBank.xsb">
+      <Name>SoundBank</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="audio\WaveBank.xwb">
+      <Name>WaveBank</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="data\default_setting\setting.xml">
       <Name>setting</Name>
       <Importer>XmlImporter</Importer>
@@ -912,6 +928,45 @@
     </Compile>
     <Compile Include="images\scene\HelpScene\pineapple_in_game.PNG">
       <Name>pineapple_in_game</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\scene\LoadingScene\loading_bar.png">
+      <Name>loading_bar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\LoadingScene\loading_border.png">
+      <Name>loading_border</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scene\LoadingScene\loading_text.png">
+      <Name>loading_text</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\maps\map4.png">
+      <Name>map4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="data\maps\map4.xml">
+      <Name>map4</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="images\maps\map_level_4_thumb.png">
+      <Name>map_level_4_thumb</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

@@ -52,6 +52,8 @@ namespace Library
         public Sprite(Vector2 center)
         {
             mCenter = center;
+            this.mPosition.X = mCenter.X - mTexture.Width / 2;
+            this.mPosition.Y = mCenter.Y - mTexture.Height / 2;
         }
 
         public Sprite(Texture2D texture)
@@ -87,6 +89,8 @@ namespace Library
                     this.mCenter.Y = position.Y - texture.Height / 2;
                     break;
             }
+            this.mPosition.X = mCenter.X - mTexture.Width / 2;
+            this.mPosition.Y = mCenter.Y - mTexture.Height / 2;
         }
 
         public Rectangle BoundingBox()

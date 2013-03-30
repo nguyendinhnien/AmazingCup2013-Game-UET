@@ -19,5 +19,10 @@ namespace Library
 
         public CactusBullet(Texture2D pTexture, Vector2 pCenter, int pDamage)
             : base(pTexture, pCenter, SPEED, pDamage, EFFECT) { }
+
+        public override void BulletSound()
+        {
+            AudioManager.soundBank.GetCue("bullet_2").Play();
+        }
     }
 }

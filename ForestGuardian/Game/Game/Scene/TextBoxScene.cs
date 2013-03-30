@@ -63,7 +63,8 @@ namespace CustomGame
             string player_name = textBox.Text;
             UserData.highscore.AddScore(new Score(player_name, total_points));
             DataSerializer.SaveData<HighScore>(UserData.highscore, UserData.HighScoreDirectory ,UserData.HighScoreFile);
-            this.ExitScene();
+            sceneManager.ExitToMainMenu();
+            sceneManager.AddScene(new ScoreScene());
         }
         
         private void SaveButton_Clicked(object sender, EventArgs e)

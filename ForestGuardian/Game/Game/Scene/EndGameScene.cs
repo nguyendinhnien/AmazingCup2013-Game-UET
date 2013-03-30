@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Media;
 
 using Library;
 namespace CustomGame
@@ -63,11 +64,13 @@ namespace CustomGame
         private void RestartButton_Clicked(object sender, EventArgs e)
         {
             this.ExitScene();
+            MediaPlayer.Stop();
             GamePlayScene.Instance.LoadNewGame();
         }
         private void ContinueButton_Clicked(object sender, EventArgs e)
         {
             this.sceneManager.AddScene(new TextBoxScene(total_points));
+            MediaPlayer.Stop();
             this.ExitScene();
         }
 

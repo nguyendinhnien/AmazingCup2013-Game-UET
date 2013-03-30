@@ -18,10 +18,10 @@ namespace Library
 
         public static float FIRE_RELOAD = 1.0f;
         public static int COST = 10;
-        public static int UP_COST = 5;
+        public static int UP_COST = 8;
         public static int RANGE = 150;
-        public static int DAMAGE = 0;
-        public static float REDUCE_SPEED = 0.4f;
+        public static int DAMAGE = 5;
+        public static float REDUCE_SPEED = 0.5f;
         public static float SLOW_DURATION = 3.0f;
 
         private float mSpeedReduce;
@@ -62,7 +62,7 @@ namespace Library
             {
                 mTexture = TEXTURE_LV3;
                 mDamage = (int)(DAMAGE * 1.8f);
-                mSpeedReduce = REDUCE_SPEED + 0.3f;
+                mSpeedReduce = REDUCE_SPEED + 0.2f;
                 mSlowDuration = SLOW_DURATION + 1.0f; 
             }
         }

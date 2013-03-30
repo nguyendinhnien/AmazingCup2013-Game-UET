@@ -118,9 +118,7 @@ namespace CustomGame
                     MapLoadManager.getMapThumbnail(startItem + i).Width, MapLoadManager.getMapThumbnail(startItem + i).Height)))
                 {
                     currentItemShow = i;
-                    UserData.currentMapIndex = i;
-                    PreviewScale = Math.Min(368 / (float)MapLoadManager.getMap(i).BackgroundTexture.Width,
-                                            276 / (float)MapLoadManager.getMap(i).BackgroundTexture.Height);
+                    UserData.currentMapIndex = startItem + currentItemShow;                  
                     break;
                 }
             }
@@ -132,6 +130,9 @@ namespace CustomGame
                     UserData.currentMapMode = i;
                 }
             }
+
+            PreviewScale = Math.Min(368 / (float)MapLoadManager.getMap(startItem + currentItemShow).BackgroundTexture.Width,
+                                    276 / (float)MapLoadManager.getMap(startItem + currentItemShow).BackgroundTexture.Height);
         }
 
         public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
@@ -153,10 +154,9 @@ namespace CustomGame
                     spriteBatch.Draw(lockTexture, itemPosition[i], Color.White);
                 }
             }
-
+            spriteBatch.Draw(hightlightSelectTexture, itemPosition[currentItemShow] - new Vector2(2, 2), Color.White);
+            
             int mapIndex = startItem + currentItemShow;
-            spriteBatch.Draw(hightlightSelectTexture, itemPosition[mapIndex] - new Vector2(2, 2), Color.White);
-
             if(!UserData.isMapLock(mapIndex)){                
                 spriteBatch.Draw(MapLoadManager.getMap(mapIndex).BackgroundTexture, new Vector2(44, 107), null, Color.White, 0.0f, Vector2.Zero,PreviewScale,SpriteEffects.None,0.0f);
                 
@@ -174,6 +174,7 @@ namespace CustomGame
             if (!UserData.isMapLock(startItem + currentItemShow))
             {
                 SceneManager.AddScene(GamePlayScene.Instance);
+                SceneManager.AddScene(new LoadingScene());
                 this.ExitScene();
             }
         }
@@ -181,13 +182,19 @@ namespace CustomGame
         private void BackwardButtonClicked(object sender, EventArgs e)
         {
             if (startItem > 0)
+            {
                 startItem--;
+                UserData.currentMapIndex = startItem + currentItemShow; 
+            }
         }
 
         private void ForwardButtonClicked(object sender, EventArgs e)
         {
             if (startItem < numberOfItems - NUMBER_OF_ITEM_DISPLAY)
+            {
                 startItem++;
+                UserData.currentMapIndex = startItem + currentItemShow; 
+            }
         }
 
         private void BackButtonClicked(object sender, EventArgs e)

@@ -118,7 +118,9 @@ namespace CustomGame
                 if (InputManager.IsMouseJustReleased() && InputManager.IsMouseHittedRectangle(new Rectangle(
                     (int)itemPosition[i].X, (int)itemPosition[i].Y, itemCard[0].Width, itemCard[0].Height)))
                 {
-                    currentItemShow = i; break;
+                    currentItemShow = i;
+                    AudioManager.soundBank.PlayCue("mouse_click");
+                    break;
                 }
             }
             switch (currentItemShow)
@@ -162,10 +164,10 @@ namespace CustomGame
                         spriteBatch.Draw(lockTexture, itemPosition[i], Color.White);
                     }
                 }
-
-                int towerIndex = currentItemShow + startItem;
                 //Highlight phan duoc select
-                spriteBatch.Draw(hightlightSelectTexture, itemPosition[towerIndex] - new Vector2(2, 2), Color.White);
+                spriteBatch.Draw(hightlightSelectTexture, itemPosition[currentItemShow] - new Vector2(2, 2), Color.White);
+                
+                int towerIndex = currentItemShow + startItem;               
                 if (! UserData.isTowerLock(towerIndex))
                 {
                     string TowerInfo = "Name: " + TowerName + "\n" +

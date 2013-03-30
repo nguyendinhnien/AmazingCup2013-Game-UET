@@ -27,6 +27,8 @@ namespace Library
 
         protected bool mHit;
 
+        public virtual void BulletSound() { }
+
         public float Speed
         {
             get { return speed; }
@@ -60,6 +62,8 @@ namespace Library
                 Vector2 tmp = pEnemy.Center;
                 mEffect.Trigger(ref tmp);
                 mHit = true;
+
+                BulletSound();
             }
         }
 
@@ -144,7 +148,6 @@ namespace Library
             {
                 Move();
             }
-
             float seconds = (float)gameTime.ElapsedGameTime.TotalSeconds;
             mEffect.Update(seconds);
 

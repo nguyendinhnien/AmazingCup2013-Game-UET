@@ -14,7 +14,7 @@ namespace CustomGame
     public static class UserData
     {
         public static int MAX_TOWER_NUMBER = 3;
-        public static int MAX_MAP_NUMBER = 3;
+        public static int MAX_MAP_NUMBER = 4;
         public static bool isFullScreen = false;
 
         public static Setting setting;
@@ -57,7 +57,7 @@ namespace CustomGame
         }
         public static int UnlockNewMap()
         {
-            if (currentMapIndex < MAX_MAP_NUMBER && currentMapIndex == (setting.mapLockIndex-1))
+            if (currentMapIndex < MAX_MAP_NUMBER-1 && currentMapIndex == (setting.mapLockIndex-1))
             {
                 setting.mapLockIndex++;
                 DataSerializer.SaveData<Setting>(setting, CustomSettingDirectory, CustomSettingFile);
@@ -68,7 +68,7 @@ namespace CustomGame
 
         public static int UnlockNewTower()
         {
-            if (currentMapIndex < MAX_TOWER_NUMBER && currentMapIndex == (setting.towerLockIndex-1))
+            if (currentMapIndex < MAX_TOWER_NUMBER-1 && currentMapIndex == (setting.towerLockIndex-1))
             {
                 setting.towerLockIndex++;
                 DataSerializer.SaveData<Setting>(setting, CustomSettingDirectory, CustomSettingFile);

@@ -50,6 +50,8 @@ namespace CustomGame
         /// </summary>
         protected override void Initialize()
         {
+            AudioManager.Initialize();
+
             //IsMouseVisible = true;
             keyboard_dispatcher = new KeyboardDispatcher(this.Window);
             DataSerializer.Initialize();
@@ -66,9 +68,11 @@ namespace CustomGame
         protected override void LoadContent()
         {
             renderer.LoadContent(Content);
-            //DataSerializer.CheckDirectory(UserData.HighScoreDirectory);
+
             UserData.LoadSetting();
-            //MapLoadManager.LoadAllMap(Content);
+            AudioManager.SetMusicVolume(UserData.setting.music_volume);
+            AudioManager.SetSoundVolume(UserData.setting.sound_volume);
+
             base.LoadContent();
         }
 
@@ -89,6 +93,7 @@ namespace CustomGame
         protected override void Update(GameTime gameTime)
         {
             InputManager.Update();
+            AudioManager.Update();
             base.Update(gameTime);
         }
 

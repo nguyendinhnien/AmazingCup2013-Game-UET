@@ -23,22 +23,19 @@ namespace Library
         protected Vector2 mVelocity;
         protected Vector2 mDirection;
 
-        protected ParticleEffect mEffect;
+        public ParticleEffect mEffect;
 
         protected bool mHit;
 
         public virtual void BulletSound() { }
-
         public float Speed
         {
             get { return speed; }
         }
-
         public bool Alive
         {
             get { return (age > 0); }
         }
-
         public int Damage
         {
             get { return mDamage; }
@@ -150,7 +147,6 @@ namespace Library
             }
             float seconds = (float)gameTime.ElapsedGameTime.TotalSeconds;
             mEffect.Update(seconds);
-
             base.Update(gameTime);
         }
 
@@ -161,5 +157,6 @@ namespace Library
                 base.Draw(spriteBatch);
             }
         }
+       
     }
 }

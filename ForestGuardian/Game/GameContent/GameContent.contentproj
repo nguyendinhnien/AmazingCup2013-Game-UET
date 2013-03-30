@@ -967,7 +967,7 @@
       <Name>map_level_4_thumb</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
-     </Compile>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="audio\song\open_game.mp3">
@@ -990,10 +990,17 @@
       <Processor>SongProcessor</Processor>
     </Compile>
   </ItemGroup>
-  
   <ItemGroup>
     <Compile Include="images\cursor_clicked.png">
       <Name>cursor_clicked</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="images\scene\GameTipScene\control_map_tut.png">
+      <Name>control_map_tut</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

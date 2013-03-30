@@ -58,7 +58,7 @@ namespace CustomGame
             pressTexture = content.Load<Texture2D>(@"images\scene\MenuPause\b_reset_clicked");
             position = backgroundPosition + new Vector2(49, 200);
             restartButton = new Button(texture, null, pressTexture, position);
-            restartButton.Clicked += ResetButtonClicked;
+            restartButton.Clicked += RestartButtonClicked;
 
             texture = content.Load<Texture2D>(@"images\scene\MenuPause\b_options");
             pressTexture = content.Load<Texture2D>(@"images\scene\MenuPause\b_options_clicked");
@@ -103,9 +103,9 @@ namespace CustomGame
             this.ExitScene();
         }
 
-        private void ResetButtonClicked(object sender, EventArgs e)
+        private void RestartButtonClicked(object sender, EventArgs e)
         {
-            //sceneManager.ResetGame();
+            GamePlayScene.Instance.ClearEffect();
             GamePlayScene.Instance.LoadNewGame();
             this.ExitScene();
         }

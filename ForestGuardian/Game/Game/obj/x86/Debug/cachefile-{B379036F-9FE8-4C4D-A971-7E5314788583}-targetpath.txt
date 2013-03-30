@@ -155,6 +155,7 @@ Content\audio\song\defeat.xnb
 Content\audio\song\defeat.wma
 Content\audio\song\victory.xnb
 Content\audio\song\victory.wma
+Content\images\scene\GameTipScene\control_map_tut.xnb
 Content\audio\AudioProject.xgs
 Content\audio\SoundBank.xsb
 Content\audio\WaveBank.xwb

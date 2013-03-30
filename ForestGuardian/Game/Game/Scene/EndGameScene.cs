@@ -70,10 +70,12 @@ namespace CustomGame
         {
             this.ExitScene();
             MediaPlayer.Stop();
+            GamePlayScene.Instance.ClearEffect();
             GamePlayScene.Instance.LoadNewGame();
         }
         private void ContinueButton_Clicked(object sender, EventArgs e)
         {
+            GamePlayScene.Instance.ClearEffect();
             this.sceneManager.AddScene(new TextBoxScene(total_points));
             MediaPlayer.Stop();
             this.ExitScene();

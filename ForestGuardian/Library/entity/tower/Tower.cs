@@ -39,12 +39,14 @@ namespace Library
         {
             get { return mRange; }
         }
-
+        public Bullet Bullet
+        {
+            get { return bullet; }
+        }
         public int Level
         {
             get { return level; }
         }
-
         public int Cost
         {
             get { return cost; }
@@ -55,7 +57,7 @@ namespace Library
         }
         public int SellCost
         {
-            get { return (cost/2); }
+            get { return (int)(cost/1.4f); }
         }
 
         public Tower(Texture2D texture, Vector2 pCenter, int cost, int upgradeCost, int range, int damage, float fire_reload)

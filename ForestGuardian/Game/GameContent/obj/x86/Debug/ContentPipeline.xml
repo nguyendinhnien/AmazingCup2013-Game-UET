@@ -1382,6 +1382,15 @@
       <Extra>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\audio\song\victory.wma</Extra>
       <Time>2013-03-30T15:15:20.3296249+07:00</Time>
     </Item>
+    <Item>
+      <Source>images\scene\GameTipScene\control_map_tut.png</Source>
+      <Name>images\scene\GameTipScene\control_map_tut</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\GameTipScene\control_map_tut.xnb</Output>
+      <Time>2013-03-30T15:52:21.124945+07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

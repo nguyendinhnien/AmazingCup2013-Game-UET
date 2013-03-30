@@ -16,7 +16,7 @@ namespace CustomGame
         private Label LifeLabel;
         private Label MoneyLabel;
 
-        private Vector2 PointPosition;
+        private Vector2 PointPosition = new Vector2(512,48);
 
         private ToggleButton playButton;
         private ToggleButton fastButton;

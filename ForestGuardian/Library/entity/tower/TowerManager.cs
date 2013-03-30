@@ -35,6 +35,18 @@ namespace Library
             Tower tower = towers[key_pos];
             tower.Upgrade();
         }
+        public void ClearEffect()
+        {
+            Tower tower;
+            foreach (var tower_pair in towers)
+            {
+                tower = tower_pair.Value;
+                if (tower.Bullet != null)
+                {
+                    tower.Bullet.mEffect.Terminate();
+                }
+            }
+        }
 
         public void Update(GameTime gameTime,List<Enemy> enemies)
         {

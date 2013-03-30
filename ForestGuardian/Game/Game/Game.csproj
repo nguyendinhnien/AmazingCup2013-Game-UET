@@ -147,6 +147,7 @@
     <Compile Include="Scene\ConfirmScene.cs" />
     <Compile Include="Scene\GamePlayScene.cs" />
     <Compile Include="Scene\GameScene.cs" />
+    <Compile Include="Scene\GameTipScene.cs" />
     <Compile Include="Scene\HelpScene.cs" />
     <Compile Include="Scene\HUDLayer.cs" />
     <Compile Include="Scene\LoadingScene.cs" />

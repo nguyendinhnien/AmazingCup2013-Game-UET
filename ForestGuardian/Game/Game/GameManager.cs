@@ -55,7 +55,6 @@ namespace CustomGame
             //IsMouseVisible = true;
             keyboard_dispatcher = new KeyboardDispatcher(this.Window);
             DataSerializer.Initialize();
-            //UserData.Init();
 
             base.Initialize();
             sceneManager.AddScene(new MainMenuScene());

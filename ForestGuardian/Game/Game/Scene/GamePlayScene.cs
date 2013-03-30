@@ -182,7 +182,7 @@ namespace CustomGame
         {
             switch (UserData.currentMapMode)
             {
-                case (int)Mode.Classic:
+                case (int)Mode.Standard:
                     lives = MAX_LIVES; break;
                 case (int)Mode.Death:
                     lives = 1; break;

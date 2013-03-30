@@ -96,6 +96,7 @@ namespace CustomGame
 
             
             selectModeTexture = content.Load<Texture2D>(@"images\scene\SelectLevelScene\b_select_level");
+            UserData.currentMapMode = (int)Mode.Standard;
         }
 
         public override void Update(GameTime gameTime)

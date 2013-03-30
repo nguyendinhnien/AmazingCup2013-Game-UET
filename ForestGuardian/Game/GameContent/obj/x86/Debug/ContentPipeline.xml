@@ -1025,7 +1025,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\cursor.xnb</Output>
-      <Time>2013-03-30T15:15:20.3608249+07:00</Time>
+      <Time>2013-03-30T16:14:43.2279333+07:00</Time>
     </Item>
     <Item>
       <Source>images\gameplay\enemies\dozer.png</Source>
@@ -1232,7 +1232,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\cursor_clicked.xnb</Output>
-      <Time>2013-03-30T15:15:20.3608249+07:00</Time>
+      <Time>2013-03-30T16:14:43.2279333+07:00</Time>
     </Item>
     <Item>
       <Source>fonts\gameplay\value_font.spritefont</Source>
@@ -1428,7 +1428,7 @@
       </Assembly>
       <Assembly>
         <Key>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Data\bin\x86\Debug\Data.dll</Key>
-        <Value>2013-03-30T15:29:47.9131748+07:00</Value>
+        <Value>2013-03-30T16:16:32.4287382+07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>

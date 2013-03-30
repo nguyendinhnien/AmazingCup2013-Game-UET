@@ -9,7 +9,7 @@ namespace CustomGame
 {
     public enum Mode
     {
-        Classic,Death,Time
+        Standard,Death,Time
     }
     public static class UserData
     {

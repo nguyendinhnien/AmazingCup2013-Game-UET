@@ -13,8 +13,6 @@ namespace Library
         public static SoundBank soundBank;
         private static WaveBank waveBank;
 
-        public static bool[] isMoveLoopPlaying;
-
         public static Cue moveLoop1;
         public static Cue moveLoop2;
         public static Cue moveLoop3;
@@ -30,11 +28,6 @@ namespace Library
             moveLoop1 = soundBank.GetCue("move_loop_1");
             moveLoop2 = soundBank.GetCue("move_loop_2");
             moveLoop3 = soundBank.GetCue("move_loop_3");
-
-            isMoveLoopPlaying = new bool[3];
-            isMoveLoopPlaying[0] = false;
-            isMoveLoopPlaying[1] = false;
-            isMoveLoopPlaying[2] = false;
         }
 
         public static void Update()

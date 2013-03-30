@@ -13,8 +13,7 @@ namespace Library
         public static SoundBank soundBank;
         private static WaveBank waveBank;
 
-        public static bool isMoveLoopPlaying = false; //first playing
-        public static bool isMoveLoopPause = false;
+        public static bool[] isMoveLoopPlaying;
 
         public static Cue moveLoop1;
         public static Cue moveLoop2;
@@ -31,6 +30,11 @@ namespace Library
             moveLoop1 = soundBank.GetCue("move_loop_1");
             moveLoop2 = soundBank.GetCue("move_loop_2");
             moveLoop3 = soundBank.GetCue("move_loop_3");
+
+            isMoveLoopPlaying = new bool[3];
+            isMoveLoopPlaying[0] = false;
+            isMoveLoopPlaying[1] = false;
+            isMoveLoopPlaying[2] = false;
         }
 
         public static void Update()
@@ -41,6 +45,16 @@ namespace Library
         public static void SetSoundVolume(int vol)
         {
             soundCategory.SetVolume((float)vol * 0.01f);
+        }
+
+        public static void PauseMovingSound()
+        {
+            if (AudioManager.moveLoop1.IsPlaying)
+                AudioManager.moveLoop1.Pause();
+            if (AudioManager.moveLoop2.IsPlaying)
+                AudioManager.moveLoop2.Pause();
+            if (AudioManager.moveLoop3.IsPlaying)
+                AudioManager.moveLoop3.Pause();
         }
     }
 }

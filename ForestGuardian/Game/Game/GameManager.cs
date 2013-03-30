@@ -94,9 +94,14 @@ namespace CustomGame
         protected override void Update(GameTime gameTime)
         {
             if (!IsActive)
+            {
                 MediaPlayer.Pause();
+                AudioManager.PauseMovingSound();
+            }
             if (IsActive && (MediaPlayer.State == MediaState.Paused))
+            {
                 MediaPlayer.Resume();
+            }
 
             InputManager.Update();
             AudioManager.Update();

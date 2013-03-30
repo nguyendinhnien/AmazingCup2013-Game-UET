@@ -41,17 +41,6 @@ namespace Library
         private float mSlowDuration;
 
         public string deathSound;
-        public Cue movingSound;
-
-        public void PlayMovingSound()
-        {
-            movingSound.Play();
-        }
-
-        public virtual void PauseMovingSound()
-        {
-            movingSound.Pause();
-        }
 
         public float MaxHealth
         {

@@ -26,6 +26,7 @@ namespace CustomGame
             DefeatLabel.Center = new Vector2(512, 100);
 
             endGameSong = Content.Load<Song>(@"audio\song\defeat");
+            AudioManager.PauseMovingSound();
             base.LoadContent();
         }
 

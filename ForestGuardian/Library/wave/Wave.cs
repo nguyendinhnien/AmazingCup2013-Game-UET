@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Audio;
 
 namespace Library
 {
@@ -166,65 +167,53 @@ namespace Library
         }
 
         public void PlayMovingSound()
-        {/*
-            if (AudioManager.isMoveLoopPause)
-            {
+        {
                 switch (enemy_type)
                 {
                     case EnemyType.AXE_MAN:
-                        AudioManager.moveLoop1.Resume();
+                        
+                        if (AudioManager.moveLoop1.IsPaused)
+                            AudioManager.moveLoop1.Resume();
+                        if (!AudioManager.moveLoop1.IsPlaying)
+                            AudioManager.moveLoop1.Play();
                         break;
                     case EnemyType.SAW_MAN:
-                        AudioManager.moveLoop2.Resume();
+                        
+                        if (AudioManager.moveLoop2.IsPaused)
+                            AudioManager.moveLoop2.Resume();
+                        if (!AudioManager.moveLoop2.IsPlaying)
+                            AudioManager.moveLoop2.Play();
                         break;
                     case EnemyType.DOZER:
-                        AudioManager.moveLoop3.Resume();
+                        if (AudioManager.moveLoop3.IsPaused)
+                            AudioManager.moveLoop3.Resume();
+                        if (!AudioManager.moveLoop3.IsPlaying)
+                            AudioManager.moveLoop3.Play();
                         break;
                     default:
                         break;
                 }
-                AudioManager.isMoveLoopPause = false;
-                return;
-            }
-            if (!AudioManager.isMoveLoopPlaying)
-            {
-                switch (enemy_type)
-                {
-                    case EnemyType.AXE_MAN:
-                        AudioManager.soundBank.PlayCue("move_loop_1");
-                        break;
-                    case EnemyType.SAW_MAN:
-                        AudioManager.moveLoop2.Play();
-                        break;
-                    case EnemyType.DOZER:
-                        AudioManager.moveLoop3.Play();
-                        break;
-                    default:
-                        break;
-                }
-                AudioManager.isMoveLoopPlaying = true;
-            }*/
         }
 
         public void PauseMovingSound()
-        {/*
-            if (AudioManager.isMoveLoopPause)
-                return;
+        {
             switch (enemy_type)
             {
                 case EnemyType.AXE_MAN:
-                    AudioManager..Stop();
+                    if (AudioManager.moveLoop1.IsPlaying)
+                        AudioManager.moveLoop1.Pause();
                     break;
                 case EnemyType.SAW_MAN:
-                    AudioManager.moveLoop2.P();
+                    if (AudioManager.moveLoop2.IsPlaying)
+                        AudioManager.moveLoop2.Pause();
                     break;
                 case EnemyType.DOZER:
-                    AudioManager.moveLoop3.Pause();
+                    if (AudioManager.moveLoop3.IsPlaying)
+                        AudioManager.moveLoop3.Pause();
                     break;
                 default:
                     break;
             }
-            AudioManager.isMoveLoopPause = false;*/
         }
     }
 }

@@ -80,8 +80,7 @@ namespace CustomGame
         //Singleton
         private static GamePlayScene GamePlay;
 
-        private GamePlayScene() {
-        }
+        private GamePlayScene() { }
         public static GamePlayScene Instance
         {
             get{
@@ -255,6 +254,7 @@ namespace CustomGame
                 song = Content.Load<Song>(map.SongFiles[i]);
                 songs.Add(song);
             }
+            MediaPlayer.Stop();
         }
 
         public int TileSize { get { return tile_size; } }

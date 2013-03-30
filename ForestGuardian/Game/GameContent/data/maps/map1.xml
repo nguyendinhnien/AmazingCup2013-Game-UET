@@ -32,28 +32,28 @@
       <!--
       <Item>
         <EnemyType>AxeMan</EnemyType>
-        <EnemyNumber>2</EnemyNumber>
+        <EnemyNumber>7</EnemyNumber>
         <SpawnRate>0.3</SpawnRate>
       </Item>
       <Item>
-        <EnemyType>AxeMan</EnemyType>
-        <EnemyNumber>9</EnemyNumber>
-        <SpawnRate>1.0</SpawnRate>
-      </Item>
-      <Item> 
-        <EnemyType>SawMan</EnemyType> 
+        <EnemyType>SawMan</EnemyType>
         <EnemyNumber>5</EnemyNumber>
         <SpawnRate>1.2</SpawnRate>
       </Item>
       <Item>
         <EnemyType>SawMan</EnemyType>
         <EnemyNumber>7</EnemyNumber>
-        <SpawnRate>1.2</SpawnRate>
+        <SpawnRate>1.0</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>AxeMan</EnemyType>
+        <EnemyNumber>10</EnemyNumber>
+        <SpawnRate>0.8</SpawnRate>
       </Item>
       <Item>
         <EnemyType>SawMan</EnemyType>
-        <EnemyNumber>9</EnemyNumber>
-        <SpawnRate>1.2</SpawnRate>
+        <EnemyNumber>10</EnemyNumber>
+        <SpawnRate>0.8</SpawnRate>
       </Item>
       <Item>
         <EnemyType>Dozer</EnemyType>

@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Media;
 
 using Library;
+using Microsoft.Xna.Framework.Media;
 namespace CustomGame
 {
     public class EndGameScene : GameScene
@@ -26,6 +27,8 @@ namespace CustomGame
         protected Vector2 TotalPointPosition; 
         protected int total_killed;
         protected Vector2 TotalKillPosition;
+
+        protected Song endGameSong;
 
         public EndGameScene(int total_points, int total_killed, string map_name):base()
         {
@@ -59,6 +62,8 @@ namespace CustomGame
             ContinueButton.Clicked += ContinueButton_Clicked;
 
             font = Content.Load<SpriteFont>(@"fonts\EndGameScene\end_game");
+
+            MediaPlayer.Play(endGameSong);
         }
 
         private void RestartButton_Clicked(object sender, EventArgs e)
@@ -76,6 +81,11 @@ namespace CustomGame
 
         public override void Update(GameTime gameTime)
         {
+            if (MediaPlayer.State == MediaState.Stopped)
+            {
+                MediaPlayer.Play(MainMenuScene.openGameSong);
+            }
+
             RestartButton.Update(gameTime);
             ContinueButton.Update(gameTime);
         }

@@ -29,9 +29,14 @@ namespace Data
         public int Height;
         public int TileSize;
         public string BackgroundFile;
-        
+        private Texture2D mBackgroundTexture;
+
         [ContentSerializerIgnore]
-        public Texture2D BackgroundTexture;
+        public Texture2D BackgroundTexture
+        {
+            get { return mBackgroundTexture; }
+            set { mBackgroundTexture = value; }
+        }
 
         public byte[] InteractiveMap;
         public Cell StartCell;

@@ -31,10 +31,6 @@ namespace Data
                 scores.Insert(i, score);
             }
 
-            /*if (scores.Count > MAX_SCORE)
-            {
-                scores.RemoveRange(scores.Count, MAX_SCORE - scores.Count);
-            }*/
             if (scores.Count > MAX_SCORE)
             {
                 scores.RemoveRange(MAX_SCORE, scores.Count - MAX_SCORE);

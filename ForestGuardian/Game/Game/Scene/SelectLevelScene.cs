@@ -55,6 +55,8 @@ namespace CustomGame
             }
 
             startItem = currentItemShow = 0;
+
+            UserData.mapIndex = currentItemShow;
         }
 
         public override void LoadContent()

@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Media;
 
 namespace CustomGame
 {
@@ -28,7 +29,6 @@ namespace CustomGame
         protected SceneManager sceneManager;
 
         public event EventHandler Exiting;
-
 
         public bool IsPopup
         {
@@ -93,6 +93,7 @@ namespace CustomGame
         }
 
         public virtual void LoadContent() { }
+
         public virtual void UnloadContent() { }
 
         public virtual void StateUpdate(GameTime gameTime, bool otherSceneHasFocus,bool coveredByOtherScene)

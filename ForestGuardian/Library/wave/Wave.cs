@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Audio;
 
 namespace Library
 {
@@ -36,7 +37,6 @@ namespace Library
         private Queue<Vector2> waypoints;
 
         private WaveState state = WaveState.Start;
-
 
         public Wave(string enemy_type ,int total_number, float spawn_rate, Queue<Vector2> waypoints, float grow_rate)
         {
@@ -163,6 +163,56 @@ namespace Library
             foreach (Enemy enemy in active_enemies)
             {
                 enemy.Draw(spriteBatch);
+            }
+        }
+
+        public void PlayMovingSound()
+        {
+                switch (enemy_type)
+                {
+                    case EnemyType.AXE_MAN:
+                        
+                        if (AudioManager.moveLoop1.IsPaused)
+                            AudioManager.moveLoop1.Resume();
+                        if (!AudioManager.moveLoop1.IsPlaying)
+                            AudioManager.moveLoop1.Play();
+                        break;
+                    case EnemyType.SAW_MAN:
+                        
+                        if (AudioManager.moveLoop2.IsPaused)
+                            AudioManager.moveLoop2.Resume();
+                        if (!AudioManager.moveLoop2.IsPlaying)
+                            AudioManager.moveLoop2.Play();
+                        break;
+                    case EnemyType.DOZER:
+                        if (AudioManager.moveLoop3.IsPaused)
+                            AudioManager.moveLoop3.Resume();
+                        if (!AudioManager.moveLoop3.IsPlaying)
+                            AudioManager.moveLoop3.Play();
+                        break;
+                    default:
+                        break;
+                }
+        }
+
+        public void PauseMovingSound()
+        {
+            switch (enemy_type)
+            {
+                case EnemyType.AXE_MAN:
+                    if (AudioManager.moveLoop1.IsPlaying)
+                        AudioManager.moveLoop1.Pause();
+                    break;
+                case EnemyType.SAW_MAN:
+                    if (AudioManager.moveLoop2.IsPlaying)
+                        AudioManager.moveLoop2.Pause();
+                    break;
+                case EnemyType.DOZER:
+                    if (AudioManager.moveLoop3.IsPlaying)
+                        AudioManager.moveLoop3.Pause();
+                    break;
+                default:
+                    break;
             }
         }
     }

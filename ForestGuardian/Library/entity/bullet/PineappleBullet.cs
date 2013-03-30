@@ -14,8 +14,8 @@ namespace Library
 {
     public class PineappleBullet : Bullet
     {
-        public static float SPEED = 7.0f;
-        public static int SPLASH_RANGE = 150;
+        public static float SPEED = 8.0f;
+        public static int SPLASH_RANGE = 120;
         public static ParticleEffect EFFECT = new ParticleEffect();
 
         private List<Enemy> mEnemies;

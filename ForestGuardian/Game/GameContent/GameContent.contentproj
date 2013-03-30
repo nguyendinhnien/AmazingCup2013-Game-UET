@@ -751,6 +751,7 @@
       <Name>map1</Name>
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
+      <SubType>Designer</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -765,6 +766,7 @@
       <Name>map2</Name>
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
+      <SubType>Designer</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -880,10 +882,6 @@
       <Name>AudioProject</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="audio\MusicBank.xsb">
-      <Name>MusicBank</Name>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="audio\SoundBank.xsb">
       <Name>SoundBank</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -967,6 +965,35 @@
   <ItemGroup>
     <Compile Include="images\maps\map_level_4_thumb.png">
       <Name>map_level_4_thumb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="audio\song\open_game.mp3">
+      <Name>open_game</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="audio\song\defeat.mp3">
+      <Name>defeat</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="audio\song\victory.mp3">
+      <Name>victory</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Include="images\cursor_clicked.png">
+      <Name>cursor_clicked</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

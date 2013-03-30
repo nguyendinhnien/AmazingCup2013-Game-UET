@@ -71,10 +71,12 @@ namespace Library
                         break;
                     case WaveState.Active:
                         current_wave.Update(gameTime);
+                        current_wave.PlayMovingSound();
                         break;
                     case WaveState.InActive:
                         current_wave.Update(gameTime);
                         current_wave.State = WaveState.Finish;
+                        current_wave.PauseMovingSound();
                         break;
                     case WaveState.Finish:
                         waves.Dequeue();

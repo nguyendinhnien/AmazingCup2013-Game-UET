@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Audio;
 
 
 namespace Library
@@ -82,7 +83,7 @@ namespace Library
         }
 
         public virtual void setMoveAnimation() { }
-        
+
         public Enemy(Vector2 center, float maxHealth, int value, float move_speed)
             : base(center)
         {

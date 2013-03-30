@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
 using Library;
+using Microsoft.Xna.Framework.Media;
 namespace CustomGame
 {
     public class VictoryScene : EndGameScene
@@ -41,9 +42,11 @@ namespace CustomGame
             VictoryLabel = new Label();
             VictoryLabel.Texture = texture;
             VictoryLabel.Center = new Vector2(512, 100);
+
             unlock_font = Content.Load<SpriteFont>(@"fonts\VictoryScene\unlock_font");
             normal_font = Content.Load<SpriteFont>(@"fonts\VictoryScene\normal_font");
 
+            endGameSong = Content.Load<Song>(@"audio\song\victory");
             base.LoadContent();
         }
 

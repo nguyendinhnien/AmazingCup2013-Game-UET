@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.Input;
 
 using Data;
 using Library;
+using Microsoft.Xna.Framework.Media;
 
 namespace CustomGame
 {
@@ -133,14 +134,14 @@ namespace CustomGame
         {
             UserData.setting.music_volume -= 10;
             UserData.setting.music_volume = Math.Max(UserData.setting.music_volume, 0);
-            AudioManager.SetMusicVolume(UserData.setting.music_volume);
+            MediaPlayer.Volume = (float)UserData.setting.music_volume * 0.01f;
         }
 
         private void IncreMusicButtonClicked(object sender, EventArgs e)
         {
             UserData.setting.music_volume += 10;
             UserData.setting.music_volume = Math.Min(UserData.setting.music_volume, 100);
-            AudioManager.SetMusicVolume(UserData.setting.music_volume);
+            MediaPlayer.Volume = (float)UserData.setting.music_volume * 0.01f;
         }
 
         private void DecreSoundButtonClicked(object sender, EventArgs e)

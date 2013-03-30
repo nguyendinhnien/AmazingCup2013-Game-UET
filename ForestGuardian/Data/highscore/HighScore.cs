@@ -22,16 +22,22 @@ namespace Data
         public void AddScore(Score score)
         {
             int i;
-            for (i=0; i < scores.Count; i++)
+            for (i = 0; i < scores.Count; i++)
             {
                 if (score.points > scores[i].points) break;
             }
-            if (i < MAX_SCORE){
+            if (i < MAX_SCORE)
+            {
                 scores.Insert(i, score);
             }
-            if (scores.Count > MAX_SCORE)
+
+            /*if (scores.Count > MAX_SCORE)
             {
                 scores.RemoveRange(scores.Count, MAX_SCORE - scores.Count);
+            }*/
+            if (scores.Count > MAX_SCORE)
+            {
+                scores.RemoveRange(MAX_SCORE, scores.Count - MAX_SCORE);
             }
         }
 

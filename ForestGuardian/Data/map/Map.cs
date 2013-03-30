@@ -150,7 +150,6 @@ namespace Data
             Debug.WriteLine(BackgroundFile);
             Debug.WriteLine(InteractiveMap);
             Debug.WriteLine(paths.Count);
-            //Debug.WriteLine("Path number: " + Paths.Count);
         }
     }
 }

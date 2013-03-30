@@ -13,6 +13,13 @@ namespace Library
         public static SoundBank soundBank;
         private static WaveBank waveBank;
 
+        public static bool isMoveLoopPlaying = false; //first playing
+        public static bool isMoveLoopPause = false;
+
+        public static Cue moveLoop1;
+        public static Cue moveLoop2;
+        public static Cue moveLoop3;
+
         public static void Initialize()
         {
             audioEngine = new AudioEngine(@"Content\audio\AudioProject.xgs");
@@ -20,6 +27,10 @@ namespace Library
             waveBank = new WaveBank(audioEngine, @"Content\audio\WaveBank.xwb");
 
             soundCategory = audioEngine.GetCategory("Sound");
+
+            moveLoop1 = soundBank.GetCue("move_loop_1");
+            moveLoop2 = soundBank.GetCue("move_loop_2");
+            moveLoop3 = soundBank.GetCue("move_loop_3");
         }
 
         public static void Update()
@@ -33,3 +44,4 @@ namespace Library
         }
     }
 }
+

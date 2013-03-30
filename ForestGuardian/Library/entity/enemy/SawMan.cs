@@ -22,10 +22,18 @@ namespace Library
         //}
         
         public SawMan(Vector2 center)
-            : base(center, MAX_HEALTH, VALUE, MOVE_SPEED) { deathSound = DEATH_SOUND; }
+            : base(center, MAX_HEALTH, VALUE, MOVE_SPEED) 
+        {
+            deathSound = DEATH_SOUND;
+            movingSound = AudioManager.moveLoop2;
+        }
 
         public SawMan(Animation animation, Vector2 position, Anchor a)
-            : base(animation, position, a, MAX_HEALTH, VALUE, MOVE_SPEED) { deathSound = DEATH_SOUND; }
+            : base(animation, position, a, MAX_HEALTH, VALUE, MOVE_SPEED) 
+        { 
+            deathSound = DEATH_SOUND;
+            movingSound = AudioManager.moveLoop2;
+        }
 
         public override void setMoveAnimation()
         {

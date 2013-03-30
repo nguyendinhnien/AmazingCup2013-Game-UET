@@ -37,7 +37,6 @@ namespace Library
 
         private WaveState state = WaveState.Start;
 
-
         public Wave(string enemy_type ,int total_number, float spawn_rate, Queue<Vector2> waypoints, float grow_rate)
         {
             this.spawn_rate = spawn_rate;
@@ -164,6 +163,68 @@ namespace Library
             {
                 enemy.Draw(spriteBatch);
             }
+        }
+
+        public void PlayMovingSound()
+        {/*
+            if (AudioManager.isMoveLoopPause)
+            {
+                switch (enemy_type)
+                {
+                    case EnemyType.AXE_MAN:
+                        AudioManager.moveLoop1.Resume();
+                        break;
+                    case EnemyType.SAW_MAN:
+                        AudioManager.moveLoop2.Resume();
+                        break;
+                    case EnemyType.DOZER:
+                        AudioManager.moveLoop3.Resume();
+                        break;
+                    default:
+                        break;
+                }
+                AudioManager.isMoveLoopPause = false;
+                return;
+            }
+            if (!AudioManager.isMoveLoopPlaying)
+            {
+                switch (enemy_type)
+                {
+                    case EnemyType.AXE_MAN:
+                        AudioManager.soundBank.PlayCue("move_loop_1");
+                        break;
+                    case EnemyType.SAW_MAN:
+                        AudioManager.moveLoop2.Play();
+                        break;
+                    case EnemyType.DOZER:
+                        AudioManager.moveLoop3.Play();
+                        break;
+                    default:
+                        break;
+                }
+                AudioManager.isMoveLoopPlaying = true;
+            }*/
+        }
+
+        public void PauseMovingSound()
+        {/*
+            if (AudioManager.isMoveLoopPause)
+                return;
+            switch (enemy_type)
+            {
+                case EnemyType.AXE_MAN:
+                    AudioManager..Stop();
+                    break;
+                case EnemyType.SAW_MAN:
+                    AudioManager.moveLoop2.P();
+                    break;
+                case EnemyType.DOZER:
+                    AudioManager.moveLoop3.Pause();
+                    break;
+                default:
+                    break;
+            }
+            AudioManager.isMoveLoopPause = false;*/
         }
     }
 }

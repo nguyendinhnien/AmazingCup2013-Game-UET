@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Storage;
+using Microsoft.Xna.Framework.Media;
 
 using Library;
 using Data;
@@ -73,6 +74,13 @@ namespace CustomGame
             UserData.highscore.AddScore(new Score(player_name,total_points));
             DataSerializer.SaveData<HighScore>(UserData.highscore, UserData.HighScoreDirectory ,UserData.HighScoreFile);
             sceneManager.ExitToMainMenu();
+
+
+            if (MediaPlayer.State == MediaState.Stopped)
+            {
+                MediaPlayer.Play(MainMenuScene.openGameSong);
+            }
+
             sceneManager.AddScene(new ScoreScene());
         }
 

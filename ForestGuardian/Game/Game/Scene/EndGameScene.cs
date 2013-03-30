@@ -81,11 +81,6 @@ namespace CustomGame
 
         public override void Update(GameTime gameTime)
         {
-            if (MediaPlayer.State == MediaState.Stopped)
-            {
-                MediaPlayer.Play(MainMenuScene.openGameSong);
-            }
-
             RestartButton.Update(gameTime);
             ContinueButton.Update(gameTime);
         }

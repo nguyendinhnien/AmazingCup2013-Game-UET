@@ -51,28 +51,130 @@
     </EndCell>
     <Waves>
       <Item>
-        <EnemyType>AxeMan</EnemyType> <EnemyNumber>1</EnemyNumber> <SpawnRate>1.0</SpawnRate>
-      </Item>
-      <!--
-      <Item>
-        <EnemyType>AxeMan</EnemyType> <EnemyNumber>1</EnemyNumber> <SpawnRate>1.0</SpawnRate>
+        <EnemyType>AxeMan</EnemyType>
+        <EnemyNumber>5</EnemyNumber>
+        <SpawnRate>1.0</SpawnRate>
       </Item>
       <Item>
-        <EnemyType>AxeMan</EnemyType> <EnemyNumber>1</EnemyNumber> <SpawnRate>1.0</SpawnRate>
+        <EnemyType>AxeMan</EnemyType>
+        <EnemyNumber>7</EnemyNumber>
+        <SpawnRate>1.0</SpawnRate>
       </Item>
       <Item>
-        <EnemyType>AxeMan</EnemyType> <EnemyNumber>1</EnemyNumber> <SpawnRate>1.0</SpawnRate>
+        <EnemyType>SawMan</EnemyType>
+        <EnemyNumber>5</EnemyNumber>
+        <SpawnRate>1.0</SpawnRate>
       </Item>
       <Item>
-        <EnemyType>AxeMan</EnemyType> <EnemyNumber>1</EnemyNumber> <SpawnRate>1.0</SpawnRate>
+        <EnemyType>SawMan</EnemyType>
+        <EnemyNumber>7</EnemyNumber>
+        <SpawnRate>1.0</SpawnRate>
       </Item>
       <Item>
-        <EnemyType>AxeMan</EnemyType> <EnemyNumber>1</EnemyNumber> <SpawnRate>1.0</SpawnRate>
+        <EnemyType>AxeMan</EnemyType>
+        <EnemyNumber>10</EnemyNumber>
+        <SpawnRate>0.8</SpawnRate>
       </Item>
       <Item>
-        <EnemyType>AxeMan</EnemyType> <EnemyNumber>1</EnemyNumber> <SpawnRate>1.0</SpawnRate>
+        <EnemyType>SawMan</EnemyType>
+        <EnemyNumber>10</EnemyNumber>
+        <SpawnRate>0.8</SpawnRate>
       </Item>
-      -->
+      <Item>
+        <EnemyType>Dozer</EnemyType>
+        <EnemyNumber>2</EnemyNumber>
+        <SpawnRate>1.5</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>AxeMan</EnemyType>
+        <EnemyNumber>10</EnemyNumber>
+        <SpawnRate>0.6</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>SawMan</EnemyType>
+        <EnemyNumber>10</EnemyNumber>
+        <SpawnRate>0.6</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>Dozer</EnemyType>
+        <EnemyNumber>3</EnemyNumber>
+        <SpawnRate>1.5</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>AxeMan</EnemyType>
+        <EnemyNumber>15</EnemyNumber>
+        <SpawnRate>0.6</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>SawMan</EnemyType>
+        <EnemyNumber>15</EnemyNumber>
+        <SpawnRate>0.6</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>AxeMan</EnemyType>
+        <EnemyNumber>20</EnemyNumber>
+        <SpawnRate>0.6</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>SawMan</EnemyType>
+        <EnemyNumber>20</EnemyNumber>
+        <SpawnRate>0.6</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>Dozer</EnemyType>
+        <EnemyNumber>5</EnemyNumber>
+        <SpawnRate>1.5</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>SawMan</EnemyType>
+        <EnemyNumber>25</EnemyNumber>
+        <SpawnRate>0.6</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>SawMan</EnemyType>
+        <EnemyNumber>25</EnemyNumber>
+        <SpawnRate>0.6</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>AxeMan</EnemyType>
+        <EnemyNumber>30</EnemyNumber>
+        <SpawnRate>0.6</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>SawMan</EnemyType>
+        <EnemyNumber>30</EnemyNumber>
+        <SpawnRate>0.6</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>Dozer</EnemyType>
+        <EnemyNumber>7</EnemyNumber>
+        <SpawnRate>1.5</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>SawMan</EnemyType>
+        <EnemyNumber>35</EnemyNumber>
+        <SpawnRate>0.6</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>SawMan</EnemyType>
+        <EnemyNumber>40</EnemyNumber>
+        <SpawnRate>0.6</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>AxeMan</EnemyType>
+        <EnemyNumber>40</EnemyNumber>
+        <SpawnRate>0.6</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>SawMan</EnemyType>
+        <EnemyNumber>45</EnemyNumber>
+        <SpawnRate>0.6</SpawnRate>
+      </Item>
+      <Item>
+        <EnemyType>Dozer</EnemyType>
+        <EnemyNumber>9</EnemyNumber>
+        <SpawnRate>1.5</SpawnRate>
+      </Item>
     </Waves>
     <SongFiles>
       <Item>musics/Song8</Item>

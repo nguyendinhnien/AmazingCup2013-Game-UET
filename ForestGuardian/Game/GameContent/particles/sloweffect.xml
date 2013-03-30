@@ -8,7 +8,7 @@
       <ReleaseQuantity>11</ReleaseQuantity>
       <Enabled>True</Enabled>
       <ReleaseSpeed>
-        <Value>50</Value>
+        <Value>75</Value>
         <Variation>0</Variation>
       </ReleaseSpeed>
       <ReleaseColour>
@@ -16,12 +16,12 @@
         <Variation>0 0 0</Variation>
       </ReleaseColour>
       <ReleaseOpacity>
-        <Value>1</Value>
+        <Value>0.75</Value>
         <Variation>0</Variation>
       </ReleaseOpacity>
       <ReleaseScale>
-        <Value>64</Value>
-        <Variation>0</Variation>
+        <Value>32</Value>
+        <Variation>16</Variation>
       </ReleaseScale>
       <ReleaseRotation>
         <Value>0</Value>
@@ -30,13 +30,6 @@
       <ReleaseImpulse>0 0</ReleaseImpulse>
       <ParticleTextureAssetName>Particle007</ParticleTextureAssetName>
       <Modifiers>
-        <Item Type="ProjectMercury.Modifiers.ScaleModifier">
-          <InitialScale>16</InitialScale>
-          <UltimateScale>32</UltimateScale>
-        </Item>
-        <Item Type="ProjectMercury.Modifiers.DampingModifier">
-          <DampingCoefficient>0</DampingCoefficient>
-        </Item>
         <Item Type="ProjectMercury.Modifiers.TrajectoryRotationModifier">
           <RotationOffset>0</RotationOffset>
         </Item>

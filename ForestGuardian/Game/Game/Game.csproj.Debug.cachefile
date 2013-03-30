@@ -135,6 +135,8 @@ Content\images\scene\LoadingScene\loading_text.xnb
 Content\images\maps\map4.xnb
 Content\images\maps\map_level_4_thumb.xnb
 Content\images\cursor_clicked.xnb
+Content\images\scene\GameTipScene\control_map_tut.xnb
+Content\FlowerBurst.xnb
 Content\fonts\gameplay\value_font.xnb
 Content\fonts\gameplay\hud_font.xnb
 Content\fonts\ScoreScene\score.xnb
@@ -151,7 +153,6 @@ Content\musics\Song8.xnb
 Content\audio\song\open_game.xnb
 Content\audio\song\defeat.xnb
 Content\audio\song\victory.xnb
-Content\images\scene\GameTipScene\control_map_tut.xnb
 Content\musics\Song8.wma
 Content\audio\song\open_game.wma
 Content\audio\song\defeat.wma

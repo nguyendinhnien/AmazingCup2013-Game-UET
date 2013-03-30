@@ -22,6 +22,7 @@ namespace CustomGame
         bool traceEnabled;
 
         Texture2D CursorTexture;
+        Texture2D CursorPressTexture;
         Vector2 CursorPosition;
 
         public SpriteBatch SpriteBatch
@@ -54,6 +55,7 @@ namespace CustomGame
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             CursorTexture = content.Load<Texture2D>(@"images\cursor");
+            CursorPressTexture = content.Load<Texture2D>(@"images\cursor_clicked");
             // Tell each of the screens to load their content.
             foreach (GameScene scene in scenes)
             {
@@ -138,7 +140,12 @@ namespace CustomGame
                 scene.Draw(spriteBatch, gameTime);
             }
             spriteBatch.Begin();
-            spriteBatch.Draw(CursorTexture, CursorPosition, Color.White);
+
+            if (Mouse.GetState().LeftButton == ButtonState.Pressed)
+                spriteBatch.Draw(CursorPressTexture, CursorPosition, Color.White);
+            else
+                spriteBatch.Draw(CursorTexture, CursorPosition, Color.White);
+
             spriteBatch.End();
         }
 

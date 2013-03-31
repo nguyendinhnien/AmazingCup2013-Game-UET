@@ -67,7 +67,7 @@ namespace CustomGame
         #region Buttons,Labels
 
         private ToggleValueLabel OakTowerLabel;
-        private ToggleValueLabel CatusTowerLabel;
+        private ToggleValueLabel CactusTowerLabel;
         private ToggleValueLabel PineappleTowerLabel;
         private ToggleValueLabel UpgradeLabel;
         private ValueLabel SellLabel;
@@ -145,18 +145,24 @@ namespace CustomGame
             Texture2D textureEnable, textureDisable;
 
             ValueLabel.FONT = Content.Load<SpriteFont>(@"fonts\gameplay\value_font");
-            textureEnable = Content.Load<Texture2D>(@"images\gameplay\buttons\oak_tower_enable_but");
-            textureDisable = Content.Load<Texture2D>(@"images\gameplay\buttons\oak_tower_disable_but");
-            OakTowerLabel = new ToggleValueLabel(textureEnable, textureDisable, new Vector2(600, 640), new Vector2(32,72),OakTower.COST);
-
-            textureEnable = Content.Load<Texture2D>(@"images\gameplay\buttons\cactus_tower_enable_but");
-            textureDisable = Content.Load<Texture2D>(@"images\gameplay\buttons\cactus_tower_disable_but");
-            CatusTowerLabel = new ToggleValueLabel(textureEnable, textureDisable, new Vector2(700, 640), new Vector2(32, 72), CactusTower.COST);
-
-            textureEnable = Content.Load<Texture2D>(@"images\gameplay\buttons\pineapple_tower_enable_but");
-            textureDisable = Content.Load<Texture2D>(@"images\gameplay\buttons\pineapple_tower_disable_but");
-            PineappleTowerLabel = new ToggleValueLabel(textureEnable, textureDisable, new Vector2(800, 640), new Vector2(32, 72), PineappleTower.COST);
-
+            if (!UserData.isTowerLock((int)TowerType.Oak))
+            {
+                textureEnable = Content.Load<Texture2D>(@"images\gameplay\buttons\oak_tower_enable_but");
+                textureDisable = Content.Load<Texture2D>(@"images\gameplay\buttons\oak_tower_disable_but");
+                OakTowerLabel = new ToggleValueLabel(textureEnable, textureDisable, new Vector2(600, 640), new Vector2(32, 72), OakTower.COST);
+            }
+            if (!UserData.isTowerLock((int)TowerType.Cactus))
+            {
+                textureEnable = Content.Load<Texture2D>(@"images\gameplay\buttons\cactus_tower_enable_but");
+                textureDisable = Content.Load<Texture2D>(@"images\gameplay\buttons\cactus_tower_disable_but");
+                CactusTowerLabel = new ToggleValueLabel(textureEnable, textureDisable, new Vector2(700, 640), new Vector2(32, 72), CactusTower.COST);
+            }
+            if (!UserData.isTowerLock((int)TowerType.Pineapple))
+            {
+                textureEnable = Content.Load<Texture2D>(@"images\gameplay\buttons\pineapple_tower_enable_but");
+                textureDisable = Content.Load<Texture2D>(@"images\gameplay\buttons\pineapple_tower_disable_but");
+                PineappleTowerLabel = new ToggleValueLabel(textureEnable, textureDisable, new Vector2(800, 640), new Vector2(32, 72), PineappleTower.COST);
+            }
             textureEnable = Content.Load<Texture2D>(@"images\gameplay\buttons\upgrade_enable_but");
             textureDisable = Content.Load<Texture2D>(@"images\gameplay\buttons\upgrade_disable_but");
             UpgradeLabel = new ToggleValueLabel(textureEnable, textureDisable, Vector2.Zero, new Vector2(12, 41));
@@ -371,8 +377,6 @@ namespace CustomGame
                 }
             }
 
-            HudLayer.Update(gameTime);
-
             if (UserData.currentMapMode == (int)Mode.Time)
             {
                 timer -= gameTime.ElapsedGameTime;
@@ -383,14 +387,15 @@ namespace CustomGame
                 }
             }
 
+            HudLayer.Update(gameTime);
+            
             if (wave_manager.Waiting){ WaveTable.Update(gameTime, wave_manager.CurrentWaveNumber); }
             else { WaveTable.Update(gameTime, wave_manager.CurrentWaveNumber + 1); }
             //Cap nhat Camera
             Camera2D.Update(gameTime);
-
-            OakTowerLabel.Update(money);
-            CatusTowerLabel.Update(money);
-            PineappleTowerLabel.Update(money);
+            if (OakTowerLabel != null) { OakTowerLabel.Update(money); }
+            if (CactusTowerLabel != null) { CactusTowerLabel.Update(money); }
+            if (PineappleTowerLabel != null) { PineappleTowerLabel.Update(money); }
             if (is_tower_select)
             {
                 UpgradeLabel.Update(money);
@@ -417,9 +422,9 @@ namespace CustomGame
                 if (!is_tower_add && !is_tower_select)
                 {
                     //Kiem tra xem nut nao duoc click
-                    if (OakTowerLabel.InBound(mouseState.X, mouseState.Y) && OakTowerLabel.Active) { OakTowerLabel_Clicked(); }
-                    if (CatusTowerLabel.InBound(mouseState.X, mouseState.Y) && CatusTowerLabel.Active) { CatusTowerLabel_Clicked(); }
-                    if (PineappleTowerLabel.InBound(mouseState.X, mouseState.Y) && PineappleTowerLabel.Active) { PineappleTowerLabel_Clicked(); }
+                    if (OakTowerLabel != null && OakTowerLabel.InBound(mouseState.X, mouseState.Y) && OakTowerLabel.Active) { OakTowerLabel_Clicked(); }
+                    if (CactusTowerLabel != null && CactusTowerLabel.InBound(mouseState.X, mouseState.Y) && CactusTowerLabel.Active) { CatusTowerLabel_Clicked(); }
+                    if (PineappleTowerLabel != null && PineappleTowerLabel.InBound(mouseState.X, mouseState.Y) && PineappleTowerLabel.Active) { PineappleTowerLabel_Clicked(); }
 
                     if (!is_tower_add)
                     {
@@ -624,9 +629,9 @@ namespace CustomGame
                 }
                 spriteBatch.DrawString(wave_font, "Wave: " + wave_manager.CurrentWaveNumber, new Vector2(20, 110), Color.White, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, 0.08f);
                 spriteBatch.DrawString(wave_font, "Total: " + wave_manager.TotalWaveNumber, new Vector2(20, 160), Color.White, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, 0.08f);
-                OakTowerLabel.Draw(spriteBatch);
-                CatusTowerLabel.Draw(spriteBatch);
-                PineappleTowerLabel.Draw(spriteBatch);
+                if (OakTowerLabel != null) { OakTowerLabel.Draw(spriteBatch); }
+                if (CactusTowerLabel != null) { CactusTowerLabel.Draw(spriteBatch); }
+                if (PineappleTowerLabel != null) { PineappleTowerLabel.Draw(spriteBatch); }
                 WaveTable.Draw(spriteBatch);
                 HudLayer.Draw(spriteBatch);
             spriteBatch.End();

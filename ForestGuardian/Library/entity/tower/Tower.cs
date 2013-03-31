@@ -57,7 +57,7 @@ namespace Library
         }
         public int SellCost
         {
-            get { return (int)(cost/1.4f); }
+            get { return (int)((cost + (level-1)*upgradeCost)/1.5f); }
         }
 
         public Tower(Texture2D texture, Vector2 pCenter, int cost, int upgradeCost, int range, int damage, float fire_reload)

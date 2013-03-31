@@ -371,6 +371,41 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="musics\Song1.mp3">
+      <Name>Song1</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+    <Compile Include="musics\Song2.mp3">
+      <Name>Song2</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+    <Compile Include="musics\Song3.mp3">
+      <Name>Song3</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+    <Compile Include="musics\Song4.mp3">
+      <Name>Song4</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+    <Compile Include="musics\Song5.mp3">
+      <Name>Song5</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+    <Compile Include="musics\Song6.mp3">
+      <Name>Song6</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+    <Compile Include="musics\Song7.mp3">
+      <Name>Song7</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
     <Compile Include="Particle004.png">
       <Name>Particle004</Name>
       <Importer>TextureImporter</Importer>
@@ -755,13 +790,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="musics\Song8.mp3">
-      <Name>Song8</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="data\maps\map2.xml">
       <Name>map2</Name>
       <Importer>XmlImporter</Importer>
@@ -997,12 +1025,18 @@
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Compile Include="images\scene\GameTipScene\control_map_tut.png">
       <Name>control_map_tut</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="musics\Song8.mp3">
+      <Name>Song8</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />

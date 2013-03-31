@@ -62,7 +62,7 @@ namespace Library
             Camera2D.world_width = world_width;
             Camera2D.world_height = world_height;
 
-            minPosition = Vector2.Zero;
+            position = minPosition = Vector2.Zero;
             maxZoom = 1.5f;
 
             float ratio;

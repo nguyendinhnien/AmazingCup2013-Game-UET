@@ -69,7 +69,7 @@ namespace Data
             for (int i = 0; i < Waves.Count;i++ )
             {
                 Waves[i].path_order = random.Next(Waves.Count);
-                Waves[i].GrowRate = i / Data.Wave.NUMBER_BETWEEN_GROW * Data.Wave.BASE_GROW_RATE;
+                Waves[i].GrowRate = (i / Data.Wave.NUMBER_BETWEEN_GROW) * Data.Wave.BASE_GROW_RATE;
             }
         }
 

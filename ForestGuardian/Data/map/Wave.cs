@@ -9,10 +9,10 @@ namespace Data
     public class Wave
     {
         [ContentSerializerIgnore]
-        public static int NUMBER_BETWEEN_GROW = 1;
+        public static int NUMBER_BETWEEN_GROW = 5;
         
         [ContentSerializerIgnore]
-        public static float BASE_GROW_RATE = 0.1f;
+        public static float BASE_GROW_RATE = 0.3f;
         
         public string EnemyType;
         public int EnemyNumber;

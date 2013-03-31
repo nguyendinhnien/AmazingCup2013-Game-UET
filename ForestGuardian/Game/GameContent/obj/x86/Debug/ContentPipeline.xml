@@ -8,7 +8,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\maps\map3.xnb</Output>
-      <Time>2013-03-30T14:26:05.0725603+07:00</Time>
+      <Time>2013-03-31T12:02:02.6552938+07:00</Time>
     </Item>
     <Item>
       <Source>particles\slowEffect.xml</Source>
@@ -44,7 +44,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\maps\map1.xnb</Output>
-      <Time>2013-03-30T15:28:31.3887693+07:00</Time>
+      <Time>2013-03-31T12:01:56.6272431+07:00</Time>
     </Item>
     <Item>
       <Source>data\maps\map2.xml</Source>
@@ -53,7 +53,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\maps\map2.xnb</Output>
-      <Time>2013-03-29T16:28:39.5349925+07:00</Time>
+      <Time>2013-03-31T12:02:00.2752905+07:00</Time>
     </Item>
     <Item>
       <Source>data\maps\map4.xml</Source>
@@ -62,7 +62,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\data\maps\map4.xnb</Output>
-      <Time>2013-03-30T15:12:09.6185744+07:00</Time>
+      <Time>2013-03-31T12:02:05.2213245+07:00</Time>
     </Item>
     <Item>
       <Source>images\gameplay\buttons\arrow_hover_but.png</Source>
@@ -1235,6 +1235,15 @@
       <Time>2013-03-30T16:14:43.2279333+07:00</Time>
     </Item>
     <Item>
+      <Source>images\scene\GameTipScene\control_map_tut.png</Source>
+      <Name>images\scene\GameTipScene\control_map_tut</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\GameTipScene\control_map_tut.xnb</Output>
+      <Time>2013-03-30T15:52:21.124945+07:00</Time>
+    </Item>
+    <Item>
       <Source>fonts\gameplay\value_font.spritefont</Source>
       <Name>fonts\gameplay\value_font</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -1343,16 +1352,6 @@
       <Time>2013-03-29T22:25:19.7816635+07:00</Time>
     </Item>
     <Item>
-      <Source>musics\Song8.mp3</Source>
-      <Name>musics\Song8</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song8.xnb</Output>
-      <Extra>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song8.wma</Extra>
-      <Time>2013-03-24T16:20:58+07:00</Time>
-    </Item>
-    <Item>
       <Source>audio\song\open_game.mp3</Source>
       <Name>audio\song\open_game</Name>
       <Importer>Mp3Importer</Importer>
@@ -1383,13 +1382,84 @@
       <Time>2013-03-30T15:15:20.3296249+07:00</Time>
     </Item>
     <Item>
-      <Source>images\scene\GameTipScene\control_map_tut.png</Source>
-      <Name>images\scene\GameTipScene\control_map_tut</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
+      <Source>musics\Song1.mp3</Source>
+      <Name>musics\Song1</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\images\scene\GameTipScene\control_map_tut.xnb</Output>
-      <Time>2013-03-30T15:52:21.124945+07:00</Time>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song1.xnb</Output>
+      <Extra>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song1.wma</Extra>
+      <Time>2013-03-24T16:42:40+07:00</Time>
+    </Item>
+    <Item>
+      <Source>musics\Song2.mp3</Source>
+      <Name>musics\Song2</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song2.xnb</Output>
+      <Extra>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song2.wma</Extra>
+      <Time>2013-03-24T10:36:18+07:00</Time>
+    </Item>
+    <Item>
+      <Source>musics\Song3.mp3</Source>
+      <Name>musics\Song3</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song3.xnb</Output>
+      <Extra>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song3.wma</Extra>
+      <Time>2012-11-11T22:59:30+07:00</Time>
+    </Item>
+    <Item>
+      <Source>musics\Song4.mp3</Source>
+      <Name>musics\Song4</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song4.xnb</Output>
+      <Extra>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song4.wma</Extra>
+      <Time>2013-03-30T21:41:46.9458165+07:00</Time>
+    </Item>
+    <Item>
+      <Source>musics\Song5.mp3</Source>
+      <Name>musics\Song5</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song5.xnb</Output>
+      <Extra>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song5.wma</Extra>
+      <Time>2013-03-24T16:19:00+07:00</Time>
+    </Item>
+    <Item>
+      <Source>musics\Song6.mp3</Source>
+      <Name>musics\Song6</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song6.xnb</Output>
+      <Extra>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song6.wma</Extra>
+      <Time>2013-03-30T21:42:10.1858491+07:00</Time>
+    </Item>
+    <Item>
+      <Source>musics\Song7.mp3</Source>
+      <Name>musics\Song7</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song7.xnb</Output>
+      <Extra>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song7.wma</Extra>
+      <Time>2013-03-24T16:20:58+07:00</Time>
+    </Item>
+    <Item>
+      <Source>musics\Song8.mp3</Source>
+      <Name>musics\Song8</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song8.xnb</Output>
+      <Extra>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\Game\bin\x86\Debug\Content\musics\Song8.wma</Extra>
+      <Time>2013-03-24T10:29:16.8346049+07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -1437,7 +1507,7 @@
       </Assembly>
       <Assembly>
         <Key>E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Data\bin\x86\Debug\Data.dll</Key>
-        <Value>2013-03-30T16:16:32.4287382+07:00</Value>
+        <Value>2013-03-31T10:41:49.2911995+07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>

@@ -364,7 +364,7 @@ namespace CustomGame
             }
             else
             {
-                if (MediaPlayer.State == MediaState.Stopped)
+                if (MediaPlayer.State == MediaState.Stopped && songs.Count > 0)
                 {
                     MediaPlayer.Play(songs[currentSongIndex]);
                     currentSongIndex = (currentSongIndex + 1) % songs.Count;

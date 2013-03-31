@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Media;
 using Library; 
 
 namespace CustomGame
@@ -61,7 +62,7 @@ namespace CustomGame
 
         private void PlayButton_Clicked(object sender, EventArgs e)
         {
-            gameplay.Pause = !gameplay.Pause;
+            gameplay.Pause = !gameplay.Pause;           
             playButton.Active = !playButton.Active;
         }
 

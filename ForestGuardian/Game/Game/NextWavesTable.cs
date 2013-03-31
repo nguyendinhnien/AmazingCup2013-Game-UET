@@ -117,7 +117,7 @@ namespace CustomGame
                 Vector2 index_position, texture_position, number_position;
 
                 index_position = NextWavesLabel.Position + FirstIndexOffset;
-                index_position.X -= (font.MeasureString(next_wave_index[0].ToString())).X / 2;
+                index_position.X -= (font.MeasureString(next_wave_index[0].ToString())).X * 0.7f/ 2;
                 
                 texture_position = NextWavesLabel.Position + FirstTextureOffset;
                 
@@ -128,9 +128,9 @@ namespace CustomGame
                 {
                     if (next_wave_index[i] <= Waves.Count)
                     {
-                        spriteBatch.DrawString(font, next_wave_index[i].ToString(), index_position, Color.Orange, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, layerDepth);
+                        spriteBatch.DrawString(font, next_wave_index[i].ToString(), index_position, Color.Orange, 0.0f, Vector2.Zero, 0.7f, SpriteEffects.None, layerDepth);
                         spriteBatch.Draw(next_wave_texture[i], texture_position, null, Color.White, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, layerDepth);
-                        spriteBatch.DrawString(font, next_wave_number[i].ToString(), number_position, Color.FloralWhite, 0.0f, Vector2.Zero, 0.5f, SpriteEffects.None, layerDepth);
+                        spriteBatch.DrawString(font, next_wave_number[i].ToString(), number_position, Color.White, 0.0f, Vector2.Zero, 0.5f, SpriteEffects.None, layerDepth);
 
                         index_position.Y += 77; texture_position.Y += 77; number_position.Y += 77;
                     }

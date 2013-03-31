@@ -12,8 +12,8 @@ namespace Library
         public static Texture2D TEXTURE;
         public static Animation MOVE_ANIMATION;
         public static float MOVE_SPEED = 1.7f;
-        public static float MAX_HEALTH = 60.0f;
-        public static int VALUE = 5;
+        public static float MAX_HEALTH = 90.0f;
+        public static int VALUE = 2;
 
         public static string DEATH_SOUND = "death_2";
         

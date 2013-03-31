@@ -39,8 +39,7 @@ namespace CustomGame
         private ToggleButton backwardButton;
         private ToggleButton forwardButton;
 
-        private string TowerName;
-        private int TowerDamage,TowerRange, TowerCost;
+        private string TowerInfo = "";
 
         public HelpScene():base()
         {
@@ -126,19 +125,19 @@ namespace CustomGame
             switch (currentItemShow)
             {
                 case (int)TowerType.Oak:
-                    TowerName = OakTower.NAME; TowerDamage = OakTower.DAMAGE; TowerRange = OakTower.RANGE; TowerCost = OakTower.COST;
+                    TowerInfo = OakTower.TowerInfo();
                     towerLevelTexture[0] = OakTower.TEXTURE_LV1;
                     towerLevelTexture[1] = OakTower.TEXTURE_LV2;
                     towerLevelTexture[2] = OakTower.TEXTURE_LV3;
                     break;
                 case (int)TowerType.Cactus:
-                    TowerName = CactusTower.NAME; TowerDamage = CactusTower.DAMAGE; TowerRange = CactusTower.RANGE; TowerCost = CactusTower.COST;
+                    TowerInfo = CactusTower.TowerInfo();
                     towerLevelTexture[0] = CactusTower.TEXTURE_LV1;
                     towerLevelTexture[1] = CactusTower.TEXTURE_LV2;
                     towerLevelTexture[2] = CactusTower.TEXTURE_LV3;
                     break;
                 case (int)TowerType.Pineapple:
-                    TowerName = PineappleTower.NAME; TowerDamage = PineappleTower.DAMAGE; TowerRange = PineappleTower.RANGE; TowerCost = PineappleTower.COST;
+                    TowerInfo = PineappleTower.TowerInfo();
                     towerLevelTexture[0] = PineappleTower.TEXTURE_LV1;
                     towerLevelTexture[1] = PineappleTower.TEXTURE_LV2;
                     towerLevelTexture[2] = PineappleTower.TEXTURE_LV3;
@@ -170,10 +169,6 @@ namespace CustomGame
                 int towerIndex = currentItemShow + startItem;               
                 if (! UserData.isTowerLock(towerIndex))
                 {
-                    string TowerInfo = "Name: " + TowerName + "\n" +
-                                        "Damage: " + TowerDamage + "/" + (int)(TowerDamage * 1.5f) + "/" + (int)(TowerDamage * 1.8f) + "\n" +
-                                        "Range: " + TowerRange + "\n" + "Cost: " + TowerCost;
-
                     spriteBatch.DrawString(helpFont, TowerInfo, new Vector2(75,190) , Color.Black, 0, Vector2.Zero,0.5f, SpriteEffects.None, 1.0f);
                     
                     spriteBatch.Draw(towerLevelTexture[0], new Vector2(700, 315), Color.White);

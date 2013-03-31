@@ -16,10 +16,10 @@ namespace Library
 
         public static Texture2D BULLET_TEXTURE;
 
-        public static float FIRE_RELOAD = 0.7f;
-        public static int COST = 5;
-        public static int UP_COST = 4;
-        public static int RANGE = 150;
+        public static float FIRE_RELOAD = 0.5f;
+        public static int COST = 8;
+        public static int UP_COST = 6;
+        public static int RANGE = 130;
         public static int DAMAGE = 10;
 
         public OakTower(Vector2 pCenter)
@@ -29,6 +29,13 @@ namespace Library
             : base(TEXTURE_LV1, pPosition, a, COST, UP_COST, RANGE, DAMAGE, FIRE_RELOAD) { }
 
 
+        public static string TowerInfo()
+        {
+            string towerInfo = "Name: " + NAME + "\n" +
+                               "Damage: " + DAMAGE + "/" + (int)(DAMAGE * 1.3f) + "/" + (int)(DAMAGE * 1.5f) + "\n" +
+                               "Range: " + RANGE + "\n" + "Cost: " + COST;
+            return towerInfo;
+        }
         public override void createBullet()
         {
             bullet = new OakBullet(BULLET_TEXTURE, this.Center, mDamage);
@@ -43,12 +50,12 @@ namespace Library
             if (level == 2)
             {
                 mTexture = TEXTURE_LV2;
-                mDamage = (int)(DAMAGE * 1.5f);
+                mDamage = (int)(DAMAGE * 1.3f);
             }
             else if (level == 3)
             {
                 mTexture = TEXTURE_LV3;
-                mDamage = (int)(DAMAGE * 1.8f);
+                mDamage = (int)(DAMAGE * 1.5f);
             }
         }
     }

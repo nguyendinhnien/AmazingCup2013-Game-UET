@@ -24,7 +24,7 @@ namespace CustomGame
         private Button ArrowButton;
         private Vector2 ArrowOffset = new Vector2(25, 120);
         
-        private Vector2 FirstIndexOffset = new Vector2(92, 80);
+        private Vector2 FirstIndexOffset = new Vector2(93, 90);
         private Vector2 FirstTextureOffset = new Vector2(132, 80);
         private Vector2 FirstNumberOffset = new Vector2(240, 95);
 
@@ -117,7 +117,7 @@ namespace CustomGame
                 Vector2 index_position, texture_position, number_position;
 
                 index_position = NextWavesLabel.Position + FirstIndexOffset;
-                index_position.X -= (font.MeasureString(next_wave_index[0].ToString())).X * 0.7f/ 2;
+                index_position.X -= (font.MeasureString(next_wave_index[0].ToString())).X * 0.7f / 2;
                 
                 texture_position = NextWavesLabel.Position + FirstTextureOffset;
                 

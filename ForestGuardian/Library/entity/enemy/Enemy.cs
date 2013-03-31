@@ -116,7 +116,7 @@ namespace Library
 
         public void Grow(float grow_rate)
         {
-            maxHealth = maxHealth * (1+grow_rate);
+            maxHealth = maxHealth * (1 + grow_rate);
             health = maxHealth;
         }
 

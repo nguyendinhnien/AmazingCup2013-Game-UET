@@ -136,6 +136,7 @@ Content\images\maps\map4.xnb
 Content\images\maps\map_level_4_thumb.xnb
 Content\images\cursor_clicked.xnb
 Content\images\scene\GameTipScene\control_map_tut.xnb
+Content\FlowerBurst.xnb
 Content\fonts\gameplay\value_font.xnb
 Content\fonts\gameplay\hud_font.xnb
 Content\fonts\ScoreScene\score.xnb
@@ -148,12 +149,6 @@ Content\fonts\SelectLevelScene\select_level.xnb
 Content\fonts\VictoryScene\unlock_font.xnb
 Content\fonts\VictoryScene\normal_font.xnb
 Content\fonts\DefeatScene\normal_font.xnb
-Content\audio\song\open_game.xnb
-Content\audio\song\open_game.wma
-Content\audio\song\defeat.xnb
-Content\audio\song\defeat.wma
-Content\audio\song\victory.xnb
-Content\audio\song\victory.wma
 Content\musics\Song1.xnb
 Content\musics\Song1.wma
 Content\musics\Song2.xnb
@@ -168,6 +163,12 @@ Content\musics\Song6.xnb
 Content\musics\Song6.wma
 Content\musics\Song7.xnb
 Content\musics\Song7.wma
+Content\audio\song\open_game.xnb
+Content\audio\song\open_game.wma
+Content\audio\song\defeat.xnb
+Content\audio\song\defeat.wma
+Content\audio\song\victory.xnb
+Content\audio\song\victory.wma
 Content\musics\Song8.xnb
 Content\musics\Song8.wma
 Content\audio\AudioProject.xgs

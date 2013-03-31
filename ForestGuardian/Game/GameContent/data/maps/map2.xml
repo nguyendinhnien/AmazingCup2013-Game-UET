@@ -82,7 +82,6 @@
       <Item> <EnemyType>Dozer</EnemyType> <EnemyNumber>30</EnemyNumber> <SpawnRate>0.1</SpawnRate></Item>
       <Item> <EnemyType>Dozer</EnemyType> <EnemyNumber>38</EnemyNumber> <SpawnRate>0.2</SpawnRate></Item>
       <Item> <EnemyType>Dozer</EnemyType> <EnemyNumber>50</EnemyNumber> <SpawnRate>0.3</SpawnRate></Item>
-      
     </Waves>
     <SongFiles>
       <Item>musics/Song7</Item>

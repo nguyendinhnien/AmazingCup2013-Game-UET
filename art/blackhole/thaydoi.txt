@@ -1,0 +1,4 @@
+- Finish scene các điểm số cậu draw liên tiếp giống 
+cái hiệu ứng trong field runner ấy
+- Chọn mode chơi thì c chèn thêm vài dòng chữ 
+giới thiệu cách chơi vào dưới intro_map , có thể chữ màu đỏ

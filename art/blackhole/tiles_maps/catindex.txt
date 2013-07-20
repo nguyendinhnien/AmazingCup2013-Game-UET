@@ -1,0 +1,14 @@
+# Index file for tiles_maps
+flower.png, Flower, , C
+grass1.png, Grass1, , C
+grass2 - copy.png, Grass2 - copy, , C
+grass2.png, Grass2, , C
+grass3.png, Grass3, , C
+grass4.png, Grass4, , C
+grass5.png, Grass5, , C
+ground.png, Ground, , C
+mushroom.png, Mushroom, , C
+panda.png, Panda, , C
+tree.png, Tree, , C
+tree2.png, Tree2, , C
+untitled_00000.png, 00000, , C

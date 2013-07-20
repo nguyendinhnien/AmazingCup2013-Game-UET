@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="16" height="12" tilewidth="64" tileheight="64">
+ <tileset firstgid="1" name="grass1" tilewidth="64" tileheight="64">
+  <image source="tiles_maps/grass1.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="2" name="grass2" tilewidth="64" tileheight="64">
+  <image source="tiles_maps/grass2.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="3" name="ground" tilewidth="64" tileheight="64">
+  <image source="tiles_maps/ground.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="4" name="grass4" tilewidth="64" tileheight="64">
+  <image source="tiles_maps/grass4.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="5" name="grass3" tilewidth="64" tileheight="64">
+  <image source="tiles_maps/grass3.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="6" name="grass5" tilewidth="64" tileheight="64">
+  <image source="tiles_maps/grass5.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="7" name="TREE" tilewidth="64" tileheight="100">
+  <image source="tiles_maps/TREE.png" width="64" height="100"/>
+ </tileset>
+ <tileset firstgid="8" name="oak_tree_level_1" tilewidth="64" tileheight="128">
+  <image source="tower/oak_tree_level_1.png" width="64" height="128"/>
+ </tileset>
+ <tileset firstgid="9" name="TREE2" tilewidth="64" tileheight="100">
+  <image source="tiles_maps/TREE2.png" width="64" height="100"/>
+ </tileset>
+ <tileset firstgid="10" name="PANDA" tilewidth="64" tileheight="64">
+  <image source="tiles_maps/PANDA.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="11" name="MUSHROOM" tilewidth="64" tileheight="64">
+  <image source="tiles_maps/MUSHROOM.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="12" name="Untitled_00000" tilewidth="64" tileheight="64">
+  <image source="tiles_maps/Untitled_00000.png" width="64" height="64"/>
+ </tileset>
+ <layer name="grass and ground" width="16" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgYBwkmIkIjE8/MxEYn53Y5NHNR3cPIfMJuY+Q+aS6j1T/j3QMALZjARY=
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="16" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjZ2BgYKcAczKgAm40jE+OE4rR1REC1NDPgKQfGbDg0MOKRQxdLzkAZgbMfDYC6pHdh839pNoNCz9ywpCa+rkY8KcdBjR1DFC9lKRdEAYAKmwCzQ==
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="16" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYKA+4IJiXHLUMH+gANsA2j1YAPdAO4CKAAB8hAA6
+  </data>
+ </layer>
+</map>

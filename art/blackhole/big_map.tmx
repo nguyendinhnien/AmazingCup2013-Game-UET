@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="24" height="18" tilewidth="64" tileheight="64">
+ <properties>
+  <property name="grass" value="0"/>
+ </properties>
+ <tileset firstgid="1" name="grass1" tilewidth="64" tileheight="64">
+  <image source="tiles_maps/grass1.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="2" name="grass2 - Copy" tilewidth="64" tileheight="64">
+  <image source="tiles_maps/grass2 - Copy.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="3" name="grass2" tilewidth="64" tileheight="64">
+  <image source="tiles_maps/grass2.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="4" name="grass3" tilewidth="64" tileheight="64">
+  <image source="tiles_maps/grass3.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="5" name="grass4" tilewidth="64" tileheight="64">
+  <image source="tiles_maps/grass4.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="6" name="ground" tilewidth="64" tileheight="64">
+  <image source="tiles_maps/ground.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="7" name="grass5" tilewidth="64" tileheight="64">
+  <image source="tiles_maps/grass5.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="8" name="MUSHROOM" tilewidth="64" tileheight="64">
+  <image source="tiles_maps/MUSHROOM.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="9" name="PANDA" tilewidth="64" tileheight="64">
+  <image source="tiles_maps/PANDA.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="10" name="TREE" tilewidth="64" tileheight="96">
+  <image source="tiles_maps/TREE.png" width="64" height="100"/>
+ </tileset>
+ <tileset firstgid="11" name="TREE2" tilewidth="64" tileheight="96">
+  <image source="tiles_maps/TREE2.png" width="64" height="100"/>
+ </tileset>
+ <layer name="grass" width="24" height="18">
+  <properties>
+   <property name="grass" value="0"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgYBwmmJlKmNZuwaePlQI7WegQdvSIH1x6CJlPTNiR6x9K0w8lcUOKP9kpiDtK0w8+uymJQ2qGHS43EpN+KHUHNcKH1mlrqGEAJZsCpQ==
+  </data>
+ </layer>
+ <layer name="flower" width="24" height="18">
+  <data encoding="base64" compression="zlib">
+   eJxjYKA94CCASdGHLEdLQGu7SDUfXQ0hPfR0Py55WsYRMemHlmZTai+t0+9QAtjCgprhQ6pZxOS1gc5f1DSf1HKZVPNpCQD+SwGJ
+  </data>
+ </layer>
+ <layer name="tree&amp;ground" width="24" height="18">
+  <data encoding="base64" compression="zlib">
+   eJy9ld0KwCAIRr0KzPd/34gYE1GzHzsQG1Qn+WqtAkBNbAQDhB/+HsEaT8yfgfSXS62Dhn8VmQ13fH5U+naJ+lE8V/Phfm1tr64o5Ky965c+q35t3zLziTLzR+o68XvzXp4f6855lY92P8zmneQjv9cbdHf2v6UBTJQGFA==
+  </data>
+ </layer>
+</map>

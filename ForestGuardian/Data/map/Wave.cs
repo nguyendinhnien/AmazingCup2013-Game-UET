@@ -12,7 +12,7 @@ namespace Data
         public static int NUMBER_BETWEEN_GROW = 5;
         
         [ContentSerializerIgnore]
-        public static float BASE_GROW_RATE = 0.3f;
+        public static float BASE_GROW_RATE = 0.1f;
         
         public string EnemyType;
         public int EnemyNumber;

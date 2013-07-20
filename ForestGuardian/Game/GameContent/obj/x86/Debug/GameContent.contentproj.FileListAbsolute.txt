@@ -1,1 +1,2 @@
 E:\Cac mon hoc o truong\Hoc ky 2 nam 3\Chuyen de cong nghe\Global GitHub\AmazingCup2013-Game-UET\ForestGuardian\Game\GameContent\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\WORKSPACE\AmazingCup2013-Game-UET\ForestGuardian\Game\GameContent\obj\x86\Debug\GameContent.contentprojResolveAssemblyReference.cache
